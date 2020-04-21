@@ -1,0 +1,848 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+a, .Right span{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF; /*Color leta */
+}
+
+/*MENU*/
+.headerBar{
+    height: 78px;
+    background-color: #912F46; /*Color menu*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-freeda{
+  margin-left: 61%; /*Alineacion*/
+  /*margin-bottom: 0%;*/
+  height: 75px;
+  width: 210px; 
+  display:flex;
+}
+
+/*Lado derecho el menu*/
+.Right{
+    display: flex;
+    flex-direction: row;
+    /* width: 40%; */
+    align-items: center;
+    /* justify-content: flex-end;
+    margin-right: 10%; */
+}
+.Right i{
+    cursor: pointer;
+    position: relative;
+}
+.selected{
+    color: #60A1E7 !important;
+}
+/*AYUDA, NOTIFICACION Y USUARIO*/
+.menu{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #FFFFFF;/*Color de letra*/
+}
+
+
+
+.bubble{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px #D0D0D0;
+    position: absolute;
+    top: 50px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3B536D;
+    display: none;
+}
+
+#notifications{
+    width: 200px;
+    height: auto;
+    line-height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px #D0D0D0;
+    position: absolute;
+    top: 50px;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3B536D;
+    display: none;
+    border-left: 10px solid #3B536D;
+}
+
+
+#notifications p a{
+    color: #60A1E7;
+    /* font-size: 13px; */
+}
+
+.show, .show#notifications{display: block;}
+.material-icons{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+/*COBERTURAS-VER POLIZA-SINIESTRO*/
+.seccion1{
+  position: static;
+  height: 80px;
+  width: 100%;
+  padding-top: 20px;
+}
+.underlineHover1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 30%;
+} 
+.underlineHover1:hover {
+  color: #912F46;
+}
+.underlineHover2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 5%;
+} 
+.underlineHover2:hover {
+  color: #912F46;
+}
+.underlineHover3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 5%;
+} 
+.underlineHover3:hover {
+  color: #912F46;
+}
+
+
+
+
+/*NUEVO DAHSBOARD*/
+.part1{
+  height: 600px;
+  padding-bottom: 100px;
+}
+.part2{
+  height: 600px;
+  padding-bottom: 100px; 
+}
+/*Recuadro con casita*/
+.recuadro-info{
+  width: 104%;
+  height: 95%;
+  margin-left: -2%;
+  margin-top: 5%;
+  border-radius: 10px;
+  background-color: #e3e7f2;
+  /*padding-left: 20px;
+  padding-right: 20px;*/
+}
+.info_seg{
+    /* width: 90%; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    border-spacing: 20px;
+}
+td{
+  vertical-align: top;
+  padding-right: 4%; /*Centrar el texto*/
+  padding-left: 4%; /*Centrar el texto*/
+}
+td.col_l{
+  font-size: 20px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+td.col_r{
+  font-size: 20px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  width: auto;
+  text-align: right;
+  line-height: 30px; /*Sangria*/
+}
+
+
+.documentos{
+  width: 100%;
+  height: 78%;
+  margin-left: 0%;
+  margin-top: 4%;
+  border-radius: 10px;
+  background-color: #e3e7f2;
+  display: none;   
+}
+.visibleflex{
+  display: flex;
+}
+svg.icon_proptype{ /*Imagen casa*/
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+h3.prop_street, h3.seg_active{ /*Casiopesa*/
+    color: #3B536D;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0px 20px;
+    color: #912F46;
+    line-height: 47px; /*Sangria*/
+}
+h3.seg_active{
+    margin-top: 10px;
+}
+h3.seg_active .material-icons{
+    margin-left: 0;
+}
+h3.seg_active{
+    display: flex;
+}
+h5{ /*Prado Churubusco*/
+  font-size: 20px;
+  font-weight: 200;
+  color: #8D8D8D;
+  margin-left: 20px;
+  line-height: 40px; /*Sangria*/
+}
+
+
+
+
+.doc_row_1{
+  width: 100%;
+}
+.doc_row{ /*Renglones*/
+  display: flex;
+  flex-direction: row; /*Pegado al margen izq*/
+  flex-wrap: wrap; /*Acomoda elementos hacia abajo*/
+  border-bottom: 1.5px solid #8E97A7; /*Margen de abajo*/
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+  padding-bottom: 5px;
+  cursor: default;
+
+}
+.doc_btns{ /*BOTONES VER Y DESCARGA*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.doc_btns button{
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid #8E97A7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  color: #8E97A7;
+  font-weight: 600;
+  outline: none;
+  cursor: auto;
+}
+.doc_btns button:hover{
+  color: #912F46;
+  border-color: #912F46;
+}
+.doc_btns button:focus{
+  border-color: #912F46;
+  color: #912F46;
+}
+
+/*POP-UP.html*/
+/*SeccionBoton SIGUIENTE*/
+.seccion-siniestro{
+  max-width: 900px;
+  padding-top: 130px;
+  height: 90%;
+  /*background: #bfe7e5;        /*PRUEBA*/
+} 
+.material-icons-siniestro{
+ width: 5px;
+}
+.btn-siniestro{
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 35%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-siniestro:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.btn-siniestro:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-siniestro:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+
+/* PANTALLA TODO LISTO*/
+#cover2{ /*Cubre toda la pantalla*/
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index:100;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.readyScreen{ /*Recuadro POP UP*/
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 100; /*superponen*/
+  display: block;
+
+  background-image: url("../img/Grieta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 100% 0%;
+  background-size: 60%;
+}
+
+.icono_micro_screen{
+  height: auto;
+}
+
+
+
+
+/*NUEVO FOOTER*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-top: solid 5px;
+  border-color: #F2F5F4;
+  padding-top: 2%;
+  /*background: #99cccc;   /* PRUEBA*/
+}
+.texto1-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px; /*Separacion entre textos*/
+  padding-left: 5%;
+  margin-top: 28px;
+  z-index: 2001;
+}
+.texto2-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto3-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto4-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+}
+.texto5-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.link-footer:hover{
+  color: #C88585;
+}
+.link-footer:active{
+  color: #C88585;
+  text-decoration: none;
+}
+.link-footer:focus{
+  text-decoration: underline;
+  color: #C88585;
+}
+.logo-footer{
+  width: 160px;
+  height: 60px;
+  display: flex;
+  margin-left: 80%;
+  margin-top: -3%;
+}
+
+
+
+
+
+
+
+
+
+/*PARTE Dashboard
+.tables{  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: red;
+}
+.left_col{
+    float: left; 
+    width: 100%;
+    background-color: green;
+}
+.right_col{
+    float: right; 
+    width: 65%;
+    background-color: blue;
+}*/
+
+/*Recuadro con casita
+.resume_prop{
+    width: 90%;
+    height: 75%;
+    /*margin-left: 5%; 
+    background-color: pink;
+    border-radius: 10px;
+    margin-left: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
+}*/
+/*.resume_prop.s{
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 10px;
+}*/
+
+/*.info_seg{
+        /* width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    border-spacing: 20px;
+}*/
+
+/*.right_col.cotizar{
+    width: 90%; 
+}*/
+
+
+
+
+
+/*---------MEDIA QUERIES---------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+/*body{
+  background-color: orange;
+}*/
+.logo-freeda{
+  padding-right: 10%;
+  margin-left: 10%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
+}
+/*Dashboard2.html*/
+.underlineHover1{
+  margin-left: 5%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+} 
+
+
+
+
+.doc_row{
+  width: 90%;
+  margin: 10px auto;
+  padding-bottom: 5px;
+}
+.doc_row .doc_btns{
+width: fit-content;
+margin:10px 0;
+}   
+.doc_row h4{
+  font-size: 16px;
+  font-weight: 300;
+  color: #8E97A7;
+  width: 45%;
+  margin:10px 0;
+}
+.doc_row h4, .doc_row .doc_btns{
+  /* width: fit-content; */
+  margin:10px 5px;
+
+}
+.doc_btns{
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Popup.html*/
+.btn-siniestro{
+  margin-top: 56%;
+  margin-left: 29%;
+}
+.readyScreen{ /*Recuadro grieta*/
+  top: calc(68% - 250px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 380px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  font-weight: 500;
+  width: 80%;
+  margin: 28px auto;
+  color: #912F46;
+}
+.readyScreen p{ /*Espera el reporte final*/
+  width: 260px;
+  font-size: 25px;
+  margin: 5px auto;
+}
+.icono_micro_screen{
+  margin-top: 70px;
+  margin-right: 70%;
+  width: 100px;
+  }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+/*body{
+  background-color: red
+}*/
+.logo-freeda{
+  padding-right: 15%;
+  margin-left: 25%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
+}
+
+
+
+.underlineHover1{
+  margin-left: 5%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+} 
+
+/*Contenedor descarga*/
+.right_col{
+  width: 100%; 
+}
+.docs_content{
+  width: 70%;
+  height: 30%;
+  margin-left: 10%;
+  margin-top: -5%;
+  padding: 5px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10%;
+} 
+.doc_row{
+  width: 90%;
+  margin: 10px auto;
+  padding-bottom: 5px;
+}
+.doc_row .doc_btns{
+width: fit-content;
+margin:10px 0;
+}   
+.doc_row h4{
+  font-size: 16px;
+  font-weight: 300;
+  color: #8E97A7;
+  width: 45%;
+  margin:10px 0;
+}
+.doc_row h4, .doc_row .doc_btns{
+  /* width: fit-content; */
+  margin:10px 5px;
+}
+.doc_btns{
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Pop up*/
+.btn-siniestro{
+  margin-top: 46%;
+  margin-left: 33%;
+}
+.readyScreen{ /*Recuadro grieta*/
+  top: calc(68% - 250px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  width: 80%;
+  margin: 38px auto;
+  color: #912F46
+}
+.readyScreen p{ /*Espera el reporte final*/
+  width: 270px;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 5px auto;
+}
+.icono_micro_screen{ /*Microfono*/
+  margin-top: 70px;
+  margin-right: 70%;
+  width: 100px;
+}
+
+}
+    
+
+
+
+
+      
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/*body{
+  background-color: aqua;
+}*/
+/*Dashboard2.html*/
+.underlineHover1{
+  margin-left: 20%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+} 
+
+/*Recuadro con casita*/
+/*NUEVO DASH*/
+.doc_row h4, .doc_row .doc_btns{
+  /* width: fit-content; */
+  margin:10px 5px;
+}
+.doc_row h4{
+  /* font-size: 16px; */
+  font-weight: 300;
+  color: #8E97A7;
+  /* margin-left: 30px; */
+}
+.doc_btns{
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*Pop up*/
+.btn-siniestro{
+  margin-top: 430%;
+  margin-left: 440%;
+}
+.readyScreen{ /*Reguadro grieta*/
+  top: calc(68% - 250px);
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 400px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  font-weight: 500;
+  width: 80%;
+  margin: 30px auto;
+  color: #912F46;
+}
+.readyScreen p{ /*Espera el reporte*/
+  width: 290px;
+  font-size: 28px;
+  margin: 5px auto;
+}
+.icono_micro_screen{ /*Microfono*/
+  margin-top: 60px;
+  margin-right: 70%;
+  width: 100px;
+}
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+/*body{
+  background-color: violet
+}*/
+
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  visibility: visible;
+}
+.texto-notificacion{
+  display: all;
+}
+
+/*Dashboard2.html*/
+.underlineHover1{
+  margin-left: 30%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+} 
+
+/*NUEVO DASH*/
+.recuadro-info{
+  height: 108%;
+}
+.doc_row h4, .doc_row .doc_btns{
+  /* width: fit-content; */
+  margin:10px 5px;
+}
+.doc_row h4{
+  /* font-size: 16px; */
+  font-weight: 300;
+  color: #8E97A7;
+  /* margin-left: 30px; */
+}
+.doc_btns{
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Pop up*/
+.btn-siniestro{
+  margin-top: 30%;
+  margin-left: 40%;
+}
+.material-icons{
+
+}
+.readyScreen{ /*Recuadro grieta*/
+  top: calc(65% - 250px);
+  left: calc(45% - 250px);
+  width: 650px;
+  height: 400px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  font-weight: 500;
+  width: 80%;
+  margin: 40px auto;
+  color: #912F46;
+}
+.readyScreen p{ /*Espera el reporte final*/
+  width: 350px;
+  font-size: 30px;
+  margin: 5px auto;
+}
+.icono_micro_screen{ /*Microfono*/
+  margin-top: 5%;
+  margin-right: 80%;
+  width: 100px;
+}
+}
+
+
+
+
+
+
