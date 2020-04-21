@@ -38,6 +38,26 @@ $(document).ready(function(){
 
 
 //7-validar-token.html
+
+//Event listener del boton de validación
+$("#enviar").on("click", function(){
+  $("#validar").hide();
+  $("#formError").hide();
+  let tokenValue = $("#token").val();
+  let validation = validateToken(tokenValue);
+  if (validation) {
+    $("#validar").show();
+  } else {
+    $("#formError").show();
+  }
+});
+
+//Función para validar el token ingresado
+function validateToken(value) {
+  let tokenBD = "123456" //Aqui guardar el número de token original
+  let validation = value == tokenBD;
+  return validation;
+}
 /*$(document).ready(Principal);
     function Principal(){
         var flag1 = true;
@@ -49,7 +69,7 @@ $(document).ready(function(){
         });
     }*/
 
-    var tokenBD = "123456"
+    /* var tokenBD = "123456"
     var tokenInput = "123456"
 
     var validation = tokenInput == tokenBD;
@@ -59,7 +79,7 @@ $(document).ready(function(){
         document.getElementById("validar");
     }else{
         document.getElementById("formError");
-    }
+    } */
 
 /*
 function myFunction(id) {
