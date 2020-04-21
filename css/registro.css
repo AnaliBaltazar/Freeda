@@ -56,7 +56,20 @@
   width: 100%;
   /*background: #DEDEDE; /*Prueba */
 }
-.texto1-seccion1, .texto1-registro{
+.texto1-seccion1{
+  font-size: 40px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 47px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  margin-top: 12%;
+}
+
+
+.texto1-registro{
   font-size: 40px; /*Tamaño letra*/
   font-family: 'Raleway', sans-serif;
   font-weight: 700; /*Grosor*/
@@ -682,9 +695,9 @@ input.quantity-field{
  left: 50%;
 }
 /*Registro.html*/
-.texto1-registro{
-  margin-right: 3%;
-}
+/*.texto1-registro{
+  margin-right: 0%;
+}*/
 .label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
   margin-left: 36%;
 }
