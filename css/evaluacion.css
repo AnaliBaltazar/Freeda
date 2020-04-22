@@ -636,9 +636,9 @@ margin-left: 33%;
 
 
 @media only screen and (max-width:1024px) and (min-width:992px){
-body{
+/*body{
   background-color: gray;
-}
+}*/
 /*CONTRATAR.HTML*/
 .seccion1{
   height: 200px;
@@ -674,9 +674,9 @@ margin-left: 33%;
 }
 
 @media only screen and (max-width:991px) and (min-width:576px){
-body{
+/*body{
   background-color: violet;
-}
+}*/
 /*MENU*/
 .tamaño-renglon-1{
   padding-left: 10%;
