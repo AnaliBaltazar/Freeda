@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--Empieza head-->
+ <head>
+
+  	<title>Validación de token</title>
+  	<link rel="icon" href=""> <!--Favicon-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Documento css (Ruta css/----) -->
+    <link rel="stylesheet" href="css/registro.css" > 
+    <!--Fuente de letra-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+    <!--Va tipografia-->
+    <!--Para usar iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src=""></script> --> <!-- Va el js/freeda.js -->
+ </head>
+ <!--Termina head-->
+
+ <!--Empieza body-->
+<body>
+        <nav class="navbar navbar-expand-lg tamaño-renglon-1">
+        <!--Logo de menu--> <!-- Botones del menu -->
+        <a href="indexfreeda.html"><img src="img/logo_freeda.svg" class="img-responsive navbar-brand logo-freeda"></a>  <!--Logo Freeda-->
+        
+        <button class="btn navbar-toggler boton-menu" type="button" data-toggle="collapse" data-traget="#navbarCollapsible">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <!--Menu formal-->
+        <div class="collapse navbar-collapse" id="navbarCollapsible">
+            <ul class="navbar-nav  menu-freeda">
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link  texto-menu-f t1m text-nowrap">Solicitud de <span class="tmbl">pago</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Mi <span class="t2mi tmbl">póliza</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Crear <span class="t2mi tmbl">usuario</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Iniciar <span class="t2mi tmbl">sesión</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--<div class="container seccion1 ">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-12 col-xl-12"> 
+                <p class="texto1-seccion1">Activar token</p>  
+                <p class="texto2-seccion1">En breve recibirás un mensaje a tu celular SMS que contiene 6 dígitos<br>que deberás de ingresar para hacer válidos</p> 
+                
+            </div>
+        </div>
+    </div> -->
+
+     <div class="container contenedor">
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+            <p class="texto1-seccion1">Validar token</p> 
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+            <p class="texto2-seccion1">En breve recibirás un mensaje a tu celular SMS que contiene 6 dígitos<br>que deberás de ingresar para hacer válidos</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <form action="#" id="data_activar_token">
+                    
+                    <div class="texto_area_token">
+                        <input type="text" name="token" id="token" class="data_input_token" maxlength="6" pattern="[0-9]{3} {3}" required placeholder="XXX-XXX"/>
+                        
+
+                        <label class="head-label" for="activar-token">Ingresa los 6 digitos</label>
+                        <label class="bottom-label1" id="bottom-token" for="activar-token"></label>
+
+                        
+                         <!--MENSAJE-->
+                        <span class="error" id="formError">Numero incorrecto</span>
+
+                        <!-- Boton validar token  FALTA MENSAJE
+                        <input type="submit" name="enviar" id="enviar" class="validar-token btn" value="Validación de token"></code> -->
+                    </div>
+                    <div class="msn-validacion" id="validar" >
+                            <p class="mensaje">Validación correcta de token</p>
+                            
+                        </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+   <!-- <div class="container seccion-activar ">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-12 col-xl-12"> 
+                <form action="#" id="data_activar_token">
+                    
+                    <div class="texto_area_token">
+                        <input type="text" name="token" id="token" class="data_input_token" pattern="[0-9]{3}-{3}" required placeholder="XXX-XXX" />
+                        <label class="head-label" for="activar-token">Ingresa los 6 digitos</label>
+                        <label class="bottom-label1" id="bottom-token" for="activar-token"></label>
+
+                        Boton validar token  FALTA MENSAJE
+                        <input type="submit" name="enviar" id="enviar" class="validar-token btn" value="Validación de token"></code>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+
+<!--SeccionBoton -->
+    <div class="container seccion-token">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <!--Boton validar token  FALTA MENSAJE -->
+                        <input type="submit" name="enviar" id="enviar" class="validar-token btn" value="Validación de token"></code>
+            </div>
+        </div>
+    </div> 
+
+
+        <!--Footer Menu-->
+  <div class="footermenu">
+    <!--<a href="#" class="texto1-footermenu link-footer">Solicitud de póliza</a> -->
+    <a href="#" class="texto1-footer link-footer">Politicas de privacidad</a>
+    <a href="#" class="texto2-footer link-footer">Términos y condiciones</a>
+    <a href="#" class="texto3-footer link-footer">Sobre nosotros</a>
+     <a href="#" class="texto4-footer link-footer">Nuestros servicios</a>
+    <!--<a href="#" class="texto5-footer link-footer">Aviso de privacidad</a> -->
+    <a href="#" class="logo-footer"><img src="img/freeda.svg"></a>    
+  </div>
+  <script type="text/javascript" src="./js/freeda.js"></script>
+</body>
+</html>
+
+
