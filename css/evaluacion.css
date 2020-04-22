@@ -235,7 +235,7 @@ td.col_r{
 /*Seccion1*/
 .seccion1{
   position: static;
-  height: 250px;
+  height: 220px;
   width: 100%;
   /*background: #DEDEDE; /*Prueba */
 }
@@ -248,7 +248,7 @@ td.col_r{
   text-align: center;
   color: #912F46;
   opacity: 1;
-  margin-top: 10%;
+  /*margin-top: 10%;*/
 }
 /*Seccion registro*/
 /* REG 1 Y 2
@@ -466,16 +466,6 @@ input.quantity-field{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*FECHA DE NACIMIENTO*/
 .label-date{
   padding: 5px 0;
@@ -504,92 +494,6 @@ input.quantity-field{
   font-family: 'Raleway', sans-serif;
 }
 
-
-
-
-
-/*Footermenu
-.footermenu{
-  position: static;
-  height: 80px;
-  border-bottom: solid 5px;
-  border-color: #F2F5F4;
- background: #99cccc;   /* PRUEBA
-}
-
-.texto1-footermenu{
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 10%;
-  margin-top: 28px;
-  z-index: 2001;
-}
-
-.texto2-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.texto3-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-
-.texto4-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-
-.link-footer:hover{
-  color: #C88585;
-}
-
-.link-footer:active{
-  color: #C88585;
-  text-decoration: none;
-}
-
-.link-footer:focus{
-  text-decoration: underline;
-  color: #C88585;
-}
-
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: 20px;
-  height: 48px;
-  width: 158px;
-  display: flex;
-}
-
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: -10px;
-  height: 55px;
-  width: 199px;
-  display: flex;
-}*/
-
-
 /*NUEVO FOOTER*/
 /*Footermenu*/
 .footermenu{
@@ -600,19 +504,6 @@ input.quantity-field{
   padding-top: 2%;
   /*background: #99cccc;   /* PRUEBA*/
 }
-/*.texto1-footermenu{
-  display: flex;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 5%;
-  margin-top: 28px;
-  z-index: 2001;
-} */
 .texto1-footer{
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
@@ -685,7 +576,7 @@ input.quantity-field{
 
 
 /*-------------MEDIA QUERIES--------------*/
-@media only screen and (max-width:1919px) and (min-width:992px){
+@media only screen and (max-width:1919px) and (min-width:1025px){
  /*body{
   background-color: pink;
  } */
@@ -703,8 +594,10 @@ input.quantity-field{
 }
 
 /*Datos-asegurado.html*/
+/*.seccion1{
+  height: 180px;
+}*/
 .texto1-seccion1{
-  margin-left: -3%;
   margin-top: 12%;
 }
 .texto_area{
@@ -742,39 +635,49 @@ margin-left: 33%;
 }
 
 
-
-
-
- @media only screen and (max-width:1024px) and (min-width:992px){
-/*body{
+@media only screen and (max-width:1024px) and (min-width:992px){
+body{
   background-color: gray;
- } */
+}
+/*CONTRATAR.HTML*/
+.seccion1{
+  height: 200px;
+}
+.texto1-seccion1{
+  margin-top: 14%;
+}
+.imagen-casa{
+  margin-top: 12%;
+}
+/*DATOS-ASEGURADO.html*/
+.label-date{
+  margin-left: 33%;
+}
+.nacimiento1{
+width: 6%;
+margin-left: 33%;
+}
+.nacimiento2{
+  width: 15%;
+}
+.nacimiento3{
+  width: 7%;
+}
+/*FOOTER*/
 .footer-freeda{
   padding-left: 540px;
 }
 .logo-freeda{
   padding-right: 20%;
 }
-.imagen-casa{
-  margin-top: 12%;
-}
-
-.texto1-seccion1{
-margin-top: 10%;
-}
-
 
 }
-
-
-
-
-  
 
 @media only screen and (max-width:991px) and (min-width:576px){
-/*body{
+body{
   background-color: violet;
-} */
+}
+/*MENU*/
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -829,16 +732,14 @@ margin-top: 10%;
   margin-top: 20%;
   margin-left: 25%;
 }
-.underlineHover{
-  margin-left: 68%;
-  margin-top: 60%;
-}
-/*Datos-asegurado.html*/
+
+
+/*DATOS-ASEGURADO.html*/
 .texto1-seccion1{
-margin-top: 18%;
+margin-top: 20%;
 }
-.texto_area{
-  width: 50%;
+.texto_area_rfc, .texto_area_regis{
+  width: 55%;
 }
 .label-date{
   margin-left: 26%;
@@ -894,14 +795,12 @@ margin-left: 26%;
 
 
 @media only screen and (max-width:575px){
-  /*body{
-    background-color: orange;
-  } */
-
+/*body{
+  background-color: orange;
+} */
 .tamaño-renglon-1{
   padding-left: 10%;
 }
-
 .logo-freeda{
   margin-left: -10%;
   margin-top: -7.5%;
@@ -954,20 +853,16 @@ margin-left: 26%;
 .part2{
   width: 45%;
 }
-.underlineHover{
-  margin-left: 60%;
-  margin-top: 60%;
-}
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 30%;
 }
 
 /*Datos-asegurado.html*/
 .texto1-seccion1{
-margin-top: 20%;
+margin-top: 25%;
 }
-.texto_area{
-  width: 50%;
+.texto_area_rfc, .texto_area_regis{
+  width: 60%;
 }
 .label-date{
   margin-left: 26%;
