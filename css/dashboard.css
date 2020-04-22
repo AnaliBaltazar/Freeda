@@ -401,12 +401,11 @@ button.activeHover:hover{ /*Todo el boton (CUADRADO)*/
     background-color: #DEDEDE !important; /*GRIS*/
     border: none !important;
 }
-
-button.activeHover:hover .rectangle_content .button_text, button.activeHover:hover .cls-1{
+button.activeHover:hover .rectangle_content .button_text, 
+button.activeHover:hover .cls-1{
     color: #989A9B !important;  /*GRIS   989A9B*/
     fill: #989A9B !important;  /*GRIS*/
 }
-
 #icon_content{
     display: inline-block;
     margin-right: 5%;
@@ -416,21 +415,49 @@ button.activeHover:hover .rectangle_content .button_text, button.activeHover:hov
     width: 70px;
     height: auto;
 }
-
-button.bien.activeHover:hover .icono_bienes .cls-1m, button.bien.activeHover:hover .icono_bienes .cls-1ed, button.bien.activeHover:hover .icono_bienes .cls-1e, button.bien.activeHover:hover .icono_bienes .cls-1a, button.bien.activeHover:hover .icono_bienes .cls-2a{
+button.bien.activeHover:hover .icono_bienes .cls-1m,  
+button.bien.activeHover:hover .icono_bienes .cls-1c,
+button.bien.activeHover:hover .icono_bienes .cls-2c,
+button.bien.activeHover:hover .icono_bienes .cls-3c, 
+button.bien.activeHover:hover .icono_bienes .cls-1e,
+button.bien.activeHover:hover .icono_bienes .cls-2e,
+button.bien.activeHover:hover .icono_bienes .cls-1t,
+button.bien.activeHover:hover .icono_bienes .cls-2t{
     fill: #DEDEDE !important; /*Interior del icono*/
     stroke: #989A9B !important; /*GRIS Margen del icono*/ 
 }
 
-button.bien.activeHover:hover .icono_bienes .cls-1d, button.bien.activeHover:hover .icono_bienes .cls-1j{
+button.bien.activeHover:hover .icono_bienes .cls-2m,
+button.bien.activeHover:hover .icono_bienes .cls-1j{
     stroke: #989A9B !important; /*GRIS*/
 }
+/*Relleno de figura*/
+button.bien.activeHover:hover .icono_bienes .cls-2m,
+button.bien.activeHover:hover .icono_bienes .cls-2e,
+button.bien.activeHover:hover .icono_bienes .cls-2t{
+    fill: #989A9B !important; /*GRIS*/
+}
 
-.icono_bienes.ico_selected .cls-2ed, .icono_bienes.ico_selected .cls-1m, .icono_bienes.ico_selected .cls-1ed, .icono_bienes.ico_selected .cls-1e, .icono_bienes.ico_selected .cls-1d, .icono_bienes.ico_selected .cls-1j, .icono_bienes.ico_selected .cls-2a, .icono_bienes.ico_selected .cls-1a{
+
+
+
+
+
+.icono_bienes.ico_selected .cls-2ed, 
+.icono_bienes.ico_selected .cls-1m, 
+.icono_bienes.ico_selected .cls-1ed, 
+.icono_bienes.ico_selected .cls-1e, 
+.icono_bienes.ico_selected .cls-1d, 
+.icono_bienes.ico_selected .cls-1j, 
+.icono_bienes.ico_selected .cls-2a, 
+.icono_bienes.ico_selected .cls-1a{
     stroke: #60A1E7; /*AZUL SI SE SELECCIONA*/ 
 }
 
-.icono_bienes.ico_selected .cls-2m, .icono_bienes.ico_selected .cls-2ed, .icono_bienes.ico_selected .cls-2d, .icono_bienes.ico_selected .cls-3a{
+.icono_bienes.ico_selected .cls-2m, 
+.icono_bienes.ico_selected .cls-2ed, 
+.icono_bienes.ico_selected .cls-2d, 
+.icono_bienes.ico_selected .cls-3a{
     fill: #60A1E7;  /*AZUL*/
 }
 

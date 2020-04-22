@@ -109,7 +109,7 @@
   background: #ffcc00; /*Prueba 
 }
 */
-
+/*Parte imagen casa.svg*/
 .part1{
   padding-bottom: 100px;
   height: 250px;
@@ -119,7 +119,7 @@
   margin-top: 5%;
   margin-left: 70%;
 }
-
+/*Tabla de datos*/
 .part2{
   padding-bottom: 100px;
   height: 250px; 
@@ -129,19 +129,33 @@
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
   color: #912F46;
-  margin-right:50%;
+  padding: 10px 0 15px 0;
 }
 .texto-medidas{
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #000000;
   line-height: 12px;
-   margin-right:50%;
+  margin-right:50%;
+}
+td{
+  vertical-align: top;
+  padding-right: 4%; /*Centrar el texto*/
+  padding-left: 4%; /*Centrar el texto*/
+}
+td.col_l{
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+td.col_r{
+  width: auto;
+  text-align: left;
+  line-height: 30px; /*Sangria*/
 }
 
 .seccion7{
   position: static;
-
   height: 260px;
   width: 100%;
   border: 2px solid #912F46;
@@ -154,20 +168,24 @@
   margin-left: auto;
   margin-right: auto;
 }
-.precio{
+.precio{ /*$59*/
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Raleway', sans-serif;
   color: #FFFFFF;
-  padding-top: 35px;
+  padding-top: 31px;
+}
+/*Link conoce cobertura*/
+.seccion-link{
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .underlineHover{  /*Conocer coberturas*/
-   font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #707070;
-  text-align: right;
-  margin-left: 70%;
-  margin-bottom: 80px;
+  text-align: center;
+  padding: 30px 0 10px 0;
 } 
 .underlineHover:hover {
   color: #912F46;
@@ -177,14 +195,14 @@
 /*SeccionBoton SIGUIENTE*/
 .seccion-siguiente{
   max-width: 900px;
-  padding-top: 130px;
+  padding-top: 250px;
   /*background: #bfe7e5;        /*PRUEBA*/
 } 
 
 .btn-siguiente{
   position: absolute;
   margin-left: 38%;
-  margin-top: -13%;
+  margin-top: -18%;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -217,7 +235,7 @@
 /*Seccion1*/
 .seccion1{
   position: static;
-  height: 250px;
+  height: 220px;
   width: 100%;
   /*background: #DEDEDE; /*Prueba */
 }
@@ -230,7 +248,7 @@
   text-align: center;
   color: #912F46;
   opacity: 1;
-  margin-top: 10%;
+  /*margin-top: 10%;*/
 }
 /*Seccion registro*/
 /* REG 1 Y 2
@@ -278,14 +296,14 @@
 }
 
 /*HOMOCLAVE*/
-.homo1{
+/*.homo1{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #000000;
   text-align: center;
   width: 5%;
   margin-left: 30%;
-  margin-top: -16%; /*Subir los recudros*/
+  margin-top: -16%; /*Subir los recudros
   }
   .homo2{
   font-family: 'Raleway', sans-serif;
@@ -293,7 +311,7 @@
   color: #000000;
   text-align: center;
   width: 5%;
-  margin-left: -4.2px; /*Separacion entre cada casilla*/
+  margin-left: -4.2px; /*Separacion entre cada casilla
   }
 
   .homo3{
@@ -302,19 +320,19 @@
   color: #000000;
   text-align: center;
   width: 5%;
-  margin-left: -4.2px; /*Separacion entre cada casilla*/
-}
-  .head-label2{
+  margin-left: -4.2px; /*Separacion entre cada casilla
+} 
+.head-label2{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 300;
   padding: 5px 0;
-  width: 85%; /*Alinea el texto de arriba*/
-  margin-left: auto; /*Alinea el texto de arriba*/
-  margin-right: auto; /*Alinea el texto de arriba*/
+  width: 85%; /*Alinea el texto de arriba
+  margin-left: auto; /*Alinea el texto de arriba
+  margin-right: auto; /*Alinea el texto de arriba
   margin-left: 22%;
   padding-top: 15px;
-  }
+}*/
 /*RFC*/
 .texto_area_rfc{
   text-align: center;
@@ -448,16 +466,6 @@ input.quantity-field{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*FECHA DE NACIMIENTO*/
 .label-date{
   padding: 5px 0;
@@ -486,92 +494,6 @@ input.quantity-field{
   font-family: 'Raleway', sans-serif;
 }
 
-
-
-
-
-/*Footermenu
-.footermenu{
-  position: static;
-  height: 80px;
-  border-bottom: solid 5px;
-  border-color: #F2F5F4;
- background: #99cccc;   /* PRUEBA
-}
-
-.texto1-footermenu{
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 10%;
-  margin-top: 28px;
-  z-index: 2001;
-}
-
-.texto2-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.texto3-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-
-.texto4-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-
-.link-footer:hover{
-  color: #C88585;
-}
-
-.link-footer:active{
-  color: #C88585;
-  text-decoration: none;
-}
-
-.link-footer:focus{
-  text-decoration: underline;
-  color: #C88585;
-}
-
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: 20px;
-  height: 48px;
-  width: 158px;
-  display: flex;
-}
-
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: -10px;
-  height: 55px;
-  width: 199px;
-  display: flex;
-}*/
-
-
 /*NUEVO FOOTER*/
 /*Footermenu*/
 .footermenu{
@@ -582,19 +504,6 @@ input.quantity-field{
   padding-top: 2%;
   /*background: #99cccc;   /* PRUEBA*/
 }
-/*.texto1-footermenu{
-  display: flex;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 5%;
-  margin-top: 28px;
-  z-index: 2001;
-} */
 .texto1-footer{
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
@@ -667,7 +576,7 @@ input.quantity-field{
 
 
 /*-------------MEDIA QUERIES--------------*/
-@media only screen and (max-width:1919px) and (min-width:992px){
+@media only screen and (max-width:1919px) and (min-width:1025px){
  /*body{
   background-color: pink;
  } */
@@ -685,8 +594,10 @@ input.quantity-field{
 }
 
 /*Datos-asegurado.html*/
+/*.seccion1{
+  height: 180px;
+}*/
 .texto1-seccion1{
-  margin-left: -3%;
   margin-top: 12%;
 }
 .texto_area{
@@ -706,14 +617,15 @@ margin-left: 33%;
 .nacimiento3{
   width: 7%;
 }
-
-.head-label2{ /*Homoclave*/
+/*Homoclave
+.head-label2{ 
   margin-left: 33%;
   margin-top: 2%;
 }
 .homo1{
   margin-left: 33%;
-}
+}*/
+
 .texto_area2{
   width: 40%;
 }
@@ -723,39 +635,49 @@ margin-left: 33%;
 }
 
 
-
-
-
- @media only screen and (max-width:1024px) and (min-width:992px){
+@media only screen and (max-width:1024px) and (min-width:992px){
 /*body{
   background-color: gray;
- } */
+}*/
+/*CONTRATAR.HTML*/
+.seccion1{
+  height: 200px;
+}
+.texto1-seccion1{
+  margin-top: 14%;
+}
+.imagen-casa{
+  margin-top: 12%;
+}
+/*DATOS-ASEGURADO.html*/
+.label-date{
+  margin-left: 33%;
+}
+.nacimiento1{
+width: 6%;
+margin-left: 33%;
+}
+.nacimiento2{
+  width: 15%;
+}
+.nacimiento3{
+  width: 7%;
+}
+/*FOOTER*/
 .footer-freeda{
   padding-left: 540px;
 }
 .logo-freeda{
   padding-right: 20%;
 }
-.imagen-casa{
-  margin-top: 12%;
-}
-
-.texto1-seccion1{
-margin-top: 10%;
-}
-
 
 }
-
-
-
-
-  
 
 @media only screen and (max-width:991px) and (min-width:576px){
 /*body{
   background-color: violet;
-} */
+}*/
+/*MENU*/
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -810,16 +732,14 @@ margin-top: 10%;
   margin-top: 20%;
   margin-left: 25%;
 }
-.underlineHover{
-  margin-left: 68%;
-  margin-top: 60%;
-}
-/*Datos-asegurado.html*/
+
+
+/*DATOS-ASEGURADO.html*/
 .texto1-seccion1{
-margin-top: 18%;
+margin-top: 20%;
 }
-.texto_area{
-  width: 50%;
+.texto_area_rfc, .texto_area_regis{
+  width: 55%;
 }
 .label-date{
   margin-left: 26%;
@@ -834,7 +754,9 @@ margin-left: 26%;
 .nacimiento3{
   width: 12%;
 }
-.head-label2{ /*Homoclave*/
+
+/*Homoclave
+.head-label2{ 
   margin-left: 26%;
   margin-top: 2%;
 }
@@ -846,7 +768,7 @@ margin-left: 26%;
 }
 .homo3{
   width: 6%;
-}
+} */
 .texto_area2{
   width: 50%;
 }
@@ -873,14 +795,12 @@ margin-left: 26%;
 
 
 @media only screen and (max-width:575px){
-  /*body{
-    background-color: orange;
-  } */
-
+/*body{
+  background-color: orange;
+} */
 .tamaño-renglon-1{
   padding-left: 10%;
 }
-
 .logo-freeda{
   margin-left: -10%;
   margin-top: -7.5%;
@@ -933,20 +853,16 @@ margin-left: 26%;
 .part2{
   width: 45%;
 }
-.underlineHover{
-  margin-left: 60%;
-  margin-top: 60%;
-}
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 30%;
 }
 
 /*Datos-asegurado.html*/
 .texto1-seccion1{
-margin-top: 20%;
+margin-top: 25%;
 }
-.texto_area{
-  width: 50%;
+.texto_area_rfc, .texto_area_regis{
+  width: 60%;
 }
 .label-date{
   margin-left: 26%;
@@ -961,7 +877,8 @@ margin-left: 26%;
 .nacimiento3{
   width: 12%;
 }
-.head-label2{ /*Homoclave*/
+/*Homoclave
+.head-label2{ 
   margin-left: 26%;
   margin-top: 2%;
 }
@@ -973,7 +890,7 @@ margin-left: 26%;
 }
 .homo3{
   width: 6%;
-}
+}*/
 .texto_area2{
   width: 50%;
 }

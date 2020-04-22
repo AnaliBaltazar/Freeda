@@ -111,16 +111,15 @@
     <div class="container seccion-siniestro">
         <div class="row texto-centrado">
             <div class="col-xs-12 col-sm-12 col-md-1 col-lg-12 col-xl-12"> <!--Grid-->
-                <button class="btn btn-siniestro" role="link" onclick="window.location='#'">SINIESTRO<span class="material-icons-siniestro">
-report_problem
-</span></button>
+                <button class="btn btn-siniestro" role="link" onclick="window.location='#'">SINIESTRO<span class="material-icons" id="icon-siniestro">report_problem</span></button>
             </div>
         </div>
     </div>
 
 
     <!-- POP UP -->
-    <div id="cover2"></div>
+    <div id="cover2">
+    </div>
     <div class="readyScreen" id="ready_screen">
         
         <h1 id="screenHeader">Tembló</h1>
@@ -131,7 +130,9 @@ report_problem
             <img class="icono_micro_screen" src="img/microfono.svg" alt="">
         </div>
         <!--<button class="Continuar aceptar" id="verseguro">Ver mi seguro <i class="material-icons">arrow_forward</i></button> -->      
-            
+        <!-- <a href="#" class="btn-close">X</a>  -->
+        <button class="btn-close">
+            <i class="material-icons" id="close-pop">clear</i></button> 
     </div>
 
 
