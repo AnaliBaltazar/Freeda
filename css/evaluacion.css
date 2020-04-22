@@ -296,14 +296,14 @@ td.col_r{
 }
 
 /*HOMOCLAVE*/
-.homo1{
+/*.homo1{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #000000;
   text-align: center;
   width: 5%;
   margin-left: 30%;
-  margin-top: -16%; /*Subir los recudros*/
+  margin-top: -16%; /*Subir los recudros
   }
   .homo2{
   font-family: 'Raleway', sans-serif;
@@ -311,7 +311,7 @@ td.col_r{
   color: #000000;
   text-align: center;
   width: 5%;
-  margin-left: -4.2px; /*Separacion entre cada casilla*/
+  margin-left: -4.2px; /*Separacion entre cada casilla
   }
 
   .homo3{
@@ -320,19 +320,19 @@ td.col_r{
   color: #000000;
   text-align: center;
   width: 5%;
-  margin-left: -4.2px; /*Separacion entre cada casilla*/
-}
-  .head-label2{
+  margin-left: -4.2px; /*Separacion entre cada casilla
+} 
+.head-label2{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 300;
   padding: 5px 0;
-  width: 85%; /*Alinea el texto de arriba*/
-  margin-left: auto; /*Alinea el texto de arriba*/
-  margin-right: auto; /*Alinea el texto de arriba*/
+  width: 85%; /*Alinea el texto de arriba
+  margin-left: auto; /*Alinea el texto de arriba
+  margin-right: auto; /*Alinea el texto de arriba
   margin-left: 22%;
   padding-top: 15px;
-  }
+}*/
 /*RFC*/
 .texto_area_rfc{
   text-align: center;
@@ -724,14 +724,15 @@ margin-left: 33%;
 .nacimiento3{
   width: 7%;
 }
-
-.head-label2{ /*Homoclave*/
+/*Homoclave
+.head-label2{ 
   margin-left: 33%;
   margin-top: 2%;
 }
 .homo1{
   margin-left: 33%;
-}
+}*/
+
 .texto_area2{
   width: 40%;
 }
@@ -852,7 +853,9 @@ margin-left: 26%;
 .nacimiento3{
   width: 12%;
 }
-.head-label2{ /*Homoclave*/
+
+/*Homoclave
+.head-label2{ 
   margin-left: 26%;
   margin-top: 2%;
 }
@@ -864,7 +867,7 @@ margin-left: 26%;
 }
 .homo3{
   width: 6%;
-}
+} */
 .texto_area2{
   width: 50%;
 }
@@ -979,7 +982,8 @@ margin-left: 26%;
 .nacimiento3{
   width: 12%;
 }
-.head-label2{ /*Homoclave*/
+/*Homoclave
+.head-label2{ 
   margin-left: 26%;
   margin-top: 2%;
 }
@@ -991,7 +995,7 @@ margin-left: 26%;
 }
 .homo3{
   width: 6%;
-}
+}*/
 .texto_area2{
   width: 50%;
 }
