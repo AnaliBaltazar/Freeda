@@ -109,7 +109,7 @@
   background: #ffcc00; /*Prueba 
 }
 */
-
+/*Parte imagen casa.svg*/
 .part1{
   padding-bottom: 100px;
   height: 250px;
@@ -119,16 +119,17 @@
   margin-top: 5%;
   margin-left: 70%;
 }
+/*Tabla de datos*/
 .part2{
   padding-bottom: 100px;
   height: 250px; 
-  border: 5px solid #912F46; /*PRUEBA*/
+  /*border: 5px solid #912F46; /*PRUEBA*/
 }
 .texto-clase{ /*Casa*/
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
   color: #912F46;
-  margin-right:50%;
+  padding: 10px 0 15px 0;
 }
 .texto-medidas{
   font-family: 'Raleway', sans-serif;
@@ -137,9 +138,20 @@
   line-height: 12px;
   margin-right:50%;
 }
-.datos{
-  margin-left: 10%;
-  color: red;
+td{
+  vertical-align: top;
+  padding-right: 4%; /*Centrar el texto*/
+  padding-left: 4%; /*Centrar el texto*/
+}
+td.col_l{
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+td.col_r{
+  width: auto;
+  text-align: left;
+  line-height: 30px; /*Sangria*/
 }
 
 .seccion7{
@@ -156,20 +168,24 @@
   margin-left: auto;
   margin-right: auto;
 }
-.precio{
+.precio{ /*$59*/
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Raleway', sans-serif;
   color: #FFFFFF;
-  padding-top: 35px;
+  padding-top: 31px;
+}
+/*Link conoce cobertura*/
+.seccion-link{
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .underlineHover{  /*Conocer coberturas*/
-   font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #707070;
-  text-align: right;
-  margin-left: 70%;
-  margin-bottom: 80px;
+  text-align: center;
+  padding: 30px 0 10px 0;
 } 
 .underlineHover:hover {
   color: #912F46;
@@ -179,7 +195,7 @@
 /*SeccionBoton SIGUIENTE*/
 .seccion-siguiente{
   max-width: 900px;
-  padding-top: 130px;
+  padding-top: 150px;
   /*background: #bfe7e5;        /*PRUEBA*/
 } 
 
