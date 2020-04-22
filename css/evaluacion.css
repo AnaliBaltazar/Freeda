@@ -195,14 +195,14 @@ td.col_r{
 /*SeccionBoton SIGUIENTE*/
 .seccion-siguiente{
   max-width: 900px;
-  padding-top: 150px;
+  padding-top: 250px;
   /*background: #bfe7e5;        /*PRUEBA*/
 } 
 
 .btn-siguiente{
   position: absolute;
   margin-left: 38%;
-  margin-top: -13%;
+  margin-top: -18%;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
