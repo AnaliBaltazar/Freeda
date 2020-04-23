@@ -1,5 +1,6 @@
 /*Navegacion*/
 /*Encabezado menú*/
+
 .tamaño-renglon-1{
   position: fixed;
   height: 78px;
@@ -323,9 +324,11 @@ button{
 
 /********BOTONES********/
 
+
 /*BORDE DEL BOTON  #60A1E7*/
 button:focus{
     border: 5px solid #F9919C; /*Borde el boton*/
+    outline: none; /* quita borde azul al hacer focus */
 }
 
 /*FONDO DEL BOTON AL DAR CLIC #A7CBF2*/
@@ -371,6 +374,38 @@ button.activeHover:hover .rectangle_content .button_text, button.activeHover:hov
     width: 50px;
     height: 50px;
 }
+
+/* Estilos del contenedor con la descripcion de la Clase */
+.textoContenedor{
+  border: 1.5px solid #C7C7C7;
+  border-radius: 5px;
+}
+
+button.Continuar{
+  display: block;
+  background-color: #912F46;
+  border: none;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  max-width: 300px;
+}
+
+button.Continuar:hover{
+  background-color: rgb(180, 66, 92);
+  border: none;
+}
+p.textoClase{
+  color: #3B536D;
+  font-weight: lighter;
+  font-size: 16px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+/* *********************** */
 
 /*
 .material-icons.md-24b{
@@ -439,6 +474,12 @@ button{
 .footer-freeda{
     padding-left: 144px;
   }
+
+button.Continuar.Small{
+  width: 30%;
+  height: 35px;
+  margin: 7px auto;
+}
 }
 
 
@@ -491,7 +532,11 @@ button{
 .footer-freeda{
     padding-left: 300px;
   }
-
+button.Continuar.Small{
+  width: 30%;
+  height: 35px;
+  margin: 7px auto;
+}
 }
 
 
