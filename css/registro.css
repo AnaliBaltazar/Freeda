@@ -139,18 +139,19 @@ label.head-label, label.bottom-label1{
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
   animation: silo-fade 0.2s; /*Google*/
 }
+input:focus{outline: none;}
 
 /*Hace la animacion de aparecer cuando se da clic*/
 input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
   display: block;
 }
 
-input.invalid + label.head_label + label.bottom_label1{
+input.invalid + label.head-label + label.bottom-label1{
   display: block;
   color:#FF4B4B;
   font-weight: 500;
   position: relative;
-  }
+}
 
 input:focus::-webkit-input-placeholder {
     opacity: 0;
@@ -727,6 +728,11 @@ input.quantity-field{
 /*.footer-freeda{
     padding-left: 758px;
   }*/
+  /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 }
 
 
@@ -762,7 +768,11 @@ input.quantity-field{
 .nacimiento3{ /*Año*/
   width: 8%;
 }
-
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 }
 
 
@@ -821,7 +831,6 @@ input.quantity-field{
 }
 .data_input_token{
   width: 100%;
-  margin-left: 
 }
 /*.data_input_token{
   margin-left: 8%;
@@ -887,7 +896,11 @@ width: 120%
 .logo-footer{
   display: none;
 }
-
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 
 }
 
@@ -996,6 +1009,11 @@ width: 55%;
 .logo-footer{
   display: none;
 }
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1 {
+  top: 110px;
+}
+
 }
 
 

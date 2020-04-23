@@ -107,8 +107,8 @@
 
                  <!--C.P.-->
                 <div class="texto_area_r" id="codigo-postal">
-                    <input type="text" name="cp" id="cp" class="data_input_usua" placeholder="C.P." required>
-                    <label class="head-label" for="cp">Nombre de usuario</label>
+                    <input type="text" name="cp" id="cp" class="data_input_usua" placeholder="C.P." pattern="[0-9]*" maxlength="5" min="1000" max="99999" required>
+                    <label class="head-label" for="cp">Código postal de tu inmueble.</label>
                     <label class="bottom-label1" id="bottom-cp" for="cp"></label>    
                 </div>
 
@@ -227,6 +227,6 @@
     <a href="#" class="texto1-footer link-footer">Términos y condiciones</a>
     <a href="#" class="texto2-footer link-footer">Aviso de privacidad</a>
   </footer>-->
-
+  <script src="./js/validar.js"></script>
 </body>
 </html>
