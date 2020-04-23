@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--Empieza head-->
+ <head>
+
+  	<title>Dashboard</title>
+  	<link rel="icon" href=""> <!--Favicon-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Documento css (Ruta css/----) -->
+    <link rel="stylesheet" href="css/dashboard-1.css" > 
+    <!--Fuente de letra-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+    <!--Va tipografia-->
+    <!--Usar iconos-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src=""></script> <!-- Va el js/freeda.js -->
+ </head>
+ <!--Termina head-->
+
+
+ <!--Empieza body-->
+<body>
+        <!--<nav class="navbar navbar-expand-lg tamaño-renglon-1">
+       
+        <a href="indexfreeda.html"><img src="img/logo_freeda.svg" class="img-responsive navbar-brand logo-freeda"></a> 
+        
+        <button class="btn navbar-toggler boton-menu-f" type="button" data-toggle="collapse" data-traget="#navbarCollapsible">
+            <i class="material-icons"> Menu </i>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarCollapsible">
+            <ul class="navbar-nav  menu-freeda">
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link  texto-menu-f t1m text-nowrap">Solicitud de <span class="tmbl">pago</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Mi <span class="t2mi tmbl">póliza</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Crear <span class="t2mi tmbl">usuario</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Iniciar <span class="t2mi tmbl">sesión</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+
+    <div class="headerBar" id="dashboard_header">
+        <!--logo freeda-->
+        <div class="Left">
+            <a href="#"><img class="img-responsive logo-freeda" src="img/logo_freeda.svg" alt=""></a>
+        </div>
+
+        <div class="Right">
+            <div class="menu help" id="optn_hlp">
+                <!--Icono-->                                <!--Texto-->
+                <i class="material-icons" id="help">help</i><span class="texto-ayuda">Centro de ayuda</span>
+                <div class="bubble">Centro de ayuda</div>
+            </div>
+
+            <div class="menu notification" id="optn_not">
+                <i class="material-icons" id="notify">notifications</i><span class="texto-notificacion" href="#">Notificaciones</span>
+
+                <div class="bubble" id="notifications">
+                    <p>Tu código de invitación 345654 ha sido activado por el arrendador</p>
+                    <p><a href="#">Verifica tu perfil</a> para que tu solicitud pueda ser evaluada por el arrendador</p>
+                </div>
+            </div>
+
+            <div class="menu user_profile" id="optn_profile">
+                <i class="material-icons" id="profile">expand_more</i><span href="#">Manuel Chavez...</span>
+                <div class="bubble">Cerrar sesión</div>
+            </div>
+        </div>    
+    </div>   
+
+
+    <!--LINK DE COBERTURA, PÓLIZA Y SINIESTRO-->
+    <div class="container seccion1 ">
+            <div class="row texto-centrado">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                    <a class="underlineHover1" href="#">Coberturas</a>
+                    <a class="underlineHover2" href="#">Ver póliza</a> 
+                    <a class="underlineHover3" href="#">Siniestro</a> 
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- DASHBOARD-->
+
+        <div class="container contenedor-analisis">
+        <div class="row">
+            <!--Parte1-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 part1">
+
+                <!--Recuadro CASIOPESA 74-->
+                <div class="recuadro-info">
+                    <!--Imagen casa-->
+                    <svg class="icon_proptype" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 78.17">
+                        <defs>
+                            <style>
+                            .cls-1{
+                                fill:#3B536D;
+                            }
+                            .cls-2{
+                            fill:none;
+                            }
+                            </style>
+                        </defs>
+                        <title>Recurso 14</title>
+                        <g id="Capa_2" data-name="Capa 2">
+                            <g id="Capa_1-2" data-name="Capa 1">
+                                <path class="cls-1" d="M20.9,13.71a1.76,1.76,0,0,0-1.5.8l-14,19h0a.76.76,0,0,0-.2.5v.1c0,.2-.1.3-.1.5v28A2,2,0,0,0,7,64.51H42a.9.9,0,0,0,.5-.1c.2,0,.3.1.5.1H71a2,2,0,0,0,1.9-1.9v-28a1.5,1.5,0,0,0-.4-1.1l-14-19-.1-.1c-.1-.1-.2-.2-.2-.3h0a1.59,1.59,0,0,0-1.2-.4C57,13.61,20.9,13.71,20.9,13.71Zm20.1,47H8.8V36.51H41Zm1.9-33h-2a1.9,1.9,0,1,0,0,3.8h1.9l-.9,1.2H10.7l4.6-6.2H16a2,2,0,0,0,1.9-1.9,1.5,1.5,0,0,0-.4-1.1l1.5-2h1a2,2,0,0,0,1.9-1.9,1.9,1.9,0,0,0-.5-1.3l.6-.8H53.2l-.4.5a1.49,1.49,0,0,0-.9-.2h-2a1.9,1.9,0,0,0,0,3.8h.3L49,23.21a2.1,2.1,0,0,0-1.1-.4h-2a1.9,1.9,0,0,0,0,3.8h.6l-1.8,2.5A2,2,0,0,0,42.9,27.71Zm26.1,33H44.8V35.21l12.1-16.4L69,35.21v25.5Zm-12.4,2.8h2a2,2,0,0,0,1.9-1.9v-8a2,2,0,0,0-1.9-1.9h-2a2,2,0,0,0-1.9,1.9v8A1.84,1.84,0,0,0,56.6,63.51Zm-26-10h2a2,2,0,0,0,1.9-1.9v-8a2,2,0,0,0-1.9-1.9h-2a2,2,0,0,0-1.9,1.9v8A1.9,1.9,0,0,0,30.6,53.51Zm-12.8,0h2a2,2,0,0,0,1.9-1.9v-8a2,2,0,0,0-1.9-1.9h-2a2,2,0,0,0-1.9,1.9v8A1.84,1.84,0,0,0,17.8,53.51Zm28-33.9a2,2,0,0,0-1.9-1.9h-2a1.9,1.9,0,1,0,0,3.8h2A1.84,1.84,0,0,0,45.8,19.61Zm-11.9,1.9h2a1.9,1.9,0,0,0,0-3.8h-2a2,2,0,0,0-1.9,1.9A1.9,1.9,0,0,0,33.9,21.51Zm-8,0h2a1.9,1.9,0,1,0,0-3.8h-2a2,2,0,0,0-1.9,1.9A1.9,1.9,0,0,0,25.9,21.51Zm-.1,3.1a2,2,0,0,0-1.9-1.9h-2a1.9,1.9,0,1,0,0,3.8h2A1.84,1.84,0,0,0,25.8,24.61Zm14.1-1.9h-2a1.9,1.9,0,1,0,0,3.8h2a2,2,0,0,0,1.9-1.9A1.9,1.9,0,0,0,39.9,22.71Zm-6.1,1.9a2,2,0,0,0-1.9-1.9h-2a1.9,1.9,0,1,0,0,3.8h2A1.84,1.84,0,0,0,33.8,24.61Zm-14.9,3.1h-2a1.9,1.9,0,1,0,0,3.8h2a2,2,0,0,0,1.9-1.9A1.9,1.9,0,0,0,18.9,27.71Zm16,0h-2a1.9,1.9,0,1,0,0,3.8h2a2,2,0,0,0,1.9-1.9A1.9,1.9,0,0,0,34.9,27.71Zm-8,0h-2a1.9,1.9,0,1,0,0,3.8h2a2,2,0,0,0,1.9-1.9A1.9,1.9,0,0,0,26.9,27.71Z"/>
+                                <rect class="cls-2" width="78" height="78.17"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="adress">
+                        <h3 class="prop_street" id="prop_street">Casiopea 74</h3>
+                        <h5 class="prop_address" id="prop_address">Prado Churubusco, CDMX</h5>
+                    </div>
+
+                    <table class="info_seg">
+                        <tbody>
+                            <tr>
+                                <td class="col_l">Tipo de seguro:</td>
+                                <td class="col_r">Seguro primeros</td>
+                            </tr>
+                            <tr>
+                                <td class="col_l">No. de póliza:</td>
+                                <td class="col_r">64739402</td>
+                            </tr>
+
+                            <tr>
+                                <td class="col_l">Vigencia:</td>
+                                <td class="col_r">28/08/2020 al 28/08/2021</td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="col_l">Asegurado:</td>
+                                <td class="col_r" id="clientName">Pablo Ruiz Castillo</td>
+                            </tr>
+
+                            <tr>
+                                <td class="col_l">Cuentas para recibir indemnización:<br id="clientName">0141806563128404</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                       
+
+
+
+                    
+                </div>
+
+            </div>
+
+
+            <!--Parte2-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 part2">
+            
+            <div class="documentos visibleflex" id="DocsSeg">
+                <div class="doc_row_1">
+                    
+                    <!--CARATULA-->
+                    <div class="doc_row" id="caratula">
+                        <h4>Caratula</h4>
+                        <div class="doc_btns">
+                            <!-- <a href="Manual%20de%20identidad%20Freeda.pdf"> -->
+
+                            <button><i class="material-icons">visibility</i></button>
+                        <!--</a>
+
+                        <a href="pdf/Manual.pdf">-->
+                            <button><i class="material-icons">get_app</i></button>
+                       <!-- </a> -->
+                        </div>
+                    </div>
+
+                    <!--AVISO DE COBRO-->
+                    <div class="doc_row" id="aviso">
+                        <h4>Aviso de cobro</h4>
+                        <div class="doc_btns">
+                            <button><i class="material-icons">visibility</i></button>
+                            <button><i class="material-icons">get_app</i></button>
+                        </div>
+                    </div>
+
+
+                    <!--RECIBO-->
+                    <div class="doc_row" id="recibo">
+                        <h4>Recibo</h4>
+                        <div class="doc_btns">
+                            <button><i class="material-icons">visibility</i></button>
+                            <button><i class="material-icons">get_app</i></button>
+                        </div>
+                    </div>
+
+
+                    <!--CONDICIONES PARTICULARES-->
+                    <div class="doc_row" id="condiciones_p">
+                        <h4>Condiciones particulares</h4>
+                        <div class="doc_btns">
+                            <button><i class="material-icons">visibility</i></button>
+                            <button><i class="material-icons">get_app</i></button>
+                        </div>
+                    </div>
+
+                    <!--CONDICIONES GENERALES-->
+                    <div class="doc_row" id="condiciones_g">
+                        <h4>Condiciones generales</h4>
+                        <div class="doc_btns">
+                            <button><i class="material-icons">visibility</i></button>
+                            <button><i class="material-icons">get_app</i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+            <!--Footer Menu-->
+  <div class="footermenu">
+    <!--<a href="#" class="texto1-footermenu link-footer">Solicitud de póliza</a> -->
+    <a href="#" class="texto1-footer link-footer">Mi póliza</a>
+    <a href="#" class="texto2-footer link-footer">Crear usuario</a>
+    <a href="#" class="texto3-footer link-footer">Inicio sesión</a>
+     <a href="#" class="texto4-footer link-footer">Términos y condiciones</a>
+    <a href="#" class="texto5-footer link-footer">Aviso de privacidad</a>
+    <a href="#" class="logo-footer"><img src="img/freeda.svg"></a>    
+  </div>
+
+</body>
+</html>
+                
