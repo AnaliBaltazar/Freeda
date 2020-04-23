@@ -433,24 +433,22 @@ button.bien.activeHover:hover .icono_bienes .cls-1j{
 }
 /*Relleno de figura*/
 button.bien.activeHover:hover .icono_bienes .cls-2m,
+button.bien.activeHover:hover .icono_bienes .cls-1c,
 button.bien.activeHover:hover .icono_bienes .cls-2e,
 button.bien.activeHover:hover .icono_bienes .cls-2t{
     fill: #989A9B !important; /*GRIS*/
 }
 
 
-
-
-
-
-.icono_bienes.ico_selected .cls-2ed, 
 .icono_bienes.ico_selected .cls-1m, 
-.icono_bienes.ico_selected .cls-1ed, 
+.icono_bienes.ico_selected .cls-2m, 
+.icono_bienes.ico_selected .cls-1c, 
+.icono_bienes.ico_selected .cls-2c, 
+.icono_bienes.ico_selected .cls-3c, 
 .icono_bienes.ico_selected .cls-1e, 
-.icono_bienes.ico_selected .cls-1d, 
-.icono_bienes.ico_selected .cls-1j, 
-.icono_bienes.ico_selected .cls-2a, 
-.icono_bienes.ico_selected .cls-1a{
+.icono_bienes.ico_selected .cls-2e,
+.icono_bienes.ico_selected .cls-1t, 
+.icono_bienes.ico_selected .cls-2t{
     stroke: #60A1E7; /*AZUL SI SE SELECCIONA*/ 
 }
 
