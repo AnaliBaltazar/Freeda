@@ -485,7 +485,11 @@ input.quantity-field{
 }
 /*Mensaje validacion*/
 .msn-validacion{
-  background: pink;
+  font-family: 'Raleway',sans-serif;
+  font-size:20px; 
+  /*border: solid 2px #912F46;*/
+  background-color: #912F46;
+  color: #FFFFFF;
   width: 30%;
   padding: 7px 0 4px 0;
   text-align: center;
@@ -495,88 +499,10 @@ input.quantity-field{
   position: relative;
   display: none;
 }
-
 .error{
   color: red;
   display: none;
 }
-
-
-
-
-/*Footermenu*/
-.footermenu{
-  position: static;
-  height: 80px;
-  border-bottom: solid 5px;
-  border-color: #F2F5F4;
- /* background: #99cccc;   /* PRUEBA*/
-}
-/*.texto1-footermenu{
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 10%;
-  margin-top: 28px;
-  z-index: 2001;
-}
-.texto2-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.texto3-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.texto4-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.link-footer:hover{
-  color: #C88585;
-}
-.link-footer:active{
-  color: #C88585;
-  text-decoration: none;
-}
-.link-footer:focus{
-  text-decoration: underline;
-  color: #C88585;
-}
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: 20px;
-  height: 48px;
-  width: 158px;
-  display: flex;
-}
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: -10px;
-  height: 55px;
-  width: 199px;
-  display: flex;
-}*/
-
 
 /*NUEVO FOOTER*/
 /*Footermenu*/
@@ -589,19 +515,6 @@ input.quantity-field{
   border-bottom: none;
   /*background: #99cccc;   /* PRUEBA*/
 }
-/*.texto1-footermenu{
-  display: flex;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 5%;
-  margin-top: 28px;
-  z-index: 2001;
-} */
 .texto1-footer{
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
@@ -662,14 +575,6 @@ input.quantity-field{
   text-decoration: underline;
   color: #C88585;
 }
-/*
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: 20px;
-  height: 48px;
-  width: 158px;
-  display: flex;
-}*/
 .logo-footer{
   width: 160px;
   height: 60px;
@@ -684,9 +589,9 @@ input.quantity-field{
 
 /*-------------MEDIA QUERIES--------------*/
 @media only screen and (max-width:1919px) and (min-width:992px){
- /*body{
+/*body{
   background-color: pink;
- } */
+}*/
   /*Nav*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
@@ -725,9 +630,6 @@ input.quantity-field{
 .validar-token{ /*Boton validar token*/
   margin-top: 5%;
 }
-/*.footer-freeda{
-    padding-left: 758px;
-  }*/
   /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
 input.invalid + label.head-label + label.bottom-label1{
   top: 110px;
@@ -742,7 +644,7 @@ input.invalid + label.head-label + label.bottom-label1{
 @media only screen and (max-width:1024px) and (min-width:992px){
 /*body{
   background-color: gray;
- }*/
+}*/
 .footer-freeda{
   padding-left: 540px;
 }
@@ -820,8 +722,6 @@ input.invalid + label.head-label + label.bottom-label1{
 .material-icons{
   color: white;
 }
-
-
 /*activar-token.html*/
 .texto1-seccion1{ /*Activar token*/
   margin-top: 20%;
@@ -837,11 +737,16 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 100%;
 }*/
 .validar-token{ /*Boton validar token*/
- margin-left: 40%;
+ margin-left: 38%;
  margin-top: 3%;
 }
 .texto2-seccion1{
   margin-bottom: 5%;
+}
+.msn-validacion{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .data_input_tel{ /*SMS*/
@@ -882,9 +787,6 @@ width: 120%
   margin-top: -15%;
   margin-left: 30%;
 }
-/*.footer-freeda{
-    padding-left: 300px;
-}*/
 
 /*NUEVO FOOTER*/
 .footermenu{
@@ -1004,6 +906,11 @@ width: 55%;
 }
 .enviar-token{  /*Enviar token SMS*/
   margin-left: 29%;
+}
+.msn-validacion{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-footer{
