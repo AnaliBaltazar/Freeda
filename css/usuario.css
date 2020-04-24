@@ -119,11 +119,16 @@ label.head-label, label.bottom-label1{
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
   animation: silo-fade 0.2s; /*Google*/
 }
+
+/* Asigna estilos cuando la validacion es buena */
+input:focus{outline: none;}
+
+
 /*Hace la animacion de aparecer cuando se da clic*/
 input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
   display: block;
 }
-input.invalid + label.head_label + label.bottom_label1{
+input.invalid + label.head-label + label.bottom-label1{
   display: block;
   color:#FF4B4B;
   font-weight: 500;
@@ -331,9 +336,9 @@ input.quantity-field{
   /*background: #bfe7e5;        /*PRUEBA*/
 } 
 .btn-siguiente{
-  position: absolute;
+  /* position: absolute; */
   margin-left: 38%;
-  margin-top: -8%;
+  /* margin-top: -8%; */
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -565,6 +570,11 @@ input.quantity-field{
   opacity: 1;
   margin-top: 11%;
 }
+
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 /*.footer-freeda{
   padding-left: 758px;
 }*/
@@ -586,7 +596,10 @@ input.quantity-field{
   margin-left: 76%;
   margin-top: -1%;
 }
-
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 
 
 }
@@ -682,6 +695,10 @@ width: 50%;
 .logo-footer{
   display: none;
 }
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 
 }
 
@@ -762,6 +779,11 @@ width: 50%;
 
 .logo-footer{
   display: none;
+}
+
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1 {
+  top: 110px;
 }
 /*.footer-freeda{
   padding-left: 150px;
