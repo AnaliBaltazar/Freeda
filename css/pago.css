@@ -51,15 +51,15 @@
 @import "http://fonts.googleapis.com/css?family=Lato:300,400,700";
 /*@import "https://fonts.googleapis.com/css?family=Raleway&display=swap"*/		
 .card_container *{
-    color: #444;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 .card_container{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 ::-webkit-input-placeholder {
 font-style: italic;
@@ -74,665 +74,166 @@ font-style: italic;
 font-style: italic;
 }
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 .card_container .a {
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 .card_container a { /*button*/
-    cursor: pointer;
-    border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    text-align: center;
-    font-size: 21px;
-    font-weight: 400;
-    padding: 12px 0;
-    width: 100%;
-    display: table;
-    background: #E51F04;
-    background: -moz-linear-gradient(top,  #E51F04 0%, #A60000 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E51F04), color-stop(100%,#A60000));
-    background: -webkit-linear-gradient(top,  #E51F04 0%,#A60000 100%);
-    background: -o-linear-gradient(top,  #E51F04 0%,#A60000 100%);
-    background: -ms-linear-gradient(top,  #E51F04 0%,#A60000 100%);
-    background: linear-gradient(top,  #E51F04 0%,#A60000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E51F04', endColorstr='#A60000',GradientType=0 );
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  padding: 12px 0;
+  width: 100%;
+  display: table;
+  background: #E51F04;
+  background: -moz-linear-gradient(top,  #E51F04 0%, #A60000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E51F04), color-stop(100%,#A60000));
+  background: -webkit-linear-gradient(top,  #E51F04 0%,#A60000 100%);
+  background: -o-linear-gradient(top,  #E51F04 0%,#A60000 100%);
+  background: -ms-linear-gradient(top,  #E51F04 0%,#A60000 100%);
+  background: linear-gradient(top,  #E51F04 0%,#A60000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E51F04', endColorstr='#A60000',GradientType=0 );
 }
 .card_container a i { /*button*/
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .card_container a.disabled { /*button*/
-    background: none repeat scroll 0 0 #ccc;
-    cursor: default;
+  background: none repeat scroll 0 0 #ccc;
+  cursor: default;
 }
 .bkng-tb-cntnt a { /*button*/
-    color: #fff;
-    float: right;
-    font-size: 18px;
-    padding: 5px 20px;
-    width: auto;
+  color: #fff;
+  float: right;
+  font-size: 18px;
+  padding: 5px 20px;
+  width: auto;
 }
 .bkng-tb-cntnt a.o { /*button*/
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #912F46;
-    border: 1px solid #912F46;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #912F46;
+  border: 1px solid #912F46;
 }
 .bkng-tb-cntnt a i { /*button*/
-    color: #fff;
+  color: #fff;
 }
 .bkng-tb-cntnt a.o i { /*button*/
-    color: #912F46;
+  color: #912F46;
 }
 .bkng-tb-cntnt a.right i { /*button*/
-    float: right;
-    margin: 2px 0 0 10px;
+  float: right;
+  margin: 2px 0 0 10px;
 }
 .bkng-tb-cntnt a.left { /*button*/
-    float: left;
+  float: left;
 }
 .bkng-tb-cntnt a.disabled.o { /*button*/
-    border-color: #ccc;
-    color: #ccc;
+  border-color: #ccc;
+  color: #ccc;
 }
 .bkng-tb-cntnt a.disabled.o i { /*button*/
-    color: #ccc;
+  color: #ccc;
 }
 .sctn-col input {
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 .pymnt-itm h2 {
-    background-color: #e9e9e9;
+  background-color: #e9e9e9;
 }
 .pymnt-itm.active h2 {
-    background-color: #EBEBEB;
-    color: #000;
-    cursor: default;
-    text-align: left;
-    font-weight: 300;
+  background-color: #EBEBEB;
+  color: #000;
+  cursor: default;
+  text-align: left;
+  font-weight: 300;
 }
 .pymnt-itm div.pymnt-cntnt {
-    display: none;
+  display: none;
 }
 .pymnt-itm.active div.pymnt-cntnt {
-    background-color: #f7f7f7;
-    display: block;
-    padding: 0 0 30px;
+  background-color: #f7f7f7;
+  display: block;
+  padding: 0 0 30px;
 }
 .pymnt-cntnt div.sctn-row div.sctn-col.cvv {
-    background-image: url("../img/cvv.png");
-    background-repeat: no-repeat;
+  background-image: url("../img/cvv.png");
+  background-repeat: no-repeat;
 }
 .openpay {
-    float: right;
+  float: right;
 }
 .openpay div.logo_card {
-    background-image: url("../img/openpay.png");
-    background-repeat: no-repeat;
-    font-size: 12px;
-    font-weight: 400;
-    height: 45px;
+  background-image: url("../img/openpay.png");
+  background-repeat: no-repeat;
+  font-size: 12px;
+  font-weight: 400;
+  height: 45px;
 }
 div.shield {
-    background-image: url("../img/security.png");
-    background-repeat: no-repeat; /*Hace que la imagen insertada no se repita*/
-    font-size: 12px;
-    font-weight: 400;
-    margin-right: 30%;
+  background-image: url("../img/security.png");
+  background-repeat: no-repeat; /*Hace que la imagen insertada no se repita*/
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 30%;
  }
 .card-expl {
-    float: left;
+  float: left;
  }
 .card-expl div {
-    background-position: left 45px;
-    background-repeat: no-repeat;
-    }
+  background-position: left 45px;
+  background-repeat: no-repeat;
+}
 .card-expl div.debit {
-    background-image: url("../img/cards2.png");
+  background-image: url("../img/cards2.png");
 }
 .card-expl div.credit {
-    background-image: url("../img/cards1.png");
+  background-image: url("../img/cards1.png");
 }
 .card-expl h4 {
-    font-weight: 400;
-    margin: 0;
+  font-weight: 400;
+  margin: 0;
 }
-
-
+/*Seguro primeros gastos terremoto*/
 #insuranceValue_container{
-    height: 100px;
-    border-radius: 5px;
-    box-shadow: 0 0 30px #DEDEDE;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+  height: 100px;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 0 30px #DEDEDE;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
+/*$2,361.26*/
 .centerValue{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
 }
 #insuranceValue_label, #insuranceValue, #insuranceValue_mxn{
-    color: #912F46;
-    margin: 0;
+  color: #912F46;
+  margin: 0;
 }
-
 #insuranceValue_mxn, #insuranceValue{
-    font-weight: 500;
+  font-weight: 500;
 }
 #insuranceValue_label{
-    font-weight: 400;
-    width: 100%;    
+  font-weight: 400;
+  width: 100%;    
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .card_container{
-        width: 90%;
-        margin-top: 20px;
-        height: 800px;
-        min-width: 300px;
-    }
-    .bkng-tb-cntnt {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .pymnts {
-        width: 100%;
-        height: 100%;
-    }
-
-    .pymnts * {
-        float: none;
-    }
-
-    .sctn-row {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .sctn-col {
-        width: 100%;
-        margin: 5px 0;
-    }
-    
-    .sctn-col input {
-        font-size: 16px;
-        line-height: 24px;
-        padding: 10px 12px;
-        width: 100%;
-        height: 20px;
-    }
-    .sctn-col input::placeholder{
-        font-size: 16px;
-    }
-    .sctn-col label {
-        font-size: 20px;
-        line-height: 20px;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-    .sctn-col.x3 {
-        width: 300px;
-    }
-    .sctn-col.x3.last {
-        width: 200px;
-    }
-    .sctn-col.x3 input {
-        width: 210px;
-    }
-    .sctn-col.x3 a {
-        float: right;
-    }
-    .pymnts-sctn {
-        width: 100%;
-    }
-    .pymnt-itm {
-        margin: 0 0 3px;
-        width: 100%;
-        height: 100%;
-    }
-    .pymnt-itm h2 {
-        font-size: 18px;
-        line-height: 50px;
-        padding: 0 10px;
-        width: calc(100% - 20px);
-        height: 50px;
-    }
-
-    .pymnt-itm.active div.pymnt-cntnt {
-        width: 100%;
-        height: 750px;
-    }
-    
-    .pymnt-cntnt div.sctn-row {
-        margin: 10px 10px 0;
-        width: 90%;
-        text-align: left;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.l {
-        width: 100%;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col input {
-        width: 90%;
-        font-size: 14px;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.half {
-        width: 45%;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.half.l {
-        float: left;
-        width: 45%;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.half input {
-        width: 70%;
-        margin: 0;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.cvv {
-        background-position: right 80%;
-        background-size: 160px;
-        padding-bottom: 0px;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.cvv div.sctn-col.half input {
-        width: 60%;
-    }
-    .openpay {
-        height: 160px;
-        margin: 10px 30px 0 0;
-        width: 100%;
-    }
-    .openpay div.logo_card {
-        background-position: center bottom;
-        text-align: center;
-        border-right: none;
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0 20px 0;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-    }
-    div.shield {
-        background-position: left center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px;
-        padding: 10px 0 10px 30px;
-        text-align: center;
-    }
-
-    #pagar{
-        width: 90%;
-        text-align: right;
-    }
-    .card-expl {
-        margin: 0;
-        height: 150px;
-        width: 95%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .card-expl div {
-        height: 70px;
-        line-height: 45px;
-        padding-top: 10px;
-    }
-    .card-expl div.debit {
-        background-size: 100%;
-        margin-left: 0;
-        width: 100%;
-    }
-    .card-expl div.credit {
-        border-right: none;
-        border-bottom: 1px solid #ccc;
-        margin-left: 0;
-        width: 100%;
-    }
-    .card-expl h4 {
-        font-size: 14px;
-        margin-left: 15px;
-    }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .card_container{
-        width: 90%;
-        max-width: 800px;
-        margin-top: 20px;
-        /* height: 850px; */
-    }
-    .bkng-tb-cntnt {
-        width: 100%;
-        /* height: 100%; */
-    }
-    .pymnts {
-        width: 100%;
-        /* height: 100%; */
-    }
-    .pymnts * {
-        float: none;
-    }
-    .sctn-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .sctn-col {
-        margin: 5px 0;
-    }
-    .sctn-col input {
-        font-size: 16px;
-        line-height: 24px;
-        padding: 10px 0;
-        width: 100%;
-        height: 20px;
-        margin: 0;
-    }
-    .sctn-col input::placeholder{
-        font-size: 16px;
-    }
-    .sctn-col label {
-        font-size: 20px;
-        line-height: 20px;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-    .sctn-col.x3 {
-        width: 300px;
-    }
-    .sctn-col.x3.last {
-        width: 200px;
-    }
-    .sctn-col.x3 input {
-        width: 210px;
-    }
-    .sctn-col.x3 a {
-        float: right;
-    }
-    .pymnts-sctn {
-        width: 100%;
-    }
-    .pymnt-itm {
-        margin: 0 0 3px;
-        width: 100%;
-        /* height: 100%; */
-    }
-    .pymnt-itm h2 {
-        font-size: 18px;
-        line-height: 50px;
-        padding: 0;
-        width: 100%;
-        height: 50px;
-    }
-    .pymnt-itm.active div.pymnt-cntnt {
-        width: 100%;
-        /* height: 650px; */
-    }
-    .pymnt-cntnt div.sctn-row {
-        width: calc(100% - 20px);
-        margin: 20px 10px 0;
-        text-align: left;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: calc(50% - 5px);
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.l {
-        width: calc(50% - 5px);
-        margin-right: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col input {
-        width: 90%;
-        font-size: 14px;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.half {
-        width: 45%;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.half.l {
-        float: left;
-        width: 45%;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.half input {
-        width: 70%;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.cvv {
-        background-position: 80% bottom;
-        background-size: 40%;
-        padding-bottom: 0px;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .pymnt-cntnt div.sctn-row div.sctn-col.cvv div.sctn-col.half input {
-        width: 60%;
-    }
-    .openpay {
-        height: 60px;
-        margin: 10px 30px 0 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .openpay div.logo_card {
-        background-position: center bottom;
-        text-align: center;
-        border-right: 1px solid #ccc;
-        border-bottom: none;
-        padding: 10px 30px 10px 0;
-        margin: 0 5%; 
-    }
-    div.shield {
-        background-position: left center;
-        width: 280px; /*Tamaño de contenedor*/
-        text-align: right 10%; /*Alinear el texto*/
-        line-height: 20px;
-        padding: 10px 5px 10px 40px;
-        margin: 60px auto; /*Separacion entre objetos*/
-        margin-left: 60%; /*Mover derecha*/
-        margin-top: 5%; /*Mover abajo*/
-    }
-
-    #pagar{
-        width: 90%;
-        text-align: right;
-    }
-    .card-expl {
-        margin: 0;
-        height: 80px;
-        width: 95%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .card-expl div {
-        height: 70px;
-        line-height: 45px;
-        padding-top: 10px;
-    }
-    .card-expl div.debit {
-        background-size: 100%;
-        margin-left: 20px;
-        width: 60%;
-    }
-    .card-expl div.credit {
-        background-size: 100%;
-        border-right: 1px solid #ccc;
-        border-bottom: none;
-        margin-left: 20px;
-        width: 30%;
-    }
-    .card-expl h4 {
-        font-size: 14px;
-        font-weight: 400;
-        margin-left: 15px;
-    }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-
-
-
-
-
-
-
-
-
-/*Footermenu*/
-.footermenu{
-  position: static;
-  height: 80px;
-  border-bottom: solid 5px;
-  border-color: #F2F5F4;
- /* background: #99cccc;   /* PRUEBA*/
-}
-.texto1-footermenu{
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 10%;
-  margin-top: 28px;
-  z-index: 2001;
-}
-.texto2-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.texto3-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.texto4-footermenu{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-}
-.link-footer:hover{
-  color: #C88585;
-}
-.link-footer:active{
-  color: #C88585;
-  text-decoration: none;
-}
-.link-footer:focus{
-  text-decoration: underline;
-  color: #C88585;
-}
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: 20px;
-  height: 48px;
-  width: 158px;
-  display: flex;
-}
-.logo-footermenu{
-  margin-left: 66%;
-  margin-top: -10px;
-  height: 55px;
-  width: 199px;
-  display: flex;
-}
-
-
-/*Footer terminos y condiciones*/
-.footer-freeda{
-  position: static;
-  height: 75px;
-  padding-top: 20px;
-  padding-left: 1020px;
-  /*background: #ccffff;*/
-}
-.texto1-footer{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-}
-.texto2-footer{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-  text-decoration: none;
-}
-.link-footer:hover{
-  color: #C88585;
-}
-.link-footer:active{
-  color: #C88585;
-  text-decoration: none;
-}
-.link-footer:focus{
-  text-decoration: underline;
-  color: #C88585;
-}
-
-
-
-
-
 
 /*Seccion1*/
 .seccion-texto{
@@ -753,7 +254,6 @@ div.shield {
 }
 
 /*BOTON PAGAR*/
-
 .boton-pagar{
   position: absolute;
   margin-left: 65%;
@@ -772,26 +272,96 @@ div.shield {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
-
 .boton-pagar:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
   color: #000000;
 }
-
 .boton-pagar:active{
   background: #912F46 0% 0% no-repeat padding-box;
   border: 1px solid #000000;
 }
-
 .boton-pagar:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
 
-
-
-
-
+/*NUEVO FOOTER*/
+/*Footermenu*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-top: solid 5px;
+  border-color: #FFFFFF;
+  padding-top: 2%;
+  /*background: #99cccc;   /* PRUEBA*/
+}
+.texto1-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px; /*Separacion entre textos*/
+  padding-left: 5%;
+  margin-top: 28px;
+  z-index: 2001;
+}
+.texto2-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto3-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto4-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+}
+.texto5-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.link-footer:hover{
+  color: #912F46;
+}
+.link-footer:active{
+  color: #912F46;
+  text-decoration: none;
+}
+.link-footer:focus{
+  text-decoration: underline;
+  color: #912F46;
+}
+.logo-footer{
+  width: 160px;
+  height: 60px;
+  display: flex;
+  margin-left: 80%;
+  margin-top: -3%;
+}
 
 /*Animations*/
 @-webkit-keyframes silo-fade {
@@ -833,202 +403,568 @@ div.shield {
     }
 }
 
+/*---------------Media Queries--------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.menu-freeda{
+  position: absolute;
+  margin-left: -80px;
+  margin-right: 30px;
+  margin-top: 11px;
+  background-color: #FFFFFF;
+  width: 100vh;
+  min-height: 100vh;
+}
+.texto-menu{
+  padding-right: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+  margin-left: 175px;
+  margin-top: 30px;
+  letter-spacing: 0.35px;
+  color: #FFFFFF;
+}
+.t1m{
+  margin-top: 200px;
+}
+.tmbl{
+  font-weight: 700;
+}
+.boton-menu{
+  left: 80%;
+}
+.material-icons{
+  color: white;
+}
+/*Seguro primeros gastos terremoto*/
+.texto1-titulo{
+  margin-top: 25%;
+}
+#insuranceValue_container{
+  width: 90%;
+}   
+.boton-pagar{
+  width: 20%;
+  margin-top: 10%;
+}
+
+.card_container{
+  width: 90%;
+  margin-top: 20px;
+  height: 820px;
+  min-width: 300px;
+}
+.bkng-tb-cntnt {
+  width: 100%;
+  height: 100%;
+}
+.pymnts {
+  width: 100%;
+  height: 100%;
+}
+.pymnts * {
+  float: none;
+}
+.sctn-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sctn-col {
+  width: 100%;
+  margin: 5px 0;
+}
+.sctn-col input {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 12px;
+  width: 100%;
+  height: 20px;
+}
+.sctn-col input::placeholder{
+  font-size: 16px;
+}
+.sctn-col label {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.sctn-col.x3 {
+  width: 300px;
+}
+.sctn-col.x3.last {
+  width: 200px;
+}
+.sctn-col.x3 input {
+  width: 210px;
+}
+.sctn-col.x3 a {
+  float: right;
+}
+.pymnts-sctn {
+  width: 100%;
+}
+.pymnt-itm {
+  margin: 0 0 3px;
+  width: 100%;
+  height: 100%;
+}
+.pymnt-itm h2 {
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0 10px;
+  width: calc(100% - 20px);
+  height: 50px;
+}
+.pymnt-itm.active div.pymnt-cntnt {
+  width: 100%;
+  height: 750px;
+}
+.pymnt-cntnt div.sctn-row {
+  margin: 10px 10px 0;
+  width: 90%;
+  text-align: left;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.l {
+  width: 100%;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col input {
+  width: 90%;
+  font-size: 14px;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.half {
+  width: 45%;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.half.l {
+  float: left;
+  width: 45%;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.half input {
+  width: 70%;
+  margin: 0;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.cvv {
+  background-position: right 80%;
+  background-size: 160px;
+  padding-bottom: 0px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.cvv div.sctn-col.half input {
+  width: 60%;
+}
+.openpay {
+  height: 160px;
+  margin: 10px 30px 0 0;
+  width: 100%;
+}
+.openpay div.logo_card {
+  background-position: center bottom;
+  text-align: center;
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 20px 0;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+div.shield {
+  background-position: left center;
+  margin-left: 55%;
+  width: 180px;
+  padding: 10px 0 10px 30px;
+  text-align: center;
+}
+#pagar{
+  width: 90%;
+  text-align: right;
+}
+.card-expl {
+  margin: 0;
+  height: 150px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-expl div {
+  height: 70px;
+  line-height: 45px;
+  padding-top: 10px;
+}
+.card-expl div.debit {
+  background-size: 100%;
+  margin-left: 0;
+  width: 100%;
+}
+.card-expl div.credit {
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  margin-left: 0;
+  width: 100%;
+}
+.card-expl h4 {
+  font-size: 14px;
+  margin-left: 15px;
+}
+.footermenu{
+  padding-left: 0px;
+}
+.logo-footer{
+  display: none;
+}
 
 
+}
 
 
-/*-------------MEDIA QUERIES--------------*/
-@media only screen and (max-width:1919px) and (min-width:992px){
-/* body{
-  background-color: pink;
- } */
-  /*Nav*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+/*.menu-freeda{
+  position: absolute;
+  margin-left: -80px;
+  margin-right: 30px;
+  margin-top: 11px;
+  background-color: #FFFFFF;
+  width: 100vh;
+  min-height: 100vh;
+}*/
+.texto-menu{
+  padding-right: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+  margin-left: 175px;
+  margin-top: 30px;
+  letter-spacing: 0.35px;
+  color: #FFFFFF;
+}
+.t1m{
+  margin-top: 200px;
+}
+.tmbl{
+  font-weight: 700;
+}
+.boton-menu{
+  left: 80%;
+}
+.material-icons{
+  color: white;
+}
+/*Seguro primeros gastos terremoto*/
+.texto1-titulo{
+  margin-top: 25%;
+}
+#insuranceValue_container{
+  width: 90%;
+}   
+.boton-pagar{
+  width: 30%;
+}
+
+.card_container{
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+  /* height: 850px; */
+}
+.bkng-tb-cntnt {
+  width: 100%;
+  /* height: 100%; */
+}
+.pymnts {
+  width: 100%;
+  /* height: 100%; */
+}
+.pymnts * {
+  float: none;
+}
+.sctn-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sctn-col {
+  margin: 5px 0;
+}
+.sctn-col input {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+}
+.sctn-col input::placeholder{
+  font-size: 16px;
+}
+.sctn-col label {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.sctn-col.x3 {
+  width: 300px;
+}
+.sctn-col.x3.last {
+  width: 200px;
+}
+.sctn-col.x3 input {
+  width: 210px;
+}
+.sctn-col.x3 a {
+  float: right;
+}
+.pymnts-sctn {
+  width: 100%;
+}
+.pymnt-itm {
+  margin: 0 0 3px;
+  width: 100%;
+  /* height: 100%; */
+}
+.pymnt-itm h2 {
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+}
+.pymnt-itm.active div.pymnt-cntnt {
+  width: 100%;
+  /* height: 650px; */
+}
+.pymnt-cntnt div.sctn-row {
+  width: calc(100% - 20px);
+  margin: 20px 10px 0;
+  text-align: left;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(50% - 5px);
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.l {
+  width: calc(50% - 5px);
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col input {
+  width: 90%;
+  font-size: 14px;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.half {
+  width: 45%;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.half.l {
+  float: left;
+  width: 45%;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.half input {
+  width: 70%;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.cvv {
+  background-position: 80% bottom;
+  background-size: 40%;
+  padding-bottom: 0px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pymnt-cntnt div.sctn-row div.sctn-col.cvv div.sctn-col.half input {
+  width: 60%;
+}
+.openpay {
+  height: 60px;
+  margin: 10px 30px 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.openpay div.logo_card {
+  background-position: center bottom;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
+  padding: 10px 30px 10px 0;
+  margin: 0 5%; 
+}
+div.shield {
+  background-position: left center;
+  width: 220px; /*Tamaño de contenedor*/
+  text-align: right 10%; /*Alinear el texto*/
+  line-height: 20px;
+  padding: 10px 5px 10px 40px;
+  margin: 60px auto; /*Separacion entre objetos*/
+  margin-left: 60%; /*Mover derecha*/
+  margin-top: 5%; /*Mover abajo*/
+}
+#pagar{
+  width: 90%;
+  text-align: right;
+}
+.card-expl {
+  margin: 0;
+  height: 80px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-expl div {
+  height: 70px;
+  line-height: 45px;
+  padding-top: 10px;
+}
+.card-expl div.debit {
+  background-size: 100%;
+  margin-left: 20px;
+  width: 60%;
+}
+.card-expl div.credit {
+  background-size: 100%;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
+  margin-left: 20px;
+  width: 30%;
+}
+.card-expl h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.boton-menu{
+padding-right: 16%;
+}
+.material-icons{
+  color: white;
+}
+
+/*Seguro primeros gastos terremoto*/
+.texto1-titulo{
+  margin-top: 17%;
+}
+
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
-
-.boton-menu{
-  position: absolute;
- left: 50%;
-}
-
-
-
-.footer-freeda{
-    padding-left: 758px;
-  }
-}
-
-
-
-
-
- @media only screen and (max-width:1024px) and (min-width:992px){
-/*body{
-  background-color: gray;
- } */
-.footer-freeda{
-  padding-left: 540px;
-}
-.logo-freeda{
-  padding-right: 20%;
-}
-
-
-
-
-}
-
-
-
-
-  
-
-@media only screen and (max-width:991px) and (min-width:576px){
-/*body{
-  background-color: violet;
-} */
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
-.boton-menu{
-  left: 80%;
-}
-.material-icons{
-  color: white;
-}
-
-
-
-
-
-
-/*Pago*/
+/*Seguro primeros gastos terremoto*/
 .texto1-titulo{
-  margin-top: 22%;
-}
-.shield{
-  background-color: blue;
-
-  padding-bottom: 2px;
-}
-
-.footer-freeda{
-  padding-left: 100px;
-}
-.logo-footermenu{
-  margin-top: 5%;
-}
-}
-
-
-
-
-
-@media only screen and (max-width:575px){
- /* body{
-    background-color: orange;
-  } */
-
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
-.boton-menu{
-  left: 80%;
-}
-.material-icons{
-  color: white;
-}
-/*Datos-asegurado.html*/
-
-
-
-
-
-
-/*Pago.html*/
-.texto1-titulo{
-  margin-top: 22%;
-}
-.boton-pagar{
   margin-top: 10%;
-  margin-left: 30%;
 }
-
-.footer-freeda{
-    padding-left: 150px;
-  }
-
+#insuranceValue_container{
+  width: 58%;
 }
 
 
 
+.tamaño-renglon-1{
+  position: fixed;
+  height: 78px;
+  padding-top: 13px;
+  width: 100%;
+  z-index: 2010;
+  background: #912F46 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #00000029;
+  opacity: 1;
+  padding-left: 19%;
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: 0%;
+  height: 85px;
+  width: 210px; 
+  display:flex;
+}
+.menu-freeda{
+  font-size: 14px;
+  margin-left: 4%;
+  padding-bottom: 4px;
+}
+.texto-menu-f{ /*Letra del menu*/
+  font-size: 18px;
+  color:#F7F7F7;
+  margin-top: 3px;
+  padding-right: 33px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
+  color: #FFFFFF;
+}
+.texto-menu-f:active{
+  color: #FFFFFF;
+}
+.texto-menu-f:focus{ /*Queda activado*/
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.boton-menu-f{
+  position: absolute;
+  left: 10%;
+}
 
-
-@media only screen and (max-width:320px){
- /* body{
-    background-color: lime;
-  } */
 
 }
+
+
+
+
+
+
+
+
 
 
