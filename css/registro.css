@@ -342,7 +342,7 @@ input.quantity-field{
   max-width: 900px;
   padding-top: 0px;
   padding-bottom: 200px;
-  margin-top: -2%;
+  margin-top: 2%; /*-2% ???*/
   /*background: #cc99cc;        /*PRUEBA*/ 
 }
 /*Boton Enviar token SMS*/
