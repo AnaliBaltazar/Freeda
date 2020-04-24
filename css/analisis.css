@@ -762,7 +762,7 @@ input.invalid + label.head-label, input:focus + label.head-label, input:not(:pla
   display: block;
 }
 
-input.invalid + label.head_label + label.bottom_label1{
+input.invalid + label.head-label + label.bottom-label1{
   display: block;
   color:#FF4B4B;
   font-weight: 500;
@@ -1125,6 +1125,10 @@ input.quantity-field{
   margin-right: 1%; /*5%*/
   margin-top: -5%; /*Agrego para subir al nivel del titulo*/
 }
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 }
 
 
@@ -1158,7 +1162,10 @@ margin-left: 5%;
 .imagen2-part2{
   margin-left: 5%;
 }
-
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 
 }
 
@@ -1312,7 +1319,10 @@ margin-top: -20%;
 .logo-footer{
   display: none;
 }
-
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 }
 
 
@@ -1471,6 +1481,9 @@ margin-top: -30%;
 
 .logo-footer{
   display: none;
+}
+input.invalid + label.head-label + label.bottom-label1 {
+  top: 110px;
 }
 }
 
