@@ -427,13 +427,14 @@ label.head-label, label.bottom-label1{
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
   animation: silo-fade 0.2s; /*Google*/
 }
+input:focus{outline: none;}
 
 /*Hace la animacion de aparecer cuando se da clic*/
 input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
   display: block;
 }
 
-input.invalid + label.head_label + label.bottom_label1{
+input.invalid + label.head-label + label.bottom-label1{
   display: block;
   color:#FF4B4B;
   font-weight: 500;
@@ -629,6 +630,10 @@ margin-left: 33%;
 .texto_area2{
   width: 40%;
 }
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 /*.footer-freeda{
   padding-left: 758px;
 }*/
@@ -670,7 +675,10 @@ margin-left: 33%;
 .logo-freeda{
   padding-right: 20%;
 }
-
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 }
 
 @media only screen and (max-width:991px) and (min-width:576px){
@@ -787,7 +795,10 @@ margin-left: 26%;
 .logo-footer{
   display: none;
 }
-
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 }
 
 
@@ -908,7 +919,9 @@ margin-left: 26%;
   .logo-footer{
   display: none;
 }
-
+input.invalid + label.head-label + label.bottom-label1 {
+  top: 110px;
+}
 }
 
 
