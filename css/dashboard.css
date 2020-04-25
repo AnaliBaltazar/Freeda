@@ -12,6 +12,7 @@ a, .Right span{
   font-size: 16px;
   color: #FFFFFF; /*Color leta */
 }
+button:focus{outline: none;}
 /*MENU*/
 .headerBar{
   height: 78px;
@@ -43,7 +44,7 @@ a, .Right span{
   position: relative;
 }
 .selected{
-  color: #60A1E7 !important;
+  color: #912F46 !important;
 }
 /*AYUDA, NOTIFICACION Y USUARIO*/
 .menu{
@@ -86,7 +87,7 @@ a, .Right span{
   border-left: 10px solid #3B536D;
 }
 #notifications p a{
-  color: #60A1E7;
+  color: #912F46;
   /* font-size: 13px; */
 }
 
@@ -249,7 +250,7 @@ td.col_r{
   border-color: #007BFF;
 }
 .doc_btns span, .material-icons.upload{
-  color: #60A1E7;
+  color: #912F46;
 }
 .material-icons.upload{
   border-color: #912F46;
@@ -346,9 +347,8 @@ td.col_r{
   width: 60%;
   max-width: 600px; /*Permite que se acomoden los botones de acuerdo al tamaño*/
   align-items: center; /*Alinea los items*/
-  justify-content: center; /*Acomoda los botones al centro*/
-  margin-top: 20px;
-  margin-left: 16%;
+  justify-content: space-between; /*Acomoda los botones al centro*/
+  margin: 50px auto;
 }
 .reporte-daños{
   width: 70%;
@@ -393,7 +393,7 @@ h3{
   z-index:5;
   width:100%;
   height:100%;
-  /*display:none;*/
+  display:none;
 }
 .valueScreen{ /*Ventana*/
   background-color: white;
@@ -407,7 +407,7 @@ h3{
   border-radius: 5px;
   text-align: center;
   z-index: 5;
-  /*display: none;*/
+  display: none;
 }
 /*Boton cerrar ventana*/
 .valueScreen i#close{
@@ -563,21 +563,21 @@ button.bien.activeHover:hover .icono_bienes .cls-2t{
 .icono_bienes.ico_selected .cls-2e,
 .icono_bienes.ico_selected .cls-1t, 
 .icono_bienes.ico_selected .cls-2t{
-    stroke: #60A1E7; /*AZUL SI SE SELECCIONA*/ 
+    stroke: #912F46; /*AZUL SI SE SELECCIONA*/ 
 }
 
 .icono_bienes.ico_selected .cls-2m, 
 .icono_bienes.ico_selected .cls-2ed, 
 .icono_bienes.ico_selected .cls-2d, 
 .icono_bienes.ico_selected .cls-3a{
-    fill: #60A1E7;  /*AZUL*/
+    fill: #912F46;  /*AZUL*/
 }
 
 .bien{
     border: 1.5px solid #912F46; /*GRIS*/
     width: 250px;
     height: 250px;
-    margin: 15px;
+    margin: 50px;
     text-align: center;
     border-radius: 5px;
     display: block;
@@ -1122,7 +1122,7 @@ h3{
 }
 
 #bienesInquilino{
-  width: 70%;
+  width: 100%;
   margin-top: 10px;    
 }
 .bien{
@@ -1279,7 +1279,7 @@ margin:10px 0;
 
 /*Reporte-daños.html*/
 #bienesInquilino{
-  width: 70%;
+  width: 90%;
   margin-top: 10px;    
 }
 h3{
@@ -1427,7 +1427,7 @@ margin:10px 0;
 
 /*Reporte-daños.html*/
 #bienesInquilino{
-  width: 70%;
+  width: 100%;
   margin-top: 10px;    
 }
 h3{
@@ -1438,7 +1438,7 @@ h3{
   border: 1.5px solid #C7C7C7;
   width: 210px;
   height: 210px;
-  margin: 10px;
+  margin: 20px;
 }
    
 .icon_content{
@@ -1608,6 +1608,7 @@ button.Aceptar{
 #bienesInquilino{
   width: 80%;
   margin-top: 10px;    
+  min-width: 565px;
 }
 h3{
   font-size: 22px;
@@ -1616,7 +1617,7 @@ h3{
   border: 1.5px solid #C7C7C7;
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 40px;
 }  
 .icon_content{
   width: 100%;
