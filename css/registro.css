@@ -350,7 +350,7 @@ input.quantity-field{
   /*    position: absolute;
   margin-left: 38%;
   margin-top: 5px; /*Mover hacia arriba
-  
+
   width: 24%; Tamaño del boton
   
   text-align: center; /*Alineacion del texto del boton
@@ -403,8 +403,6 @@ input.quantity-field{
   padding-right: 140px;
   color: #912F46;
 }*/
-
-
 /*SECCION ACTIVAR artivar-token.html
 .seccion-activar{
   position: static;
@@ -412,14 +410,7 @@ input.quantity-field{
   width: 100%;
   margin-top:  50px;
 }*/
-.seccion-token /*Boton vali-token.html*/
-{
-  max-width: 900px;
-  padding-top: 5px;
-  padding-bottom: 200px;
- /* background-color: #cc99cc;        /*PRUEBA*/
-  margin-top: -5%;
-}
+
 .texto_area_token{
   text-align: center;
   margin-left: auto;
@@ -451,6 +442,14 @@ input.quantity-field{
   font-size: 18px;
   background: #912F46;
 }*/
+.seccion-token /*Boton vali-token.html*/
+{
+  max-width: 900px;
+  padding-top: 5px;
+  padding-bottom: 200px;
+ /* background-color: #cc99cc;        /*PRUEBA*/
+  margin-top: -5%;
+}
 .validar-token{
   position: absolute;
   margin-left: 37%;
