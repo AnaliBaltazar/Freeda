@@ -1,5 +1,4 @@
 /*Navegacion*/
-/*Encabezado menú*/
 .tamaño-renglon-1{
   position: fixed;
   height: 78px;
@@ -119,10 +118,8 @@ label.head-label, label.bottom-label1{
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
   animation: silo-fade 0.2s; /*Google*/
 }
-
 /* Asigna estilos cuando la validacion es buena */
 input:focus{outline: none;}
-
 
 /*Hace la animacion de aparecer cuando se da clic*/
 input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
@@ -134,9 +131,8 @@ input.invalid + label.head-label + label.bottom-label1{
   font-weight: 500;
   position: relative;
 }
-
 input:focus::-webkit-input-placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 input.valid{
   color: #912F46;
@@ -196,16 +192,55 @@ input.quantity-field{
 }
 
 
-/*SeccionBoton CREAR CUENTA*/
-.seccion-boton-crear{
+/* -----------------
+
+.contenedor1{
+
+}
+.btn-siguiente1{
+  position: absolute;
+  margin-left: 40%;
+  /* margin-top: -8%; 
+  border: 1px solid #FFFFFF;
+  border-radius: 5px; 
+  width: 200px; 
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  text-transform: uppercase; 
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; 
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-siguiente1:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.btn-siguiente1:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-siguiente1:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+-------------------- */
+  
+/*SeccionBoton SIGUIENTE*/
+.seccion-siguiente{
   max-width: 900px;
-  padding-top: 130px;
+  padding-top: 200px;
+  padding-bottom: 200px;  
   /*background: #bfe7e5;        /*PRUEBA*/
 } 
-.boton-crear{
+.btn-siguiente{
   position: absolute;
-  margin-left: 38%;
-  margin-top: -10%;
+  margin-left: 40%;
+  margin-top: 5%;
+  /* margin-top: -8%; */
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -220,15 +255,15 @@ input.quantity-field{
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
-.boton-crear:hover{
+.btn-siguiente:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
   color: #000000;
 }
-.boton-crear:active{
+.btn-siguiente:active{
   background: #912F46 0% 0% no-repeat padding-box;
   border: 1px solid #000000;
 }
-.boton-crear:focus{
+.btn-siguiente:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
@@ -267,31 +302,6 @@ input.quantity-field{
 .underlineHover:hover {
   color: #912F46;
 }
-
-
-/*Boton INICIAR iniciar-sesion.html*/
-/*.seccion-boton{
-  max-width: 900px;
-  padding-top: 170px;
-  padding-bottom: 100px;*
-
-  background: #cc99cc;        /*PRUEBA*/
-
-/*.btn-iniciar{
-  position: absolute;
-  margin-left: 85%;
-  margin-top: 25px; /*Mover hacia arriba
-  width: 25.8%; /*Tamaño del boton
-  
-  text-align: center; /*Alineacion del texto del boton
-  
-  color: #FFFFFF;
-
-  background: #912F46;
-
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-}*/
 .btn-iniciar{
   position: absolute;
   margin-left: 79%;
@@ -324,54 +334,11 @@ input.quantity-field{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
   color: #912F46;
-}
-
-
-  
-/*SeccionBoton SIGUIENTE*/
-.seccion-siguiente{
-  max-width: 900px;
-  padding-top: 130px;
-  padding-bottom: 100px;  
-  /*background: #bfe7e5;        /*PRUEBA*/
 } 
-.btn-siguiente{
-  /* position: absolute; */
-  margin-left: 38%;
-  /* margin-top: -8%; */
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
-  opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
-.btn-siguiente:hover{
-  background: #C88585 0% 0% no-repeat padding-box; 
-  color: #000000;
-}
-.btn-siguiente:active{
-  background: #912F46 0% 0% no-repeat padding-box;
-  border: 1px solid #000000;
-}
-.btn-siguiente:focus{
-  background: #C88585 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-}
-
-  
 
 
 
 /*NUEVO FOOTER*/
-/*Footermenu*/
 .footermenu{
   position: static;
   height: 80px;
@@ -450,232 +417,46 @@ input.quantity-field{
 
 
 
-/*-------------MEDIA QUERIES--------------*/
-@media only screen and (max-width:1919px) and (min-width:1025px){
+/*---------MEDIA QUERIES---------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 /*body{
   background-color: pink;
-} */
-  /*Nav*/
+}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
-.boton-menu{
-  position: absolute;
- left: 50%;
-}
-.texto1-seccion1{
-  font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700; /*Grosor*/
-  letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 47px; /*Sangria*/
-  text-align: center;
-  color: #912F46;
-  opacity: 1;
-  margin-top: 11%;
-}
-.btn-siguiente{
-  margin-top: 8%; /*Para que no se encime con los INPUTS*/
-}
-
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-/*.footer-freeda{
-  padding-left: 758px;
-}*/
-
-}
-
-
-@media only screen and (max-width:1024px) and (min-width:992px){
-/*body{
-  background-color: gray;
-}*/
-.footer-freeda{
-  padding-left: 540px;
-}
 .logo-freeda{
-  padding-right: 20%;
-}
-.btn-iniciar{
-  margin-left: 76%;
-  margin-top: -1%;
-}
-.btn-siguiente{
-  margin-top: 8%; /*Para que no se encime con los INPUTS*/
-}
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-
-
-}
-
-
-
-
-  
-
-@media only screen and (max-width:991px) and (min-width:576px){
-body{
-  background-color: violet;
-} 
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
-.boton-menu{
-  left: 80%;
+  margin-left: -55%;
+  margin-top: -7%;
 }
 .material-icons{
   color: white;
 }
-/*Crear-usuario.html*/
-.texto1-seccion1{
-  margin-top: 18%;
+.boton-menu{
+  left: 80%;
+}
+/*----------------------------*/
+.texto1-seccion1{ /*CREAR USUARIO*/
+  margin-top: 28%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
-width: 50%;
+  width: 75%;
 }
 .data_input_crear{
   width: 100%;
 }
 .btn-siguiente{
-  margin-left: 36%;
-  margin-top: 30%; /*Para que no se encime con los INPUTS*/
+  margin-left: 28%;
 }
-
-
-/*Iniciar-sesion.html*/
-.texto_area_login{ 
-  margin-left: 25%;
-}
-.underlineHover{
-  margin-left: 3%;
-}
-.btn-iniciar{
-  margin-left: 47%;
-  margin-top: 2%;
-}
-.seccion-boton{
-  display: inline-grid;
-}
-
-/*.footer-freeda{
-  padding-left: 300px;
-}*/
-/*NUEVO FOOTER*/
-.footermenu{
-    padding-left: 0px;
-}
-.texto1-footer, .texto2-footer ,.texto3-footer, .texto4-footer, .texto5-footer{
-  margin-right: 25px;
-}
-.logo-footer{
-  display: none;
-}
+/*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   top: 110px;
   width: 95%;
 }
 
-}
-
-
-
-
-
-@media only screen and (max-width:575px){
-/*body{
-  background-color: orange;
-}*/
-
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
-.boton-menu{
-  left: 80%;
-}
-.material-icons{
-  color: white;
-}
-/*Crear-usuario.html*/
-.texto1-seccion1{
-  margin-top: 25%;
-}
-.texto_area_usuario{ /*Area correo, contraseña y confirmar */
-width: 50%;
-}
-.data_input_crear{
-  width: 105%;
-}
-.btn-siguiente{
-  margin-left: 29%;
-  margin-top: 30%;
-}
-
-/*Iniciar-sesion.html*/
+/*6-INICIAR-SESIÓN.HTML*/
 .texto_area_login{ 
   margin-left: 15%;
 }
@@ -687,30 +468,268 @@ width: 50%;
   margin-top: -1%;
 }
 
+
+
+/*Footer*/
 .logo-footer{
   display: none;
 }
 
-/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
-input.invalid + label.head-label + label.bottom-label1 {
-  top: 110px;
 }
-/*.footer-freeda{
-  padding-left: 150px;
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+/*body{
+  background-color: gray;
 }*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: -7%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+/*----------------------------*/
+.texto1-seccion1{ /*CREAR USUARIO*/
+  margin-top: 25%;
+}
+.texto_area_usuario{ /*Area correo, contraseña y confirmar */
+  width: 75%;
+}
+.data_input_crear{
+  width: 100%;
+}
+.btn-siguiente{
+  margin-left: 30%;
+}
+/*INPUT IVALIDO*/
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
 
+/*6-INICIAR-SESIÓN.HTML*/
+.texto_area_login{ 
+  margin-left: 15%;
+}
+.underlineHover{
+  margin-left: 3%;
+}
+.btn-iniciar{
+  margin-left: 33%;
+  margin-top: -1%;
+}
+
+
+/*Footer*/
+.footermenu{ /*Politicas de privacidad*/
+  padding-right: 180px;
+  height: 130px;
+  background-color: white;
+}
+.texto1-footer{
+  margin-right: 15px;
+}
+.texto3-footer{
+}
+
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+
+
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/*body{
+  background-color: orange;
+}*/
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+/*----------------------------*/
+.texto1-seccion1{ /*CREAR USUARIO*/
+  margin-top: 18%;
+}
+.texto_area_usuario{ /*Area correo, contraseña y confirmar */
+  width: 55%;
+}
+.data_input_crear{
+  width: 100%;
+}
+.btn-siguiente{
+  margin-left: 34%;
+}
+/*INPUT IVALIDO*/
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+/*6-INICIAR-SESIÓN.HTML*/
+.texto_area_login{
+  width: 55%;
+  margin-left: 23%;
+}
+.underlineHover{
+  margin-left: 3%;
+}
+.btn-iniciar{
+  margin-left: 35%;
+}
+
+
+
+/*Footer*/
+.footermenu{
+  padding-right: 150px;
+  background-color: white;
+}
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+/*body{
+  background-color: aqua;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: 1%;
+}
+/*5-CREAR-USUARIO.HTML*/
+.texto1-seccion1{ /*CREAR USUARIO*/
+  margin-top: 14%;
+}
+.texto_area_usuario{ /*Area correo, contraseña y confirmar */
+  width: 42%;
+}
+.data_input_crear{
+  width: 100%;
+}
+.btn-siguiente{
+  margin-left: 38%;
+}
+/*INPUT IVALIDO*/
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+/*6-INICIAR-SESIÓN.HTML*/
+.texto_area_login{
+  width: 88.5%;
+  margin-left: 60%;
+}
+.underlineHover{
+  margin-left: 3%;
+}
+.btn-iniciar{
+  margin-left: 78%;
+}
+
+/*Footer*/
+.footermenu{
+  padding-right: 45px;
+}
+.logo-footer{
+  margin-left: 78%;
+  height: 60px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/*body{
+  background-color: violet;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+margin-left: -55%;
+margin-top: 1%;
+}
+/*5-CREAR-USUARIO.HTML*/
+.texto1-seccion1{ /*CREAR USUARIO*/
+  margin-top: 11%;
+}
+.texto_area_usuario{ /*Area correo, contraseña y confirmar */
+  width: 37%;
+}
+.data_input_crear{
+  width: 100%;
+}
+.btn-siguiente{
+  margin-left: 40%;
+}
+/*INPUT IVALIDO*/
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+
+/*6-INICIAR-SESIÓN.HTML*/
+.texto_area_login{
+  width: 76%;
+  margin-left: 65%;
+}
+.underlineHover{
+  margin-left: 3%;
+}
+.btn-iniciar{
+  margin-left: 81%;
+}
+
+
+/*Footer*/
+.footermenu{
+  padding-left: 115px;
+}
+.logo-footer{
+  margin-left: 78%;
+}
 }
 
 
 
 
 
-@media only screen and (max-width:320px){
-  /*body{
-    background-color: lime;
-  } */
 
-}
 
 
 
