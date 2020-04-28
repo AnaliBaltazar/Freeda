@@ -178,6 +178,20 @@
   font-family: 'Raleway', sans-serif;
 }
 
+/*13-TERRENO.HTML*/
+.texto_area_terreno{ /*Cuando de introduce el texto*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 10px;
+  width: 44%;
+  padding: 50px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
 
 
 label.head-label, label.bottom-label1{
@@ -359,9 +373,9 @@ input.quantity-field{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-body{
+/*body{
   background-color: pink;
-}
+}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -404,6 +418,11 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 90%;
 }
 
+/*13-TERRENO.HTML*/
+.texto_area_terreno{
+  width: 92%;
+}
+
 
 
 
@@ -418,9 +437,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-body{
+/*body{
   background-color: gray;
-}
+}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -464,6 +483,11 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 90%;
 }
 
+/*13-TERRENO.HTML*/
+.texto_area_terreno{
+  width: 92%;
+}
+
 
 
 /*Footer*/
@@ -491,9 +515,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-body{
+/*body{
   background-color: orange;
-}
+}*/
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -535,6 +559,10 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 68%;
 }
 
+/*13-TERRENO.HTML*/
+.texto_area_terreno{
+  width: 68%;
+}
 
 
 /*Footer*/
@@ -553,9 +581,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-body{
+/*body{
   background-color: aqua;
-}
+}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -591,6 +619,11 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 50%;
 }
 
+/*13-TERRENO.HTML*/
+.texto_area_terreno{
+  width: 50%;
+}
+
  
 
 /*Footer*/
@@ -605,9 +638,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-body{
+/*body{
   background-color: violet;
-}
+}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -641,6 +674,11 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /*12-SUPERFICIE.HTML*/
 .texto_area_superficie{
+  width: 45%;
+}
+
+/*13-TERRENO.HTML*/
+.texto_area_terreno{
   width: 45%;
 }
 
