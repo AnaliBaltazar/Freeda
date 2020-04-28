@@ -1008,9 +1008,9 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-body{
+/*body{
   background-color: orange;
-} 
+}*/ 
 .logo-freeda{
   padding-right: 10%;
   margin-left: 10%;
@@ -1184,9 +1184,9 @@ button.button-minus, button.button-plus{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-body{
+/*body{
   background-color: red
-}
+}*/
 .logo-freeda{
   padding-right: 15%;
   margin-left: 25%;
@@ -1363,9 +1363,9 @@ button.Aceptar{
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-body{
+/*body{
   background-color: green;
-} 
+}*/
 /*Dashboard2.html*/
 .underlineHover1{
   margin-left: 20%;
@@ -1546,9 +1546,9 @@ button.Aceptar{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-body{
+/*body{
   background-color: violet
-} 
+}*/
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   visibility: visible;
 }
