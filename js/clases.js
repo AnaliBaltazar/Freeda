@@ -40,6 +40,9 @@ function addText (element){     // AGREGA TEXTO EN CLASE DE INMUEBLE
     acceptButton.classList.add("Continuar");
     acceptButton.classList.add("Small");
     acceptButton.id="to_year";
+    acceptButton.addEventListener('click', function(){
+        toYear(element);
+    });
     // acceptButton.addEventListener('click',nextPage);
     if (element.id === "interes" && element.parentNode.querySelector('.textoContenedor')==null) {
         const textContent=document.createTextNode("Vivienda construida en grupos. Acabados y materiales económicos.");
@@ -86,4 +89,8 @@ function removeText(element){   // REMUEVE EL ELEMENTO DE TEXTO EN LA CLASE DE I
         element.parentNode.style.height = altura + "px";
     }
     
+}
+function toYear(elmnt) {
+    localStorage.setItem('clase_propiedad',elmnt.id)
+    window.location = "./11-años.html"
 }

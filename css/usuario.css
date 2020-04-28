@@ -272,7 +272,7 @@ input.quantity-field{
 /*INICIO DE SESION*/
 .contenedor-iniciar{
   position: static;
-  height: 350px;
+  height: 450px;
   width: 100%;
   /*background: #bfe7e5; /*PRUEBA*/
 }
@@ -284,6 +284,10 @@ input.quantity-field{
   width: 75%;
   padding: 10px;
   margin-bottom: 40px; 
+}
+.texto_area_login#error{
+  margin-bottom: 5px;
+  display: none;
 }
 .data_input_login{
   width: 100%;
@@ -538,9 +542,9 @@ input.invalid + label.head-label + label.bottom-label1{
 .texto1-footer{
   margin-right: 15px;
 }
-.texto3-footer{
+/* .texto3-footer{
 }
-
+ */
 .logo-footer{
   width: 20%; 
   height: 55px;
