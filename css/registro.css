@@ -1,5 +1,4 @@
 /*Navegacion*/
-/*Encabezado menú*/
 .tamaño-renglon-1{
   position: fixed;
   height: 78px;
@@ -46,16 +45,213 @@
   left: 10%;
 }
 
-
-
-
-/*Seccion1*/
+/*2-REGISTRO.HTML*/
 .seccion1{
   position: static;
   height: 250px;
   width: 100%;
   /*background: #DEDEDE; /*Prueba */
 }
+.texto1-registro{ /*REGISTRATE*/
+  font-size: 40px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 47px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  margin-top: 12%;
+}
+.texto_area_r{ /*Nombre usuario, apellidos,CP*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 16px;
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.data_input_usua{
+  width: 100%;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  border-radius: 6px;
+}
+/*FECHA DE NACIMIENTO*/
+.label-date{
+  padding: 5px 0;
+  width: 95%; /*Alinea el texto de arriba*/
+  margin-left: auto; /*Alinea el texto de arriba*/
+  margin-right: auto; /*Alinea el texto de arriba*/
+  font-size: 16px; /*Letra chiquita arriba del cuadro*/
+  font-weight: 300; 
+  font-family: 'Raleway', sans-serif;
+  margin-left: 475px;
+  padding-top: 5px;
+}
+.nacimiento1{ /*Dia */
+  width: 5%;
+  font-family: 'Raleway', sans-serif; 
+  margin-top: 1px;
+  margin-left: 35%;
+  font-size: 18px;
+}
+.nacimiento2{ /*Mes */
+  width: 10%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.nacimiento3{ /*Año */
+  width: 5%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.seccion-boton{
+  max-width: 900px;
+  padding-top: 170px;
+  padding-bottom: 100px;
+  /*background: #cc99cc;        /*PRUEBA*/
+} 
+.btn-registrarse{
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -10%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-registrarse:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.btn-registrarse:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-registrarse:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+
+/*3-ACTIVAR-TOKEN.HTML*/
+.texto2-seccion1{
+  font-size: 25px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 30px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  margin-top: 3%;
+}/*SECCION-TELEFONO token.html*/
+.seccion-telefono{
+  position: static;
+  height: 150px;
+  width: 100%;
+  /*background: #DEDEDE; /*Prueba */
+}
+.texto_area_tel{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 50px;
+  width: 35%; /*30*/
+  padding: 10px; /*20*/
+  font-size: 16px; /*20*/
+  font-family: 'Raleway', sans-serif;
+}
+.data_input_tel{
+  width: 100%;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  border-radius: 6px;
+}
+.seccion-sms{ /*Donde va el boton ENVIAR TOKEN*/
+  max-width: 900px;
+  padding-top: 0px;
+  padding-bottom: 200px;
+  margin-top: 2%; /*-2% ???*/
+  /*background: #cc99cc;        /*PRUEBA*/ 
+}
+.enviar-token{
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 5px;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; 
+}
+.enviar-token:hover{
+  background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
+  color: #FFFFFF; /*Color de letra*/
+}
+.enviar-token:active{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
+.enviar-token:focus{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
+
+.texto_area_token{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 50px;
+  width: 34%;
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.data_input_token{
+  width: 100%;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+
+
+
+/*revisar------------------*/
 .texto1-seccion1{
   font-size: 40px; /*Tamaño letra*/
   font-family: 'Raleway', sans-serif;
@@ -69,47 +265,8 @@
 }
 
 
-.texto1-registro{
-  font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700; /*Grosor*/
-  letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 47px; /*Sangria*/
-  text-align: center;
-  color: #912F46;
-  opacity: 1;
-  margin-top: 12%;
-}
 
-
-
-/*Texto activar-token.html*/
-.texto2-seccion1{
-  font-size: 25px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700; /*Grosor*/
-  letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 30px; /*Sangria*/
-  text-align: center;
-  color: #912F46;
-  opacity: 1;
-  margin-top: 3%;
-}
-
-
-
-/*Seccion registro*/
-/* REG 1 Y 2
-.reg1{
-  height: 300px;
-  padding-bottom: 100px; 
-}
-
-.reg2{
-  height: 300px;
-  padding-bottom: 100px;
-}*/
-
+/*INPUTS*/
 .texto_area{
   text-align: center;
   margin-left: auto;
@@ -122,8 +279,6 @@
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
 }
-
-
 label.head-label, label.bottom-label1{
   padding: 5px 0;
   width: 95%; /*Alinea el texto de arriba*/
@@ -145,38 +300,31 @@ input:focus{outline: none;}
 input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
   display: block;
 }
-
 input.invalid + label.head-label + label.bottom-label1{
   display: block;
   color:#FF4B4B;
   font-weight: 500;
   position: relative;
 }
-
 input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
-
 input.valid{
   color: #912F46;
   font-weight: 500;
 }
-
 input.invalid{
   color:#FF4B4B;
   font-weight: 300;
   border-bottom: 1px solid #FF4B4B;
 }
-
 input.invalid + label.head-label{
   color:#989A9B;
 }
-
 input.quantity-field{
   border: 1.5px solid #C7C7C7;
   text-align: center;
 }
-
 /*Animations*/
 @-webkit-keyframes silo-fade {
   0% {
@@ -217,200 +365,14 @@ input.quantity-field{
     }
 }
 
-/*registro.html ADECUAR A ESTE*/
-.texto_area_r{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: column-reverse;
-  margin-bottom: 16px;
-  width: 30%;
-  padding: 10px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-}
-.data_input_usua{
-  width: 100%;
-  font-weight: 700;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  text-align: center;
-  border-radius: 6px;
-
-}
-/*FECHA DE NACIMIENTO*/
-.label-date{
-  padding: 5px 0;
-  width: 95%; /*Alinea el texto de arriba*/
-  margin-left: auto; /*Alinea el texto de arriba*/
-  margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 16px; /*Letra chiquita arriba del cuadro*/
-  font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
-  margin-left: 475px;
+/*4-VALIDAR-TOKEN.HTML*/
+.seccion-token{ /*Boton vali-token.html*/
+  max-width: 900px;
   padding-top: 5px;
-}
-.nacimiento1{ /*Dia */
-  width: 5%;
-  font-family: 'Raleway', sans-serif; 
-  margin-top: 1px;
-  margin-left: 35%;
-  font-size: 18px;
-}
-.nacimiento2{ /*Mes */
-  width: 10%;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-}
-.nacimiento3{ /*Año */
-  width: 5%;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-}
-/*SeccionBoton Resgistarse*/
-.seccion-boton{
-  max-width: 900px;
-  padding-top: 170px;
-  padding-bottom: 100px;
-  /*background: #cc99cc;        /*PRUEBA*/
-} 
-.btn-registrarse{
-  position: absolute;
-  margin-left: 38%;
-  margin-top: -10%;
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
-  opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
-.btn-registrarse:hover{
-  background: #C88585 0% 0% no-repeat padding-box; 
-  color: #000000;
-}
-.btn-registrarse:active{
-  background: #912F46 0% 0% no-repeat padding-box;
-  border: 1px solid #000000;
-}
-.btn-registrarse:focus{
-  background: #C88585 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-}
-
-
-
-
-
-
-/*SECCION-TELEFONO token.html*/
-.seccion-telefono{
-  position: static;
-  height: 150px;
-  width: 100%;
-  /*background: #DEDEDE; /*Prueba */
-}
-.texto_area_tel{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: column-reverse;
-  margin-bottom: 50px;
-  width: 35%; /*30*/
-  padding: 10px; /*20*/
-  font-size: 16px; /*20*/
-  font-family: 'Raleway', sans-serif;
-}
-.data_input_tel{
-  width: 100%;
-  font-weight: 700;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  text-align: center;
-  border-radius: 6px;
-}
-.seccion-sms{ /*Donde va el boton ENVIAR TOKEN*/
-  max-width: 900px;
-  padding-top: 0px;
   padding-bottom: 200px;
-  margin-top: 2%; /*-2% ???*/
-  /*background: #cc99cc;        /*PRUEBA*/ 
+ /* background-color: #cc99cc;        /*PRUEBA*/
+  margin-top: -5%;
 }
-/*Boton Enviar token SMS*/
-/*.enviar-token{
-  /*    position: absolute;
-  margin-left: 38%;
-  margin-top: 5px; /*Mover hacia arriba
-
-  width: 24%; Tamaño del boton
-  
-  text-align: center; /*Alineacion del texto del boton
-  
-  color: #912F46;
-  
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  background: #FFFFFF;
-}*/
-.enviar-token{
-  position: absolute;
-  margin-left: 38%;
-  margin-top: 5px;
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
-  opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500; 
-}
-.enviar-token:hover{
-  background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
-  color: #FFFFFF; /*Color de letra*/
-}
-.enviar-token:active{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-  color: #912F46;
-}
-.enviar-token:focus{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-  color: #912F46;
-}
-
-
-/*ICONO DE SOBRE
-.fas{
-  width: 20%;
-  position: absolute;
-  margin-top: 30px;
-  padding-right: 140px;
-  color: #912F46;
-}*/
-/*SECCION ACTIVAR artivar-token.html
-.seccion-activar{
-  position: static;
-  height: 250px;
-  width: 100%;
-  margin-top:  50px;
-}*/
-
 .texto_area_token{
   text-align: center;
   margin-left: auto;
@@ -431,26 +393,7 @@ input.quantity-field{
   text-align: center;
   border-radius: 6px;
 }
-/*.validar-token{
-  margin-left: 33.5%;
-  margin-top: 0%; /*Mover hacia arriba
-  width: 33%; /*Tamaño del boton
- 
-  text-align: center; /*Alineacion del texto del boton
-  color: #FFFFFF;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  background: #912F46;
-}*/
-.seccion-token /*Boton vali-token.html*/
-{
-  max-width: 900px;
-  padding-top: 5px;
-  padding-bottom: 200px;
- /* background-color: #cc99cc;        /*PRUEBA*/
-  margin-top: -5%;
-}
-.validar-token{
+.validar-token{ /*BOTON VALIDAR TOKEN*/
   position: absolute;
   margin-left: 37%;
   margin-top: 0%;
@@ -503,15 +446,22 @@ input.quantity-field{
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
 /*NUEVO FOOTER*/
-/*Footermenu*/
 .footermenu{
   position: static;
   height: 80px;
-  border-top: solid 3px;
+  border-top: solid 5px;
   border-color: #F2F5F4;
   padding-top: 2%;
-  border-bottom: none;
   /*background: #99cccc;   /* PRUEBA*/
 }
 .texto1-footer{
@@ -586,302 +536,35 @@ input.quantity-field{
 
 
 
-/*-------------MEDIA QUERIES--------------*/
-@media only screen and (max-width:1919px) and (min-width:992px){
+/*---------MEDIA QUERIES---------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 /*body{
   background-color: pink;
 }*/
-  /*Nav*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
-.boton-menu{
-  position: absolute;
- left: 50%;
-}
-/*Registro.html*/
-/*.texto1-registro{
-  margin-right: 0%;
-}*/
-.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
-  margin-left: 36%;
-}
-.nacimiento1{ /*Dia */
-  width: 6%;
-  margin-left: 36%;
-}
-.nacimiento2{ /*Mes */
-  width: 13%;
-}
-.nacimiento3{ /*Año */
-  width: 7%;
-}
-
-
-/*Validar-token.html*/
-.data_input_token{
-  margin-left: -9%;
-  width: 115%;
-}
-.texto2-seccion1{
-  margin-bottom: 3%;
-}
-.validar-token{ /*Boton validar token*/
-  margin-top: 5%;
-}
-  /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-}
-
-
-
-
-
-@media only screen and (max-width:1024px) and (min-width:992px){
-/*body{
-  background-color: gray;
-}*/
-.footer-freeda{
-  padding-left: 540px;
-}
 .logo-freeda{
-  padding-right: 20%;
-}
-/*TITULO*/
-.texto1-seccion1, .texto1-registro{
-  margin-top: 15%;
-}
-
-/*registro.html*/
-.label-date{
-  margin-left: 36%;
-}
-.nacimiento1{ /*Día*/
-  width: 6%;
-  margin-left:36%;
-}
-.nacimiento2{ /*Mes*/
-  width: 13%;
-}
-.nacimiento3{ /*Año*/
-  width: 8%;
-}
-/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-}
-
-
-
-
-@media only screen and (max-width:991px) and (min-width:576px){
-/*body{
-  background-color: violet;
-}*/
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
-.boton-menu{
-  left: 80%;
+  margin-left: -55%;
+  margin-top: -7%;
 }
 .material-icons{
   color: white;
 }
-/*activar-token.html*/
-.texto1-seccion1{ /*Activar token*/
-  margin-top: 20%;
-}
-.texto_area_token{ /*Area XXX-XXX*/
-  width: 50%
-}
-.data_input_token{
-  width: 100%;
-}
-/*.data_input_token{
-  margin-left: 8%;
-  width: 100%;
-}*/
-.validar-token{ /*Boton validar token*/
- margin-left: 38%;
- margin-top: 3%;
-}
-.texto2-seccion1{
-  margin-bottom: 5%;
-}
-.msn-validacion{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.data_input_tel{ /*SMS*/
-width: 120%
-}
-
-
-
-/*Registro.html*/
-.texto1-registro{
-  margin-top: 20%;
-}
-/*
-.texto_area_r{
-  width: 50%;
-}*/
-.data_input_usua{ /*Input text area*/
-  width: 125%;
-  margin-left: -8%;
-}
-.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
-  margin-left: 30%;
-}
-.texto_area_r{
-  width: 40%;
-}
-.nacimiento1{ /*Dia */
-  width: 10%;
-  margin-left: 30%;
-}
-.nacimiento2{ /*Mes */
-  width: 23%;
-}
-.nacimiento3{ /*Año */
-  width: 12%;
-}
-.btn-registrarse{
-  margin-top: -15%;
-  margin-left: 30%;
-}
-
-/*NUEVO FOOTER*/
-.footermenu{
-    padding-left: 0px;
-}
-.texto1-footer, .texto2-footer ,.texto3-footer, .texto4-footer, .texto5-footer{
-  margin-right: 25px;
-}
-.logo-footer{
-  display: none;
-}
-/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-
-}
-
-
-
-
-
-@media only screen and (max-width:575px){
-/*body{
-  background-color: orange;
-} */
-
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
 .boton-menu{
   left: 80%;
 }
-.material-icons{
-  color: white;
-}
-/*validar-token.html*/
-.texto1-seccion1{ /*Activar token*/
+/*----------------------------*/
+/*2-REGISTRO.HTML*/
+.texto1-registro{ /*REGISTRARSE*/
   margin-top: 28%;
 }
-.texto2-seccion1{
-  font-size: 20px;
+.texto_area_r{ /*Nombre usuario, apellidos,CP*/
+  width: 70%;
 }
-.texto_area_token{ /*Area XXX-XXX*/
-  width: 60%
-}
-.validar-token{ /*Boton validar token*/
-  margin-left: 28%;
-}
-/* Se quito el boton registrase
-.btn-registrarse{
-  margin-top: -18%;
-  margin-left: 28%;
-}
-*/
-
-
-/*registro.html*/
-.texto1-registro{ /*Titulo Registrate*/
-margin-top: 28%;
-margin-right: 3%;
-}
-.texto_area_r{
-width: 55%;
-}
-.label-date{
+.label-date{ /*FECHA DE NACIMIENTO*/
   margin-left: 25%;
 }
 .nacimiento1{ /*Día*/
@@ -895,40 +578,363 @@ width: 55%;
   width: 14%;
 }
 .btn-registrarse{
-  margin-top: -15%;
-  margin-left: 27%;
-}
-
-/*Activar-token.html*/
-.texto_area_tel{
-  width: 60%;
-}
-.enviar-token{  /*Enviar token SMS*/
-  margin-left: 29%;
-}
-.msn-validacion{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo-footer{
-  display: none;
+  margin-left: 28%;
 }
 /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
 input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;
 }
 
+/*3-ACTIVAR-TOKEN.HTML*/
+.texto1-seccion1{
+  margin-top: 28%;
+}
+.texto_area_tel{ /*Telefono celular*/
+  width: 75%;
+}
+.enviar-token{  /*Enviar token SMS*/
+  margin-left: 29%;
+}
+
+
+/*4-VALIDAR-TOKEN.HTML*/
+.texto_area_token{
+  width: 79%;
+}
+.validar-token{ /*BOTON VALIDAR TOKEN*/
+  margin-left: 29%;
+}
+
+/*Footer*/
+.logo-footer{
+  display: none;
+}
+
 }
 
 
 
-
-
-@media only screen and (max-width:320px){
-  /*body{
-    background-color: lime;
-  }*/
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+/*body{
+  background-color: gray;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
 }
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: -7%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+/*----------------------------*/
+/*2-REGISTRO.HTML*/
+.texto1-registro{ /*REGISTRATE*/
+  margin-top: 25%;
+}
+.texto_area_r{ /*Nombre usuario, apellidos,CP*/
+  width: 65%;
+}
+/*FECHA DE NACIMIENTO*/
+.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+  margin-left: 30%;
+}
+.nacimiento1{ /*Dia */
+  width: 10%;
+  margin-left: 30%;
+}
+.nacimiento2{ /*Mes */
+  width: 23%;
+}
+.nacimiento3{ /*Año */
+  width: 12%;
+}
+.btn-registrarse{
+  margin-left: 35%;
+}
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+
+/*3-ACTIVAR-TOKEN.HTML*/
+.texto1-seccion1{
+  margin-top: 25%;
+}
+.texto_area_tel{ /*Telefono celular*/
+  width: 75%;
+}
+.enviar-token{  /*Enviar token SMS*/
+  margin-left: 33%;
+}
+
+
+/*4-VALIDAR-TOKEN.HTML*/
+.texto_area_token{
+  width: 80%;
+}
+.validar-token{ /*BOTON VALIDAR TOKEN*/
+  margin-left: 33%;
+}
+
+
+
+/*Footer*/
+.footermenu{ /*Politicas de privacidad*/
+  padding-right: 180px;
+  height: 130px;
+  background-color: white;
+}
+.texto1-footer{
+  margin-right: 15px;
+}
+.texto3-footer{
+}
+
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/*body{
+  background-color: orange;
+}*/
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+/*----------------------------*/
+/*2-REGISTRO.HTML*/
+.texto1-registro{ /*REGISTRATE*/
+  margin-top: 20%;
+}
+.texto_area_r{ /*Nombre usuario, apellidos,CP*/
+  width: 36%;
+}
+/*FECHA DE NACIMIENTO*/
+.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+  margin-left: 31%;
+}
+.nacimiento1{ /*Dia */
+  width: 8%;
+  margin-left: 31%;
+}
+.nacimiento2{ /*Mes */
+  width: 15%;
+}
+.nacimiento3{ /*Año */
+  width: 8%;
+}
+.btn-registrarse{
+  margin-left: 40%;
+}
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+
+/*3-ACTIVAR-TOKEN.HTML*/
+.texto1-seccion1{
+  margin-top: 20%;
+}
+.texto_area_tel{ /*Telefono celular*/
+  width: 55%;
+}
+.enviar-token{  /*Btn Enviar token SMS*/
+  margin-left: 36%;
+}
+
+
+/*4-VALIDAR-TOKEN.HTML*/
+.texto_area_token{
+  width: 59%;
+}
+.validar-token{ /*BOTON VALIDAR TOKEN*/
+  margin-left: 37%;
+}
+
+/*Footer*/
+.footermenu{
+  padding-right: 150px;
+  background-color: white;
+}
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+/*body{
+  background-color: aqua;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: 1%;
+}
+/*----------------------------*/
+/*2-REGISTRO.HTML*/
+.texto1-registro{ /*REGISTRATE*/
+  margin-top: 15%;
+}
+.texto_area_r{ /*Nombre usuario, apellidos,CP*/
+  width: 39%;
+}
+/*FECHA DE NACIMIENTO*/
+.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+  margin-left: 35%;
+}
+.nacimiento1{ /*Dia */
+  width: 6%;
+  margin-left: 35%;
+}
+.nacimiento2{ /*Mes */
+  width: 12%;
+}
+.nacimiento3{ /*Año */
+  width: 6%;
+}
+.btn-registrarse{
+  margin-left: 40%;
+}
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+/*3-ACTIVAR-TOKEN.HTML*/
+.texto1-seccion1{
+  margin-top: 15%;
+}
+.texto_area_tel{ /*Telefono celular*/
+  width: 41%;
+}
+.enviar-token{  /*Btn Enviar token SMS*/
+  margin-left: 39%;
+}
+
+/*4-VALIDAR-TOKEN.HTML*/
+.texto_area_token{
+  width: 44%;
+}
+.validar-token{ /*BOTON VALIDAR TOKEN*/
+  margin-left: 37%;
+}
+
+
+/*Footer*/
+.footermenu{
+  padding-right: 45px;
+}
+.logo-footer{
+  margin-left: 78%;
+  height: 60px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/*body{
+  background-color: violet;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+margin-left: -55%;
+margin-top: 1%;
+}
+/*----------------------------*/
+/*2-REGISTRO.HTML*/
+.texto1-registro{ /*REGISTRATE*/
+  margin-top: 13%;
+}
+.texto_area_r{ /*Nombre usuario, apellidos,CP*/
+  width: 31%;
+}
+/*FECHA DE NACIMIENTO*/
+.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+  margin-left: 35.5%;
+}
+.nacimiento1{ /*Dia */
+  width: 6%;
+  margin-left: 35.5%;
+}
+.nacimiento2{ /*Mes */
+  width: 12%;
+}
+.nacimiento3{ /*Año */
+  width: 6%;
+}
+.btn-registrarse{
+  margin-left: 40%;
+}
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+/*3-ACTIVAR-TOKEN.HTML*/
+.texto1-seccion1{
+  margin-top: 13%;
+}
+.texto_area_tel{ /*Telefono celular*/
+  width: 37%;
+}
+.enviar-token{  /*Btn Enviar token SMS*/
+  margin-left: 39%;
+}
+
+
+/*4-VALIDAR-TOKEN.HTML*/
+.texto_area_token{
+  width: 39%;
+}
+.validar-token{ /*BOTON VALIDAR TOKEN*/
+  margin-left: 37%;
+  margin-top: 2%;
+}
+
+
+
+/*Footer*/
+.footermenu{
+  padding-left: 115px;
+}
+.logo-footer{
+  margin-left: 78%;
+}
+}
+
+
