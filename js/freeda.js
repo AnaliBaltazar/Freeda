@@ -47,6 +47,9 @@ $("#enviar").on("click", function(){
   let validation = validateToken(tokenValue);
   if (validation) {
     $("#validar").show();
+    setTimeout(() => {
+      window.location = "./5-crear-usuario.html";
+    }, 2000);
   } else {
     $("#formError").show();
   }
