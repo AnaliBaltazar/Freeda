@@ -9,14 +9,8 @@ inputElements.forEach(inputElement => {
     inputElement.addEventListener("focusin", cleanInput)
 })
 
-/*
-    if(inputElement.className == 'data_input_usua valid'){
-        inputElement.classList.remove("valid");
-    }
-    if(inputElement.className == 'data_input_usua invalid' ){
-        inputElement.classList.remove("invalid");
-    }
- */
+/* const userform=document.querySelector('#data_crear_usua')
+userform.addEventListener('submit', validatePassword) */
 
 function cleanInput() {
     if (this.classList.contains("valid") && (this.id == "superficie" || this.id == "terreno")) {
@@ -63,7 +57,7 @@ function validateInputValue(){
             let int_result=parseInt(result);
             let d = new Date();
             let n = d.getFullYear();
-            if (result !=null && (int_result <1950 || int_result >= n)){
+            if (result !=null && (int_result <1950 || int_result > n)){
                 result = null;
                 cautionTxt = "El año de construción debe ser entre 1950 y " + n;
             } else {
@@ -97,3 +91,7 @@ function validateInputValue(){
 function appendText(texto, elemento){   //Funcion para agregar o modificar el texto del elemento dado
     elemento.textContent=texto;
 }
+
+
+
+

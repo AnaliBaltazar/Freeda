@@ -681,7 +681,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 /*FIRMA.HTML*/
 .seccion-firma{
     width: 35%;
-    height: 45%;
+    height: 350px;
     /*margin-left: 5%; */
     background-color: #F4F6FA ; /*#F4F6FA*/
     border-radius: 10px;

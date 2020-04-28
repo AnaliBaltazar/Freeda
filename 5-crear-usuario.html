@@ -80,7 +80,7 @@
         <div class="row texto-centrado">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
                 
-                <form action="#" id="data_crear_usua">
+                <form action="./6-iniciar-sesion.html" id="data_crear_usua" method="POST" onsubmit="return validatePassword();">
                     <!--Email -->
                     <div class="texto_area_usuario" id="email">
                         <input type="email" name="correo" id="correo" class="data_input_crear" placeholder="Email" required>
@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="contenedor1">
-                        <input class="btn btn-siguiente" type="submit" value="Crear cuenta">
+                        <input class="btn btn-siguiente" id="crear-cuenta" type="submit" value="Crear cuenta">
                     </div> 
                     
                 </form>
@@ -136,5 +136,6 @@
     <a href="#" class="logo-footer"><img src="img/Freeda.svg"></a>    
   </div>
   <script type="text/javascript" src="./js/validar.js"></script>
+  <script src="./js/links.js"></script>
 </body>
 </html>

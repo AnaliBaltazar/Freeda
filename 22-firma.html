@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Documento css (Ruta css/----) -->
     <link rel="stylesheet" href="css/dashboard.css" > 
+    <link rel="stylesheet" href="./css/signature-pad.css">
     <!--Fuente de letra-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
     <!--Va tipografia-->
@@ -28,6 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src=""></script> <!-- Va el js/freeda.js -->
+    
  </head>
  <!--Termina head-->
 
@@ -82,20 +84,45 @@
                 <div class="container-1"></div>
 
         <div class="container seccion-firma ">
-            <div class="row firma-usuario"></div>
+            <!-- <div class="row firma-usuario">
+                <canvas width="1328" height="752" style="touch-action: none;">
             
+            </div> -->
+            <div id="signature-pad" class="signature-pad">
+                <div class="signature-pad--body">
+                  <canvas width="1328" height="752" style="touch-action: none;"></canvas>
+                </div>
+                
+              </div>
+
         </div>
-        <div class="container-2"></div>
+        <div class="container-2" id="signature-pad-footer-container">
+            <div class="signature-pad--footer">          
+                <div class="signature-pad--actions">
+                  <div>
+                    <button type="button" class="button clear" data-action="clear">Limpiar</button>
+                    <!-- <button type="button" class="button" data-action="change-color">Cambiar color</button> 
+                    <button type="button" class="button" data-action="undo">Deshacer</button>-->
+          
+                  </div>
+                  <!-- <div>
+                    <button type="button" class="button save" data-action="save-png">Save as PNG</button>
+                    <button type="button" class="button save" data-action="save-jpg">Save as JPG</button>
+                    <button type="button" class="button save" data-action="save-svg">Save as SVG</button>
+                  </div> -->
+                </div>
+              </div>
+        </div>
 
 
 
 
         <!--SeccionBoton-->
-    <div class="container seccion-captura ">
+    <div class="container seccion-captura " id="seccion-boton">
         <div class="row texto-centrado">
             <div class="col-xs-12 col-sm-12 col-md-1 col-lg-12 col-xl-12"> <!--Grid-->
                 <!--Boton Capturar firma-->
-            <input type="submit" name="capturar" id="capturar" class="capturar-firma btn" value="Capturar firma"><i class="fas fa-envelope" arian-hidden="true"></i></code>
+            <input type="submit" name="capturar" id="capturar" class="capturar-firma btn" value="Capturar firma" data-action="save-png"><i class="fas fa-envelope" arian-hidden="true"></i></code>
 
                 
             </div>
@@ -121,6 +148,7 @@
     <a href="#" class="texto5-footer link-footer">Aviso de privacidad</a>
     <a href="#" class="logo-footer"><img src="img/freeda.svg"></a>    
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
