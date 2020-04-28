@@ -807,7 +807,7 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-top: 15%;
 }
 .texto_area_r{ /*Nombre usuario, apellidos,CP*/
-  width: 27.5%;
+  width: 39%;
 }
 /*FECHA DE NACIMIENTO*/
 .label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
@@ -884,11 +884,11 @@ margin-top: 1%;
 }
 /*FECHA DE NACIMIENTO*/
 .label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
-  margin-left: 36.5%;
+  margin-left: 35.5%;
 }
 .nacimiento1{ /*Dia */
   width: 6%;
-  margin-left: 36.5%;
+  margin-left: 35.5%;
 }
 .nacimiento2{ /*Mes */
   width: 12%;
