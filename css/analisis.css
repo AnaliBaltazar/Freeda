@@ -502,7 +502,7 @@
 }
 
 
-
+/*YA--------------------------------------*/
 
 /*SeccionBoton SIGUIENTE*/
 .seccion-siguiente{
@@ -540,6 +540,9 @@
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
+/*YA--------------------------------------*/
+
+
 
 
 
@@ -710,7 +713,7 @@
 
 
 
-
+/*YA--------------------------------------*/
 /*AÑO*/
 .seccion-medidas{
   position: static;
@@ -740,7 +743,11 @@
   text-align: center;
   border-radius: 6px;
 }
+/*YA--------------------------------------*/
 
+
+
+/*YA--------------------------------------*/
 label.head-label, label.bottom-label1{
   padding: 5px 0;
   width: 95%; /*Alinea el texto de arriba*/
@@ -833,8 +840,11 @@ input.quantity-field{
         transform: translateY(0);
     }
 }
+/*YA--------------------------------------*/
 
 
+
+/*YA--------------------------------------*/
 /*CP.html*/
 .texto1-cp{ /*Titulo Código postal*/
   font-family: 'Raleway', sans-serif;
@@ -877,8 +887,13 @@ input.quantity-field{
   text-align: center;
   border-radius: 6px;
 }
+/*YA--------------------------------------*/
 
 
+
+
+
+/*YA--------------------------------------*/
 /*Superficie.html*/
 .texto_area_superficie{ /*Cuando de introduce el texto*/
   text-align: center;
@@ -892,6 +907,7 @@ input.quantity-field{
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
 }
+/*YA--------------------------------------*/
 
 /*Terreno*/
 .texto_area_terreno{ /*Cuando de introduce el texto*/
