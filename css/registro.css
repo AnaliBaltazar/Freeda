@@ -84,23 +84,29 @@
   border-radius: 6px;
 }
 /*FECHA DE NACIMIENTO*/
-.label-date{
+/*.label-date{
   padding: 5px 0;
-  width: 95%; /*Alinea el texto de arriba*/
-  margin-left: auto; /*Alinea el texto de arriba*/
-  margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 16px; /*Letra chiquita arriba del cuadro*/
+  width: 95%; Alinea el texto de arriba
+  margin-left: auto; Alinea el texto de arriba
+  margin-right: auto; Alinea el texto de arriba
+  font-size: 16px; Letra chiquita arriba del cuadro
   font-weight: 300; 
   font-family: 'Raleway', sans-serif;
   margin-left: 475px;
   padding-top: 5px;
+}*/
+.label-date{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 35%;
 }
 .nacimiento1{ /*Dia */
-  width: 5%;
+  background: green;
   font-family: 'Raleway', sans-serif; 
-  margin-top: 1px;
-  margin-left: 35%;
   font-size: 18px;
+  width: 5%;
+  margin-top: 3%;
+  /*margin-left: 35%;*/
 }
 .nacimiento2{ /*Mes */
   width: 10%;
@@ -540,9 +546,9 @@ input.quantity-field{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/*body{
+body{
   background-color: pink;
-}*/
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -564,12 +570,16 @@ input.quantity-field{
 .texto_area_r{ /*Nombre usuario, apellidos,CP*/
   width: 70%;
 }
-.label-date{ /*FECHA DE NACIMIENTO*/
+/*.label-date{ FECHA DE NACIMIENTO
   margin-left: 25%;
+}*/
+.label-date{
+  margin-left: 17%;
 }
 .nacimiento1{ /*Día*/
   width: 11%;
-  margin-left: 25%;
+  margin-left: 17%;
+  margin-top: 8%;
 }
 .nacimiento2{ /*Mes*/
   width: 25%;
@@ -616,9 +626,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-/*body{
+body{
   background-color: gray;
-}*/
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -641,12 +651,16 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 65%;
 }
 /*FECHA DE NACIMIENTO*/
-.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+/*.label-date{ Para que no se mueva "Fecha de naciemiento"
   margin-left: 30%;
+}*/
+.label-date{
+  margin-left: 19%;
 }
 .nacimiento1{ /*Dia */
   width: 10%;
-  margin-left: 30%;
+  margin-left: 19%;
+  margin-top: 6%;
 }
 .nacimiento2{ /*Mes */
   width: 23%;
@@ -709,9 +723,9 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/*body{
+body{
   background-color: orange;
-}*/
+}
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -734,12 +748,16 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 36%;
 }
 /*FECHA DE NACIMIENTO*/
-.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+/*.label-date{ Para que no se mueva "Fecha de naciemiento"
   margin-left: 31%;
+}*/
+.label-date{
+  margin-left: 33.5%;
 }
 .nacimiento1{ /*Dia */
   width: 8%;
-  margin-left: 31%;
+  margin-left: 33.5%;
+  margin-top: 6%;
 }
 .nacimiento2{ /*Mes */
   width: 15%;
@@ -791,9 +809,9 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-/*body{
+body{
   background-color: aqua;
-}*/
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -810,12 +828,16 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 39%;
 }
 /*FECHA DE NACIMIENTO*/
-.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+/*.label-date{ Para que no se mueva "Fecha de naciemiento"
   margin-left: 35%;
+}*/
+.label-date{
+  margin-left: 31.5%;
 }
 .nacimiento1{ /*Dia */
   width: 6%;
-  margin-left: 35%;
+  margin-left: 31.5%;
+  margin-top: 4%;
 }
 .nacimiento2{ /*Mes */
   width: 12%;
@@ -864,9 +886,9 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-/*body{
+body{
   background-color: violet;
-}*/
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -883,12 +905,16 @@ margin-top: 1%;
   width: 31%;
 }
 /*FECHA DE NACIMIENTO*/
-.label-date{ /*Para que no se mueva "Fecha de naciemiento"*/
+/*.label-date{ Para que no se mueva "Fecha de naciemiento"
+  margin-left: 35.5%;
+}*/
+.label-date{
   margin-left: 35.5%;
 }
 .nacimiento1{ /*Dia */
   width: 6%;
   margin-left: 35.5%;
+  margin-top: 3%;
 }
 .nacimiento2{ /*Mes */
   width: 12%;
@@ -897,7 +923,7 @@ margin-top: 1%;
   width: 6%;
 }
 .btn-registrarse{
-  margin-left: 40%;
+  margin-left: 38%;
 }
 /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
 input.invalid + label.head-label + label.bottom-label1{
