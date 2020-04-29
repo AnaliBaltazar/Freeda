@@ -68,6 +68,7 @@
   position: static;
   margin-top: 50%;
   width: 60%;
+  height: 70%; /**/
   margin: auto;
   display: block;
   outline-color: white;
@@ -436,7 +437,7 @@ ul{ /*Contenedor botones*/
  @media only screen and (max-width:1024px) and (min-width:992px){
 /*body{
   background-color: gray;
-}*/ 
+}*/
  
 .logo-freeda{
   padding-right: 20%;
@@ -450,8 +451,9 @@ ul{ /*Contenedor botones*/
   margin-top: 8%;
 }*/
 .video1{
-  margin-top: 20%;
+  margin-top: 12%;
   width: 100%;
+
 }
 /*BOTONES SLIDER*/
 .boton-conoce{
@@ -477,7 +479,7 @@ ul{ /*Contenedor botones*/
 @media only screen and (max-width:991px) and (min-width:576px){
 /*body{
   background-color: violet;
-} */
+}*/
 .tamaño-renglon-1{
   padding-left: 10%;
 }
