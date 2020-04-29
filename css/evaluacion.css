@@ -1,4 +1,3 @@
-
 /*Navegacion*/
 /*Encabezado menú*/
 .tamaño-renglon-1{
@@ -47,37 +46,15 @@
   left: 10%;
 }
 
-
-
-/*Seccion1
-.seccion1{
-  position: static;
-  height: 200px;
-  width: 100%;
-  padding-top: 115px; 
-}*/
-/*Contratar.html*/
-.texto1{ /*Texto en negro*/
+/*14-CONTRATAR.HTML*/
+.texto1{ /*Información*/
   font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #000000; 
   font-size: 25px;
   margin-top: 10%;
 }
-.texto-1{
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  color: #000000; 
-  font-size: 25px;
-  margin-top: 0%;
-}
-/*
-.seccion2{
-  position: static;
-  height: 100px;
-  width: 100%;
-}*/
-.texto2{ /*Texto en rosa*/
+.texto2{ /*Números*/
   font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #912F46; 
@@ -85,31 +62,7 @@
   letter-spacing: 0.8px;
   margin-bottom: -10%;
 }
-/*
-.seccion3{
-  position: static;
-  height: 120px;
-  width: 100%;
-}
-.seccion4{
-  position: static;
-  height: 100px;
-  width: 100%;
-}
-.seccion5{
-  position: static;
-  height: 100px;
-  width: 100%;
-}*/
-/*
-.seccion6{
-  position: static;
-  height: 300px;
-  width: 100%;
-  background: #ffcc00; /*Prueba 
-}
-*/
-/*Parte imagen casa.svg*/
+/*SECCIÓN imagen casa.svg*/
 .part1{
   padding-bottom: 100px;
   height: 250px;
@@ -119,7 +72,7 @@
   margin-top: 5%;
   margin-left: 70%;
 }
-/*Tabla de datos*/
+/*TABLA de datos*/
 .part2{
   padding-bottom: 100px;
   height: 250px; 
@@ -154,13 +107,14 @@ td.col_r{
   line-height: 30px; /*Sangria*/
 }
 
-.seccion7{
-  position: static;
-  height: 260px;
-  width: 100%;
-  border: 2px solid #912F46;
-} 
-#circulo {
+.texto-1{ /*El precio de contratar...*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 25px;
+  margin-top: 0%;
+}
+#circulo{
   width: 150px;
   height: 150px;
   background: #912F46;
@@ -175,8 +129,7 @@ td.col_r{
   color: #FFFFFF;
   padding-top: 31px;
 }
-/*Link conoce cobertura*/
-.seccion-link{
+.seccion-link{/*Link conoce cobertura*/
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -190,19 +143,13 @@ td.col_r{
 .underlineHover:hover {
   color: #912F46;
 }
-
-
-/*SeccionBoton SIGUIENTE*/
-.seccion-siguiente{
-  max-width: 900px;
-  padding-top: 250px;
-  /*background: #bfe7e5;        /*PRUEBA*/
-} 
-
+/*BOTÓN siguiente*/
 .btn-siguiente{
-  position: absolute;
-  margin-left: 38%;
-  margin-top: -18%;
+  /*position: absolute;*/
+  /*margin-top: -18%;*/
+  /*margin-left: 0%; Centrar*/
+  margin-top: 3%;
+  margin-bottom: 10%; /*Dar espacio hacia abajo*/
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -231,8 +178,7 @@ td.col_r{
 }
 
 
-/*FORMULARIO datos-asegurado.html*/
-/*Seccion1*/
+/*16-DATOS-ASEGURADO.HTML*/
 .seccion1{
   position: static;
   height: 220px;
@@ -248,31 +194,22 @@ td.col_r{
   text-align: center;
   color: #912F46;
   opacity: 1;
-  /*margin-top: 10%;*/
+  margin-top: 10%;
 }
-/*Seccion registro*/
-/* REG 1 Y 2
-.reg1{
-  height: 300px;
-  padding-bottom: 100px; 
-}
-.reg2{
-  height: 300px;
-  padding-bottom: 100px;
-}*/
-.texto_area{
+.texto_area_rfc{/*RFC*/
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 16px;
-  width: 30%;
+  width: 36.5%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  margin-top: 29px;
+  margin-bottom: 16px;
 }
-.texto_area_regis{
+.texto_area_regis{ /*Nombre de usuario, Apellidos*/
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -291,98 +228,82 @@ td.col_r{
   padding-bottom: 5px;
   text-align: center;
   border-radius: 6px;
-
-
 }
 
-/*HOMOCLAVE*/
-/*.homo1{
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: #000000;
-  text-align: center;
-  width: 5%;
-  margin-left: 30%;
-  margin-top: -16%; /*Subir los recudros
-  }
-  .homo2{
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: #000000;
-  text-align: center;
-  width: 5%;
-  margin-left: -4.2px; /*Separacion entre cada casilla
-  }
-
-  .homo3{
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color: #000000;
-  text-align: center;
-  width: 5%;
-  margin-left: -4.2px; /*Separacion entre cada casilla
-} 
-.head-label2{
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+label.head-label, label.bottom-label1{
   padding: 5px 0;
-  width: 85%; /*Alinea el texto de arriba
-  margin-left: auto; /*Alinea el texto de arriba
-  margin-right: auto; /*Alinea el texto de arriba
-  margin-left: 22%;
-  padding-top: 15px;
-}*/
-/*RFC*/
-.texto_area_rfc{
+  width: 95%; /*Alinea el texto de arriba*/
+  margin-left: auto; /*Alinea el texto de arriba*/
+  margin-right: auto; /*Alinea el texto de arriba*/
+  font-size: 12px; /*Letra chiquita arriba del cuadro*/
+  font-weight: 300; 
+  font-family: 'Raleway', sans-serif;
+  display: none; /*Desaparese*/
+  color: #989A9B;
+  text-align: left;
+  -webkit-animation: silo-fade 0.2s; /*Google*/
+  -moz-animation: silo-fade 0.2s; /*Motzilla*/
+  animation: silo-fade 0.2s; /*Google*/
+}
+input:focus{outline: none;}
+/*Hace la animacion de aparecer cuando se da clic*/
+input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
+  display: block;
+}
+input.invalid + label.head-label + label.bottom-label1{
+  display: block;
+  color:#FF4B4B;
+  font-weight: 500;
+  position: relative;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+input.valid{
+  color: #912F46;
+  font-weight: 500;
+}
+input.invalid{
+  color:#FF4B4B;
+  font-weight: 300;
+  border-bottom: 1px solid #FF4B4B;
+}
+input.invalid + label.head-label{
+  color:#989A9B;
+}
+input.quantity-field{
+  border: 1.5px solid #C7C7C7;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: column-reverse;
-  width: 36.5%;
-  padding: 10px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif; 
-  margin-top: 29px;
-  margin-bottom: 16px;
 }
 
-
-
-/*.texto_area2{
+.label-date{
+  position: absolute;
   font-family: 'Raleway', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: column-reverse;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  margin-top: 29px;
-}*/
-
-
-
-
-
-
-
-
-
-/*SeccionBoton SIGUIENTE*/
-.seccion-boton{
-  max-width: 900px;
-  padding-top: 200px;
- /* background: #bfe7e5;        /*PRUEBA*/
-} 
-
+  margin-left: 32%;
+}
+.nacimiento1{ /*Dia */
+  font-family: 'Raleway', sans-serif; 
+  font-size: 18px;
+  width: 6%;
+  margin-top: 3%;
+  margin-left: 33%;
+}
+.nacimiento2{ /*Mes */
+  width: 12%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.nacimiento3{ /*Año */
+  width: 6%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
 /*BOTON GENERAR PÓLIZA*/
 .btn-generar{
   position: absolute;
-  margin-left: 38%;
-  margin-top: -13%;
+  margin-left: 40%;
+  margin-top: 6%;
+  /*margin-top: -13%;*/
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -409,94 +330,28 @@ td.col_r{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
-
-
-
-label.head-label, label.bottom-label1{
-  padding: 5px 0;
-  width: 95%; /*Alinea el texto de arriba*/
-  margin-left: auto; /*Alinea el texto de arriba*/
-  margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 12px; /*Letra chiquita arriba del cuadro*/
-  font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
-  display: none; /*Desaparese*/
-  color: #989A9B;
-  text-align: left;
-  -webkit-animation: silo-fade 0.2s; /*Google*/
-  -moz-animation: silo-fade 0.2s; /*Motzilla*/
-  animation: silo-fade 0.2s; /*Google*/
-}
-input:focus{outline: none;}
-
-/*Hace la animacion de aparecer cuando se da clic*/
-input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
-  display: block;
-}
-
-input.invalid + label.head-label + label.bottom-label1{
-  display: block;
-  color:#FF4B4B;
-  font-weight: 500;
-  position: relative;
-  }
-
-input:focus::-webkit-input-placeholder {
-    opacity: 0;
-}
-
-input.valid{
-  color: #912F46;
-  font-weight: 500;
-}
-
-input.invalid{
-  color:#FF4B4B;
-  font-weight: 300;
-  border-bottom: 1px solid #FF4B4B;
-}
-
-input.invalid + label.head-label{
-  color:#989A9B;
-}
-
-input.quantity-field{
-  border: 1.5px solid #C7C7C7;
+/*.texto_area{
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 16px;
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}*/
+.seccion-siguiente{
+  max-width: 900px;
+  padding-top: 160px;
+  padding-bottom: 160px;  
+  /*background: #bfe7e5;        /*PRUEBA*/
 }
 
 
-
-/*FECHA DE NACIMIENTO*/
-.label-date{
-  padding: 5px 0;
-  width: 95%; /*Alinea el texto de arriba*/
-  margin-left: auto; /*Alinea el texto de arriba*/
-  margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 16px; /*Letra chiquita arriba del cuadro*/
-  font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
-  margin-left: 25%;
-  padding-top: 5px;
-}
-
-.nacimiento1{ /*DIA*/
-  width: 10%; /*Hacer mas pequeño el recudro de DIA*/
-  font-family: 'Raleway', sans-serif;
-  margin-left: 22%;
-  margin-top: 1px;
-}
-.nacimiento2{ /*MES*/
-  width: 20%;
-  font-family: 'Raleway', sans-serif;
-}
-.nacimiento3{ /*AÑO*/
-  width: 20%;
-  font-family: 'Raleway', sans-serif;
-}
 
 /*NUEVO FOOTER*/
-/*Footermenu*/
 .footermenu{
   position: static;
   height: 80px;
@@ -576,364 +431,367 @@ input.quantity-field{
 
 
 
-/*-------------MEDIA QUERIES--------------*/
-@media only screen and (max-width:1919px) and (min-width:1025px){
- /*body{
-  background-color: pink;
- } */
-  /*Nav*/
+
+/*---------MEDIA QUERIES---------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
-.boton-menu{
-  position: absolute;
- left: 50%;
-}
-/*contratar.html*/
-.underlineHover{
-  margin-top: -10%;
-}
-
-/*Datos-asegurado.html*/
-/*.seccion1{
-  height: 180px;
-}*/
-.texto1-seccion1{
-  margin-top: 12%;
-}
-.texto_area{
-  width: 40%;
-}
-
-.label-date{
-  margin-left: 33%;
-}
-.nacimiento1{
-width: 6%;
-margin-left: 33%;
-}
-.nacimiento2{
-  width: 15%;
-}
-.nacimiento3{
-  width: 7%;
-}
-/*Homoclave
-.head-label2{ 
-  margin-left: 33%;
-  margin-top: 2%;
-}
-.homo1{
-  margin-left: 33%;
-}*/
-
-.texto_area2{
-  width: 40%;
-}
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-/*.footer-freeda{
-  padding-left: 758px;
-}*/
-}
-
-
-@media only screen and (max-width:1024px) and (min-width:992px){
-/*body{
-  background-color: gray;
-}*/
-/*CONTRATAR.HTML*/
-.seccion1{
-  height: 200px;
-}
-.texto1-seccion1{
-  margin-top: 14%;
-}
-.imagen-casa{
-  margin-top: 12%;
-}
-/*DATOS-ASEGURADO.html*/
-.label-date{
-  margin-left: 33%;
-}
-.nacimiento1{
-width: 6%;
-margin-left: 33%;
-}
-.nacimiento2{
-  width: 15%;
-}
-.nacimiento3{
-  width: 7%;
-}
-/*FOOTER*/
-.footer-freeda{
-  padding-left: 540px;
-}
 .logo-freeda{
-  padding-right: 20%;
-}
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-}
-
-@media only screen and (max-width:991px) and (min-width:576px){
-/*body{
-  background-color: violet;
-}*/
-/*MENU*/
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
-.boton-menu{
-  left: 80%;
+  margin-left: -55%;
+  margin-top: -7%;
 }
 .material-icons{
   color: white;
 }
-
-/*contratar.html*/
-.texto1{
-  margin-top: 20%;
-}
-/*.imagen-casa{
-  width: 50%;
-  margin-top: 30%;
-  margin-left: 30%;
-}*/
-
-.imagen-casa{
-  width: 50%;
-  margin-top: 20%;
-  margin-left: 25%;
-}
-
-
-/*DATOS-ASEGURADO.html*/
-.texto1-seccion1{
-margin-top: 20%;
-}
-.texto_area_rfc, .texto_area_regis{
-  width: 55%;
-}
-.label-date{
-  margin-left: 26%;
-}
-.nacimiento1{
-width: 12%;
-margin-left: 26%;
-}
-.nacimiento2{
-  width: 22%;
-}
-.nacimiento3{
-  width: 12%;
-}
-
-/*Homoclave
-.head-label2{ 
-  margin-left: 26%;
-  margin-top: 2%;
-}
-.homo1{
-  margin-left: 26%;
-  width: 6%;
-}.homo2{
-  width: 6%;
-}
-.homo3{
-  width: 6%;
-} */
-.texto_area2{
-  width: 50%;
-}
-.btn-generar{
-  margin-top: -20%;
-  margin-left: 35%;
-}
-
-/*NUEVO FOOTER*/
-.footermenu{
-    padding-left: 0px;
-}
-.texto1-footer, .texto2-footer ,.texto3-footer, .texto4-footer, .texto5-footer{
-  margin-right: 25px;
-}
-.logo-footer{
-  display: none;
-}
-input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
-  width: 95%;
-}
-}
-
-
-
-
-
-@media only screen and (max-width:575px){
-/*body{
-  background-color: orange;
-} */
-.tamaño-renglon-1{
-  padding-left: 10%;
-}
-.logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
-}
-.menu-freeda{
-  position: absolute;
-  margin-left: -80px;
-  margin-right: 30px;
-  margin-top: 11px;
-  background-color: #FFFFFF;
-  width: 100vh;
-  min-height: 100vh;
-}
-.texto-menu{
-  padding-right: 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 33px;
-  margin-left: 175px;
-  margin-top: 30px;
-  letter-spacing: 0.35px;
-  color: #FFFFFF;
-}
-.t1m{
-  margin-top: 200px;
-}
-.tmbl{
-  font-weight: 700;
-}
 .boton-menu{
   left: 80%;
 }
-.material-icons{
-  color: white;
-}
-
-/*contratar.html*/
+/*----------------------------*/
+/*14-CONTRATAR.HTML*/
 .texto1{
-  margin-top: 20%;
+  margin-top: 25%;
 }
 .part1{
-  width: 45%;
-  margin-left: 5%;
+  width: 50%;
 }
 .imagen-casa{
   width: 55%;
-  margin-top: 50%;
+  margin-top: 33%;
   margin-left: 30%;
 }
 .part2{
-  width: 45%;
-}
-.btn-siguiente{ /*Boton siguiente*/
-  margin-left: 30%;
-}
-
-/*Datos-asegurado.html*/
-.texto1-seccion1{
-margin-top: 25%;
-}
-.texto_area_rfc, .texto_area_regis{
-  width: 60%;
-}
-.label-date{
-  margin-left: 26%;
-}
-.nacimiento1{
-width: 12%;
-margin-left: 26%;
-}
-.nacimiento2{
-  width: 22%;
-}
-.nacimiento3{
-  width: 12%;
-}
-/*Homoclave
-.head-label2{ 
-  margin-left: 26%;
-  margin-top: 2%;
-}
-.homo1{
-  margin-left: 26%;
-  width: 6%;
-}.homo2{
-  width: 6%;
-}
-.homo3{
-  width: 6%;
-}*/
-.texto_area2{
   width: 50%;
 }
-.btn-generar{
-  margin-top: -20%;
-  margin-left: 29%;
+.btn-siguiente{ /*Boton siguiente*/
+  margin-left: 2%;
 }
 
-/*.footermenu{
-  padding-left: -5px;
-}*/
-.footer-freeda{
-    padding-left: 100px;
-  }
-  .logo-footer{
-  display: none;
+
+/*16-DATOS-ASEGURADO.HTML*/
+.texto1-seccion1{
+  margin-top: 28%;
+}
+.texto_area_rfc, .texto_area_regis{
+  width: 76%;
+}
+.label-date{
+  margin-left: 14%;
+}
+.nacimiento1{ /*Día*/
+  width: 13%;
+  margin-left: 14%;
+  margin-top: 8%;
+}
+.nacimiento2{ /*Mes*/
+  width: 28%;
+}
+.nacimiento3{ /*Año*/
+  width: 16%;
+}
+.btn-generar{
+  margin-left: 28%;
 }
 input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;
 }
+
+/*Footer*/
+.logo-footer{
+  display: none;
 }
-
-
-
-
-
-@media only screen and (max-width:320px){
-  /*body{
-    background-color: lime;
-  } */
 
 }
 
 
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: -7%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+/*----------------------------*/
+/*14-CONTRATAR.HTML*/
+.texto1{
+  margin-top: 25%;
+}
+/*.part1, .part2{
+  width: 50%;
+}*/
+.imagen-casa{
+  width: 55%;
+  margin-top: 35%;
+  margin-left: 30%;
+}
+.btn-siguiente{ /*Boton siguiente*/
+  margin-left: 2%;
+}
+
+
+/*16-DATOS-ASEGURADO.HTML*/
+.texto1-seccion1{
+  margin-top: 25%;
+}
+.texto_area_rfc, .texto_area_regis{
+  width: 76%;
+}
+.label-date{
+  margin-left: 14%;
+}
+.nacimiento1{ /*Día*/
+  width: 13%;
+  margin-left: 14%;
+  margin-top: 8%;
+}
+.nacimiento2{ /*Mes*/
+  width: 28%;
+}
+.nacimiento3{ /*Año*/
+  width: 16%;
+}
+.btn-generar{
+  margin-left: 28%;
+}
+input.invalid + label.head-label + label.bottom-label1 {
+  top: 110px;
+}
+
+
+/*Footer*/
+.footermenu{ /*Politicas de privacidad*/
+  padding-right: 180px;
+  height: 130px;
+  background-color: white;
+}
+.texto1-footer{
+  margin-right: 15px;
+}
+.texto3-footer{
+}
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+/*----------------------------*/
+/*14-CONTRATAR.HTML*/
+.texto1{
+  margin-top: 19%;
+}
+/*.part1, .part2{
+  width: 50%;
+}*/
+.imagen-casa{
+  margin-top: 15%;
+}
+.btn-siguiente{ /*Boton siguiente*/
+  margin-left: 2%;
+}
+
+
+/*16-DATOS-ASEGURADO.HTML*/
+.texto1-seccion1{
+  margin-top: 17%;
+}
+.texto_area_rfc, .texto_area_regis{
+  width: 56%;
+}
+.label-date{
+  margin-left: 23%;
+}
+.nacimiento1{ /*Día*/
+  width: 12%;
+  margin-left: 23%;
+  margin-top: 5.5%;
+}
+.nacimiento2{ /*Mes*/
+  width: 20%;
+}
+.nacimiento3{ /*Año*/
+  width: 12%;
+}
+.btn-generar{
+  margin-left: 35%;
+}
+input.invalid + label.head-label + label.bottom-label1 {
+  top: 110px;
+}
+
+
+/*Footer*/
+.footermenu{
+  padding-right: 150px;
+  background-color: white;
+}
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: 1%;
+}
+/*------------------*/
+/*14-CONTRATAR.HTML*/
+.texto1{
+  margin-top: 13%;
+}
+/*.part1, .part2{
+  width: 50%;
+}*/
+.imagen-casa{
+  width: 55%;
+  margin-top: 0%;
+  margin-left: 30%;
+}
+.btn-siguiente{ /*Boton siguiente*/
+  margin-left: 2%;
+}
+
+
+/*16-DATOS-ASEGURADO.HTML*/
+.texto1-seccion1{
+  margin-top: 12%;
+}
+.texto_area_rfc, .texto_area_regis{
+  width: 42%;
+}
+.label-date{
+  margin-left: 29%;
+}
+.nacimiento1{ /*Día*/
+  width: 9%;
+  margin-left: 29.5%;
+  margin-top: 4%;
+}
+.nacimiento2{ /*Mes*/
+  width: 16%;
+}
+.nacimiento3{ /*Año*/
+  width: 9%;
+}
+.btn-generar{
+  margin-left: 40%;
+}
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+
+/*Footer*/
+.footermenu{
+  padding-right: 45px;
+}
+.logo-footer{
+  margin-left: 78%;
+  height: 60px;
+}
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+margin-left: -55%;
+margin-top: 1%;
+}
+/*--------------------------*/
+/*14-CONTRATAR.HTML*/
+.texto1{
+  margin-top: 10%;
+}
+.imagen-casa{
+  width: 45%;
+  margin-left: 40%;
+}
+.btn-siguiente{ /*Boton siguiente*/
+  margin-left: 0%;
+}
+/*.part1, .part2{
+  width: 50%;
+}*/
+
+
+/*16-DATOS-ASEGURADO.HTML*/
+.texto1-seccion1{
+  margin-top: 12%;
+}
+.texto_area_rfc, .texto_area_regis{
+  width: 37%;
+}
+.label-date{
+  margin-left: 31.5%;
+}
+.nacimiento1{ /*Día*/
+  width: 8%;
+  margin-left: 32%;
+  margin-top: 3.5%;
+}
+.nacimiento2{ /*Mes*/
+  width: 15%;
+}
+.nacimiento3{ /*Año*/
+  width: 8%;
+}
+.btn-generar{
+  margin-left: 40%;
+}
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+
+/*Footer*/
+.footermenu{
+  padding-left: 115px;
+}
+.logo-footer{
+  margin-left: 78%;
+}
+}
