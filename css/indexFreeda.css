@@ -45,6 +45,37 @@
   position: absolute;
   left: 10%;
 }
+/*Boton cotizar seguro*/
+.boton2-menu{
+  position: absolute;
+  margin-left: 40%;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  letter-spacing: 0.52px;
+  color: #912F46;
+  text-transform: uppercase;
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.boton2-menu:hover{
+  background: #912F46 0% 0% no-repeat padding-box;
+  color: #000000;
+  border: 1px solid #FFFFFF;
+}
+.boton2-menu:active{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+}
+.boton2-menu:focus{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #6CBB8E;
+}
 
 
 /*Seccion1
@@ -91,21 +122,22 @@
   margin-left: 10%;
   border: 2px solid #cc99cc;
 } */
-.boton-cotizar{ /*Boton cotizar*/
+/* SE QUITO ESTE BOTÓN
+.boton-cotizar{ Boton cotizar
   margin-right: auto;
   margin-left: auto;
   margin-top: 10%;
   margin-bottom: 15%;
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
+  border: 1px solid #FFFFFF; Margen de boton
+  border-radius: 5px; Ovalado/redondo
+  width: 200px; Tamaño
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
+  color: #FFFFFF; Color de letra
+  text-transform: uppercase; Todas mayusculas
   opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  background: #912F46 0% 0% no-repeat padding-box; Color de boton
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -122,6 +154,7 @@
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
+*/
 
 
 
