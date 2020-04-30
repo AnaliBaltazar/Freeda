@@ -65,16 +65,27 @@
 /*BARRA DE PROGRESO*/
 .espacio-progreso{
   width: 100%;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
   /*background: #bfe7e5;        /*PRUEBA*/
 }
-.headerBar{
-  background: black;
-  height: 24px;
+.headerBar{ /*CONTENEDOR < >*/
+  height: 35px;
   text-align: center;
 }
-#Progress {
+.material-icons.icon-arrow{
+  font-size: 35px;
+  color: #912F46;
+}
+.Menu.Left{
+  margin-left: 10%;
+  float: left;
+}
+.Menu.Right{
+  margin-right: 10%;
+  float: right;
+}
+#Progress{
   margin-top: 10px;
   margin-bottom: 40px;
   margin-left: auto;
@@ -85,23 +96,13 @@
   background-color: #EAEAEA;
   border-radius: 5px;
 }
-#bar {
+#bar{ /*PROGRESO 20%*/
   position: absolute;
   height: 100%;
   background-color: #912F46;
   border-radius: 5px;
 }
-.material-icons.icon-arrow{
-  font-size: 24px;
-}
-.Menu.Left{
-  margin-left: 10%;
-  float: left;
-}
-.Menu.Right{
-  margin-right: 10%;
-  float: right;
-}
+
 
 /*FOOTER
 /*Footermenu
