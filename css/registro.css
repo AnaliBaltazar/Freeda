@@ -231,7 +231,6 @@
   border: 2px solid #C88585;
   color: #912F46;
 }
-
 .texto_area_token{
   text-align: center;
   margin-left: auto;
@@ -371,13 +370,13 @@ input.quantity-field{
 }
 
 /*4-VALIDAR-TOKEN.HTML*/
-.seccion-token{ /*Boton vali-token.html*/
+/*.seccion-token{ 
   max-width: 900px;
   padding-top: 5px;
   padding-bottom: 200px;
- /* background-color: #cc99cc;        /*PRUEBA*/
+ background-color: #cc99cc;        
   margin-top: -5%;
-}
+}*/
 .texto_area_token{
   text-align: center;
   margin-left: auto;
@@ -399,9 +398,6 @@ input.quantity-field{
   border-radius: 6px;
 }
 .validar-token{ /*BOTON VALIDAR TOKEN*/
-  position: absolute;
-  margin-left: 37%;
-  margin-top: 0%;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -450,7 +446,44 @@ input.quantity-field{
   color: red;
   display: none;
 }
-
+.seccion-espacio{
+  max-width: 900px;
+  padding-top: 100px;
+  padding-bottom: 100px;  
+  /*background: #bfe7e5;        /*PRUEBA*/
+}
+/*BOTON GENERAR NUEVO TOKEN*/
+.nuevo-token{ /*BOTON VALIDAR TOKEN*/
+  display: none;
+  margin-top: 2%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.nuevo-token:hover{
+  background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
+  color: #FFFFFF; /*Color de letra*/
+}
+.nuevo-token:active{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
+.nuevo-token:focus{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
 
 
 
@@ -607,8 +640,11 @@ input.invalid + label.head-label + label.bottom-label1 {
 .texto_area_token{
   width: 79%;
 }
-.validar-token{ /*BOTON VALIDAR TOKEN*/
+/*.validar-token{ 
   margin-left: 29%;
+}*/
+.nuevo-token{
+  margin-top: 5%;
 }
 
 /*Footer*/
@@ -687,8 +723,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .texto_area_token{
   width: 80%;
 }
-.validar-token{ /*BOTON VALIDAR TOKEN*/
+/*.validar-token{
   margin-left: 33%;
+}*/
+.nuevo-token{
+  margin-top: 5%;
 }
 
 
@@ -781,8 +820,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .texto_area_token{
   width: 59%;
 }
-.validar-token{ /*BOTON VALIDAR TOKEN*/
+/*.validar-token{ 
   margin-left: 37%;
+}*/
+.nuevo-token{
+  margin-top: 2.5%;
 }
 
 /*Footer*/
@@ -856,8 +898,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .texto_area_token{
   width: 44%;
 }
-.validar-token{ /*BOTON VALIDAR TOKEN*/
+/*.validar-token{ 
   margin-left: 37%;
+}*/
+.nuevo-token{
+  margin-top: 2%;
 }
 
 
@@ -931,8 +976,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .texto_area_token{
   width: 39%;
 }
-.validar-token{ /*BOTON VALIDAR TOKEN*/
+/*.validar-token{ 
   margin-left: 37%;
+  margin-top: 2%;
+}*/
+.nuevo-token{
   margin-top: 2%;
 }
 
