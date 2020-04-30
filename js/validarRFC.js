@@ -98,3 +98,46 @@ function searchRFC(value){
         /*document.querySelector("#cover.spinner_cover").style.display="none"
         document.querySelector("#spinner_screen").style.display="none" */
 }
+
+const form = document.querySelector("#data_registro")
+form.addEventListener('submit', toLoader)
+function toLoader(evt) {
+    evt.preventDefault();
+    const rfcval = document.querySelector("#rfc").value;
+    const nameval = document.querySelector("#nombre").value;
+    const patval = document.querySelector("#paterno").value;
+    const matval = document.querySelector("#materno").value;
+    const diaval = document.querySelector("#day").value;
+    const mesval = document.querySelector("#month").value;
+    const yearval = document.querySelector("#year").value;
+
+    if (rfcval == "" || nameval=="" || patval=="" || matval=="" || diaval=="0" || mesval =="0" || yearval == "0") {    //Si el campo esta vacío = INVALIDO
+        alert("Toda la información es necesaria")
+        
+    }else{
+        document.querySelector("#cover").style.display="block";
+        document.querySelector(".center_container").style.display="block";
+        document.querySelector("#bar_loader").style.width="0";
+        document.querySelector("#caption_loader").textContent="";
+        
+        setTimeout(() => {
+            document.querySelector("#bar_loader").style.width="15%";
+            document.querySelector("#caption_loader").textContent="Enviando datos a servidores";
+            setTimeout(() => {
+                document.querySelector("#bar_loader").style.width="35%";
+                document.querySelector("#caption_loader").textContent="Generando carátula del seguro";
+                setTimeout(() => {
+                    document.querySelector("#bar_loader").style.width="75%";
+                    document.querySelector("#caption_loader").textContent="Designando un número de póliza";
+                    setTimeout(() => {
+                        document.querySelector("#bar_loader").style.width="100%";
+                        document.querySelector("#caption_loader").textContent="Arreglando los últimos detalles";
+                        setTimeout(() => {
+                            window.location="./17-dashboard-1.html"
+                        }, 4000);
+                    }, 4000);
+                }, 4000);
+            }, 4000);
+        }, 4000);  
+    }
+}

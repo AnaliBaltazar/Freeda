@@ -63,6 +63,35 @@
   margin-bottom: 10%;
 }
 
+/* || HEADER STYLES */
+
+.headerBar{
+  margin-top: 30px;
+  height: 24px;
+  text-align: center;
+}
+
+#Progress {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 80%;
+  height: 13px;
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  top: 150px;
+}
+
+#bar {
+position: absolute;
+height: 100%;
+background-color: #912F46;
+border-radius: 5px;
+}
+
+/* || || || || || || || || || || || */
+
 /*FOOTER
 /*Footermenu
 .footermenu{

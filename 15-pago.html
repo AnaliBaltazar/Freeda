@@ -93,7 +93,7 @@
     <div class="card_container">
         <div class="bkng-tb-cntnt">
             <div class="pymnts">
-                <form action="#" method="POST" id="payment-form">
+                <form action="./16-datos-asegurado.html" method="POST" id="payment-form">
                     <input type="hidden" name="token_id" id="token_id">
                     <div class="pymnt-itm card active">
                         <h2>Tarjeta de crédito o débito</h2>
@@ -108,28 +108,25 @@
                                     <label>Nombre del titular</label><input id="nombre" type="text" placeholder="Como aparece en la tarjeta" autocomplete="off" data-openpay-card="holder_name">
                                 </div>
                                 <div class="sctn-col">
-                                    <label>Número de tarjeta</label><input type="text" autocomplete="off" data-openpay-card="card_number"></div>
-                                </div>
-                                <div class="sctn-row">
-                                    <div class="sctn-col l">
-                                        <label>Fecha de expiración</label>
-                                        <div class="sctn-col half l"><input type="text" placeholder="Mes" data-openpay-card="expiration_month"></div>
-                                        <div class="sctn-col half l"><input type="text" placeholder="Año" data-openpay-card="expiration_year"></div>
-                                    </div>
-                                    <div class="sctn-col cvv"><label>Código de seguridad</label>
-                                        <div class="sctn-col half l"><input type="text" placeholder="3 dígitos" autocomplete="off" data-openpay-card="cvv2"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="openpay"><div class="logo_card">Transacciones realizadas vía:</div></div> -->
-                                <div class="shield">Tus pagos se realizan de forma segura con encriptación de 256 bits</div>
-                                <!--<div class="sctn-row r" id="pagar">
-                                    <a class="button rght" id="pay-button">Pagar</a> -->
-
-                                <button class="btn boton-pagar" role="link" onclick="window.location='#'">PAGAR</button>
-            </div>
+                                    <label>Número de tarjeta</label><input type="text" autocomplete="off" data-openpay-card="card_number">
                                 </div>
                             </div>
-                            
+                            <div class="sctn-row">
+                                <div class="sctn-col l">
+                                    <label>Fecha de expiración</label>
+                                    <div class="sctn-col half l"><input type="text" placeholder="Mes" data-openpay-card="expiration_month"></div>
+                                    <div class="sctn-col half l"><input type="text" placeholder="Año" data-openpay-card="expiration_year"></div>
+                                </div>
+                                <div class="sctn-col cvv"><label>Código de seguridad</label>
+                                    <div class="sctn-col half l"><input type="text" placeholder="3 dígitos" autocomplete="off" data-openpay-card="cvv2"></div>
+                                </div>
+                            </div>
+                            <!-- <div class="openpay"><div class="logo_card">Transacciones realizadas vía:</div></div> -->
+                            <div class="shield">Tus pagos se realizan de forma segura con encriptación de 256 bits</div>
+                            <!--<div class="sctn-row r" id="pagar">
+                                <a class="button rght" id="pay-button">Pagar</a> -->
+
+                            <button class="btn boton-pagar" role="link" onclick="toDataInsured()">PAGAR</button> 
                         </div>
                     </div>
                 </form>
@@ -155,6 +152,6 @@
     <a href="#" class="texto1-footer link-footer">Términos y condiciones</a>
     <a href="#" class="texto2-footer link-footer">Aviso de privacidad</a>
   </footer>-->
-
+  <script src="./js/links.js"></script>
 </body>
 </html>
