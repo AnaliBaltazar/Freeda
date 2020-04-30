@@ -49,3 +49,10 @@ function toContratar() {
         window.location = "./14-contratar.html";
     }
 }
+
+function toPayment() {
+    window.location = "./15-Pago.html";
+}
+function toDataInsured() {
+
+}
