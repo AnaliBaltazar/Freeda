@@ -25,6 +25,10 @@ function cleanInput() {
 }
 
 function validateInputValue(){
+    document.querySelector("#cover").style.display="block"
+    document.querySelector(".center_container").style.display="block"
+    document.querySelector("#progress_loader").style.display="none"
+    document.querySelector("#caption_loader").style.display="none"
     const elmnt_value = this.value.toUpperCase();
     let reg, result, cautionTxt;
     if (elmnt_value == "") {    //Si el campo esta vacío = INVALIDO
@@ -44,7 +48,12 @@ function validateInputValue(){
                 if (busqueda != null) {
                     setRFCData(busqueda);
                 }
-            },2000);
+                document.querySelector("#cover").style.display="none"
+                document.querySelector(".center_container").style.display="none"
+                document.querySelector("#progress_loader").style.display="block"
+                document.querySelector("#caption_loader").style.display="block"
+            },1500);
+            
         }else{
             this.classList.add("invalid");
             this.classList.remove("valid");
@@ -73,13 +82,11 @@ function setRFCData(data){
     document.querySelector("#month").disabled = true;
     document.querySelector('#year [value="' + data.year + '"]').selected = true;
     document.querySelector("#year").disabled = true;
-    /* document.querySelector("#cover.spinner_cover").style.display="none"
-    document.querySelector("#spinner_screen").style.display="none" */
+    
 }
 
 function searchRFC(value){
-    /* document.querySelector("#cover.spinner_cover").style.display="block"
-    document.querySelector("#spinner_screen").style.display="block" */
+    
         let rfc_data = {
             rfc : 'CAPM990520HA1',
             nombre : 'MANUEL',
@@ -95,8 +102,6 @@ function searchRFC(value){
         } else {
             return null;
         }
-        /*document.querySelector("#cover.spinner_cover").style.display="none"
-        document.querySelector("#spinner_screen").style.display="none" */
 }
 
 const form = document.querySelector("#data_registro")

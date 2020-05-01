@@ -40,19 +40,32 @@ $(document).ready(function(){
 //7-validar-token.html
 
 //Event listener del boton de validación
-$("#enviar").on("click", function(){
+$("#data_activar_token").on("submit", function(event){
+  event.preventDefault();
   $("#validar").hide();
   $("#formError").hide();
   let tokenValue = $("#token").val();
-  let validation = validateToken(tokenValue);
-  if (validation) {
-    $("#validar").show();
-    setTimeout(() => {
-      window.location = "./5-crear-usuario.html";
-    }, 2000);
-  } else {
-    $("#formError").show();
-  }
+  document.querySelector("#cover").style.display="block"
+  document.querySelector(".center_container").style.display="block" 
+  setTimeout(() => {
+    let validation = validateToken(tokenValue);
+    if (validation) {
+      $("#validar").show();
+      
+      document.querySelector("#validar").style.zIndex="100"
+      setTimeout(() => {
+        document.querySelector("#cover").style.display="none"
+        document.querySelector(".center_container").style.display="none" 
+        window.location="./5-crear-usuario.html"
+      }, 2000);
+    } else {
+      document.querySelector("#cover").style.display="none"
+      document.querySelector(".center_container").style.display="none" 
+      $("#formError").show();
+      $("#nuevo-token").show();
+    }
+  }, 2000);
+  
 });
 
 //Función para validar el token ingresado
