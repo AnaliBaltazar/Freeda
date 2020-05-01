@@ -193,6 +193,36 @@ td.col_r{
 table{
   border-collapse: separate;
 }
+/*BOTON AGREGAR*/
+.btn-agregar{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 150px;
+  height: 25px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background: #912F46 0% 0% no-repeat padding-box;
+  position: absolute;
+  right: 10%;
+}
+.btn-agregar:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.btn-agregar:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-agregar:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+
+
 
 /*DOCUMENTOS VER Y DESCARGA*/
 .documentos{
@@ -523,9 +553,6 @@ h5{ /*Prado Churubusco*/
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/*body{
-  background-color: orange;
-}*/
 .logo-freeda{
   padding-right: 10%;
   margin-left: 10%;
@@ -551,6 +578,9 @@ h5{ /*Prado Churubusco*/
 
 .info_seg{
   border-spacing: 10px;
+}
+.btn-agregar{
+
 }
 
 
@@ -625,9 +655,7 @@ h1#screenHeader{ /*Tembló*/
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-/*body{
-  background-color: red
-}*/
+
 .logo-freeda{
   padding-right: 15%;
   margin-left: 25%;
@@ -753,9 +781,6 @@ h1#screenHeader{ /*Tembló*/
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/*body{
-  background-color: aqua;
-}*/
 /*Dashboard2.html*/
 .underlineHover1{
   margin-left: 20%;
@@ -788,7 +813,11 @@ h1#screenHeader{ /*Tembló*/
   flex-direction: row;
   align-items: center;
 }
-
+.btn-agregar{
+  z-index: 200;
+  left: 73%;
+  margin-top: 0px;
+}
 
 
 /*Pop up*/
@@ -837,9 +866,6 @@ h1#screenHeader{ /*Tembló*/
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-/*body{
-  background-color: violet
-}*/
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   visibility: visible;
 }
@@ -912,6 +938,12 @@ h1#screenHeader{ /*Tembló*/
   width: 100px;
 }
 
+.btn-agregar{
+  z-index: 200;
+  left: 55%;
+  margin-top: -12%;
+}
+
 
 /*Footer*/
 .footermenu{
@@ -925,12 +957,19 @@ h1#screenHeader{ /*Tembló*/
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .info_seg{
+.info_seg{
   border-spacing: 15px;
 }
 .recuadro-info{
   height: 110%;
 }
+
+.btn-agregar{
+  z-index: 200;
+  left: 58%;
+  margin-top: 2px;
+}
+
 }
 
 
