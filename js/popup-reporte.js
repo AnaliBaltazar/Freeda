@@ -26,6 +26,17 @@ aceptar_inquilino.forEach(aceptar => aceptar.addEventListener('click', updateVal
      }
  });
 
+ //Click en boton cerrar
+const cerrar_btns=document.querySelectorAll("i#close");
+if(cerrar_btns!=null){
+    cerrar_btns.forEach(button => button.addEventListener("click",closePopup));
+}
+
+function closePopup(){
+    document.querySelector("#cover-daños").style.display="none";
+    this.parentNode.style.display="none";
+}
+
 function openValueModifier(){  // Activa ventana para editar valor de los bienes del inquilino.
 
     //OTHER BUTTONS     -  ACTIVAR En caso de querer que solo se muestre el banner del boton seleccionado
@@ -268,5 +279,5 @@ function formatCurrency(input, blur, incdec) {
 
 function formatNumber(n) {
     // format number 1000000 to 1,234,567
-    return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    return n.replace(/\D/g, "").replace(/^0+/,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   }
