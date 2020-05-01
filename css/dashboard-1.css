@@ -3,11 +3,9 @@
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
-
 html, body{
   height: 100%;
 }
-
 a, .Right span{
   text-decoration: none;
   font-size: 16px;
@@ -34,75 +32,69 @@ a, .Right span{
 
 /*Lado derecho el menu*/
 .Right{
-    display: flex;
-    flex-direction: row;
-    /* width: 40%; */
-    align-items: center;
-    /* justify-content: flex-end;
-    margin-right: 10%; */
+  display: flex;
+  flex-direction: row;
+  /* width: 40%; */
+  align-items: center;
+  /* justify-content: flex-end;
+  margin-right: 10%; */
 }
 .Right i{
-    cursor: pointer;
-    position: relative;
+  cursor: pointer;
+  position: relative;
 }
 .selected{
-    color: #60A1E7 !important;
+  color: #60A1E7 !important;
 }
 /*AYUDA, NOTIFICACION Y USUARIO*/
 .menu{
-    display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #FFFFFF;/*Color de letra*/
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FFFFFF;/*Color de letra*/
 }
-
-
 
 .bubble{
-    width: 150px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 0 10px #D0D0D0;
-    position: absolute;
-    top: 50px;
-    margin-left: 5px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    color: #3B536D;
-    display: none;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 50px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3B536D;
+  display: none;
 }
-
 #notifications{
-    width: 200px;
-    height: auto;
-    line-height: 20px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 0 10px #D0D0D0;
-    position: absolute;
-    top: 50px;
-    margin-left: 5px;
-    text-align: left;
-    font-size: 13px;
-    font-weight: 500;
-    color: #3B536D;
-    display: none;
-    border-left: 10px solid #3B536D;
+  width: 200px;
+  height: auto;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 50px;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3B536D;
+  display: none;
+  border-left: 10px solid #3B536D;
 }
-
-
 #notifications p a{
-    color: #60A1E7;
-    /* font-size: 13px; */
+  color: #60A1E7;
+  /* font-size: 13px; */
 }
-
 .show, .show#notifications{display: block;}
 .material-icons{
-    margin-left: 5px;
-    margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 
@@ -144,8 +136,6 @@ a, .Right span{
 }
 
 
-
-
 /*NUEVO DAHSBOARD*/
 .part1{
   height: 600px;
@@ -167,11 +157,11 @@ a, .Right span{
   padding-right: 20px;*/
 }
 .info_seg{
-    /* width: 90%; */
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 15px;
-    border-spacing: 20px;
+  /* width: 90%; */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  border-spacing: 18px;
 }
 td{
   vertical-align: top;
@@ -179,23 +169,24 @@ td{
   padding-left: 4%; /*Centrar el texto*/
 }
 td.col_l{
-  font-size: 20px;
+  font-size: 18px;
   color: #535965; /*Color de letra*/
   font-weight: 500;
   width: 50%; /*auto*/
   text-align: left;
-  line-height: 30px; /*Sangria*/
 }
 td.col_r{
-  font-size: 20px;
+  font-size: 18px;
   color: #767e8e; /*Color de letra*/
   font-weight: 300;
   width: auto;
   text-align: right;
-  line-height: 30px; /*Sangria*/
+}
+table{
+  border-collapse: separate;
 }
 
-
+/*DOCUMENTOS VER Y DESCARGA*/
 .documentos{
   width: 100%;
   height: 78%;
@@ -209,26 +200,26 @@ td.col_r{
   display: flex;
 }
 svg.icon_proptype{ /*Imagen casa*/
-    width: 80px;
-    margin-top: 20px;
-    margin-left: 25px;
+  width: 80px;
+  margin-top: 20px;
+  margin-left: 25px;
 }
 h3.prop_street, h3.seg_active{ /*Casiopesa*/
-    color: #3B536D;
-    font-weight: 500;
-    font-size: 30px;
-    margin: 0px 20px;
-    color: #912F46;
-    line-height: 47px; /*Sangria*/
+  color: #3B536D;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0px 20px;
+  color: #912F46;
+  line-height: 47px; /*Sangria*/
 }
 h3.seg_active{
-    margin-top: 10px;
+  margin-top: 10px;
 }
 h3.seg_active .material-icons{
-    margin-left: 0;
+  margin-left: 0;
 }
 h3.seg_active{
-    display: flex;
+  display: flex;
 }
 h5{ /*Prado Churubusco*/
   font-size: 20px;
@@ -237,10 +228,6 @@ h5{ /*Prado Churubusco*/
   margin-left: 20px;
   line-height: 40px; /*Sangria*/
 }
-
-
-
-
 .doc_row_1{
   width: 100%;
 }
@@ -283,6 +270,9 @@ h5{ /*Prado Churubusco*/
   border-color: #912F46;
   color: #912F46;
 }
+
+
+
 
 /*POP-UP.html*/
 /*SeccionBoton SIGUIENTE*/
@@ -377,7 +367,6 @@ h5{ /*Prado Churubusco*/
   background-position: 100% 0%;
   background-size: 60%;
 }
-
 .icono_micro_screen{
   height: auto;
 }
@@ -539,7 +528,8 @@ h5{ /*Prado Churubusco*/
 .texto-notificacion{
   display: none;
 }
-/*Dashboard2.html*/
+
+/*COBERTURA, VER PÓLIZA, SINIESTRO*/
 .underlineHover1{
   margin-left: 5%;
 } 
@@ -551,16 +541,20 @@ h5{ /*Prado Churubusco*/
 } 
 
 
+.info_seg{
+  border-spacing: 10px;
+}
 
 
+/*VER Y DESCARGAR*/
 .doc_row{
   width: 90%;
   margin: 10px auto;
   padding-bottom: 5px;
 }
 .doc_row .doc_btns{
-width: fit-content;
-margin:10px 0;
+  width: fit-content;
+  margin:10px 0;
 }   
 .doc_row h4{
   font-size: 16px;
@@ -575,13 +569,15 @@ margin:10px 0;
 
 }
 .doc_btns{
-    /* margin: 5px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  /* margin: 5px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-/*Popup.html*/
+
+
+/*POPUP.html*/
 .btn-siniestro{
   margin-top: 56%;
   margin-left: 29%;
@@ -609,6 +605,12 @@ h1#screenHeader{ /*Tembló*/
   margin-right: 70%;
   width: 100px;
   }
+
+
+/*Footer*/
+.logo-footer{
+  display: none;
+}
 }
 
 
@@ -640,6 +642,11 @@ h1#screenHeader{ /*Tembló*/
 .underlineHover3{
   margin-left: 5%;
 } 
+
+.info_seg{
+  border-spacing: 10px;
+}    
+
 
 /*Contenedor descarga*/
 .right_col{
@@ -677,10 +684,10 @@ margin:10px 0;
   margin:10px 5px;
 }
 .doc_btns{
-    /* margin: 5px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  /* margin: 5px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /*Pop up*/
@@ -712,6 +719,23 @@ h1#screenHeader{ /*Tembló*/
   width: 100px;
 }
 
+/*Footer*/
+.footermenu{ /*Politicas de privacidad*/
+  padding-right: 180px;
+  height: 130px;
+  background-color: white;
+}
+.texto1-footer{
+  margin-right: 15px;
+}
+/* .texto3-footer{
+}
+ */
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
 }
     
 
@@ -737,6 +761,9 @@ h1#screenHeader{ /*Tembló*/
 
 /*Recuadro con casita*/
 /*NUEVO DASH*/
+.info_seg{
+  border-spacing: 15px;
+}
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
   margin:10px 5px;
@@ -748,11 +775,12 @@ h1#screenHeader{ /*Tembló*/
   /* margin-left: 30px; */
 }
 .doc_btns{
-    /* margin: 5px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  /* margin: 5px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 
 
 /*Pop up*/
@@ -783,6 +811,18 @@ h1#screenHeader{ /*Tembló*/
   margin-right: 70%;
   width: 100px;
 }
+
+
+/*Footer*/
+.footermenu{
+  padding-right: 150px;
+  background-color: white;
+}
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
 }
 
 
@@ -792,7 +832,6 @@ h1#screenHeader{ /*Tembló*/
 /*body{
   background-color: violet
 }*/
-
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   visibility: visible;
 }
@@ -812,8 +851,12 @@ h1#screenHeader{ /*Tembló*/
 } 
 
 /*NUEVO DASH*/
+
+.info_seg{
+  border-spacing: 15px;
+}
 .recuadro-info{
-  height: 108%;
+  height: 110%;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
@@ -826,10 +869,10 @@ h1#screenHeader{ /*Tembló*/
   /* margin-left: 30px; */
 }
 .doc_btns{
-    /* margin: 5px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  /* margin: 5px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /*Pop up*/
@@ -860,9 +903,27 @@ h1#screenHeader{ /*Tembló*/
   margin-right: 80%;
   width: 100px;
 }
+
+
+/*Footer*/
+.footermenu{
+  padding-left: 115px;
+}
+.logo-footer{
+  margin-left: 78%;
 }
 
+}
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .info_seg{
+  border-spacing: 15px;
+}
+.recuadro-info{
+  height: 110%;
+}
+}
 
 
 
