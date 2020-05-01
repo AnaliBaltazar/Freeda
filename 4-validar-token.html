@@ -74,32 +74,32 @@
         </div>
     </div> -->
 
-     <div class="container contenedor">
-      <div class="row text-center">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div class="container contenedor">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
-            <p class="texto1-seccion1">Validar token</p> 
-
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-
-            <p class="texto2-seccion1">En breve recibirás un mensaje a tu celular SMS que contiene 6 dígitos<br>que deberás de ingresar para hacer válidos</p>
+                <p class="texto1-seccion1">Validar token</p> 
 
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <form action="#" id="data_activar_token">
+
+                <p class="texto2-seccion1">En breve recibirás un mensaje a tu celular SMS que contiene 6 dígitos<br>que deberás de ingresar para hacer válidos</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <form id="data_activar_token">
                     
                     <div class="texto_area_token">
-                        <input type="text" name="token" id="token" class="data_input_token" maxlength="6" pattern="[0-9]{3} {3}" required placeholder="XXX-XXX"/>
+                        <input type="text" name="token" id="token" class="data_input_token" maxlength="6" placeholder="XXX-XXX"/>
                         
 
                         <label class="head-label" for="activar-token">Ingresa los 6 digitos</label>
                         <label class="bottom-label1" id="bottom-token" for="activar-token"></label>
 
                         
-                         <!--MENSAJE-->
+                            <!--MENSAJE-->
                         <span class="error" id="formError">Código incorrecto</span>
 
                         <!-- Boton validar token  FALTA MENSAJE
@@ -109,14 +109,18 @@
                         <p class="mensaje">Validación de token realizada exitosamente</p>
                     </div>
                     <div>
-                       <input type="submit" name="enviar" id="enviar" class="validar-token btn" value="Validación de token"> 
+                        <input type="submit" name="enviar" id="enviar" class="validar-token btn" value="Validación de token"> 
                     </div>
-                        <div>
-                       <input type="submit" name="nuevo-token" id="nuevo-token" class="nuevo-token btn" value="Generar nuevo token">
-                   </div>
+                    
                 </form>
-
-               
+                <div>
+                    <input type="button" name="nuevo-token" id="nuevo-token" class="nuevo-token btn" onclick="window.location = './3-activar-token.html'" value="Generar nuevo token">
+                </div>
+                
+            </div>
+            <div class="cover" id="cover"></div>
+            <div class="center_container">
+                <div class="loader"></div>
             </div>
         </div>
     </div>
@@ -168,6 +172,8 @@
   </div>
   <script type="text/javascript" src="./js/freeda.js"></script>
   <!-- <script type="text/javascript" src="./js/validar.js"></script> -->
+
+
 </body>
 </html>
 

@@ -80,7 +80,7 @@
         <div class="row texto-centrado">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
                 
-                <form action="./6-iniciar-sesion.html" id="data_crear_usua" method="POST" onsubmit="return validatePassword();">
+                <form action="" id="data_crear_usua" method="POST" onsubmit="validatePassword(event);">
                     <!--Email -->
                     <div class="texto_area_usuario" id="email">
                         <input type="email" name="correo" id="correo" class="data_input_crear" placeholder="Email" required>
@@ -135,6 +135,15 @@
     <!--<a href="#" class="texto5-footer link-footer">Aviso de privacidad</a> -->
     <a href="#" class="logo-footer"><img src="img/Freeda.svg"></a>    
   </div>
+
+  <div class="cover" id="cover"></div>
+    <div class="center_container">
+        <div class="loader"></div>
+        <div id="progress_loader">
+            <div id="bar_loader" style="width: 15%;"></div>
+        </div>
+        <h3 id="caption_loader"></h3>
+    </div>
   <script type="text/javascript" src="./js/validar.js"></script>
   <script src="./js/links.js"></script>
 </body>

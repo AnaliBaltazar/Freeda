@@ -1,12 +1,50 @@
-function toToken() {
+function toActivateToken() {
     window.location = "./3-activar-token.html";
 }
 
-function validatePassword() {
+function toValidateToken(event) {
+    event.preventDefault();
+    const phone=document.querySelector("#telefono");
+    if (phone.value == "") {
+        phone.classList.add("invalid");
+        appendText("Esta información es necesaria",phone.parentNode.querySelector('.bottom-label1'));
+        return false;
+    }else if (phone.classList.contains("invalid")){
+        return false;
+    }else {
+        window.location="./4-validar-token.html"
+    }
+}
+
+function validatePassword(event) {
+    event.preventDefault();
     let password1 = document.querySelector('#pass');
     let password2 = document.querySelector('#pass2');
     if (password2.classList.contains("valid") && password2.value == password1.value) {
-        return true
+
+        document.querySelector("#cover").style.display="block";
+        document.querySelector(".center_container").style.display="block";
+        document.querySelector("#bar_loader").style.width="0";
+        document.querySelector("#caption_loader").textContent="";
+        
+        setTimeout(() => {
+            document.querySelector("#bar_loader").style.width="15%";
+            document.querySelector("#caption_loader").textContent="Creando cuenta de usuario";
+            setTimeout(() => {
+                document.querySelector("#bar_loader").style.width="35%";
+                setTimeout(() => {
+                    document.querySelector("#bar_loader").style.width="75%";
+                    document.querySelector("#caption_loader").textContent="Finalizando";
+                    setTimeout(() => {
+                        document.querySelector("#bar_loader").style.width="100%";
+                        setTimeout(() => {
+                            window.location="./6-iniciar-sesion.html"
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }, 2000);
+        }, 2000);
+        
     } else {
         alert("Las contraseñas no coinciden.")
         return false
