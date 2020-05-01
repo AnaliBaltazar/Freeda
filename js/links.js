@@ -1,3 +1,6 @@
+function previousPage() {
+    window.history.back();
+}
 function toActivateToken() {
     window.location = "./3-activar-token.html";
 }
@@ -94,3 +97,7 @@ function toPayment() {
 function toDataInsured() {
 
 }
+/* function closePop() {
+    document.querySelector("#ready_screen").style.display="none";
+    document.querySelector("#cover2").style.display="none";
+} */
