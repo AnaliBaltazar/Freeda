@@ -752,39 +752,75 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   padding-top: 20px;
 }
 
-.underlineHover1, .underlineHover1-{ /*Cobertura, ver póliza Siniestro*/
+.underlineHover1{ /*Cobertura, ver póliza Siniestro*/
   margin-left: 10%;
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 30%;
 } 
-.underlineHover1, .underlineHover1-:hover {
+.underlineHover1:hover {
   color: #912F46;
 }
-
-.underlineHover2, .underlineHover2-{
+.underlineHover2{
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 5%;
 } 
-.underlineHover2, .underlineHover2-:hover {
+.underlineHover2:hover {
   color: #912F46;
 }
-
-.underlineHover3, .underlineHover3-{
+.underlineHover3{
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 5%;
-  
 } 
-.underlineHover3, .underlineHover3-:hover {
+.underlineHover3:hover {
+  color: #912F46;
+}
+
+/*VER EN QUE LINK SE ESTA*/
+a:link, a:visited{
+  color: #707070;
+}
+a.current:link, a.current:visited{
   color: #912F46;
 }
 
 
+/*UNDERLINEHOVER FIRMA.HTML*/
+.underlineHover1-1{ /*Cobertura, ver póliza Siniestro*/
+  margin-left: 10%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 30%;
+} 
+.underlineHover1-1:hover {
+  color: #912F46;
+}
+
+.underlineHover2-2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 5%;
+} 
+.underlineHover2-2:hover {
+  color: #912F46;
+}
+
+.underlineHover3-3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 5%;
+} 
+.underlineHover3-3:hover {
+  color: #912F46;
+}
 
 
 /*Seccion1*/
@@ -1502,13 +1538,13 @@ button.Aceptar{
 
 
 /*22-FIRMA.HTML*/
-.underlineHover1-{
+.underlineHover1-1{
    margin-left: 5%;
 }
-.underlineHover2-{
+.underlineHover2-2{
   margin-left: 5%;
 } 
-.underlineHover3-{
+.underlineHover3-3{
   margin-left: 5%;
 }
 .seccion-firma{
@@ -1709,13 +1745,13 @@ button.button-minus, button.button-plus{
 
 
 /*22-FIRMA.HTML*/
-.underlineHover1-{
+.underlineHover1-1{
   margin-left: 30%;
 } 
-.underlineHover2-{
+.underlineHover2-2{
   margin-left: 5%;
 } 
-.underlineHover3-{
+.underlineHover3-3{
   margin-left: 5%;
 } 
 .seccion-firma{
