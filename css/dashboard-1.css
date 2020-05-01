@@ -325,20 +325,20 @@ h5{ /*Prado Churubusco*/
   vertical-align: text-bottom;
   text-align: center;
 }
-.btn-siniestro{
+/*.btn-siniestro{
   position: absolute;
   margin-left: 38%;
   margin-top: 35%;
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
+  border: 1px solid #FFFFFF; 
+  border-radius: 5px; 
+  width: 200px; 
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
+  color: #FFFFFF; 
+  text-transform: uppercase; 
   opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  background: #912F46 0% 0% no-repeat padding-box; 
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -354,7 +354,7 @@ h5{ /*Prado Churubusco*/
 .btn-siniestro:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
-}
+}*/
 /*Boton close POP UP*/
 .btn-close{
   width: 10%;
