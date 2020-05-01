@@ -1,0 +1,778 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+html, body{
+  height: 100%;
+}
+a, .Right span{
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFFFFF; /*Color letra */
+}
+
+
+/*MENU*/
+.headerBar{
+  height: 78px;
+  background-color: #912F46; /*Color menu*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-freeda{
+  margin-left: 61%; /*Alineacion*/
+  /*margin-bottom: 0%;*/
+  height: 75px;
+  width: 210px; 
+  display:flex;
+}
+
+/*Lado derecho el menu*/
+.Right{
+  display: flex;
+  flex-direction: row;
+  /* width: 40%; */
+  align-items: center;
+  /* justify-content: flex-end;
+  margin-right: 10%; */
+}
+.Right i{
+  cursor: pointer;
+  position: relative;
+}
+.selected{
+  color: #60A1E7 !important;
+}
+/*AYUDA, NOTIFICACION Y USUARIO*/
+.menu{
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FFFFFF;/*Color de letra*/
+}
+
+.bubble{
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 50px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3B536D;
+  display: none;
+}
+#notifications{
+  width: 200px;
+  height: auto;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 50px;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3B536D;
+  display: none;
+  border-left: 10px solid #3B536D;
+}
+#notifications p a{
+  color: #60A1E7;
+  /* font-size: 13px; */
+}
+.show, .show#notifications{display: block;}
+.material-icons{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+
+/*COBERTURAS-VER POLIZA-SINIESTRO*/
+.seccion1{
+  position: static;
+  height: 80px;
+  width: 100%;
+  padding-top: 20px;
+}
+.underlineHover1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 30%;
+} 
+.underlineHover1:hover {
+  color: #912F46;
+}
+.underlineHover2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 5%;
+} 
+.underlineHover2:hover {
+  color: #912F46;
+}
+.underlineHover3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #707070;
+  margin-left: 5%;
+} 
+.underlineHover3:hover {
+  color: #912F46;
+}
+/*VER EN QUE LINK SE ESTA*/
+a:link, a:visited{
+  color: #707070;
+}
+a.current:link, a.current:visited{
+  color: #912F46;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------*/
+/*SeccionBoton SIGUIENTE*/
+.seccion-siniestro{
+  max-width: 900px;
+  padding-top: 130px;
+  height: 90%;
+  /*background: #bfe7e5;        /*PRUEBA*/
+} 
+/*Boton close POP UP*/
+.btn-close{
+  width: 10%;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.btn-close:focus{
+  outline:none; 
+}
+/*Icono de boton close*/
+.material-icons#close-pop:hover{
+  color: black;
+}
+.material-icons#close-pop{
+  color: #912F46;
+  font-size: 40px;
+}
+/* PANTALLA TODO LISTO*/
+#cover2{ /*Cubre toda la pantalla*/
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index:100;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.screenCuenta{ /*Recuadro POP UP*/
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 100; /*superponen*/
+  display: block;
+}
+
+
+
+.texto_area_b{ /*Nombre completo, Cuenta CLABE*/
+  text-align: center;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: column-reverse;
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+}
+.data_input_banca{
+  width: 100%;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  border-radius: 6px;
+}
+label.head-label, label.bottom-label1{
+  padding: 5px 0;
+  width: 95%; /*Alinea el texto de arriba*/
+  margin-left: auto; /*Alinea el texto de arriba*/
+  margin-right: auto; /*Alinea el texto de arriba*/
+  font-size: 12px; /*Letra chiquita arriba del cuadro*/
+  font-weight: 300; 
+  font-family: 'Raleway', sans-serif;
+  display: none; /*Desaparese*/
+  color: #912F46;
+  text-align: left;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  -webkit-animation: silo-fade 0.2s; /*Google*/
+  -moz-animation: silo-fade 0.2s; /*Motzilla*/
+  animation: silo-fade 0.2s; /*Google*/
+}
+input:focus{outline: none;}
+
+/*Hace la animacion de aparecer cuando se da clic*/
+input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
+  display: block;
+}
+input.invalid + label.head-label + label.bottom-label1{
+  display: block;
+  color:#FF4B4B;
+  font-weight: 500;
+  position: absolute;
+  top: 45px;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+input.valid{
+  color: #912F46;
+  font-weight: 500;
+}
+input.invalid{
+  color:#FF4B4B;
+  font-weight: 300;
+  border-bottom: 1px solid #FF4B4B;
+}
+input.invalid + label.head-label{
+  color:#989A9B;
+}
+input.quantity-field{
+  border: 1.5px solid #C7C7C7;
+  text-align: center;
+}
+select{
+  display: block;
+  margin: 0 auto;
+  color: #912F46;
+  background-color: white;
+  font-size: 16px;
+
+}
+option[value="0"][disabled]{
+  display: none;
+}
+select:focus{
+  outline: 0;
+}
+
+.boton-aceptar{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background: #912F46 0% 0% no-repeat padding-box;
+margin-top: 5%;
+}
+.boton-aceptarr:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.boton-aceptar:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.boton-aceptar:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+
+
+/*Animations*/
+@-webkit-keyframes silo-fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1.4em);
+    }
+    100% {
+     opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes silo-fade {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-1.4em);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@keyframes silo-fade {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-1.4em);
+        -moz-transform: translateY(-1.4em);
+        -ms-transform: translateY(-1.4em);
+        -o-transform: translateY(-1.4em);
+        transform: translateY(-1.4em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+
+/*NUEVO FOOTER*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-top: solid 5px;
+  border-color: #F2F5F4;
+  padding-top: 2%;
+  /*background: #99cccc;   /* PRUEBA*/
+}
+.texto1-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px; /*Separacion entre textos*/
+  padding-left: 5%;
+  margin-top: 28px;
+  z-index: 2001;
+}
+.texto2-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto3-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto4-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+}
+.texto5-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.link-footer:hover{
+  color: #C88585;
+}
+.link-footer:active{
+  color: #C88585;
+  text-decoration: none;
+}
+.link-footer:focus{
+  text-decoration: underline;
+  color: #C88585;
+}
+.logo-footer{
+  width: 160px;
+  height: 60px;
+  display: flex;
+  margin-left: 80%;
+  margin-top: -3%;
+}
+
+
+
+
+
+
+/*---------MEDIA QUERIES---------------*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.logo-freeda{
+  padding-right: 10%;
+  margin-left: 10%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
+}
+
+/*COBERTURA, VER PÓLIZA, SINIESTRO*/
+.underlineHover1{
+  margin-left: 5%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+} 
+
+
+
+.screenCuenta{ /*Recuadro grieta*/
+  top: calc(68% - 250px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 450px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  font-weight: 500;
+  width: 80%;
+  margin: 28px auto;
+  color: #912F46;
+}
+.screenCuenta p{ /*Espera el reporte final*/
+  width: 260px;
+  font-size: 25px;
+  margin: 5px auto;
+}
+
+.texto_area_b{ /*Nombre completo, Cuenta CLABE*/
+  width: 75%;
+}
+
+select{
+  width: 70%;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+
+
+
+
+/*Footer*/
+.logo-footer{
+  display: none;
+}
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+.logo-freeda{
+  padding-right: 15%;
+  margin-left: 25%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
+}
+
+
+
+.underlineHover1{
+  margin-left: 5%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+} 
+
+
+
+
+
+.screenCuenta{ /*Recuadro grieta*/
+  top: calc(68% - 250px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 450px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  width: 80%;
+  margin: 38px auto;
+  color: #912F46
+}
+.screenCuenta p{ /*Espera el reporte final*/
+  width: 270px;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 5px auto;
+}
+
+.texto_area_b{ /*Nombre completo, Cuenta CLABE*/
+  width: 76%;
+}
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  /* top: 85px;
+  left: 20px; */
+  width: 95%;
+}
+
+select{
+  width: 70%;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+
+/*Footer*/
+.footermenu{ /*Politicas de privacidad*/
+  padding-right: 180px;
+  height: 130px;
+  background-color: white;
+}
+.texto1-footer{
+  margin-right: 15px;
+}
+/* .texto3-footer{
+}
+ */
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+}
+    
+
+
+
+
+      
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+/*Dashboard2.html*/
+.underlineHover1{
+  margin-left: 20%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+} 
+
+
+
+.screenCuenta{ /*Reguadro grieta*/
+  top: calc(68% - 250px);
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 450px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  font-weight: 500;
+  width: 80%;
+  margin: 30px auto;
+  color: #912F46;
+}
+.screenCuenta p{ /*Espera el reporte*/
+  width: 290px;
+  font-size: 28px;
+  margin: 5px auto;
+}
+.icono_micro_screen{ /*Microfono*/
+  margin-top: 60px;
+  margin-right: 70%;
+  width: 100px;
+}
+
+.texto_area_b{ /*Nombre completo, Cuenta CLABE*/
+  width: 56%;
+}
+
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  /* top: 85px;
+  left: 20px; */
+  width: 95%;
+}
+
+ select{
+  width: 50%;
+  font-size: 22px;
+  margin-top: 5%;
+}
+
+
+
+/*Footer*/
+.footermenu{
+  padding-right: 150px;
+  background-color: white;
+}
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  visibility: visible;
+}
+.texto-notificacion{
+  display: all;
+}
+
+.underlineHover1{
+  margin-left: 30%;
+} 
+.underlineHover2{
+  margin-left: 5%;
+} 
+.underlineHover3{
+  margin-left: 5%;
+}
+
+
+
+.screenCuenta{ /*Recuadro grieta*/
+  top: calc(65% - 250px);
+  left: calc(45% - 250px);
+  width: 650px;
+  height: 450px;
+}
+h1#screenHeader{ /*Tembló*/
+  font-size: 35px;
+  font-weight: 500;
+  width: 80%;
+  margin: 40px auto;
+  color: #912F46;
+}
+.screenCuenta p{ /*Espera el reporte final*/
+  width: 350px;
+  font-size: 30px;
+  margin: 5px auto;
+}
+
+.texto_area_b{ /*Nombre completo, Cuenta CLABE*/
+  width: 42%;
+}
+
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+ /*  top: 85px;
+  left: 20px; */
+  width: 95%;
+}
+ select{
+  width: 40%;
+  font-size: 22px;
+  margin-top: 5%;
+}
+
+
+/*Footer*/
+.footermenu{
+  padding-left: 115px;
+}
+.logo-footer{
+  margin-left: 78%;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+.texto_area_b{ /*Nombre completo, Cuenta CLABE*/
+  width: 60%;
+}
+
+/* Posiciona etiqueta error en caso de que la entrada sea Invalida */
+input.invalid + label.head-label + label.bottom-label1{
+  /* top: 85px;
+  left: 20px; */
+  width: 95%;
+}
+select{
+  width: 58%;
+  font-size: 22px;
+  margin-top: 5%;
+}
+
+
+
+}
+
+
+
+
