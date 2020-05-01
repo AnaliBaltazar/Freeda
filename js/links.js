@@ -23,6 +23,7 @@ function validatePassword(event) {
     event.preventDefault();
     let password1 = document.querySelector('#pass');
     let password2 = document.querySelector('#pass2');
+    let mail=document.querySelector("#email")
     if (password2.classList.contains("valid") && password2.value == password1.value) {
 
         document.querySelector("#cover").style.display="block";
@@ -48,7 +49,10 @@ function validatePassword(event) {
             }, 2000);
         }, 2000);
         
-    } else {
+    } else if(password1.value == "" || password2.value == "" || mail.value == ""){
+        alert("Todos los campos son necesarios.")
+        return false
+    }else if(password2.value != password1.value){
         alert("Las contraseñas no coinciden.")
         return false
     }
