@@ -65,15 +65,16 @@
 }
 .texto_area_r{ /*Nombre usuario, apellidos,CP*/
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
+  
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 16px;
+  
   width: 30%;
   padding: 10px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 .data_input_usua{
   width: 100%;
@@ -183,6 +184,7 @@
   padding: 10px; /*20*/
   font-size: 16px; /*20*/
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 .data_input_tel{
   width: 100%;
@@ -242,6 +244,7 @@
   padding: 20px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 .data_input_token{
   width: 100%;
@@ -294,6 +297,9 @@ label.head-label, label.bottom-label1{
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
+  position: absolute;
+  top: -15px;
+  left: 20px;
   -webkit-animation: silo-fade 0.2s; /*Google*/
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
   animation: silo-fade 0.2s; /*Google*/
@@ -308,7 +314,8 @@ input.invalid + label.head-label + label.bottom-label1{
   display: block;
   color:#FF4B4B;
   font-weight: 500;
-  position: relative;
+  position: absolute;
+  top: 45px;
 }
 input:focus::-webkit-input-placeholder {
     opacity: 0;
@@ -664,9 +671,10 @@ input.quantity-field{
   margin-left: 28%;
 }
 /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
-input.invalid + label.head-label + label.bottom-label1 {
-  top: 110px;
-}
+/* input.invalid + label.head-label + label.bottom-label1 {
+  top: 85px;
+  left: 20px;
+} */
 
 /*3-ACTIVAR-TOKEN.HTML*/
 .texto1-seccion1{
@@ -746,7 +754,8 @@ input.invalid + label.head-label + label.bottom-label1 {
 }
 /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
 input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
+  /* top: 85px;
+  left: 20px; */
   width: 95%;
 }
 
@@ -843,7 +852,8 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
 input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
+  /* top: 85px;
+  left: 20px; */
   width: 95%;
 }
 
@@ -923,7 +933,8 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
 input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
+ /*  top: 85px;
+  left: 20px; */
   width: 95%;
 }
 
@@ -1000,7 +1011,8 @@ margin-top: 1%;
 }
 /* Posiciona etiqueta error en caso de que la entrada sea Invalida */
 input.invalid + label.head-label + label.bottom-label1{
-  top: 110px;
+  /* top: 85px;
+  left: 20px; */
   width: 95%;
 }
 

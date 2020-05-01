@@ -111,15 +111,14 @@
 /*Superficie.html*/
 .texto_area_cp{ /*Cuando de introduce el texto*/
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 10px;
   width: 36%;
-  padding: 50px;
+  padding: 10px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 /*INPUT*/
 .data_input{
@@ -186,15 +185,14 @@
 }
 .texto_area_años{ /*Cuando de introduce el texto*/
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 10px;
   width: 44%;
-  padding: 50px;
+  padding: 10px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 .data_input{
   width: 100%;
@@ -208,29 +206,27 @@
 /*12-SUPERFICIE.HTML*/
 .texto_area_superficie{ /*Cuando de introduce el texto*/
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 10px;
   width: 44%;
-  padding: 50px;
+  padding: 10px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 /*13-TERRENO.HTML*/
 .texto_area_terreno{ /*Cuando de introduce el texto*/
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto;
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 10px;
   width: 44%;
-  padding: 50px;
+  padding: 10px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 
@@ -246,6 +242,9 @@ label.head-label, label.bottom-label1{
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
+  position: absolute;
+  top: -15px;
+  left: 20px;
   -webkit-animation: silo-fade 0.2s; /*Google*/
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
   animation: silo-fade 0.2s; /*Google*/
@@ -260,7 +259,9 @@ input.invalid + label.head-label + label.bottom-label1{
   display: block;
   color:#FF4B4B;
   font-weight: 500;
-  position: relative;
+  position: absolute;
+  top: 45px;
+  left: 20px;
   }
 
 input:focus::-webkit-input-placeholder {
@@ -438,9 +439,9 @@ input.quantity-field{
 .texto_area_cp{
   width: 86%;
 }
-input.invalid + label.head-label + label.bottom-label1 {
-  top: 110px;
-}
+/*input.invalid + label.head-label + label.bottom-label1 {
+   top: 110px; 
+}*/
 .boton-siguiente{
   margin-left: 30%;
 }
@@ -502,9 +503,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 .texto_area_cp{
   width: 64%;
 }
-input.invalid + label.head-label + label.bottom-label1 {
-  top: 110px;
-}
+/*input.invalid + label.head-label + label.bottom-label1 {
+   top: 110px; 
+}*/
 .boton-siguiente{
   margin-left: 37%;
 }
@@ -580,9 +581,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 .texto_area_cp{
   width: 49%;
 }
-input.invalid + label.head-label + label.bottom-label1 {
-  top: 110px;
-}
+/*input.invalid + label.head-label + label.bottom-label1 {
+   top: 110px; 
+}*/
 .boton-siguiente{
   margin-left: 40%;
 }
@@ -640,9 +641,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 .texto_area_cp{
   width: 40%;
 }
-input.invalid + label.head-label + label.bottom-label1 {
+/* input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;
-}
+} */
 .boton-siguiente{
   margin-left: 42%;
 }
@@ -697,9 +698,9 @@ margin-top: 1%;
 .texto_area_cp{
   width: 37%;
 }
-input.invalid + label.head-label + label.bottom-label1 {
+/* input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;
-}
+} */
 .boton-siguiente{
   margin-left: 43%;
 }
