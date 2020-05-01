@@ -12,6 +12,7 @@ a, .Right span{
   color: #FFFFFF; /*Color letra */
 }
 
+
 /*MENU*/
 .headerBar{
   height: 78px;
@@ -132,6 +133,13 @@ a, .Right span{
   margin-left: 5%;
 } 
 .underlineHover3:hover {
+  color: #912F46;
+}
+/*VER EN QUE LINK SE ESTA*/
+a:link, a:visited{
+  color: #707070;
+}
+a.current:link, a.current:visited{
   color: #912F46;
 }
 
