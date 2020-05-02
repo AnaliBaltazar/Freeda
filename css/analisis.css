@@ -45,8 +45,26 @@
   position: absolute;
   left: 10%;
 }
+/*BARRA DE PROGRESO*/
+.espacio-progreso{
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  /*background: #bfe7e5;        /*PRUEBA*/
+}
 
-
+.headerBar{ /*CONTENEDOR < >*/
+  height: 35px;
+  text-align: center;
+}
+.material-icons.icon-arrow{
+  font-size: 35px;
+  color: #912F46;
+}
+.Menu.Left{
+  margin-left: 20%;
+  float: left;
+}
 
 
 /*Seccion1*/
@@ -297,9 +315,9 @@
 /*Seccion SUMA*/
 .seccion-suma{
   position: static;
-  height: 290px;
+  height: 200px;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 10px;
   /*background: #DEDEDE; /*Prueba */
 }
 .texto1-suma{
