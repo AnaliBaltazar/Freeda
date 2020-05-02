@@ -866,8 +866,7 @@ a.current:link, a.current:visited{
   padding-top: 30px;
   margin-bottom: 30px;
 }
-.boton-si{
-  /*position: absolute; */
+.boton-si{  
   width: 10%; /*Tamaño del boton*/
   background: #FFFFFF; /*Color del boton*/
   font-family: 'Raleway', sans-serif;
@@ -875,8 +874,8 @@ a.current:link, a.current:visited{
   text-align: center; /*Alineacion del texto del boton*/
   color: #912F46;
   border: 1.5px solid #912F46;
-  margin-top: 0%; /*Mover hacia arriba*/
-  margin-left: 37%;
+  margin-left: 38%;
+  margin-right: 5%;
   border-radius: 5px; /*Ovalado/redondo*/
 }
 .boton-si:hover{
@@ -892,23 +891,16 @@ a.current:link, a.current:visited{
   border: 2px solid #C88585;
   color: #912F46;
 }
-
 /*NO*/
 .boton-no{
-    /*position: absolute;*/
-    width: 10%; /*Tamaño 200px*/
-    background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    color: #912F46; /*Color de letra*/
-    border: 1.5px solid #912F46; /*Margen de boton*/
-    border-radius: 5px; /*Ovalado/redondo*/
-    margin-top: -6%;
-    margin-left: 54%;
-    /*height: 40px;
-    opacity: 1;
-    font-weight: 500;*/
+  width: 10%; /*Tamaño 200px*/
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #912F46; /*Color de letra*/
+  border: 1.5px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
 }
 .boton-no:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -917,7 +909,6 @@ a.current:link, a.current:visited{
 .boton-no:active{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
-  
 }
 .boton-no:focus{
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -927,31 +918,29 @@ a.current:link, a.current:visited{
 
 
 /*Transferencia2.html*/
-
 .info-trans{
-    width: 50%;
-    height: 40%;
-    /*margin-left: 5%; */
-    background-color: #F4F6FA ; /*#F4F6FA*/
-    border-radius: 10px;
-    margin-left: 26%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 100% 0%;
-    background-size: 60%;
+  width: 50%;
+  height: 40%;
+  /*margin-left: 5%; */
+  background-color: #F4F6FA ; /*#F4F6FA*/
+  border-radius: 10px;
+  margin-left: 26%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 100% 0%;
+  background-size: 60%;
 }
-
 .texto-trans{
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    color: #912F46;
-    padding: 55px 80px 5px 80px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #912F46;
+  padding: 55px 80px 5px 80px;
 }
 
 
@@ -1039,9 +1028,6 @@ a.current:link, a.current:visited{
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/*body{
-  background-color: orange;
-}*/ 
 .logo-freeda{
   padding-right: 10%;
   margin-left: 10%;
@@ -1119,11 +1105,11 @@ a.current:link, a.current:visited{
 
 
 .boton-si{
-  width: 15%;
+  width: 20%;
+  margin-left: 28%;
 }
 .boton-no{
-  width: 15%;
-  margin-top: -13%;
+  width: 20%;
 }
 
 
@@ -1215,9 +1201,6 @@ button.button-minus, button.button-plus{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-/*body{
-  background-color: red
-}*/
 .logo-freeda{
   padding-right: 15%;
   margin-left: 25%;
@@ -1307,15 +1290,21 @@ margin:10px 0;
   margin-top: -15%;
 }
 
-
-
 .boton-si{
+  width: 20%;
+  margin-left: 28%;
+}
+.boton-no{
+  width: 20%;
+}
+
+/*.boton-si{
   width: 15%;
 }
 .boton-no{
   width: 15%;
   margin-top: -13%;
-}
+}*/
 
 
 .info-trans{
@@ -1394,9 +1383,6 @@ h3.describe_bien{
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/*body{
-  background-color: green;
-}*/
 /*Dashboard2.html*/
 .underlineHover1{
   margin-left: 20%;
@@ -1426,9 +1412,9 @@ h3.describe_bien{
   background-size: 60%;
 }
 
-.boton-no{
+/*.boton-no{
   margin-top: -10%;
-}
+}*/
 
 
 .info-trans{
@@ -1577,9 +1563,6 @@ h3.describe_bien{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-/*body{
-  background-color: violet
-}*/
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   visibility: visible;
 }
@@ -1630,9 +1613,9 @@ h3.describe_bien{
   background-position: 100% 0%;
   background-size: 60%;
 }
-.boton-no{
+/*.boton-no{
   margin-top: -6%;
-}
+}*/
 
 /*Dashboard1.html 
 .resume_prop{

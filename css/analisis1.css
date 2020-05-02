@@ -169,7 +169,7 @@
 .texto1{  /*Año de terminación de la obra*/
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
-  margin-top: 13%; 
+  /*margin-top: 13%;*/ 
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
@@ -415,9 +415,6 @@ input.quantity-field{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/*body{
-  background-color: pink;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -448,8 +445,9 @@ input.quantity-field{
 
 /*11-AÑOS.HTML*/
 .texto1{
-  margin-top: 25%;
+  margin-top: 15%;
   line-height: 47px;
+  margin-bottom: 10%;
 }
 .texto_area_años{
   width: 90%;
@@ -479,9 +477,6 @@ input.quantity-field{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-/*body{
-  background-color: gray;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -513,8 +508,9 @@ input.quantity-field{
 
 /*11-AÑOS.HTML*/
 .texto1{
-  margin-top: 25%;
+  margin-top: 15%;
   line-height: 47px;
+  margin-bottom: 10%;
 }
 .texto_area_años{
   width: 90%;
@@ -557,9 +553,6 @@ input.quantity-field{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/*body{
-  background-color: orange;
-}*/
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -590,7 +583,8 @@ input.quantity-field{
 
 /*11-AÑOS.HTML*/
 .texto1{
-  margin-top: 21%;
+  margin-top: 10%;
+  margin-bottom: 6%;
 }
 .texto_area_años{
   width: 72%;
@@ -623,9 +617,6 @@ input.quantity-field{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-/*body{
-  background-color: aqua;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -650,7 +641,8 @@ input.quantity-field{
 
 /*11-AÑOS.HTML*/
 .texto1{
-  margin-top: 16%;
+  margin-top: 8%;
+  margin-bottom: 5%;
 }
 .texto_area_años{
   width: 50%;
@@ -680,9 +672,6 @@ input.quantity-field{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-/*body{
-  background-color: violet;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -708,7 +697,8 @@ margin-top: 1%;
 
 /*11-AÑOS.HTML*/
 .texto1{
-  margin-top: 14%;
+  margin-top: 8%;
+  margin-bottom: 4%;
 }
 .texto_area_años{
   width: 45%;
