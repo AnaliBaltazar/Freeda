@@ -299,7 +299,7 @@ select:focus{
   background: #912F46 0% 0% no-repeat padding-box;
 margin-top: 5%;
 }
-.boton-aceptarr:hover{
+.boton-aceptar:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
   color: #000000;
 }

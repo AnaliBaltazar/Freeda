@@ -1,13 +1,13 @@
 var wrapper = document.getElementById("signature-pad");
 var container2 =document.getElementById("signature-pad-footer-container")
-var seccioncaptura = document.getElementById("seccion-boton")
+// var seccioncaptura = document.getElementById("seccion-boton")
 var clearButton = container2.querySelector("[data-action=clear]");
 var changeColorButton = container2.querySelector("[data-action=change-color]");
 var undoButton = container2.querySelector("[data-action=undo]");
 var savePNGButton = container2.querySelector("[data-action=save-png]");
 var saveJPGButton = container2.querySelector("[data-action=save-jpg]");
 var saveSVGButton = container2.querySelector("[data-action=save-svg]");
-var capturarButton = seccioncaptura.querySelector("[data-action=save-png]");
+var capturarButton = document.querySelector("#capturar");
 var canvas = wrapper.querySelector("canvas");
 var signaturePad = new SignaturePad(canvas, {
   // It's Necessary to use an opaque color when saving image as JPEG;
