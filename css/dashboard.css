@@ -712,7 +712,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .capturar-firma{ /*BOTÓN CAPTURA FIRMA*/
   width: 25.8%; /*Tamaño del boton*/
   /*position: absolute;*/
-  margin-top: -10%; /*Mover hacia arriba*/
+  margin-top: 10%; /*Mover hacia arriba*/
   margin-left: 35%;
   text-align: center; /*Alineacion del texto del boton*/
   color: #912F46;
@@ -734,7 +734,9 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   border: 2px solid #C88585;
   color: #912F46;
 }
-
+#signature-pad-footer-container #capturar{
+  margin-top: 20px;
+}
 
 /**/
 
