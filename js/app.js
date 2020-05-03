@@ -128,9 +128,25 @@ saveSVGButton.addEventListener("click", function (event) {
 });*/
 capturarButton.addEventListener("click", function (event) {
   if (signaturePad.isEmpty()) {
-    alert("Please provide a signature first.");
+    alert("Por favor dibuja una firma primero.");
   } else {
     var dataURL = signaturePad.toDataURL();
     download(dataURL, "signature.png");
+
+    document.querySelector("#poliza-main").style.display="none"
+    document.querySelector("#siniestro-listo").style.display="none"
+    document.querySelector("#info-reporte").style.display="none"
+    document.querySelector("#reembolsobtn-container").style.display="none"
+    document.querySelector("#reporte-daños").style.display="none"
+    document.querySelector("#total-daños").style.display="none"
+    document.querySelector("#contenedor-top").style.display="none"
+    document.querySelector("#canvas").style.display="none"
+    document.querySelector("#signature-pad-footer-container").style.display="none"
+    document.querySelector("#banco-transfer").textContent=localStorage.getItem("banco")
+    document.querySelector("#cuenta-transfer").textContent=localStorage.getItem("clabe")
+    document.querySelector("#seccion-tran1").style.display="block"
+    document.querySelector("#seccion-tran2").style.display="block"
+    document.querySelector("#seccion-tran3").style.display="block"
+    document.querySelector("#seccion-btn").style.display="block"
   }
 });
