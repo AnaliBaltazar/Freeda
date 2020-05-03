@@ -14,7 +14,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Documento css (Ruta css/----) -->
-    <link rel="stylesheet" href="css/dashboard-1.css" > 
+    <link rel="stylesheet" href="css/dashboard-1.css" >
+    <link rel="stylesheet" href="./css/signature-pad.css"> 
     <!--Fuente de letra-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
     <!--Va tipografia-->
@@ -97,19 +98,19 @@
 
     <!--LINK DE COBERTURA, PÓLIZA Y SINIESTRO-->
     <div class="container seccion1 ">
-            <div class="row texto-centrado">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
-                    <a class="underlineHover1" href="./18-suma-asegurada.html">Coberturas</a>
-                    <a class="underlineHover2 current" href="./17-dashboard-1.html">Ver póliza</a> 
-                    <a class="underlineHover3" href="#">Siniestro</a> 
-                </div>
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <a class="underlineHover1" href="./18-suma-asegurada.html" id="coberturas">Coberturas</a>
+                <a class="underlineHover2 current" href="#" id="poliza">Ver póliza</a> 
+                <a class="underlineHover3" href="#" id="siniestro">Siniestro</a> 
             </div>
         </div>
+    </div>
 
 
-        <!-- DASHBOARD-->
-
-        <div class="container contenedor-analisis">
+    <!-- DASHBOARD-->
+    <!-- POLIZA -->
+    <div class="container contenedor-analisis" id="poliza-main">
         <div class="row">
             <!--Parte1-->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 part1">
@@ -175,7 +176,7 @@
                     </table>
                     <!--<p>Cuenta para recibir indemnizción:</p>-->
                     <div>
-                    <button class="btn-agregar" role="link" id="add-btn">Agregar</button>
+                        <button class="btn-agregar" role="link" id="add-btn">Agregar</button>
                     </div>
                 </div>
 
@@ -184,121 +185,511 @@
 
             <!--Parte2-->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 part2">
-            
-            <div class="documentos visibleflex" id="DocsSeg">
-                <div class="doc_row_1">
-                    
-                    <!--CARATULA-->
-                    <div class="doc_row" id="caratula">
-                        <h4>Caratula</h4>
-                        <div class="doc_btns">
-                            <!-- <a href="Manual%20de%20identidad%20Freeda.pdf"> -->
-
-                            <button><i class="material-icons">visibility</i></button>
-                        <!--</a>
-
-                        <a href="pdf/Manual.pdf">-->
-                            <button><i class="material-icons">get_app</i></button>
-                       <!-- </a> -->
+                <div class="documentos visibleflex" id="DocsSeg">
+                    <div class="doc_row_1">
+                        
+                        <!--CARATULA-->
+                        <div class="doc_row" id="caratula">
+                            <h4>Caratula</h4>
+                            <div class="doc_btns">
+                                <!-- <a href="Manual%20de%20identidad%20Freeda.pdf"> -->
+                                <button><i class="material-icons">visibility</i></button>
+                            <!--</a>
+                            <a href="pdf/Manual.pdf">-->
+                                <button><i class="material-icons">get_app</i></button>
+                            <!-- </a> -->
+                            </div>
                         </div>
-                    </div>
 
-                    <!--AVISO DE COBRO-->
-                    <div class="doc_row" id="aviso">
-                        <h4>Aviso de cobro</h4>
-                        <div class="doc_btns">
-                            <button><i class="material-icons">visibility</i></button>
-                            <button><i class="material-icons">get_app</i></button>
+                        <!--AVISO DE COBRO-->
+                        <div class="doc_row" id="aviso">
+                            <h4>Aviso de cobro</h4>
+                            <div class="doc_btns">
+                                <button><i class="material-icons">visibility</i></button>
+                                <button><i class="material-icons">get_app</i></button>
+                            </div>
                         </div>
-                    </div>
 
 
-                    <!--RECIBO-->
-                    <div class="doc_row" id="recibo">
-                        <h4>Recibo</h4>
-                        <div class="doc_btns">
-                            <button><i class="material-icons">visibility</i></button>
-                            <button><i class="material-icons">get_app</i></button>
+                        <!--RECIBO-->
+                        <div class="doc_row" id="recibo">
+                            <h4>Recibo</h4>
+                            <div class="doc_btns">
+                                <button><i class="material-icons">visibility</i></button>
+                                <button><i class="material-icons">get_app</i></button>
+                            </div>
                         </div>
-                    </div>
 
 
-                    <!--CONDICIONES PARTICULARES-->
-                    <div class="doc_row" id="condiciones_p">
-                        <h4>Condiciones particulares</h4>
-                        <div class="doc_btns">
-                            <button><i class="material-icons">visibility</i></button>
-                            <button><i class="material-icons">get_app</i></button>
+                        <!--CONDICIONES PARTICULARES-->
+                        <div class="doc_row" id="condiciones_p">
+                            <h4>Condiciones particulares</h4>
+                            <div class="doc_btns">
+                                <button><i class="material-icons">visibility</i></button>
+                                <button><i class="material-icons">get_app</i></button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!--CONDICIONES GENERALES-->
-                    <div class="doc_row" id="condiciones_g">
-                        <h4>Condiciones generales</h4>
-                        <div class="doc_btns">
-                            <button><i class="material-icons">visibility</i></button>
-                            <button><i class="material-icons">get_app</i></button>
+                        <!--CONDICIONES GENERALES-->
+                        <div class="doc_row" id="condiciones_g">
+                            <h4>Condiciones generales</h4>
+                            <div class="doc_btns">
+                                <button><i class="material-icons">visibility</i></button>
+                                <button><i class="material-icons">get_app</i></button>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- ------------------------------------------------------------------------- -->
 
-<!-- POP UP -->
-<div id="cover"></div>
-    
-<div class="screenCuenta" id="ready_screen1">
-    
-    <h1 id="screenHeader">Ingresa tus datos bancarios</h1>
-    
-    <form action="#" id="data_bancario" method="POST" onsubmit="saveData(event);">
-        <!--Nombre de usuario-->
-        <div class="texto_area_b" id="nombre_completo">
-            <input type="text" name="nombre" id="nombre" class="data_input_banca" placeholder="Nombre completo" >
+    <!-- SINIESTRO -->
+        <!-- reporte epicentro listo -->
+    <div class="container seccion2" id="siniestro-listo">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <tbody>
+                    <table class="info_seg2">
+                        <tr>
+                            <td class="col_l">No. de póliza:</td>
+                            <td class="col_r">64739402</td>
+                        </tr>
 
-            <label class="head-label" for="nombre">Nombre completo</label>
-            <label class="bottom-label1" id="bottom-nombre" for="nombre"></label>    
+                        <tr>
+                            <td class="col_l">Vigencia:</td>
+                            <td class="col_r">28/08/2020 al 28/08/2021</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="col_l">Asegurado:</td>
+                            <td class="col_r" id="clientName">Manuel Chavez Perez</td>
+                        </tr>
+                    </table>
+                </tbody>
+            </div>
         </div>
+    </div>
 
-        <!--Cuenta Clabe-->
-         <div class="texto_area_b" id="cta_clabe">
-            <input type="text" name="clabe" id="clabe" class="data_input_banca" placeholder="Cuenta CLABE" maxlength="18" >
+    <div class="info-reporte" id="info-reporte">
+        <p class="texto1-reporte">El reporte final indica que el epicentro fue en Guerrero con una magnitud de 7.1</p>
+        <p class="texto2-reporte">Tienes derecho a una indemnización de 3% de tu suma asegurada</p>
+    </div>
+        <!-- ------------------------------------------------------------------------- -->
 
-            <label class="head-label" for="clabe">Cuenta CLABE</label>
-            <label class="bottom-label1" id="bottom-clabe" for="clabe"></label>    
+        <!--SeccionBoton-->
+    <div class="container seccion-boton" id="reembolsobtn-container">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <button class="btn boton-reembolso" role="link" onclick="window.location='#'" id="reembolso-btn">SOLICITAR REEMBOLSO</button>
+            </div>
         </div>
+    </div> 
+        <!-- ------------------------------------------------------------------------- -->
+    
 
-        <!--Banco-->
-        <select name="banco" id="select_banco" class="select-banco">
-            <option disabled selected value="0"> Banco </option>
-            <option value="1">BBVA</option> 
-            <option value="2">Banamex</option> 
-            <option value="3">Bancomer</option>
-            <option value="4">HSBC</option> 
-            <option value="5">Scotiabank</option>
-        </select>
-        <button class="btn boton-aceptar" role="link" form="data_bancario" id="save-btn">GUARDAR</button> 
-    </form>
-    <button class="btn-close">
-        <a href="javascript: closePopup();"><i class="material-icons" id="close-pop">clear</i></a>
-    </button> 
-</div>
+    <!-- REPORTE DE DAÑOS -->
+        <!--Recuadro de reportes con grieta-->
+    <div class="reporte-daños" id="reporte-daños">
+        <p class="texto1-daños">Reporta los daños que ocasionó el temblor</p>
+        
+        <!--Recuadros -->
+        <div class="center_container" id="bienesInquilino">
 
+            <!--HOSPEDAJE --> 
+            <button class="bien activeHover" id="hospedaje">
+                <div class="banner_inq" id="banner_val_h">$00,000</div>
+                <div class="icon_content">
+                    <!-- <img class="icono_bienes" src="recursos/muebles.svg" alt=""> -->
+                    <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.59363 29.12494">
+                        <defs>
+                            <style>
+                                .cls-1m{ /*Sillón*/
+                                    fill:#fff;
+                                    stroke:#912F46;
+                                    stroke-linecap:round;
+                                    stroke-linejoin:round;
+                                    stroke-width:2px;
+                                }
+                                .cls-2m{ /*Patas de sillón*/
+                                    fill:#912F46;
+                                }
+                            </style>
+                        </defs>
+                        <title>Hospedaje</title>
+                        <path class="cls-1m" d="M12.31754,1H47.54092a4.17773,4.17773,0,0,1,4.17773,4.17773v11.5098a.62494.62494,0,0,1-.62494.62494H9.31242a.62494.62494,0,0,1-.62494-.62494V4.63006A3.63006,3.63006,0,0,1,12.31754,1Z"/><path class="cls-1m" d="M11.29546,10.91138s-7.40624-1.875-7.5,3.375L3.70172,27.3176h7.68749Z" transform="translate(-2.70172 -1.80202)"/><path class="cls-1m" d="M54.70162,10.91138s7.40623-1.875,7.5,3.375l.09375,13.03123H54.60787Z" transform="translate(-2.70172 -1.80202)"/><rect class="cls-1m" x="8.49998" y="17.40622" width="43.12491" height="7.96873"/><rect class="cls-2m" x="7.46874" y="26.12495" width="2.71874" height="2.99999"/><rect class="cls-2m" x="50.17178" y="26.12495" width="2.71874" height="2.99999"/>
+                    </svg>
+                    <h3 class="describe_bien">Hospedaje<br>fuera de mi hogar</h3>
+                    <!--<h3 class="describe_bien2"></h3>-->
+                </div>
+            </button>
+
+            <!-- CRISTALES -->
+            <button class="bien activeHover" id="cristales">
+                <div class="banner_inq" id="banner_val_c">$00,000</div>
+                <div class="icon_content">
+                    <!-- <img class="icono_bienes" src="recursos/electrodomesticos.svg" alt=""> -->
+                    <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.08341 26.45204">
+                        <defs>
+                            <style>
+                                .cls-1c{
+                                    fill:#912F46;
+                                }
+                                .cls-2c,.cls-3c{
+                                    fill:#fff;
+                                }
+                                .cls-2c{
+                                    stroke:#912F46;
+                                    stroke-linecap:round;
+                                    stroke-linejoin:round;
+                                }
+                                .cls-3c{
+                                    stroke:#912F46;
+                                    stroke-miterlimit:10;
+                                }
+                                </style>
+                        </defs>
+                        <title>Cristales</title>
+                        <path class="cls-1c" d="M32.36573,30.0129H3.30328V9.27823C3.06891,5.08042,4.82672,3.90662,7.21734,3.64577l19.2795.04178a5.668,5.668,0,0,1,5.86889,5.44311Z" transform="translate(-3.28232 -3.64577)"/><path class="cls-2c" d="M30.853,11.22959v-3.895s.71734-2.751-3.80209-2.70006l-9.03926-.15284L18.001,11.059" transform="translate(-3.28232 -3.64577)"/><path class="cls-2c" d="M4.47239,11.22959v-3.895s-.71734-2.751,3.80209-2.70006l9.03926-.15284.01063,6.57724" transform="translate(-3.28232 -3.64577)"/><rect class="cls-3c" x="0.71878" y="8.22272" width="13.73347" height="17.72932"/><rect class="cls-3c" x="14.52398" y="8.22272" width="13.62184" height="17.72932"/>
+                    </svg>
+                    <h3 class="describe_bien">Cristales</h3>
+                </div>
+            </button>
+
+            <!--ELECTRODOMÉSTICOS-->
+            <button class="bien activeHover" id="electrodomesticos">
+                <div class="banner_inq" id="banner_val_e">$00,000</div>
+                <div class="icon_content">
+                    <!-- <img class="icono_bienes" src="recursos/electronico.svg" alt=""> -->
+                    <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.99989 31.81244">
+                        <defs>
+                            <style>
+                            .cls-1e{
+                                fill:none;
+                                stroke:#912F46;
+                                stroke-linecap:round;
+                                stroke-linejoin:round;
+                                stroke-width:2px;
+                                }
+                                .cls-2e{
+                                    fill:#912F46;
+                                }
+                            </style>
+                        </defs>
+                        <title>Electrodomésticos</title>
+                        <rect class="cls-1e" x="1" y="1" width="53.99989" height="29.81244"/><rect class="cls-1e" x="6.48436" y="6.0312" width="29.67182" height="18.98434"/><line class="cls-1e" x1="43.60988" y1="1.39058" x2="43.66591" y2="30.07912"/><circle class="cls-2e" cx="49.51553" cy="8.84369" r="2.10937"/><circle class="cls-2e" cx="49.51553" cy="15.73431" r="2.10937"/><line class="cls-1e" x1="53.87489" y1="22.20304" x2="43.74991" y2="22.20304"/>
+                    </svg>
+                    <h3 class="describe_bien">Electrodomésticos</h3>
+                </div>
+            </button>
+
+            <!--TECHOS Y PAREDES-->
+            <button class="bien activeHover" id="paredes">
+                <div class="banner_inq" id="banner_val_p">$00,000</div>
+                <div class="icon_content">
+                    <!-- <img class="icono_bienes" src="recursos/deportivo.svg" alt=""> -->
+                    <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.0924 31.24918">
+                        <defs>
+                            <style>.cls-1t{
+                                fill:none;
+                                stroke:#912F46;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;
+                                }
+                                .cls-2t{
+                                    fill:#912F46;
+                                }
+                        </style>
+                        </defs>
+                        <title>Techos y paredes</title>
+                        <line class="cls-1t" x1="27.64946" y1="1" x2="1" y2="23.24844"/><line class="cls-1t" x1="54.0924" y1="23.77538" x2="27.80694" y2="1.09805"/><polygon class="cls-2t" points="45.157 14.937 41.718 13.999 41.718 4.812 45.191 4.812 45.157 14.937"/><rect class="cls-2t" x="40.76218" y="2.70236" width="5.27343" height="2.32031"/><polygon class="cls-2t" points="8.911 30.898 6.309 30.898 6.309 19.859 8.911 17.679 8.911 30.898"/><polygon class="cls-2t" points="47.723 31.249 50.325 31.249 50.325 20.21 47.723 18.03 47.723 31.249"/>
+                    </svg>
+                    <h3 class="describe_bien">Techos y paredes</h3>
+                </div>
+            </button>
+        </div>
+    </div>
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- Contenedor TOTAL DAÑOS -->
+    <div class="container contenedor" id="total-daños">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+            <p class="texto1-total" id="total-gastos">Suma total de gastos: $00,000</p>
+
+            <p class="texto2-total">Indemnización máxima $1,500</p>
+
+
+            <button class="btn boton1-firma" role="link" id="signature-btn">FIRMA</button>
+
+            </div>
+        </div>
+    </div>
+        <!-- ------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------- -->
+
+    <!-- FIRMA -->
+        <!-- Contenedor CANVAS para Firma -->
+    <div class="container-1" id="contenedor-top"></div>
+    <div class="container seccion-firma " id="canvas">
+        <div id="signature-pad" class="signature-pad">
+            <div class="signature-pad--body">
+                <canvas width="1328" height="752" style="touch-action: none;"></canvas>
+            </div>
+        
+        </div>
+    </div>
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- AREA BOTONES CANVAS -->
+    <div class="container-2" id="signature-pad-footer-container">
+        <div class="signature-pad--footer">          
+            <div class="signature-pad--actions">
+                <div>
+                <button type="button" class="button clear" data-action="clear">Limpiar</button>
+                <!-- <button type="button" class="button" data-action="change-color">Cambiar color</button> 
+                <button type="button" class="button" data-action="undo">Deshacer</button>-->
+        
+                </div>
+                
+                <div>
+                <button type="button" class="button save" data-action="load-img">Cargar imagen</button>
+                <!--    <button type="button" class="button save" data-action="save-jpg">Save as JPG</button>
+                <button type="button" class="button save" data-action="save-svg">Save as SVG</button>-->
+                </div> 
+            </div>
+        </div>
+        <div><input type="submit" name="capturar" id="capturar" class="capturar-firma btn" value="Capturar firma" data-action="save-png"><i class="fas fa-envelope" arian-hidden="true"></i></div>
+    </div>
+        <!-- ------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------- -->
+
+    <!-- HACER Transferencia -->
+
+    <div class="container seccion-tran1" id="seccion-tran1">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <p class="texto-t1">El monto de $1,500 por indemnización<br>sera transferido a la cuenta</p>   
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container seccion-tran2" id="seccion-tran2">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <p class="texto-t2" id="banco-transfer">Santander</p> 
+                <p class="texto-t2" id="cuenta-transfer">014180605631284041</p>  
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container seccion-tran3" id="seccion-tran3">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <p class="texto-t2">¿Es correcto?</p>  
+            </div>
+        </div>
+    </div>
+
+    <div class="container seccion-btn" id="seccion-btn">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <!--Boton SI-->
+                <input type="submit" name="si" id="si" class="boton-si btn" value="Si"><i class="fas fa-envelope" arian-hidden="true"></i></code>
+                <!--Boton SI-->
+                <!--<input type="submit" name="no" id="no" class="capturar-firma btn" value="Capturar firma"><i class="fas fa-envelope" arian-hidden="true"></i></code> -->
+                 <button class="btn boton-no" role="link" id="no">No</button> 
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------- -->
+
+    <!-- TRANSFERENCIA REALIZADA -->
+
+    <div class="container seccion2 " id="datos-poliza">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <tbody>
+                     <table class="info_seg">
+                        <tr>
+                            <td class="col_l">No. de póliza:</td>
+                            <td class="col_r">64739402</td>
+                        </tr>
+
+                        <tr>
+                            <td class="col_l">Vigencia:</td>
+                            <td class="col_r">28/08/2020 al 28/08/2021</td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="col_l">Asegurado:</td>
+                            <td class="col_r" id="clientName">Manuel Chavez Perez</td>
+                        </tr>
+                    </table>
+                </tbody>
+            </div>
+        </div>
+    </div>
+
+    <!--Recuadro gris-->
+    <div class="info-trans" id="transfer-msg">
+        <p class="texto-trans">Se ha transferido a la cuenta<br>014180605631284041<br>El monto de $1,500</p>
+    </div>
+
+    <!-- ------------------------------------------------------------------------- -->
+
+<!-- -------POPUPS----------- -->
+    <div id="cover"></div>
+    <!-- POP UP AGREGAR CUENTA -->
+    
+    <div class="screenCuenta" id="ready_screen1">
+        
+        <h1 id="screenHeader">Ingresa tus datos bancarios</h1>
+        
+        <form action="#" id="data_bancario" method="POST" onsubmit="saveData(event);">
+            <!--Nombre de usuario-->
+            <div class="texto_area_b" id="nombre_completo">
+                <input type="text" name="nombre" id="nombre" class="data_input_banca" placeholder="Nombre completo" >
+
+                <label class="head-label" for="nombre">Nombre completo</label>
+                <label class="bottom-label1" id="bottom-nombre" for="nombre"></label>    
+            </div>
+
+            <!--Cuenta Cable-->
+            <div class="texto_area_b" id="cta_clabe">
+                <input type="text" name="clabe" id="clabe" class="data_input_banca" placeholder="Cuenta CLABE" maxlength="18" >
+
+                <label class="head-label" for="clabe">Cuenta CLABE</label>
+                <label class="bottom-label1" id="bottom-clabe" for="clabe"></label>    
+            </div>
+
+            <!--Banco-->
+            <select name="banco" id="select_banco" class="select-banco">
+                <option disabled selected value="0"> Banco </option>
+                <option value="BBVA">BBVA</option> 
+                <option value="Banamex">Banamex</option> 
+                <option value="Bancomer">Bancomer</option>
+                <option value="HSBC">HSBC</option> 
+                <option value="Scotiabank">Scotiabank</option>
+            </select>
+            <button class="btn boton-aceptar" role="link" form="data_bancario" id="save-btn">GUARDAR</button> 
+        </form>
+        <button class="btn-close">
+            <a href="#numCuenta"><i class="material-icons cerrar" id="close-pop">clear</i></a>
+        </button> 
+    </div>
+    <!-- ----------------------------------------------------------- -->
+
+    <!-- POP UP TEMBLÓ -->
+    <div class="readyScreen" id="ready_screen2">
+        
+        <h1 id="screenHeader">Tembló</h1>
+        <!--<h2>Espera el reporte final para saber la magnitud del sismo</h2>-->
+        <p>Espera el reporte final para saber la magnitud del sismo</p>
+        
+        <div class="center_icon">
+            <img class="icono_micro_screen" src="img/microfono.svg" alt="">
+        </div>
+        <!--<button class="Continuar aceptar" id="verseguro">Ver mi seguro <i class="material-icons">arrow_forward</i></button> -->      
+        <!-- <a href="#" class="btn-close">X</a>  -->
+        <button class="btn-close">
+            <a href="#"><i class="material-icons cerrar" id="close-pop2">clear</i></a>
+        </button> 
+    </div>
+    <!-- ----------------------------------------------------------- -->
+
+    <!-- POP UP REPORTE DE GASTOS -->
+    
+    <!--HOSPEDAJE-->
+    <div class="valueScreen" id="screen_hospedaje">
+        <i class="material-icons" id="close">clear</i>
+        <h1 id="screenHeaderD">Escribe un valor aproximado de todos los gastos por:</h1>
+        <div class="center_iconD">
+            <img class="icono-daños" src="img/Hospedaje.svg" alt="">
+        </div>
+        <h3 id="screenLabel">Hospedaje</h3>
+        <p>DESCRIPCIÓN</p>
+        <div class="valueModifier">
+            <button class="btn-minus">-</button>
+            <input class="quantity-field" id="valueQty_h" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern="">
+            <button class="btn-plus">+</button>   
+        </div>
+        <button class="Aceptar btn-aceptar" id="aceptar-h">ACEPTAR</button>
+    </div>
+
+    <!--CRISTALES-->
+    <div class="valueScreen" id="screen_cristales">
+        <i class="material-icons" id="close">clear</i>
+        <h1 id="screenHeaderD">Escribe un valor aproximado de todos los gastos por:</h1>
+        <div class="center_iconD">
+            <img class="icono-daños" src="img/Cristales.svg" alt="">
+        </div>
+        <h3 id="screenLabel">Cristales</h3>
+        <p>DESCRIPCIÓN</p>
+        <div class="valueModifier">
+            <button class="btn-minus">-</button>
+            <input class="quantity-field" id="valueQty_c" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern=""> 
+            <button class="btn-plus">+</button>  
+        </div>
+        <button class="Aceptar btn-aceptar" id="aceptar-c">ACEPTAR</button>
+    </div>
+
+
+    <!--EQUIPO ELECTRÓNICO Y FOTOGRÁFICO -->
+    <div class="valueScreen" id="screen_electrodomesticos">
+        <i class="material-icons" id="close">clear</i>
+        <h1 id="screenHeaderD">Escribe un valor aproximado de todos los gastos por:</h1>
+        <div class="center_iconD">
+            <img class="icono-daños" src="img/Electrodomésticos.svg" alt="">
+        </div>
+        <h3 id="screenLabel">Electrodomésticos</h3>
+        <p>DESCRIPCIÓN</p>
+        <div class="valueModifier">
+            <button class="btn-minus">-</button>
+            <input class="quantity-field" id="valueQty_e" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern="">
+            <button class="btn-plus">+</button>   
+        </div>
+        <button class="Aceptar btn-aceptar" id="aceptar-e">ACEPTAR</button>
+    </div>
+
+
+     <!--TECHO Y PAREDES-->
+    <div class="valueScreen" id="screen_paredes">
+        <i class="material-icons" id="close">clear</i>
+        <h1 id="screenHeaderD">Escribe un valor aproximado de todos los gastos por:</h1>
+        <div class="center_iconD">
+            <img class="icono-daños" src="img/Techos y paredes.svg" alt="">
+        </div>
+        <h3 id="screenLabel">Techo y paredes</h3>
+        <p>DESCRIPCIÓN</p>
+        <div class="valueModifier">
+            <button class="btn-minus">-</button>
+            <input class="quantity-field" id="valueQty_p" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern="">
+            <button class="btn-plus">+</button>   
+        </div>
+        <button class="Aceptar btn-aceptar" id="aceptar-p">ACEPTAR</button>
+    </div>
+
+    <!-- ------------------------- -->
 
           <!--Footer Menu-->
-  <div class="footermenu">
-    <!--<a href="#" class="texto1-footermenu link-footer">Solicitud de póliza</a> -->
-    <a href="#" class="texto1-footer link-footer">Mi póliza</a>
-    <a href="#" class="texto2-footer link-footer">Crear usuario</a>
-    <a href="#" class="texto3-footer link-footer">Inicio sesión</a>
-     <a href="#" class="texto4-footer link-footer">Términos y condiciones</a>
-    <a href="#" class="texto5-footer link-footer">Aviso de privacidad</a>
-    <a href="#" class="logo-footer"><img src="img/freeda.svg"></a>    
-  </div>
-<script src="./js/dashboard.js"></script>
+    <div class="footermenu">
+        <!--<a href="#" class="texto1-footermenu link-footer">Solicitud de póliza</a> -->
+        <a href="#" class="texto1-footer link-footer">Mi póliza</a>
+        <a href="#" class="texto2-footer link-footer">Crear usuario</a>
+        <a href="#" class="texto3-footer link-footer">Inicio sesión</a>
+        <a href="#" class="texto4-footer link-footer">Términos y condiciones</a>
+        <a href="#" class="texto5-footer link-footer">Aviso de privacidad</a>
+        <a href="#" class="logo-footer"><img src="img/freeda.svg"></a>    
+    </div>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/popup-reporte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
                 

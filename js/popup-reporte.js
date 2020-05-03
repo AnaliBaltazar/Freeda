@@ -27,13 +27,13 @@ aceptar_inquilino.forEach(aceptar => aceptar.addEventListener('click', updateVal
  });
 
  //Click en boton cerrar
-const cerrar_btns=document.querySelectorAll("i#close");
-if(cerrar_btns!=null){
-    cerrar_btns.forEach(button => button.addEventListener("click",closePopup));
+const cerrarD_btns=document.querySelectorAll("i#close");
+if(cerrarD_btns!=null){
+    cerrarD_btns.forEach(button => button.addEventListener("click",closePopup));
 }
 
 function closePopup(){
-    document.querySelector("#cover-daños").style.display="none";
+    document.querySelector("#cover").style.display="none";
     this.parentNode.style.display="none";
 }
 
@@ -52,7 +52,7 @@ function openValueModifier(){  // Activa ventana para editar valor de los bienes
     this.style.borderColor = "#912F46";
     this.classList.remove("activeHover");
     
-    document.querySelector('#cover-daños').style.display = "block";
+    document.querySelector('#cover').style.display = "block";
     let bien_id= this.id;
     switch(bien_id){
         case "hospedaje":
@@ -71,7 +71,7 @@ function openValueModifier(){  // Activa ventana para editar valor de los bienes
     }
 }
 function updateValue(){  //Actualiza el valor en el banner correspondiente al bien del inquilino seleccionado
-    document.querySelector('#cover-daños').style.display = "none";
+    document.querySelector('#cover').style.display = "none";
     let boton_id= this.id;
     switch(boton_id){
         case "aceptar-h":
