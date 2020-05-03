@@ -1398,6 +1398,10 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-top: 0%;
 }
 
+.btn-agregar{
+  margin-right: -4%;
+  margin-top: -5%;
+}
 
 
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
@@ -1558,6 +1562,11 @@ button.button-minus, button.button-plus{
 .logo-freeda{
   margin-left: 12%;
   margin-top: 0%;
+}
+
+.btn-agregar{
+  margin-right: -4%;
+  margin-top: -5%;
 }
 
 
@@ -1769,10 +1778,13 @@ h3.describe_bien{
   flex-direction: row;
   align-items: center;
 }
-.btn-agregar{
-  
+/*.btn-agregar{
   left: 73%;
   margin-top: 0px;
+}*/
+.btn-agregar{
+  margin-right: -4%;
+  margin-top: -4%;
 }
 
 
@@ -2050,9 +2062,14 @@ margin-top: 1%;
   height: 110%;
 }
 
-.btn-agregar{
+/*.btn-agregar{
   left: 58%;
   margin-top: 2px;
+}*/
+
+.btn-agregar{
+  left: 60%;
+  margin-top: -6%;
 }
 
 /*Footer*/
