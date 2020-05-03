@@ -1028,10 +1028,21 @@ a.current:link, a.current:visited{
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.logo-freeda{
-  padding-right: 10%;
-  margin-left: 10%;
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
 }
+.logo-freeda{
+  margin-left: -3%;
+  margin-top: 0%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+
+
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   display: none;
 }
@@ -1201,10 +1212,17 @@ button.button-minus, button.button-plus{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-.logo-freeda{
-  padding-right: 15%;
-  margin-left: 25%;
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
 }
+.logo-freeda{
+  margin-left: 12%;
+  margin-top: 0%;
+}
+
+
+
+
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   display: none;
 }
@@ -1383,6 +1401,15 @@ h3.describe_bien{
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: 26%;
+  margin-top: 0%;
+}
+
+
 /*Dashboard2.html*/
 .underlineHover1{
   margin-left: 20%;
@@ -1563,6 +1590,15 @@ h3.describe_bien{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: 75%;
+  margin-top: 1%;
+}
+
+
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   visibility: visible;
 }

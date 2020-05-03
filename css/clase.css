@@ -1,6 +1,4 @@
 /*Navegacion*/
-/*Encabezado menú*/
-
 .tamaño-renglon-1{
   position: fixed;
   height: 78px;
@@ -122,19 +120,6 @@
   padding-top: 2%;
   /*background: #99cccc;   /* PRUEBA*/
 }
-/*.texto1-footermenu{
-  display: flex;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 40px;
-  padding-left: 5%;
-  margin-top: 28px;
-  z-index: 2001;
-} */
 .texto1-footer{
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
@@ -381,14 +366,28 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.logo-freeda{
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+/*.logo-freeda{
   padding-right: 1%;
   margin-top: -7%;
-}
 .boton-menu{
   position: absolute;
   left: 34%;
 }
+}*/
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: -7%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+
 
 
 .texto-clase{
@@ -447,14 +446,28 @@ button.Continuar.Small{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
 @media only screen and (min-width: 600px) {
-.logo-freeda{
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+/*.logo-freeda{
   padding-right: 15%;
   margin-top: -7%;
 }
 .boton-menu{
   position: absolute;
   left: 34%;
+}*/
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: -7%;
 }
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+
 
 .texto-clase{ /*¿Que clase de inmueble es?*/
   /*padding-top: 14%;*/
@@ -500,14 +513,28 @@ button.Continuar.Small{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-.logo-freeda{
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+/*.logo-freeda{
   padding-right: 15%;
   margin-top: -7%;
 }
 .boton-menu{
   position: absolute;
   left: 34%;
+}*/
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
 }
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
+}
+
 .texto-clase{ /*¿Que clase de inmueble es?*/
   /*padding-top: 11%;*/
   margin-top: 8%;
@@ -548,6 +575,13 @@ button{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: 1%;
+}
 .texto-clase{ /*¿Que clase de inmueble es?*/
   /*padding-top: 9%;*/
   margin-top: 6%;

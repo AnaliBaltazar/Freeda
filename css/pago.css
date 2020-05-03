@@ -1,5 +1,4 @@
 /*Navegacion*/
-/*Encabezado menú*/
 .tamaño-renglon-1{
   position: fixed;
   height: 78px;
@@ -447,7 +446,7 @@ div.shield {
 /*---------------Media Queries--------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.tamaño-renglon-1{
+/*.tamaño-renglon-1{
   padding-left: 10%;
 }
 .logo-freeda{
@@ -484,6 +483,19 @@ div.shield {
 }
 .material-icons{
   color: white;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: -7%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
 }
 /*Seguro primeros gastos terremoto*/
 .texto1-titulo{
@@ -667,13 +679,16 @@ div.shield {
   font-size: 14px;
   margin-left: 15px;
 }
-.footermenu{
+/*.footermenu{
   padding-left: 0px;
 }
 .logo-footer{
   display: none;
+}*/
+/*Footer*/
+.logo-footer{
+  display: none;
 }
-
 
 }
 
@@ -681,14 +696,14 @@ div.shield {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-.tamaño-renglon-1{
+/*.tamaño-renglon-1{
   padding-left: 10%;
 }
 .logo-freeda{
   margin-left: -10%;
   margin-top: -7.5%;
 }
-/*.menu-freeda{
+.menu-freeda{
   position: absolute;
   margin-left: -80px;
   margin-right: 30px;
@@ -696,7 +711,7 @@ div.shield {
   background-color: #FFFFFF;
   width: 100vh;
   min-height: 100vh;
-}*/
+}
 .texto-menu{
   padding-right: 0;
   font-family: 'Raleway', sans-serif;
@@ -718,6 +733,19 @@ div.shield {
 }
 .material-icons{
   color: white;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: -7%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
 }
 /*Seguro primeros gastos terremoto*/
 .texto1-titulo{
@@ -909,12 +937,30 @@ div.shield {
   margin-left: 15px;
 }
 
+/*Footer*/
+.footermenu{ /*Politicas de privacidad*/
+  padding-right: 180px;
+  height: 130px;
+  background-color: white;
+}
+.texto1-footer{
+  margin-right: 15px;
+}
+.texto3-footer{
+}
+
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-.tamaño-renglon-1{
+/*.tamaño-renglon-1{
   padding-left: 10%;
 }
 .logo-freeda{
@@ -926,6 +972,19 @@ padding-right: 16%;
 }
 .material-icons{
   color: white;
+}*/
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.material-icons{
+  color: white;
+}
+.boton-menu{
+  left: 80%;
 }
 
 /*Seguro primeros gastos terremoto*/
@@ -933,14 +992,33 @@ padding-right: 16%;
   margin-top: 17%;
 }
 
+/*Footer*/
+.footermenu{
+  padding-right: 150px;
+  background-color: white;
+}
+.logo-footer{
+  width: 20%; 
+  height: 55px;
+  margin-left: 84%;
+}
+
 
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
+.logo-freeda{
+  margin-left: -55%;
+  margin-top: 1%;
+}
+
+.texto1-titulo{
+  margin-top: 7%;
+}
+
 /*Seguro primeros gastos terremoto*/
 .texto1-titulo{
   margin-top: 10%;
@@ -949,52 +1027,13 @@ padding-right: 16%;
   width: 58%;
 }
 
-
-
-.tamaño-renglon-1{
-  position: fixed;
-  height: 78px;
-  padding-top: 13px;
-  width: 100%;
-  z-index: 2010;
-  background: #912F46 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 10px #00000029;
-  opacity: 1;
-  padding-left: 19%;
+/*Footer*/
+.footermenu{
+  padding-right: 45px;
 }
-.logo-freeda{
-  margin-left: -55%;
-  margin-top: 0%;
-  height: 85px;
-  width: 210px; 
-  display:flex;
-}
-.menu-freeda{
-  font-size: 14px;
-  margin-left: 4%;
-  padding-bottom: 4px;
-}
-.texto-menu-f{ /*Letra del menu*/
-  font-size: 18px;
-  color:#F7F7F7;
-  margin-top: 3px;
-  padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-}
-.texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
-  color: #FFFFFF;
-}
-.texto-menu-f:active{
-  color: #FFFFFF;
-}
-.texto-menu-f:focus{ /*Queda activado*/
-  text-decoration: underline;
-  color: #FFFFFF;
-}
-.boton-menu-f{
-  position: absolute;
-  left: 10%;
+.logo-footer{
+  margin-left: 78%;
+  height: 60px;
 }
 
 
