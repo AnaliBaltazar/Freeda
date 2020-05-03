@@ -105,6 +105,11 @@
   margin-bottom: 10%;
 }
 
+.espacio{
+  width: 100%;
+  padding-bottom: 105px;
+  /*background: #bfe7e5;        /*PRUEBA*/
+}
 
 
 /*NUEVO FOOTER*/
@@ -268,29 +273,23 @@ a{
 
 a:focus{outline:none;}
 */
-
+/********BOTONES********/
 /*HACE EFECTO EN LAS LETRAS DEL BOTTON*/
 h3{
-    font-weight: normal;
-    color: #989A9B;
+  font-weight: normal;
+  color: #989A9B;
 }
 /*HACE EFECTO EN EL BOTTON LO ALARGA*/
 button{
-    border: 1.5px solid #C7C7C7;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    outline: none;
+  border: 1.5px solid #C7C7C7;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  outline: none;
 }
-
-
-
-/********BOTONES********/
-
-
 /*BORDE DEL BOTON  #60A1E7*/
 button:focus{
     border: 5px solid #F9919C; /*Borde el boton*/
@@ -314,31 +313,27 @@ button.activeHover:hover .rectangle_content .button_text, button.activeHover:hov
 
 /*AJUSTA LOS BOTONES EN MEDIO*/
 .rectangle{
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left; 
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
-
-
 /*TAMAÑO DEL BOTON*/
-.rectangle_content{
-    display: inline-block;
-    width: 56%;
-    margin-left: 10%;
-    margin-right: 15%;
-    text-align: left;
+.rectangle_content{ /*TEXTO*/
+  display: inline-block;
+  width: 56%;
+  margin-left: 10%;
+  margin-right: 15%;
+  text-align: left;
 }
-
-.rectangle_icon{
-    display: inline-block;
+.rectangle_icon{ /*ICONO*/
+  display: inline-block;
 }
-
 /*HACE EFECTO EN EL ICONO*/
 .icono{
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Estilos del contenedor con la descripcion de la Clase */
@@ -386,9 +381,6 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/*body{
-  background-color: red;
-}*/
 .logo-freeda{
   padding-right: 1%;
   margin-top: -7%;
@@ -400,9 +392,10 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
 
 
 .texto-clase{
-  padding-top:17%;
+  /*padding-top:12%;*/
+  margin-top: 12%;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 
@@ -454,9 +447,6 @@ button.Continuar.Small{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
 @media only screen and (min-width: 600px) {
-/*body{
-  background-color: green;
-}*/
 .logo-freeda{
   padding-right: 15%;
   margin-top: -7%;
@@ -467,9 +457,10 @@ button.Continuar.Small{
 }
 
 .texto-clase{ /*¿Que clase de inmueble es?*/
-  padding-top: 14%;
+  /*padding-top: 14%;*/
+  margin-top: 10%;
   text-align: center;
-  margin-bottom: 8%;
+  margin-bottom: 15%;
 }
 
 
@@ -509,9 +500,6 @@ button.Continuar.Small{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/*body{
-  background-color: orange;
-}*/
 .logo-freeda{
   padding-right: 15%;
   margin-top: -7%;
@@ -521,9 +509,10 @@ button.Continuar.Small{
   left: 34%;
 }
 .texto-clase{ /*¿Que clase de inmueble es?*/
-  padding-top: 11%;
+  /*padding-top: 11%;*/
+  margin-top: 8%;
   text-align: center;
-  margin-bottom: 8%;
+  margin-bottom: 12%;
 }
 
 
@@ -559,14 +548,11 @@ button{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-/*body{
-  background-color: violet;
-} */
-
 .texto-clase{ /*¿Que clase de inmueble es?*/
-  padding-top: 9%;
+  /*padding-top: 9%;*/
+  margin-top: 6%;
   text-align: center;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
 }
 
 h3{
@@ -578,6 +564,7 @@ h3{
   height: 104px;
   margin-top: 2%;
   margin-bottom: 2%;
+
 }
 
 button{
