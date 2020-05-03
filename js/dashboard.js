@@ -96,6 +96,8 @@ function saveData(event) {
         document.querySelector("#numCuenta").textContent = account_value.replace(/\d(?=\d{4})/g,"*")
         document.querySelector("#cover").style.display="none";
         document.querySelector("#ready_screen1").style.display="none";
+        document.querySelector("#banco-transfer").textContent=bank
+        document.querySelector("#cuenta-transfer").textContent=account_value
     }
 }
 
