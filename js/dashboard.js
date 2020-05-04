@@ -5,9 +5,9 @@ window.onload = function(){
         document.querySelector("#banco-transfer").textContent=localStorage.getItem("banco")
         document.querySelector("#cuenta-transfer").textContent=localStorage.getItem("clabe")
     }else{
-        document.querySelector("#numCuenta").textContent = "No hay una cuenta dada de alta.";
-        document.querySelector("#banco-transfer").textContent="Sin información"
-        document.querySelector("#cuenta-transfer").textContent="Sin información"
+        document.querySelector("#numCuenta").textContent = "Sin registro.";
+        document.querySelector("#banco-transfer").textContent="Sin información."
+        document.querySelector("#cuenta-transfer").textContent="Sin información."
     }
 }
 const addAccount=document.querySelector("#add-btn");

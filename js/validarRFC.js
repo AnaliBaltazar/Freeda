@@ -34,6 +34,8 @@ function validateInputValue(){
     if (elmnt_value == "") {    //Si el campo esta vacío = INVALIDO
         this.classList.add("invalid");
         appendText("Esta información es necesaria",this.parentNode.querySelector('.bottom-label1'));
+        document.querySelector("#cover").style.display="none"
+        document.querySelector(".center_container").style.display="none"
     } else {
         reg=/^[A-Z,Ñ,&]{3,4}[0-9]{2}[0-1][0-9][0-3][0-9][A-Z,0-9]?[A-Z,0-9]?[0-9,A-Z]?/g;
         result = elmnt_value.match(reg);
@@ -58,6 +60,8 @@ function validateInputValue(){
             this.classList.add("invalid");
             this.classList.remove("valid");
             appendText(cautionTxt,this.parentNode.querySelector('.bottom-label1'));
+            document.querySelector("#cover").style.display="none"
+            document.querySelector(".center_container").style.display="none"
         } 
     }
 }
@@ -108,10 +112,14 @@ const form = document.querySelector("#data_registro")
 form.addEventListener('submit', toLoader)
 function toLoader(evt) {
     evt.preventDefault();
-    const rfcval = document.querySelector("#rfc").value;
-    const nameval = document.querySelector("#nombre").value;
-    const patval = document.querySelector("#paterno").value;
-    const matval = document.querySelector("#materno").value;
+    const rfcelmnt = document.querySelector("#rfc");
+    const nameelmnt = document.querySelector("#nombre");
+    const patelmnt = document.querySelector("#paterno");
+    const matelmnt = document.querySelector("#materno");
+    const rfcval = rfcelmnt.value;
+    const nameval = nameelmnt.value;
+    const patval = patelmnt.value;
+    const matval = matelmnt.value;
     const diaval = document.querySelector("#day").value;
     const mesval = document.querySelector("#month").value;
     const yearval = document.querySelector("#year").value;
@@ -119,6 +127,8 @@ function toLoader(evt) {
     if (rfcval == "" || nameval=="" || patval=="" || matval=="" || diaval=="0" || mesval =="0" || yearval == "0") {    //Si el campo esta vacío = INVALIDO
         alert("Toda la información es necesaria")
         
+    }else if (rfcelmnt.classList.contains("invalid") || nameelmnt.classList.contains("invalid") || patelmnt.classList.contains("invalid") || matelmnt.classList.contains("invalid")){
+        alert("La información proporcionada no es válida")
     }else{
         document.querySelector("#cover").style.display="block";
         document.querySelector(".center_container").style.display="block";
@@ -143,6 +153,6 @@ function toLoader(evt) {
                     }, 4000);
                 }, 4000);
             }, 4000);
-        }, 4000);  
+        }, 4000);
     }
 }

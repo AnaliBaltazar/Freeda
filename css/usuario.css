@@ -107,7 +107,7 @@ label.head-label, label.bottom-label1{
   width: 95%; /*Alinea el texto de arriba*/
   margin-left: auto; /*Alinea el texto de arriba*/
   margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 12px; /*Letra chiquita arriba del cuadro*/
+  font-size: 15px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
   font-family: 'Raleway', sans-serif;
   display: none; /*Desaparese*/
@@ -304,7 +304,7 @@ input.quantity-field{
 .underlineHover{
   display: block; /*Posicionar debajo de text-area*/
   font-family: 'Raleway', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   color: #707070;
 } 
 .underlineHover:hover {
