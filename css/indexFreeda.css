@@ -113,21 +113,21 @@ ul{ /*Contenedor botones*/
 }
 
 
-/*SLIDER Boton CONOCE MAS...*/
+/*SLIDER Boton CONOCE MAS...
 .boton-conoce{
   position: absolute;
   margin-left: -8%;
   margin-top: -40%;
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
+  border: 1px solid #FFFFFF; /*Margen de boton
+  border-radius: 5px; /*Ovalado/redondo
+  width: 200px; /*Tamaño
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
+  color: #FFFFFF; /*Color de letra
+  text-transform: uppercase; /*Todas mayusculas
   opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -143,22 +143,22 @@ ul{ /*Contenedor botones*/
 .boton-conoce:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
-}
-/*SLIDER Boton INICAR SESIÓN*/
+}*/
+/*SLIDER Boton INICAR SESIÓN
 .boton-iniciar{
   position: absolute;
   margin-left: -8%;
   margin-top: -35%;
-  border: 1px solid #912F46; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
+  border: 1px solid #912F46; 
+  border-radius: 5px; 
+  width: 200px; 
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
-  color: #912F46; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
+  color: #912F46; 
+  text-transform: uppercase; 
   opacity: 1;
-  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  background: #FFFFFF 0% 0% no-repeat padding-box; 
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -174,7 +174,7 @@ ul{ /*Contenedor botones*/
 .boton-iniciar:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
-}
+}*/
 
 
 
@@ -295,7 +295,7 @@ ul{ /*Contenedor botones*/
   width: 120%;
   height: 100%;
 }
-/*BOTONES SLIDER*/
+/*BOTONES SLIDER
 .boton-conoce{
   width: 130px;
   height: 30px;
@@ -310,7 +310,7 @@ ul{ /*Contenedor botones*/
   margin-right:auto;
   margin-left: auto;
   margin-top: -33%;
-}
+}*/
 
 /*Footer*/
 .logo-footer{
@@ -342,7 +342,7 @@ ul{ /*Contenedor botones*/
   margin-top: 20%;
   width: 100%;
 }
-/*BOTONES SLIDER*/
+/*BOTONES SLIDER
 .boton-conoce{
   width: 130px;
   height: 30px;
@@ -357,7 +357,7 @@ ul{ /*Contenedor botones*/
   margin-right:auto;
   margin-left: auto;
   margin-top: -33%;
-}
+}*/
 
 
 /*Footer*/
@@ -404,7 +404,7 @@ ul{ /*Contenedor botones*/
   margin-top: 20%;
   width: 100%;
 }
-/*BOTONES SLIDER*/
+/*BOTONES SLIDER
 .boton-conoce{
   width: 130px;
   height: 30px;
@@ -419,7 +419,7 @@ ul{ /*Contenedor botones*/
   margin-right:auto;
   margin-left: auto;
   margin-top: -33%;
-}
+}*/
 
 
 
@@ -461,7 +461,7 @@ margin-left: -10%;
   width: 100%;
 }
 
-/*BOTONES SLIDER*/
+/*BOTONES SLIDER
 .boton-conoce{
   width: 160px;
   height: 40px;
@@ -475,8 +475,7 @@ margin-left: -10%;
   font-size: 15px;
   margin-right:auto;
   margin-left: auto;
- 
-}
+}*/
 
 /*Footer*/
 .footermenu{
@@ -510,7 +509,7 @@ margin-top: 1%;
   width: 100%;
   margin-top: 10%;
 }
-/*BOTONES SLIDER*/
+/*BOTONES SLIDER
 .boton-conoce{
   width: 170px;
   height: 40px;
@@ -524,7 +523,7 @@ margin-top: 1%;
   font-size: 15px;
   margin-right:auto;
   margin-left: auto;
-}
+}*/
 
 
 
