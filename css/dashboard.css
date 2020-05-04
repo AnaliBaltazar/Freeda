@@ -301,9 +301,9 @@ td.col_r{
   /*background: #cc99cc;        /*PRUEBA*/
 } 
 .boton-reembolso{
-  position: absolute;
-  margin-left: 38%;
-  margin-top: -10%;
+  /*position: absolute;*/
+  /*margin-left: 38%;
+  margin-top: -10%;*/
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 240px; /*Tamaño*/
@@ -1028,6 +1028,9 @@ a.current:link, a.current:visited{
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+body{
+  background: red;
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1103,15 +1106,16 @@ a.current:link, a.current:visited{
 .texto1-reporte{
   font-size: 20px;
   line-height: 25px;
-  padding-top: 12%;
+  padding-top: 8%;
 }
 .texto2-reporte{
   font-size: 20px;
   font-weight: 400;
 }
 .boton-reembolso{
-  margin-left: 25%;
-  margin-top: -18%;
+  display: block;
+  margin-left: 19.5%;
+  margin-top: 2%;
 }
 
 
@@ -1212,6 +1216,9 @@ button.button-minus, button.button-plus{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+body{
+  background: gray;
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1297,15 +1304,16 @@ margin:10px 0;
 .texto1-reporte{
   font-size: 25px;
   line-height: 25px;
-  padding-top: 12%;
+  padding-top: 8%;
 }
 .texto2-reporte{
   font-size: 25px;
   font-weight: 400;
 }
 .boton-reembolso{
-  margin-left: 35%;
-  margin-top: -15%;
+  display: block;
+  margin-left: 28%;
+  margin-top: 2%;
 }
 
 .boton-si{
@@ -1401,6 +1409,9 @@ h3.describe_bien{
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+body{
+  background: orange;
+}
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -1575,6 +1586,11 @@ h3.describe_bien{
   margin-left: 38%; 
 }
 
+.boton-reembolso{
+  display: block;
+  margin-left: 28%;
+  margin-top: 2%;
+}
 
 .footer-freeda{
   padding-left: 300px;
@@ -1590,6 +1606,9 @@ h3.describe_bien{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+body{
+  background: violet;
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1788,6 +1807,11 @@ button.button-minus, button.button-plus{
   margin-left: 40%;
 }
 
+.boton-reembolso{
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 1%;
+}
 .footer-freeda{
   padding-left: 758px;
 }
