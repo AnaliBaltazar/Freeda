@@ -202,9 +202,10 @@
   /*background: #cc99cc;        /*PRUEBA*/ 
 }
 .enviar-token{
-  position: absolute;
+  /*position: absolute;
   margin-left: 38%;
-  margin-top: 5px;
+  margin-top: 5px;*/
+  display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -449,6 +450,7 @@ input.quantity-field{
   border-radius: 6px;
 }
 .validar-token{ /*BOTON VALIDAR TOKEN*/
+  display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -629,6 +631,9 @@ input.quantity-field{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+body{
+  background: pink;
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -642,8 +647,9 @@ input.quantity-field{
 .boton-menu{
   left: 80%;
 }
-/*----------------------------*/
-/*2-REGISTRO.HTML*/
+
+
+/*------2-REGISTRO.HTML------*/
 .texto1-registro{ /*REGISTRARSE*/
   margin-top: 28%;
 }
@@ -676,7 +682,10 @@ input.quantity-field{
   left: 20px;
 } */
 
-/*3-ACTIVAR-TOKEN.HTML*/
+
+
+
+/*-------3-ACTIVAR-TOKEN.HTML-------*/
 .texto1-seccion1{
   margin-top: 28%;
 }
@@ -684,20 +693,24 @@ input.quantity-field{
   width: 75%;
 }
 .enviar-token{  /*Enviar token SMS*/
-  margin-left: 29%;
+  /*margin-left: 29%;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-/*4-VALIDAR-TOKEN.HTML*/
+/*-------4-VALIDAR-TOKEN.HTML-------*/
 .texto_area_token{
   width: 79%;
 }
-/*.validar-token{ 
-  margin-left: 29%;
-}*/
+.validar-token{ 
+  margin-left: auto;
+  margin-right: auto;
+}
 .nuevo-token{
   margin-top: 5%;
 }
+
 
 /*Footer*/
 .logo-footer{
@@ -710,6 +723,9 @@ input.quantity-field{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+body{
+  background: gray;
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -723,8 +739,8 @@ input.quantity-field{
 .boton-menu{
   left: 80%;
 }
-/*----------------------------*/
-/*2-REGISTRO.HTML*/
+
+/*-------2-REGISTRO.HTML-------*/
 .texto1-registro{ /*REGISTRATE*/
   margin-top: 25%;
 }
@@ -760,7 +776,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 
 
-/*3-ACTIVAR-TOKEN.HTML*/
+/*-------3-ACTIVAR-TOKEN.HTML-------*/
 .texto1-seccion1{
   margin-top: 25%;
 }
@@ -768,17 +784,20 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 75%;
 }
 .enviar-token{  /*Enviar token SMS*/
-  margin-left: 33%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
-/*4-VALIDAR-TOKEN.HTML*/
+/*-------4-VALIDAR-TOKEN.HTML-------*/
 .texto_area_token{
   width: 80%;
 }
-/*.validar-token{
-  margin-left: 33%;
-}*/
+.validar-token{
+  /*margin-left: 33%;*/
+  margin-left: auto;
+  margin-right: auto;
+}
 .nuevo-token{
   margin-top: 5%;
 }
@@ -796,7 +815,6 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 .texto3-footer{
 }
-
 .logo-footer{
   width: 20%; 
   height: 55px;
@@ -808,6 +826,9 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+body{
+  background: red;
+}
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -821,8 +842,8 @@ input.invalid + label.head-label + label.bottom-label1{
 .boton-menu{
   left: 80%;
 }
-/*----------------------------*/
-/*2-REGISTRO.HTML*/
+
+/*-------2-REGISTRO.HTML------*/
 .texto1-registro{ /*REGISTRATE*/
   margin-top: 20%;
 }
@@ -858,7 +879,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 
 
-/*3-ACTIVAR-TOKEN.HTML*/
+/*--------3-ACTIVAR-TOKEN.HTML--------*/
 .texto1-seccion1{
   margin-top: 20%;
 }
@@ -866,17 +887,19 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 55%;
 }
 .enviar-token{  /*Btn Enviar token SMS*/
-  margin-left: 36%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
-/*4-VALIDAR-TOKEN.HTML*/
+/*--------4-VALIDAR-TOKEN.HTML--------*/
 .texto_area_token{
   width: 59%;
 }
-/*.validar-token{ 
-  margin-left: 37%;
-}*/
+.validar-token{ 
+  margin-left: auto;
+  margin-right: auto;
+}
 .nuevo-token{
   margin-top: 2.5%;
 }
@@ -893,8 +916,13 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 }
 
+
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+body{
+  background: aqua;
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -902,8 +930,8 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: -55%;
   margin-top: 1%;
 }
-/*----------------------------*/
-/*2-REGISTRO.HTML*/
+
+/*--------2-REGISTRO.HTML--------*/
 .texto1-registro{ /*REGISTRATE*/
   margin-top: 15%;
 }
@@ -938,7 +966,7 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 95%;
 }
 
-/*3-ACTIVAR-TOKEN.HTML*/
+/*--------3-ACTIVAR-TOKEN.HTML--------*/
 .texto1-seccion1{
   margin-top: 15%;
 }
@@ -946,16 +974,19 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 41%;
 }
 .enviar-token{  /*Btn Enviar token SMS*/
-  margin-left: 39%;
+  /*margin-left: 39%;*/
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/*4-VALIDAR-TOKEN.HTML*/
+/*--------4-VALIDAR-TOKEN.HTML--------*/
 .texto_area_token{
   width: 44%;
 }
-/*.validar-token{ 
-  margin-left: 37%;
-}*/
+.validar-token{ 
+  margin-left: auto;
+  margin-right: auto;
+}
 .nuevo-token{
   margin-top: 2%;
 }
@@ -973,15 +1004,18 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+body{
+  background: violet;
+}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
 .logo-freeda{
-margin-left: -55%;
-margin-top: 1%;
+  margin-left: -55%;
+  margin-top: 1%;
 }
-/*----------------------------*/
-/*2-REGISTRO.HTML*/
+
+/*--------2-REGISTRO.HTML--------*/
 .texto1-registro{ /*REGISTRATE*/
   margin-top: 13%;
 }
@@ -1016,7 +1050,7 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 95%;
 }
 
-/*3-ACTIVAR-TOKEN.HTML*/
+/*--------3-ACTIVAR-TOKEN.HTML--------*/
 .texto1-seccion1{
   margin-top: 13%;
 }
@@ -1024,18 +1058,21 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 37%;
 }
 .enviar-token{  /*Btn Enviar token SMS*/
-  margin-left: 39%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
-/*4-VALIDAR-TOKEN.HTML*/
+/*--------4-VALIDAR-TOKEN.HTML--------*/
 .texto_area_token{
   width: 39%;
 }
-/*.validar-token{ 
-  margin-left: 37%;
-  margin-top: 2%;
-}*/
+.validar-token{ 
+  /*margin-left: 37%;
+  margin-top: 2%;*/
+  margin-left: auto;
+  margin-right: auto;
+}
 .nuevo-token{
   margin-top: 2%;
 }

@@ -91,7 +91,7 @@
 .texto1-cp{ /*Titulo Código postal*/
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
-  margin-top: 13%; 
+  /*margin-top: 13%;*/ 
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
@@ -431,10 +431,11 @@ input.quantity-field{
 /*----------------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 25%;
+  margin-top: 30%;
 }
 .texto_area_cp{
   width: 86%;
+  margin-bottom: 20%;
 }
 /*input.invalid + label.head-label + label.bottom-label1 {
    top: 110px; 
@@ -493,10 +494,11 @@ input.quantity-field{
 /*----------------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 25%;
+  margin-top: 30%;
 }
 .texto_area_cp{
   width: 64%;
+  margin-bottom: 14%;
 }
 /*input.invalid + label.head-label + label.bottom-label1 {
    top: 110px; 
@@ -573,6 +575,7 @@ input.quantity-field{
 }
 .texto_area_cp{
   width: 49%;
+  margin-bottom: 10%;
 }
 /*input.invalid + label.head-label + label.bottom-label1 {
    top: 110px; 
@@ -631,6 +634,7 @@ input.quantity-field{
 }
 .texto_area_cp{
   width: 40%;
+  margin-bottom: 7%;
 }
 /* input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;
@@ -686,6 +690,7 @@ margin-top: 1%;
 }
 .texto_area_cp{
   width: 37%;
+  margin-bottom: 6%;
 }
 /* input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;

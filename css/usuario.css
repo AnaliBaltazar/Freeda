@@ -62,7 +62,7 @@
   text-align: center;
   color: #912F46;
   opacity: 1;
-  margin-top: 11%;
+  /*margin-top: 11%;*/
 }
 
 
@@ -284,7 +284,7 @@ input.quantity-field{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   text-align: center;
-  margin-left: 65%;
+  /*margin-left: 65%;*/
   width: 75%;
   padding: 10px;
   margin-bottom: 40px; 
@@ -311,10 +311,11 @@ input.quantity-field{
   color: #912F46;
 }
 .btn-iniciar{
-  position: absolute;
+  display: block;
+  /*position: absolute;
   margin-left: 79%;
   margin-top: 10px;
-  margin-bottom: 20%;
+  margin-bottom: 20%;*/
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -490,9 +491,6 @@ h3#caption_loader{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/*body{
-  background-color: pink;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -527,14 +525,18 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*6-INICIAR-SESIÓN.HTML*/
 .texto_area_login{ 
-  margin-left: 15%;
+  /*margin-left: 15%;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 .underlineHover{
   margin-left: 3%;
 }
 .btn-iniciar{
-  margin-left: 33%;
-  margin-top: -1%;
+  /*margin-left: 33%;
+  margin-top: -1%;*/
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -550,9 +552,6 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-/*body{
-  background-color: gray;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -568,7 +567,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 25%;
+  margin-top: 28%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 75%;
@@ -587,14 +586,18 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*6-INICIAR-SESIÓN.HTML*/
 .texto_area_login{ 
-  margin-left: 15%;
+  /*margin-left: 15%;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 .underlineHover{
   margin-left: 3%;
 }
 .btn-iniciar{
-  margin-left: 33%;
-  margin-top: -1%;
+  /*margin-left: 33%;
+  margin-top: -1%;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -624,9 +627,6 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-/*body{
-  background-color: orange;
-}*/
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -642,7 +642,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 18%;
+  margin-top: 20%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 55%;
@@ -662,13 +662,17 @@ input.invalid + label.head-label + label.bottom-label1{
 /*6-INICIAR-SESIÓN.HTML*/
 .texto_area_login{
   width: 55%;
-  margin-left: 23%;
+  /*margin-left: 23%;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 .underlineHover{
   margin-left: 3%;
 }
 .btn-iniciar{
-  margin-left: 35%;
+  /*margin-left: 35%;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -689,9 +693,6 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-/*body{
-  background-color: aqua;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -701,7 +702,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 14%;
+  margin-top: 16%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 42%;
@@ -727,7 +728,7 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: 3%;
 }
 .btn-iniciar{
-  margin-left: 78%;
+  margin-left: 83%;
 }
 
 /*Footer*/
@@ -742,9 +743,6 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-/*body{
-  background-color: violet;
-}*/
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -754,7 +752,7 @@ margin-top: 1%;
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 11%;
+  margin-top: 13%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 37%;
@@ -781,7 +779,7 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: 3%;
 }
 .btn-iniciar{
-  margin-left: 81%;
+  margin-left: 85%;
 }
 
 
