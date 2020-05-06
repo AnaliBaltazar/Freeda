@@ -200,7 +200,7 @@ function showPoliza() {
 }
 
 //LINK COLOR
-$(function() {
+$(function(){
     $("#sub-menu a").each(function() {
         if (this.href == window.location) {
             $(this).css("color", "#912f46");
