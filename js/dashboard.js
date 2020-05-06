@@ -198,3 +198,12 @@ function showPoliza() {
     document.querySelector("#datos-poliza").style.display="none"
     document.querySelector("#transfer-msg").style.display="none"
 }
+
+//LINK COLOR
+$(function() {
+    $("#sub-menu a").each(function() {
+        if (this.href == window.location) {
+            $(this).css("color", "#912f46");
+        };
+    });
+});
