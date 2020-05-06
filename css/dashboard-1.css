@@ -255,6 +255,7 @@ table{
   text-align: right;
   line-height: 30px; /*Sangria*/
 }
+/*------El reporte final indica que el epicentro...------*/
 .info-reporte{
   width: 50%;
   height: 65%;
@@ -636,16 +637,17 @@ margin-top: 5%;
 .container#total-daños{
   display: none;
 }
-.texto1-daños{
+.texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
   text-align: center;
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 47px; /*Sangria*/
+  line-height: 25px; /*Sangria 47px*/
   color: #534965;
   /*padding-left: 80px;
   padding-right: 80px; */
-  padding: 15px 60px 10px 60px;
+  padding-top: 10px;
+  /*padding: 15px 60px 10px 60px;*/
 }
 h3{
   font-weight: normal;
@@ -844,27 +846,27 @@ button.bien.activeHover:hover .icono_bienes .cls-2t{
     fill: #912F46;  /*AZUL*/
 }
 
-.bien{
-    border: 1.5px solid #912F46; /*GRIS*/
-    width: 250px;
-    height: 250px;
-    margin: 50px;
-    text-align: center;
-    border-radius: 5px;
-    display: block;
-    position: relative;
+.bien{ /*BOTONES(BANNER,ICONO,DESCRIPCIÓN)*/
+  border: 1.5px solid #912F46; /*GRIS*/
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  position: relative;
 }
-.icon_content{
-    display: block;
-    width: 100%;
-    /* align-items: center;
-    justify-content: center; */
-    position: absolute;
-    top: 35px;
-    text-align: center;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+.icon_content{ /*ICONO, DESCRIPCIÓN*/
+  display: block;
+  width: 100%;
+  /* align-items: center;
+  justify-content: center; */
+  position: absolute;
+  top: 35px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   font-family: 'Raleway',sans-serif;
@@ -915,9 +917,10 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 /*BTN FIRMA*/
 .boton1-firma{
-  position: absolute;
+  /*position: absolute;
   margin-left: -10%;
-  margin-top: 2%;
+  margin-top: 2%;*/
+  display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
   width: 200px; /*Tamaño*/
@@ -1391,9 +1394,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-body{
-  background: pink;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1493,19 +1493,21 @@ h1#screenHeader{ /*Tembló*/
   }
 
 /*Reporte-daños.html*/
+.texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
+  font-size: 18px;
+}
 h3{
   font-size: 16px;
 }
-
 #bienesInquilino{
   width: 100%;
-  margin-top: 10px;    
+  margin-top: 10px; 
 }
 .bien{
   border: 1.5px solid #C7C7C7;
   width: 160px;
   height: 160px;
-  margin: 5px;
+  margin: auto; /*20px*/
 }
 .icon_content{
   top: 22px;
@@ -1517,6 +1519,15 @@ h3.describe_bien{
 .banner_inq{
   margin-top: 3%;
 }
+.texto1-total, .texto2-total{
+  font-size: 25px;
+}
+.boton1-firma{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+}
+
 /*Ventana*/
 /* button.Aceptar{
   width: 90%;
@@ -1552,6 +1563,7 @@ button.button-minus, button.button-plus{
 }
 
 /*DASHBOARD2 REEMBOLSO*/
+/*------El reporte final indica que el epicentro...------*/
 .info-reporte{ /*Recuadro con grieta*/
   width: 90%;
   margin-left: 5%;
@@ -1567,9 +1579,11 @@ button.button-minus, button.button-plus{
   font-weight: 400;
 }
 .boton-reembolso{
-  position: absolute;
+  /*position: absolute;
   margin-top:-40%;
-  margin-left: 24%;
+  margin-left: 24%;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 /*Footer*/
 .logo-footer{
@@ -1581,9 +1595,6 @@ button.button-minus, button.button-plus{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-body{
-  background: red;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1693,6 +1704,9 @@ h1#screenHeader{ /*Tembló*/
   width: 100px;
 }
 /*Reporte-daños.html*/
+.texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
+  font-size: 18px;
+}
 #bienesInquilino{
   width: 90%;
   margin-top: 10px;    
@@ -1700,12 +1714,11 @@ h1#screenHeader{ /*Tembló*/
 h3{
   font-size: 22px;
 }
-
 .bien{
   border: 1.5px solid #C7C7C7;
   width: 160px;
   height: 160px;
-  margin: 5px;
+  margin: 3px;
 }
 .icon_content{
   width: 100%;
@@ -1717,6 +1730,14 @@ h3.describe_bien{
 }
 .banner_inq{
   margin-top: 5%;
+}
+.texto1-total, .texto2-total{
+  font-size: 25px;
+}
+.boton1-firma{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
 }
 /*22-FIRMA.HTML*/
 .seccion-firma{
@@ -1741,6 +1762,7 @@ h3.describe_bien{
 }
 
 /*DASHBOARD2 REEMBOLSO*/
+/*------El reporte final indica que el epicentro...------*/
 .info-reporte{ /*Recuadro con grieta*/
   width: 90%;
   margin-left: 5%;
@@ -1757,8 +1779,11 @@ h3.describe_bien{
   font-weight: 400;
 }
 .boton-reembolso{
-  margin-top:-38%;
-  margin-left: 32%;
+  /*margin-top:-38%;
+  margin-left: 32%;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
 }
 /*Footer*/
 .footermenu{ /*Politicas de privacidad*/
@@ -1784,9 +1809,6 @@ h3.describe_bien{
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-body{
-  background: orange;
-}
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -1868,6 +1890,25 @@ h1#screenHeader{ /*Tembló*/
 }
 
 /*Reporte-daños.html*/
+.texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
+  font-size: 18px;
+}
+
+.texto1-total, .texto2-total{
+  font-size: 25px;
+}
+.boton1-firma{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+}
+.bien{
+  border: 1.5px solid #C7C7C7;
+  width: 210px;
+  height: 210px;
+  margin: 20px;
+}
+
 #bienesInquilino{
   width: 100%;
   margin-top: 10px;    
@@ -1875,14 +1916,6 @@ h1#screenHeader{ /*Tembló*/
 h3{
   font-size: 19px;
 }
-
-.bien{
-  border: 1.5px solid #C7C7C7;
-  width: 210px;
-  height: 210px;
-  margin: 20px;
-}
-   
 .icon_content{
   width: 100%;
   top: 40px;
@@ -1925,28 +1958,22 @@ h3.describe_bien{
 }
 
 /*DASHBOARD2 REEMBOLSO*/
+/*------El reporte final indica que el epicentro...------*/
 .info-reporte{ /*Recuadro con grieta*/
   width: 60%;
+  height: 75%;
   /*height: 70%;
   margin-left: 5%; */
-  background-color: #F4F6FA ; /*#F4F6FA*/
-  border-radius: 10px;
-  margin-left: 20%;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  margin-top: 30px;
-  margin-bottom: 100px;
-  background-image: url("../img/Grieta.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 100% 0%;
-  background-size: 60%;
+  margin-left: auto;
+   margin-right: auto;
 }
 .boton-reembolso{
-  display: block;
+  /*display: block;
   margin-top:-34%;
-  margin-left: 36.5%;
+  margin-left: 36.5%;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
 }
 /*Footer*/
 .footermenu{
@@ -1964,9 +1991,6 @@ h3.describe_bien{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  body{
-  background: gray;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -2111,9 +2135,10 @@ button.button-minus, button.button-plus{
   width: 20%;
   margin-left: 40%;
 }
-
+/*------El reporte final indica que el epicentro...------*/
 .boton-reembolso{
-  margin-left: 36%;
+  /*margin-left: 36%;*/
+  margin-top: 10%;
 }
 /*Footer*/
 .footermenu{
@@ -2128,9 +2153,6 @@ button.button-minus, button.button-plus{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  body{
-  background: aqua;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -2155,9 +2177,10 @@ margin-top: 1%;
   left: 60%;
   margin-top: -6%;
 }
+/*------El reporte final indica que el epicentro...------*/
 .info-reporte{
   width: 50%;
-  height: 65%;
+  height: 75%;
   /*margin-left: 5%; */
   margin-left: 26%;
   padding-left: 20px;
@@ -2165,10 +2188,12 @@ margin-top: 1%;
   margin-top: 30px;
   margin-bottom: 100px;
 }
-
 .boton-reembolso{
-  margin-left: 37.5%;
+  /*margin-left: 37.5%;*/
+  margin-top: 10%;
 }
+
+
 /*Footer*/
 .footermenu{
   padding-left: 115px;
