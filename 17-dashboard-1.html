@@ -277,15 +277,14 @@
     <div class="info-reporte" id="info-reporte">
         <p class="texto1-reporte">El reporte final indica que el epicentro fue en Guerrero con una magnitud de 7.1</p>
         <p class="texto2-reporte">Tienes derecho a una indemnización de 3% de tu suma asegurada</p>
-        <button class="btn boton-reembolso" role="link" onclick="window.location='#'" id="reembolso-btn">SOLICITAR REEMBOLSO</button>
     </div>
         <!-- ------------------------------------------------------------------------- -->
 
-        
+        <!--SeccionBoton-->
     <div class="container seccion-boton" id="reembolsobtn-container">
         <div class="row texto-centrado">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
-                <!--<button class="btn boton-reembolso" role="link" onclick="window.location='#'" id="reembolso-btn">SOLICITAR REEMBOLSO</button>-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <button class="btn boton-reembolso" role="link" onclick="window.location='#'" id="reembolso-btn">SOLICITAR REEMBOLSO</button>
             </div>
         </div>
     </div> 
@@ -302,7 +301,7 @@
 
             <!--HOSPEDAJE --> 
             <button class="bien activeHover" id="hospedaje">
-                <div class="banner_inq" id="banner_val_h">$00,000</div>
+                <div class="banner_inq" id="banner_val_h">$ 0</div>
                 <div class="icon_content">
                     <!-- <img class="icono_bienes" src="recursos/muebles.svg" alt=""> -->
                     <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.59363 29.12494">
@@ -330,7 +329,7 @@
 
             <!-- CRISTALES -->
             <button class="bien activeHover" id="cristales">
-                <div class="banner_inq" id="banner_val_c">$00,000</div>
+                <div class="banner_inq" id="banner_val_c">$ 0</div>
                 <div class="icon_content">
                     <!-- <img class="icono_bienes" src="recursos/electrodomesticos.svg" alt=""> -->
                     <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.08341 26.45204">
@@ -362,7 +361,7 @@
 
             <!--ELECTRODOMÉSTICOS-->
             <button class="bien activeHover" id="electrodomesticos">
-                <div class="banner_inq" id="banner_val_e">$00,000</div>
+                <div class="banner_inq" id="banner_val_e">$ 0</div>
                 <div class="icon_content">
                     <!-- <img class="icono_bienes" src="recursos/electronico.svg" alt=""> -->
                     <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.99989 31.81244">
@@ -389,7 +388,7 @@
 
             <!--TECHOS Y PAREDES-->
             <button class="bien activeHover" id="paredes">
-                <div class="banner_inq" id="banner_val_p">$00,000</div>
+                <div class="banner_inq" id="banner_val_p">$ 0</div>
                 <div class="icon_content">
                     <!-- <img class="icono_bienes" src="recursos/deportivo.svg" alt=""> -->
                     <svg class="icono_bienes" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.0924 31.24918">
@@ -417,9 +416,9 @@
         <div class="row text-center">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
             
-            <p class="texto1-total" id="total-gastos">Suma total de gastos: $00,000</p>
+            <p class="texto1-total" id="total-gastos">Suma total de gastos: $ --</p>
 
-            <p class="texto2-total">Indemnización máxima $1,500</p>
+            <p class="texto2-total">Indemnización máxima $ 1,500</p>
 
 
             <button class="btn boton1-firma" role="link" id="signature-btn">FIRMA</button>
@@ -616,7 +615,7 @@
         <p>DESCRIPCIÓN</p>
         <div class="valueModifier">
             <button class="btn-minus">-</button>
-            <input class="quantity-field" id="valueQty_h" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern="">
+            <input class="quantity-field" id="valueQty_h" type="text" name="quantity" data-type="currency" step="1" value="$ 0" pattern="">
             <button class="btn-plus">+</button>   
         </div>
         <button class="Aceptar btn-aceptar" id="aceptar-h">ACEPTAR</button>
@@ -633,7 +632,7 @@
         <p>DESCRIPCIÓN</p>
         <div class="valueModifier">
             <button class="btn-minus">-</button>
-            <input class="quantity-field" id="valueQty_c" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern=""> 
+            <input class="quantity-field" id="valueQty_c" type="text" name="quantity" data-type="currency" step="1" value="$ 0" pattern=""> 
             <button class="btn-plus">+</button>  
         </div>
         <button class="Aceptar btn-aceptar" id="aceptar-c">ACEPTAR</button>
@@ -645,13 +644,13 @@
         <i class="material-icons" id="close">clear</i>
         <h1 id="screenHeaderD">Escribe un valor aproximado de todos los gastos por:</h1>
         <div class="center_iconD">
-            <img class="icono-daños" src="img/Electrodomésticos.svg" alt="">
+            <img class="icono-daños" src="img/Electrodomesticos.svg" alt="">
         </div>
         <h3 id="screenLabel">Electrodomésticos</h3>
         <p>DESCRIPCIÓN</p>
         <div class="valueModifier">
             <button class="btn-minus">-</button>
-            <input class="quantity-field" id="valueQty_e" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern="">
+            <input class="quantity-field" id="valueQty_e" type="text" name="quantity" data-type="currency" step="1" value="$ 0" pattern="">
             <button class="btn-plus">+</button>   
         </div>
         <button class="Aceptar btn-aceptar" id="aceptar-e">ACEPTAR</button>
@@ -669,7 +668,7 @@
         <p>DESCRIPCIÓN</p>
         <div class="valueModifier">
             <button class="btn-minus">-</button>
-            <input class="quantity-field" id="valueQty_p" type="text" name="quantity" data-type="currency" step="1" value="$00,000" pattern="">
+            <input class="quantity-field" id="valueQty_p" type="text" name="quantity" data-type="currency" step="1" value="$ 0" pattern="">
             <button class="btn-plus">+</button>   
         </div>
         <button class="Aceptar btn-aceptar" id="aceptar-p">ACEPTAR</button>

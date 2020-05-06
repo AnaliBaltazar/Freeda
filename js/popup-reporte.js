@@ -19,10 +19,7 @@ aceptar_inquilino.forEach(aceptar => aceptar.addEventListener('click', updateVal
  // CAMBIO DE VALOR EN CUADRO DE TEXTO DE MONTO DE LOS BIENES
  $("input[data-type='currency']").on({
      keyup: function() {
-         formatCurrency($(this));
-     },
-     blur: function() { 
-         formatCurrency($(this), "blur");
+         formatCurrency(this,0);
      }
  });
 
@@ -70,31 +67,64 @@ function openValueModifier(){  // Activa ventana para editar valor de los bienes
         default:
     }
 }
-function updateValue(){  //Actualiza el valor en el banner correspondiente al bien del inquilino seleccionado
+function updateValue(){  //Actualiza el valor en el banner correspondiente al boton seleccionado
     document.querySelector('#cover').style.display = "none";
-    let boton_id= this.id;
-    switch(boton_id){
-        case "aceptar-h":
-            document.querySelector("#screen_hospedaje").style.display="none";
-            document.querySelector("#banner_val_h").textContent=document.querySelector("#valueQty_h").value
-            break;
-        case "aceptar-e":
-            document.querySelector("#screen_electrodomesticos").style.display="none";
-            document.querySelector("#banner_val_e").textContent=document.querySelector("#valueQty_e").value
-            break;
-        case "aceptar-c":
-            document.querySelector("#screen_cristales").style.display="none";
-            document.querySelector("#banner_val_c").textContent=document.querySelector("#valueQty_c").value
-            break;
-        case "aceptar-p":
-            document.querySelector("#screen_paredes").style.display="none";
-            document.querySelector("#banner_val_p").textContent=document.querySelector("#valueQty_p").value
-            break;
-        default:
-    }
-    setTotal();
+    let boton_id=this.id;
+    let boton_idLast= boton_id.substring(boton_id.length - 1);
+    let newVal = this.parentNode.querySelector(".quantity-field").value;
+    let newValOK = checkTotal(newVal,boton_idLast);
+    if (newValOK) {
+        switch(boton_id){
+            case "aceptar-h":
+                document.querySelector("#banner_val_h").textContent=document.querySelector("#valueQty_h").value
+                break;
+            case "aceptar-e":
+                document.querySelector("#banner_val_e").textContent=document.querySelector("#valueQty_e").value
+                break;
+            case "aceptar-c":
+                document.querySelector("#banner_val_c").textContent=document.querySelector("#valueQty_c").value
+                break;
+            case "aceptar-p":
+                document.querySelector("#banner_val_p").textContent=document.querySelector("#valueQty_p").value
+                break;
+            default:
+        }
+    } 
+    this.parentNode.style.display="none";
+    // setTotal();
 }
 
+function checkTotal(newVal, elmntID) {
+    const banners=document.querySelectorAll(".banner_inq");
+    let valuesbanner=0;
+    let valuebanner,actual, actualInt;
+    let result, funcresult;
+    let intresult=0;
+    let reg=/\d+(\.\d{2})?|\.\d{2}/g;
+    banners.forEach(banner => {
+        if (banner.id != ("banner_val_" + elmntID)) {
+            valuebanner=banner.textContent;
+            result = valuebanner.match(reg);
+            intresult = intresult + parseInt(result.join(""));
+        }else{
+            actual=banner.textContent;
+            actualInt=parseInt(actual.match(reg).join(""));
+        }
+    });
+    let newValINT=parseInt(newVal.match(reg).join(""));
+
+    if ((intresult+newValINT) > 1500) {
+        intresult = intresult + actualInt;
+        alert("No puedes reportar una cantidad mayor a la indemnización máxima");
+        funcresult = false;
+    } else {
+        intresult = intresult + newValINT;
+        funcresult = true;
+    }
+    let totalBienesC="$ " + formatNumber(intresult.toString());
+    document.querySelector('#total-gastos').textContent= "Suma total de gastos: " + totalBienesC;
+    return funcresult;
+}
 function setTotal() {
     const banners=document.querySelectorAll(".banner_inq");
     let valuesbanner=0;
@@ -116,168 +146,67 @@ function setTotal() {
         intresult = intresult + parseInt(result.join(""));
 
     });
-    let totalBienesC="$" + formatNumber(intresult.toString());
+    let totalBienesC="$ " + formatNumber(intresult.toString());
     document.querySelector('#total-gastos').textContent= "Suma total de gastos: " + totalBienesC;
 }
 
 function incrementar(){  //Incrementa en $1 el valor del bien al presionar el boton "+"
-    formatCurrency(this.parentNode.querySelector('input'),"","inc");
+    formatCurrency(this.parentNode.querySelector('input'),10);
 }
 
 function decrementar(){  //Decrementa en $1 el valor del bien al presionar el boton "-"
-    formatCurrency(this.parentNode.querySelector('input'),"","dec");
+    formatCurrency(this.parentNode.querySelector('input'),-10);
 }
 
-function formatCurrency(input, blur, incdec) {
+function formatCurrency(input, incdec) {
     // appends $ to value, validates decimal side
     // and puts cursor back in right position.
-    if(incdec!=null){
-        // get input value
-        var input_val = input.value;
-        
-        // don't validate empty input
-        if (input_val === "") { return; }
-        
-        // original length
-        var original_len = input_val.length;
-        // check for decimal
-        if (input_val.indexOf(".") >= 0) {
 
-            // get position of first decimal
-            // this prevents multiple decimals from
-            // being entered
-            var decimal_pos = input_val.indexOf(".");
+    // get input value
+    var input_val = input.value;
+    
+    // don't validate empty input
+    if (input_val === "") { return; }
 
-            // split number by decimal point
-            var left_side = input_val.substring(0, decimal_pos);
-            var right_side = input_val.substring(decimal_pos);
-
-            // Add $1 if "PLUS" button is clicked
-            if(incdec=="inc"){
-                let reg=/\d+(\.\d{2})?|\.\d{2}/g;
-                let result = left_side.match(reg);
-                let intresult = parseInt(result.join("")) + 1;
-                left_side=intresult.toString();
-            }
-
-            // Reduce by $1 if "MINUS" button is clicked
-            if(incdec=="dec"){
-                let reg=/\d+(\.\d{2})?|\.\d{2}/g;
-                let result = left_side.match(reg);
-                let intresult = parseInt(result.join("")) - 1;
-                left_side=intresult.toString();
-            }
-            // add commas to left side of number
-            left_side = formatNumber(left_side);
-
-            // validate right side
-            right_side = formatNumber(right_side);
+    // original length
+    var original_len = input_val.length;
+    
+    // initial caret position 
+    var caret_pos = input.  selectionStart;
+    
+    // Add $10 if "PLUS" button is clicked
+    // Reduce by $10 if "MINUS" button is clicked
+    let reg=/\d+(\.\d{2})?|\.\d{2}/g;
+    let result = (input_val.match(reg) != null) ? input_val.match(reg) : ["0"];
+    let intresult = parseInt(result.join("")) + incdec;
+    if (intresult<=0) {
+        input.value="$ 0";
+        return
+    } else if (intresult > 1500){
+        intresult=1500;
+        alert("No puedes reportar una cantidad mayor a la indemnización máxima")
+    }
+    input_val=intresult.toString();
+    
+    // add commas to left side of number
+    input_val = formatNumber(input_val);
+    
+    // join number
+    input_val = "$ " + input_val;// + "." + right_side;
+    
+    // send updated string to input
+    input.value=input_val;
             
-            // On blur make sure 2 numbers after decimal
-            if (blur === "blur") {
-                right_side += "00";
-            }
-            
-            // Limit decimal to only 2 digits
-            right_side = right_side.substring(0, 2);
-
-            // join number by .
-            input_val = "$" + left_side; // + "." + right_side;
-
-        } else {
-
-            if(incdec=="inc"){
-                let reg=/\d+(\.\d{2})?|\.\d{2}/g;
-                let result = input_val.match(reg);
-                let intresult = parseInt(result.join("")) + 1;
-                input_val=intresult.toString();
-            }
-            if(incdec=="dec"){
-                let reg=/\d+(\.\d{2})?|\.\d{2}/g;
-                let result = input_val.match(reg);
-                let intresult = parseInt(result.join("")) - 1;
-                input_val=intresult.toString();
-            }
-            // no decimal entered
-            // add commas to number
-            // remove all non-digits
-            input_val = formatNumber(input_val);
-            input_val = "$" + input_val;
-            
-            // final formatting
-            if (blur === "blur") {
-            input_val += ".00";
-            }
-        }
-        
-        // send updated string to input
-        input.value=input_val;
-    }else{
-        // get input value
-        var input_val = input.val();
-        
-        // don't validate empty input
-        if (input_val === "") { return; }
-        
-        // original length
-        var original_len = input_val.length;
-        
-        // initial caret position 
-        var caret_pos = input.prop("selectionStart");
-            
-        // check for decimal
-        if (input_val.indexOf(".") >= 0) {
-
-            // get position of first decimal
-            // this prevents multiple decimals from
-            // being entered
-            var decimal_pos = input_val.indexOf(".");
-
-            // split number by decimal point
-            var left_side = input_val.substring(0, decimal_pos);
-            var right_side = input_val.substring(decimal_pos);
-
-            // add commas to left side of number
-            left_side = formatNumber(left_side);
-
-            // validate right side
-            right_side = formatNumber(right_side);
-            
-            // On blur make sure 2 numbers after decimal
-            if (blur === "blur") {
-            right_side += "00";
-            }
-            
-            // Limit decimal to only 2 digits
-            right_side = right_side.substring(0, 2);
-
-            // join number by .
-            input_val = "$" + left_side + "." + right_side;
-
-        } else {
-            // no decimal entered
-            // add commas to number
-            // remove all non-digits
-            input_val = formatNumber(input_val);
-            input_val = "$" + input_val;
-            
-            // final formatting
-            if (blur === "blur") {
-            input_val += ".00";
-            }
-        }
-        
-        // send updated string to input
-        input.val(input_val);
-
-        // put caret back in the right position
-        var updated_len = input_val.length;
+    // put caret back in the right position
+    var updated_len = input_val.length;
+    
+    if(incdec==0){
         caret_pos = updated_len - original_len + caret_pos;
-        input[0].setSelectionRange(caret_pos, caret_pos);
+        input.setSelectionRange(caret_pos, caret_pos);
     }
 }
 
 function formatNumber(n) {
     // format number 1000000 to 1,234,567
-    return n.replace(/\D/g, "").replace(/^0+/,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        return n.replace(/\D/g, "").replace(/^0+/,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")    
   }
