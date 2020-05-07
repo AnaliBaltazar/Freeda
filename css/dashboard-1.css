@@ -1141,20 +1141,14 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 
 /*NO*/
 .boton-no{
-    /*position: absolute;*/
-    width: 10%; /*Tamaño 200px*/
-    background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    color: #912F46; /*Color de letra*/
-    border: 1.5px solid #912F46; /*Margen de boton*/
-    border-radius: 5px; /*Ovalado/redondo*/
-    margin-top: -6%;
-    margin-left: 54%;
-    /*height: 40px;
-    opacity: 1;
-    font-weight: 500;*/
+  width: 10%; /*Tamaño 200px*/
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #912F46; /*Color de letra*/
+  border: 1.5px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
 }
 .boton-no:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -1170,6 +1164,12 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   border: 2px solid #C88585;
   color: #912F46;
 }
+.seccion-siguiente{
+  max-width: 900px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: aqua;
+} 
 
 /*Transferencia Realizada*/
 #datos-poliza{
@@ -1499,7 +1499,7 @@ h1#screenHeader{ /*Tembló*/
   font-size: 18px;
 }
 .reporte-daños{
-  background: red;
+
 }
 h3{
   font-size: 16px;
@@ -1590,6 +1590,17 @@ button.button-minus, button.button-plus{
   margin-left: auto;
   margin-right: auto;
 }
+
+/*BOTON NO Y SI*/
+.boton-si{
+  width: 20%;
+  margin-left: 26%;
+}
+.boton-no{
+  margin-left: 10%;
+  width: 20%;
+}
+
 /*Footer*/
 .logo-footer{
   display: none;
@@ -1790,6 +1801,18 @@ h3.describe_bien{
   margin-right: auto;
   margin-top: 5%;
 }
+
+
+/*BOTON NO Y SI*/
+.boton-si{
+  width: 20%;
+  margin-left: 26%;
+}
+.boton-no{
+  margin-left: 10%;
+  width: 20%;
+}
+
 /*Footer*/
 .footermenu{ /*Politicas de privacidad*/
   padding-right: 180px;
