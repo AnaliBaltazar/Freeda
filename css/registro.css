@@ -101,6 +101,15 @@
   font-family: 'Raleway', sans-serif;
   margin-left: 35%;
 }
+select{
+  margin: 0 auto;
+  color: #912F46;
+  background-color: white;
+  font-size: 16px;
+}
+select:focus{
+  outline: 0;
+}
 .nacimiento1{ /*Dia */
   font-family: 'Raleway', sans-serif; 
   font-size: 18px;
@@ -660,15 +669,15 @@ input.quantity-field{
   margin-left: 14%;
 }
 .nacimiento1{ /*Día*/
-  width: 13%;
-  margin-left: 14%;
+  width: 18%;
+  margin-left: 15%;
   margin-top: 8%;
 }
 .nacimiento2{ /*Mes*/
-  width: 28%;
+  width: 32%;
 }
 .nacimiento3{ /*Año*/
-  width: 16%;
+  width: 18%;
 }
 .btn-registrarse{
   margin-left: 28%;
@@ -749,15 +758,15 @@ input.quantity-field{
   margin-left: 14%;
 }
 .nacimiento1{ /*Dia */
-  width: 12%;
+  width: 18%;
   margin-left: 14%;
   margin-top: 6%;
 }
 .nacimiento2{ /*Mes */
-  width: 28%;
+  width: 34%;
 }
 .nacimiento3{ /*Año */
-  width: 15%;
+  width: 18%;
 }
 .btn-registrarse{
   margin-left: 35%;
@@ -849,15 +858,15 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: 23%;
 }
 .nacimiento1{ /*Dia */
-  width: 10%;
-  margin-left: 23%;
+  width: 13.5%;
+  margin-left: 23.5%;
   margin-top: 6%;
 }
 .nacimiento2{ /*Mes */
-  width: 20%;
+  width: 24.5%;
 }
 .nacimiento3{ /*Año */
-  width: 12%;
+  width: 13.5%;
 }
 .btn-registrarse{
   margin-left: 40%;
@@ -934,15 +943,15 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: 29%;
 }
 .nacimiento1{ /*Dia */
-  width: 8%;
+  width: 10.5%;
   margin-left: 30%;
   margin-top: 4%;
 }
 .nacimiento2{ /*Mes */
-  width: 15%;
+  width: 18%;
 }
 .nacimiento3{ /*Año */
-  width: 8%;
+  width: 10.5%;
 }
 .btn-registrarse{
   margin-left: 37%;
@@ -1015,15 +1024,15 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: 31.5%;
 }
 .nacimiento1{ /*Dia */
-  width: 7%;
-  margin-left: 32%;
+  width: 9%;
+  margin-left: 32.5%;
   margin-top: 3%;
 }
 .nacimiento2{ /*Mes */
-  width: 12%;
+  width: 16%;
 }
 .nacimiento3{ /*Año */
-  width: 7%;
+  width: 9%;
 }
 .btn-registrarse{
   margin-left: 38%;
