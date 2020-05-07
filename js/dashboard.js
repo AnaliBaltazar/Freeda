@@ -128,6 +128,8 @@ function showSiniestro() {
         document.querySelector("#siniestro-listo").style.display="block"
         document.querySelector("#info-reporte").style.display="block"
         document.querySelector("#reembolsobtn-container").style.display="block"
+        document.querySelector("#siniestro").style.color="#912f46" //
+        document.querySelector("#poliza").style.color="#707070" //
     }
 }
 
@@ -197,13 +199,7 @@ function showPoliza() {
     document.querySelector("#seccion-btn").style.display="none"
     document.querySelector("#datos-poliza").style.display="none"
     document.querySelector("#transfer-msg").style.display="none"
+    document.querySelector("#siniestro").style.color="#707070"
+    document.querySelector("#poliza").style.color="#912f46"
 }
 
-//LINK COLOR
-$(function(){
-    $("#sub-menu a").each(function() {
-        if (this.href == window.location) {
-            $(this).css("color", "#912f46");
-        };
-    });
-});

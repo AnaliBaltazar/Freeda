@@ -13,6 +13,7 @@ a, .Right span{
 }
 
 
+
 /*MENU*/
 .headerBar{
   height: 78px;
@@ -607,22 +608,13 @@ margin-top: 5%;
   border: 2px solid #C88585;
 }
 
-/*REPORTE-DAÑOS.HTML*/
-#bienesInquilino{ /*Acomoda los botones*/
-  display: flex; /*Acomoda los botones de manera horizontal*/
-  flex-direction: row;
-  flex-wrap: wrap; /*Evita que solo esten horizontalmente*/
-  width: 60%;
-  max-width: 600px; /*Permite que se acomoden los botones de acuerdo al tamaño*/
-  align-items: center; /*Alinea los items*/
-  justify-content: space-between; /*Acomoda los botones al centro*/
-  margin: 50px auto;
-}
 .reporte-daños{
-  width: 70%;
+  width: 60%;
   background-color: #F4F6FA ; /*#F4F6FA*/
   border-radius: 10px;
-  margin-left: 15%;
+  
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 10px;
@@ -633,6 +625,19 @@ margin-top: 5%;
   background-position: 100% 0%;
   background-size: 60%;
   display: none;
+
+  padding-bottom: 20px;
+}
+/*REPORTE-DAÑOS.HTML*/
+#bienesInquilino{ /*Acomoda los botones*/
+  display: flex; /*Acomoda los botones de manera horizontal*/
+  flex-direction: row;
+  flex-wrap: wrap; /*Evita que solo esten horizontalmente*/
+  width: 60%;
+  max-width: 600px; /*Permite que se acomoden los botones de acuerdo al tamaño*/
+  align-items: center; /*Alinea los items*/
+  justify-content: space-between; /*Acomoda los botones al centro*/
+  margin: 50px auto;
 }
 .container#total-daños{
   display: none;
@@ -850,7 +855,7 @@ button.bien.activeHover:hover .icono_bienes .cls-2t{
   border: 1.5px solid #912F46; /*GRIS*/
   width: 250px;
   height: 250px;
-  margin: 50px;
+  /*margin: 50px;*/
   text-align: center;
   border-radius: 5px;
   display: block;
@@ -907,7 +912,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   font-size: 35px;
   color: #000000;
   text-align: center;
-  margin-top: 2px;
 }
 .texto2-total{
   font-family: 'Raleway', sans-serif;
@@ -1425,8 +1429,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .underlineHover3{
   margin-left: 5%;
 } 
-
-
 .info_seg{
   border-spacing: 10px;
 }
@@ -1495,6 +1497,9 @@ h1#screenHeader{ /*Tembló*/
 /*Reporte-daños.html*/
 .texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
   font-size: 18px;
+}
+.reporte-daños{
+  background: red;
 }
 h3{
   font-size: 16px;
@@ -2106,6 +2111,9 @@ h3.describe_bien{
 button.button-minus, button.button-plus{
   height: 35px;
 }
+.texto1-daños{
+  font-size: 23px;
+}
 /*22-FIRMA.HTML*/
 .underlineHover1-1{
   margin-left: 30%;
@@ -2193,6 +2201,13 @@ margin-top: 1%;
   margin-top: 10%;
 }
 
+/*REPORTE DE DAÑOS*/
+.bien{
+
+}
+.texto1-daños{
+  font-size: 28px;
+}
 
 /*Footer*/
 .footermenu{
