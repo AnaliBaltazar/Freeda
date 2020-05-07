@@ -93,7 +93,7 @@
   text-align: center;
   color: #000000; 
   font-size: 25px;
-  margin-top: 10%;
+  /*margin-top: 10%;*/
 }
 .texto2{ /*Números*/
   font-family: 'Raleway', sans-serif;
@@ -566,7 +566,7 @@ h3#caption_loader{
 /*----------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
-  margin-top: 25%;
+  margin-top: 15%;
 }
 .part1{
   width: 50%;
@@ -645,7 +645,7 @@ input.invalid + label.head-label + label.bottom-label1 {
 /*----------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
-  margin-top: 25%;
+  margin-top: 15%;
 }
 /*.part1, .part2{
   width: 50%;
@@ -731,7 +731,7 @@ width: 95%;
 /*----------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
-  margin-top: 19%;
+  margin-top: 12%;
 }
 /*.part1, .part2{
   width: 50%;
@@ -804,7 +804,7 @@ input.invalid + label.head-label + label.bottom-label1 {
 /*------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
-  margin-top: 13%;
+  margin-top: 8%;
 }
 /*.part1, .part2{
   width: 50%;
@@ -877,7 +877,7 @@ margin-top: 1%;
 /*--------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
-  margin-top: 10%;
+  margin-top: 8%;
 }
 .imagen-casa{
   width: 45%;
