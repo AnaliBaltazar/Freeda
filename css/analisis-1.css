@@ -1,0 +1,1535 @@
+/*Navegacion*/
+/*Encabezado menú*/
+.tamaño-renglon-1{
+  position: fixed;
+  height: 78px;
+  padding-top: 13px;
+  width: 100%;
+  z-index: 2010;
+  background: #912F46 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #00000029;
+  opacity: 1;
+  padding-left: 19%;
+}
+.logo-freeda{
+  margin-left: -55%;
+  margin-bottom: 2%;
+  height: 85px;
+  width: 210px; 
+  display:flex;
+}
+.menu-freeda{
+  font-size: 14px;
+  margin-left: 4%;
+  padding-bottom: 4px;
+}
+.texto-menu-f{ /*Letra del menu*/
+  font-size: 18px;
+  color:#F7F7F7;
+  margin-top: 3px;
+  padding-right: 33px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
+  color: #FFFFFF;
+}
+.texto-menu-f:active{
+  color: #FFFFFF;
+}
+.texto-menu-f:focus{ /*Queda activado*/
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+.boton-menu-f{
+  position: absolute;
+  left: 10%;
+}
+/*BARRA DE PROGRESO*/
+.espacio-progreso{
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  /*background: #bfe7e5;        /*PRUEBA*/
+}
+
+.headerBar{ /*CONTENEDOR < >*/
+  height: 35px;
+  text-align: center;
+}
+.material-icons.icon-arrow{
+  font-size: 35px;
+  color: #912F46;
+}
+.Menu.Left{
+  margin-left: 20%;
+  float: left;
+}
+
+
+/*Seccion1*/
+.seccion1{
+  position: static;
+  height: 230px;
+  width: 100%;
+  /*background: #DEDEDE; /*Prueba */
+}
+.texto1-seccion1{
+  font-size: 40px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 47px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  margin-top: 11%;
+}
+.texto2-seccion1{ /*Analisis completo*/
+  font-size: 25px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  color: #000000;
+  margin-right: 3%; /*5%*/
+  margin-top: -4.5%; /*Agrego para subir al nivel del titulo*/
+}
+.done-icon{ /*List*/
+  font-size: 33px;
+  color: #912F46;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+/*Seccion2 SABIAS QUE...*/
+/*.seccion2{
+  background-color: red;
+  position: static;
+  height: 50px;
+  width: 100%;
+  background: #92e4df; /*Prueba 
+}*/
+.texto1-seccion2{ /*Sabias que...*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  color: #912F46;
+  margin-top: -2%; 
+  margin-bottom: 0%; 
+}
+/*PARTE 1 de analisis completo*/
+.part1{
+  height: 600px;
+  padding-bottom: 100px; 
+  border-right: transparent 1px solid ;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: #912F46;
+  margin-top: 35%; /*Centra la linea*/
+}
+
+/*Imagen palmera*/
+.imagen1-part1{
+  width: 120px; /*Tamaño de imagen*/
+  margin-left: 33%; 
+  margin-top: 16%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 7%; /*Separacion con el otro elemento hacia abajo*/
+}
+  /*Imagen estrellas*/
+.imagen2-part1{
+  width: 250px; /*Tamaño de imagen*/
+  margin-left: 15%; 
+  margin-top: 2%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 8%; /*Separacion con el otro elemento hacia abajo*/ 
+}
+.texto1-part1{/*Distancia de la costa*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 25px;
+  padding-left: 3px;
+}
+.texto2-part1{ /*Tu inmueble se encuentra alejado*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 25px;
+  padding-left: 3%;
+}
+/*PARTE 2 de analisis completo*/
+.part2{
+  height: 600px;
+  padding-bottom: 100px;
+  border-right: transparent 1px solid ;
+}
+
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: #912F46;
+  margin-top: 35%; /*Centra la linea*/
+}
+  /*Información1*/
+.texto1-part2{ /*El terremoto del 1985*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 20px;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  padding-left: 3%;
+  line-height: 28px;
+}
+/*Casa*/ 
+.imagen1-part2{
+  width: 80px; /*Tamaño de imagen*/
+  margin-left: 15%; 
+  margin-top: -2%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 3%; /*Separacion con el otro elemento hacia abajo*/ 
+}
+.texto2-part2{ /*Derrumbe*/
+  font-family: 'Raleway', sans-serif;
+  color: #912F46; 
+  font-size: 23px;
+  font-weight: 800;
+  text-align: right; /*Texto a la derecha*/
+  margin-right: 15%; /*Alinear el texto derecha*/
+  margin-top: -60px; /*Alinear el texto hacia arriba*/
+  padding-left: 15%;
+}
+/*Información2*/
+.texto3-part2{ /*El terremoto de 2017*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 20px;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  padding-left: 3%;
+  line-height: 28px;
+}
+/*Casa*/
+.imagen2-part2{
+  width: 80px; /*Tamaño de imagen*/
+  margin-left: 15%; 
+  margin-top: -2%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 3%; /*Separacion con el otro elemento hacia abajo*/ 
+}
+.texto4-part2{ /*Derrumbe*/
+  font-family: 'Raleway', sans-serif;
+  color: #912F46; 
+  font-size: 23px;
+  font-weight: 1000;
+  text-align: right; /*Texto a la derecha*/
+  margin-right: 15%; /*Alinear el texto derecha*/
+  margin-top: -60px; /*Alinear el texto hacia arriba*/
+}
+/*PARTE 3 de analisis completo*/
+.part3{
+  height: 600px;
+  padding-bottom: 100px;
+}
+.texto1-part3{ /*Tipo de suelo en CDMX*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #912F46; 
+  font-size: 28px;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.imagen1-part3{ /*Mapa.svg*/
+  width: 70%;
+  margin-left: 16%;
+}
+.texto2-part3{ /*Zona IIIa-d*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #912F46; 
+  font-size: 25px;
+  margin-top: -1%;
+  margin-bottom: 5%;
+}
+.texto3-part3{ /*Tu inmueble se encuantra de una zona de trasición*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 20px;
+  margin-top: -3%;
+  margin-bottom: 5%;
+  line-height: 25px; 
+}
+.texto4-part3{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 15px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  line-height: 23px; 
+}
+.boton1-seccion2{ /*Boton cotizar*/
+  margin-left: 40%;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.boton1-seccion2:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.boton1-seccion2:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.boton1-seccion2:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+
+
+
+/*Seccion SUMA*/
+.seccion-suma{
+  position: static;
+  height: 200px;
+  width: 100%;
+  padding-top: 10px;
+  /*background: #DEDEDE; /*Prueba */
+}
+.texto1-suma{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #912F46; 
+  font-size: 40px;
+  font-weight: 500;
+}
+.texto2-suma{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 20px;
+  margin-top: -2%;
+}
+/*SECCION EPICENTRO 1*/
+.seccion-epicentro1{
+  position: static;
+  height: 400px;
+  width: 100%;
+  /*background: #c6d4e8;  /*PRUEBA*/
+}
+.texto1-epicentro1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+}
+.imagen1-epicentro1{
+  width: 70%;
+  height: 80%;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 165px;
+}
+.negra-epicentro{
+  font-weight: bold;
+  color: #912F46;
+}
+/*SECCION EPICENTRO 2*/
+.seccion-epicentro2{
+  position: static;
+  height: 750px;
+  width: 100%;
+  /*background: #e8c6d4; /*PRUEBA*/
+}
+.texto1-epicentro2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 13.4%; /*Alinear el texto derecha*/
+  color: #000000;
+}
+.imagen1-epicentro2{
+  width: 70%;
+  height: 80%;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 165px;
+}
+/*SeccionBoton CONTRATAR*/
+.seccion-boton{
+  max-width: 900px;
+  padding-top: 130px;
+  /*background: #cc99cc;        /*PRUEBA*/
+} 
+.btn-contratar{
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -10%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-contratar:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.btn-contratar:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-contratar:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+
+
+
+/*TIPO-PROPIEDAD.html*/
+.seccion-texto{
+  position: static;
+  height: 200px;
+  width: 100%;
+  /*background: #e8c6d4; /*Prueba */
+}
+.texto1{
+  font-size: 40px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 30px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  /*margin-top: 13%;*/
+}
+/*BOTONES CASA - DEPA*/
+.seccion-propiedad{
+  position: static;
+  height: 310px;
+  width: 100%;
+  /*background: #c6e8c9; /*Prueba */
+}
+.btn-casa{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 3%;
+  border: 1px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 300px; /*Tamaño*/
+  height: 70px;
+  text-align: left;
+  letter-spacing: 0.25px;
+  color: #912F46; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-casa:hover{
+  background: #912F46 0% 0% no-repeat padding-box; 
+  color: #FFFFFF;
+}
+.btn-casa:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-casa:focus{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+.imagen1-casa{
+  position: absolute;
+  width: 20%;
+  margin-left: 150px;
+  margin-top: -10px;
+}
+/*
+.imagen1-casa:hover{
+  filter: opacity(.5);
+}
+*/
+.btn-depa{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 15%;
+  border: 1px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 300px; /*Tamaño*/
+  height: 70px;
+  text-align: left;
+  letter-spacing: 0.25px;
+  color: #912F46; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-depa:hover{
+  background: #912F46 0% 0% no-repeat padding-box; 
+  color: #FFFFFF;
+}
+.btn-depa:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+}
+.btn-depa:focus{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 2px solid #FFFFFF;
+}
+.imagen1-depa{
+  position: absolute;
+  width: 20%;
+  margin-left: 39px;
+  margin-top: -10px;
+}
+
+
+/*YA--------------------------------------*/
+
+/*SeccionBoton SIGUIENTE*/
+.seccion-siguiente{
+  max-width: 900px;
+  padding-top: 130px;
+  /*background: #bfe7e5;        /*PRUEBA*/
+} 
+.boton-siguiente{
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -13%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.boton-siguiente:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.boton-siguiente:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.boton-siguiente:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+/*YA--------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*CLASE_INMUEBLE.html*/
+.seccion-clase{
+  position: static;
+  height: 750px;
+  width: 100%;
+  /*background: #c6e8c9; /*Prueba */
+}
+.btn-interes{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 3%;
+  border: 1px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 300px; /*Tamaño*/
+  height: 70px;
+  text-align: left;
+  letter-spacing: 0.25px;
+  color: #912F46; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-interes:hover{
+  background: #912F46 0% 0% no-repeat padding-box; 
+  color: #FFFFFF;
+}
+.btn-interes:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-interes:focus{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+.img1-interes{
+  position: absolute;
+  width: 18%;
+  margin-left: 58px;
+  margin-top: -12px;
+}
+
+/*MEDIO*/
+.btn-medio{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 16%;
+  border: 1px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 300px; /*Tamaño*/
+  height: 70px;
+  text-align: left;
+  letter-spacing: 0.25px;
+  color: #912F46; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-medio:hover{
+  background: #912F46 0% 0% no-repeat padding-box; 
+  color: #FFFFFF;
+}
+.btn-medio:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-medio:focus{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+.img2-medio{
+  position: absolute;
+  width: 23%;
+  margin-left: 45%;
+  margin-top: -10px;
+}
+
+/*SEMILUJO*/
+.btn-semilujo{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 29%;
+  border: 1px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 300px; /*Tamaño*/
+  height: 70px;
+  text-align: left;
+  letter-spacing: 0.25px;
+  color: #912F46; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-semilujo:hover{
+  background: #912F46 0% 0% no-repeat padding-box; 
+  color: #FFFFFF;
+}
+.btn-semilujo:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-semilujo:focus{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+.img3-semilujo{
+  position: absolute;
+  width: 27%;
+  margin-left: 82px;
+  margin-top: -12px;
+}
+
+/*RESIDENCIAL*/
+.btn-residencial{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 42%;
+  border: 1px solid #912F46; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 300px; /*Tamaño*/
+  height: 70px;
+  text-align: left;
+  letter-spacing: 0.25px;
+  color: #912F46; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.btn-residencial:hover{
+  background: #912F46 0% 0% no-repeat padding-box; 
+  color: #FFFFFF;
+}
+.btn-residencial:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-residencial:focus{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+.img4-residencial{
+  position: absolute;
+  width: 27%;
+  margin-left: 52px;
+  margin-top: -12px;
+}
+
+
+
+
+
+/*YA--------------------------------------*/
+/*AÑO*/
+.seccion-medidas{
+  position: static;
+  height: 200px;
+  width: 100%;
+  /*background: #DEDEDE; /*Prueba */
+}
+
+.texto_area_años{ /*Cuando de introduce el texto*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 10px;
+  width: 44%;
+  padding: 50px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.data_input{
+  width: 100%;
+  font-weight: 700;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  border-radius: 6px;
+}
+/*YA--------------------------------------*/
+
+
+
+/*YA--------------------------------------*/
+label.head-label, label.bottom-label1{
+  padding: 5px 0;
+  width: 95%; /*Alinea el texto de arriba*/
+  margin-left: auto; /*Alinea el texto de arriba*/
+  margin-right: auto; /*Alinea el texto de arriba*/
+  font-size: 12px; /*Letra chiquita arriba del cuadro*/
+  font-weight: 300; 
+  font-family: 'Raleway', sans-serif;
+  display: none; /*Desaparese*/
+  color: #989A9B;
+  text-align: left;
+  -webkit-animation: silo-fade 0.2s; /*Google*/
+  -moz-animation: silo-fade 0.2s; /*Motzilla*/
+  animation: silo-fade 0.2s; /*Google*/
+}
+
+/*Hace la animacion de aparecer cuando se da clic*/
+input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
+  display: block;
+}
+
+input.invalid + label.head-label + label.bottom-label1{
+  display: block;
+  color:#FF4B4B;
+  font-weight: 500;
+  position: relative;
+  }
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+input.valid{
+  color: #912F46;
+  font-weight: 500;
+}
+
+input.invalid{
+  color:#FF4B4B;
+  font-weight: 300;
+  border-bottom: 1px solid #FF4B4B;
+}
+
+input.invalid + label.head-label{
+  color:#989A9B;
+}
+
+input.quantity-field{
+  border: 1.5px solid #C7C7C7;
+  text-align: center;
+}
+
+
+/*Animations*/
+@-webkit-keyframes silo-fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-1.4em);
+    }
+    100% {
+     opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes silo-fade {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-1.4em);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@keyframes silo-fade {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-1.4em);
+        -moz-transform: translateY(-1.4em);
+        -ms-transform: translateY(-1.4em);
+        -o-transform: translateY(-1.4em);
+        transform: translateY(-1.4em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+/*YA--------------------------------------*/
+
+
+
+/*YA--------------------------------------*/
+/*CP.html*/
+.texto1-cp{ /*Titulo Código postal*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  margin-top: 13%; 
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 30px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1; 
+}
+.texto2-cp{ /*Descipcion*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400; /*Grosor*/
+  text-align: center;
+  color: #000000;
+  opacity: 1; 
+  margin-top: 2%;
+}
+/*Superficie.html*/
+.texto_area_cp{ /*Cuando de introduce el texto*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 10px;
+  width: 36%;
+  padding: 50px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+/*INPUT*/
+.data_input{
+  width: 100%;
+  font-weight: 700;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+/*YA--------------------------------------*/
+
+
+
+
+
+/*YA--------------------------------------*/
+/*Superficie.html*/
+.texto_area_superficie{ /*Cuando de introduce el texto*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 10px;
+  width: 44%;
+  padding: 50px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+/*YA--------------------------------------*/
+/*YA--------------------------------------*/
+/*Terreno*/
+.texto_area_terreno{ /*Cuando de introduce el texto*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 10px;
+  width: 44%;
+  padding: 50px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+/*YA--------------------------------------*/
+
+
+
+
+/*Footermenu
+.footermenu{
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+  background: #99cccc;   /* PRUEBA
+}*/
+/*.texto1-footermenu{
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+  padding-left: 10%;
+  margin-top: 28px;
+  z-index: 2001;
+}
+.texto2-footermenu{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto3-footermenu{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto4-footermenu{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.link-footer:hover{
+  color: #C88585;
+}
+.link-footer:active{
+  color: #C88585;
+  text-decoration: none;
+}
+.link-footer:focus{
+  text-decoration: underline;
+  color: #C88585;
+}
+.logo-footermenu{
+  margin-left: 66%;
+  margin-top: 20px;
+  height: 48px;
+  width: 158px;
+  display: flex;
+}
+.logo-footermenu{
+  margin-left: 66%;
+  margin-top: -10px;
+  height: 55px;
+  width: 199px;
+  display: flex;
+}*/
+
+
+/*NUEVO FOOTER*/
+/*Footermenu*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-top: solid 5px;
+  border-color: #F2F5F4;
+  padding-top: 2%;
+  /*background: #99cccc;   /* PRUEBA*/
+}
+/*.texto1-footermenu{
+  display: flex;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+  padding-left: 5%;
+  margin-top: 28px;
+  z-index: 2001;
+} */
+.texto1-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px; /*Separacion entre textos*/
+  padding-left: 5%;
+  margin-top: 28px;
+  z-index: 2001;
+}
+.texto2-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto3-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 40px;
+}
+.texto4-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+}
+.texto5-footer{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: #707070;
+  opacity: 1;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.link-footer:hover{
+  color: #C88585;
+}
+.link-footer:active{
+  color: #C88585;
+  text-decoration: none;
+}
+.link-footer:focus{
+  text-decoration: underline;
+  color: #C88585;
+}
+/*
+.logo-footermenu{
+  margin-left: 66%;
+  margin-top: 20px;
+  height: 48px;
+  width: 158px;
+  display: flex;
+}*/
+.logo-footer{
+  width: 160px;
+  height: 60px;
+  display: flex;
+  margin-left: 80%;
+  margin-top: -3%;
+}
+
+
+
+
+
+
+
+/*-------------MEDIA QUERIES--------------*/
+@media only screen and (max-width:1919px) and (min-width:992px){
+/*body{
+  background-color: pink;
+} */
+  /*Nav*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.boton-menu{
+  position: absolute;
+ left: 50%;
+}
+
+/*.footer-freeda{
+  padding-left: 758px;
+}*/
+
+/*.part1:after{ PENDIENTE
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 10;
+  width  : 1px;
+  height   : 60%;  /* or 100px 
+  background: #999;
+}*/ 
+.texto1{
+  margin-top: 14%;
+}
+.texto2-seccion1{ /*Analisis completo*/
+  font-size: 20px; /*Tamaño letra*/
+  margin-right: 1%; /*5%*/
+  margin-top: -5%; /*Agrego para subir al nivel del titulo*/
+}
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+}
+
+
+
+
+
+ @media only screen and (max-width:1024px) and (min-width:992px){
+/*body{
+  background-color: gray;
+} */
+.footer-freeda{
+  padding-left: 540px;
+}
+.logo-freeda{
+  padding-right: 20%;
+}
+/*Analisis-completo.html*/
+.imagen2-part1{ /*Imagen estrellas*/
+margin-left: 5%;
+}
+.texto2-part2{ /*Derrumbe*/
+  margin-right: 10%;
+}
+.texto4-part2{ /*Derrumbe*/
+  margin-right: 10%;
+}
+/*Imagen casa*/
+.imagen1-part2{
+  margin-left: 5%;
+}
+.imagen2-part2{
+  margin-left: 5%;
+}
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+
+}
+
+
+
+
+  
+
+@media only screen and (max-width:991px) and (min-width:576px){
+/*body{
+  background-color: violet;
+} */
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.menu-freeda{
+  position: absolute;
+  margin-left: -80px;
+  margin-right: 30px;
+  margin-top: 11px;
+  background-color: #FFFFFF;
+  width: 100vh;
+  min-height: 100vh;
+}
+.texto-menu{
+  padding-right: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+  margin-left: 175px;
+  margin-top: 30px;
+  letter-spacing: 0.35px;
+  color: #FFFFFF;
+}
+.t1m{
+  margin-top: 200px;
+}
+.tmbl{
+  font-weight: 700;
+}
+.boton-menu{
+  left: 80%;
+}
+.material-icons{
+  color: white;
+}
+/*analisis-completo.html*/
+.texto1-seccion1{  /*Riesgo de ubicacion*/
+  margin-top: 23%;
+}
+.texto2-seccion1{  /*Analisis completo*/
+  margin-right: 17%;
+  margin-top: 3%;
+}
+.done-icon{
+  color: #912F46;
+  margin-right: 15%;
+}
+.texto1-seccion2{
+  margin-top: 3%;
+}
+.part1{
+  border-bottom: #912F46 1px solid ;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.part2{
+  border-bottom: #912F46 1px solid ;
+}
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.imagen2-part1{ /*Imagen estrella*/
+margin-left: 25%;
+}
+.boton1-seccion2{ /*Boton cotizar*/
+margin-left: 30%;
+margin-top: 35%;
+margin-bottom: 30%;
+}
+
+/*Suma-asegurada.html*/
+.imagen1-epicentro1{ /*Tabla 1 Epicentro*/
+  width: 100%;
+  margin-left: 1%;
+}
+.imagen1-epicentro2{ /*Tabla 2 Epicentro*/
+  width: 100%;
+  margin-left: 1%;
+}
+.btn-contratar{ /*Boton contratar*/
+margin-top: -25%;
+}
+
+/*Años.html*/
+.texto1{
+  margin-top: 20%;
+}
+.texto_area{
+  width: 70%;
+}
+.boton-siguiente{
+margin-left: 34%;
+margin-top: -20%;
+}
+
+/*TIPO DE PROPIEDAD.HTML*/
+.texto1{
+  letter-spacing: 0.4px;
+  line-height: 30px;
+}
+/*NUEVO FOOTER*/
+.footermenu{
+    padding-left: 0px;
+}
+.texto1-footer, .texto2-footer ,.texto3-footer, .texto4-footer, .texto5-footer{
+  margin-right: 25px;
+}
+.logo-footer{
+  margin-right: 10%;
+}
+/*CP*/
+.texto1-cp{
+  margin-top: 23%;
+}
+.texto_area_años, .texto_area_superficie, .texto_area_terreno, .texto_area_cp{
+  width: 60%;
+}
+
+.logo-footer{
+  display: none;
+}
+input.invalid + label.head-label + label.bottom-label1{
+  top: 110px;
+  width: 95%;
+}
+}
+
+
+
+
+
+@media only screen and (max-width:575px){
+/*body{
+  background-color: orange;
+}*/
+
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+
+.logo-freeda{
+  margin-left: -10%;
+  margin-top: -7.5%;
+}
+.menu-freeda{
+  position: absolute;
+  margin-left: -80px;
+  margin-right: 30px;
+  margin-top: 11px;
+  background-color: #FFFFFF;
+  width: 100vh;
+  min-height: 100vh;
+}
+.texto-menu{
+  padding-right: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+  margin-left: 175px;
+  margin-top: 30px;
+  letter-spacing: 0.35px;
+  color: #FFFFFF;
+}
+.t1m{
+  margin-top: 200px;
+}
+.tmbl{
+  font-weight: 700;
+}
+.boton-menu{
+  left: 80%;
+}
+.material-icons{
+  color: white;
+}
+/*analisis-completo.html*/
+.texto1-seccion1{  /*Riesgo de ubicacion*/
+  margin-top: 25%;
+}
+.texto2-seccion1{  /*Analisis completo*/
+  margin-right: 8%;
+  margin-top: 5%;
+}
+.done-icon{
+  color: #912F46;
+  margin-right: 15%;
+}
+
+.texto1-seccion2{
+  margin-top: 3%;
+}
+
+.imagen2-part1{ /*Imagen estrella*/
+margin-left: 26%;
+}
+.part1{
+  width: 100%;
+  border-bottom: #912F46 1px solid ;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 1px;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+  size: 10%;
+}
+.part2{
+  border-bottom: #912F46 1px solid ;
+}
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.imagen2-part1{ /*Imagen estrella*/
+margin-left: 25%;
+}
+.boton1-seccion2{ /*Boton cotizar*/
+margin-left: 30%;
+margin-top: -3%;
+margin-bottom: 20%;
+}
+.part3{ /*Recusdro de informacion*/
+  height: 20%;
+}
+
+
+
+
+
+
+/*Suma-asegurada.html*/
+.imagen1-epicentro1{ /*Tabla 1 Epicentro*/
+  width: 100%;
+  margin-left: 1%;
+}
+.imagen1-epicentro2{ /*Tabla 2 Epicentro*/
+  width: 100%;
+  margin-left: 1%;
+}
+.btn-contratar{ /*Boton contratar*/
+margin-top: -40%;
+margin-left: 30%;
+}
+
+/*Años.html*/
+.texto1{
+  margin-top: 20%;
+}
+.texto_area{
+  width: 76%;
+}
+.boton-siguiente{
+margin-left: 30%;
+margin-top: -30%;
+}
+
+/*CP*/
+.texto1-cp{
+  margin-top: 23%;
+}
+
+
+.texto_area_años, .texto_area_superficie, .texto_area_terreno, .texto_area_cp{
+  width: 76%;
+}
+.footer-freeda{
+  padding-left: 150px;
+}
+
+.logo-footer{
+  display: none;
+}
+input.invalid + label.head-label + label.bottom-label1 {
+  top: 110px;
+}
+}
+
+
+
+
+
+@media only screen and (max-width:320px){
+  /*body{
+    background-color: lime;
+  } */
+
+}
+
