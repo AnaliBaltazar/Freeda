@@ -631,9 +631,6 @@ input.quantity-field{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-body{
-  background: pink;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -723,9 +720,6 @@ body{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-body{
-  background: gray;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -826,9 +820,6 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-body{
-  background: red;
-}
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -920,9 +911,6 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-body{
-  background: aqua;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1004,9 +992,6 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-body{
-  background: violet;
-}
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
