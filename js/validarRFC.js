@@ -15,8 +15,14 @@ $('#rfc').on("change keyup paste", function(){
     document.querySelector('#day [value="' + 0 + '"]').selected = true;
     document.querySelector('#month [value="' + 0 + '"]').selected = true;
     document.querySelector('#year [value="' + 0 + '"]').selected = true;
-    document.querySelectorAll("input").forEach(input => input.disabled=false)
-    document.querySelectorAll("select").forEach(select => select.disabled=false)
+    document.querySelectorAll("input").forEach(function(input){
+        if (input.id != "rfc") {
+            input.disabled=true
+        }else{
+            input.disabled=false
+        } 
+    })
+    document.querySelectorAll("select").forEach(select => select.disabled=true)
 })
 
 function cleanInput() {
@@ -54,6 +60,12 @@ function validateInputValue(){
                 document.querySelector(".center_container").style.display="none"
                 document.querySelector("#progress_loader").style.display="block"
                 document.querySelector("#caption_loader").style.display="block"
+                document.querySelector("#nombre").disabled = false;
+                document.querySelector("#paterno").disabled = false;
+                document.querySelector("#materno").disabled = false;
+                document.querySelector("#day").disabled = false;
+                document.querySelector("#month").disabled = false;
+                document.querySelector("#year").disabled = false;
             },1500);
             
         }else{
@@ -73,7 +85,7 @@ function appendText(texto, elemento){   //Funcion para agregar o modificar el te
 function setRFCData(data){
     document.querySelector("#nombre").value = data.nombre;
     document.querySelector("#nombre").classList.add("valid");
-    document.querySelector("#nombre").disabled = true;
+    
     document.querySelector("#paterno").value = data.a_paterno;
     document.querySelector("#paterno").classList.add("valid");
     document.querySelector("#paterno").disabled = true;
