@@ -167,7 +167,7 @@ select:focus{
 
 /*3-ACTIVAR-TOKEN.HTML*/
 .texto2-seccion1{
-  font-size: 25px; /*Tamaño letra*/
+  font-size: 20px; /*Tamaño letra*/
   font-family: 'Raleway', sans-serif;
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
@@ -175,7 +175,8 @@ select:focus{
   text-align: center;
   color: #912F46;
   opacity: 1;
-  margin-top: 3%;
+  /*margin-top: 0%;*/
+  margin-bottom: 7%;
 }/*SECCION-TELEFONO token.html*/
 .seccion-telefono{
   position: static;
@@ -499,9 +500,9 @@ input.quantity-field{
   width: 30%;
   padding: 7px 0 4px 0;
   text-align: center;
-  margin-top: -5%;
+  /*margin-top: -5%;*/
   margin-left: 35%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   position: relative;
   display: none;
 }
@@ -547,12 +548,6 @@ input.quantity-field{
   border: 2px solid #C88585;
   color: #912F46;
 }
-
-
-
-
-
-
 
 
 
@@ -632,8 +627,6 @@ input.quantity-field{
   margin-left: 80%;
   margin-top: -3%;
 }
-
-
 
 
 
@@ -719,6 +712,16 @@ input.quantity-field{
 }
 .nuevo-token{
   margin-top: 5%;
+}
+
+.msn-validacion{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.texto2-seccion1{
+  font-size: 18px;
+  margin-bottom: 10%;
 }
 
 
@@ -810,6 +813,16 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 .nuevo-token{
   margin-top: 5%;
+}
+
+.msn-validacion{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.texto2-seccion1{
+  font-size: 18px;
+  margin-bottom: 8%;
 }
 
 
@@ -914,6 +927,16 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-top: 2.5%;
 }
 
+.msn-validacion{
+  width: 35%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.texto2-seccion1{
+  font-size: 20px;
+  margin-bottom: 8%;
+}
+
 /*Footer*/
 .footermenu{
   padding-right: 150px;
@@ -999,6 +1022,11 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 .nuevo-token{
   margin-top: 2%;
+}
+
+.texto2-seccion1{
+  font-size: 20px;
+  margin-bottom: 4%;
 }
 
 
@@ -1087,6 +1115,9 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-top: 2%;
 }
 
+.texto2-seccion1{
+  margin-bottom: 5%;
+}
 
 
 /*Footer*/
