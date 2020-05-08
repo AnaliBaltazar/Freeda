@@ -138,12 +138,12 @@ td{
   padding-left: 4%; /*Centrar el texto*/
 }
 td.col_l{
-  width: 50%; /*auto*/
+  /* width: 50%; */ /*auto*/
   text-align: left;
   line-height: 30px; /*Sangria*/
 }
 td.col_r{
-  width: auto;
+  /* width: auto; */
   text-align: left;
   line-height: 30px; /*Sangria*/
 }
@@ -572,7 +572,7 @@ h3#caption_loader{
   width: 50%;
 }
 .imagen-casa{
-  width: 55%;
+  width: 30%;
   margin-top: 33%;
   margin-left: 30%;
 }
@@ -651,7 +651,7 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 50%;
 }*/
 .imagen-casa{
-  width: 55%;
+  width: 30%;
   margin-top: 35%;
   margin-left: 30%;
 }
@@ -810,7 +810,7 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 50%;
 }*/
 .imagen-casa{
-  width: 55%;
+  width: 30%;
   margin-top: 0%;
   margin-left: 30%;
 }
@@ -880,7 +880,7 @@ margin-top: 1%;
   margin-top: 8%;
 }
 .imagen-casa{
-  width: 45%;
+  width: 30%;
   margin-left: 40%;
 }
 .btn-siguiente{ /*Boton siguiente*/
