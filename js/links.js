@@ -99,8 +99,10 @@ function toContratar() {
 function toPayment() {
     window.location = "./15-Pago.html";
 }
-function toDataInsured() {
-
+function toDataInsured(event) {
+    event.preventDefault();
+    window.location = "./16-datos-asegurado.html";
+    return false
 }
 /* function closePop() {
     document.querySelector("#ready_screen").style.display="none";

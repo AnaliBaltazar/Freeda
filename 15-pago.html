@@ -104,7 +104,7 @@
     <div class="card_container">
         <div class="bkng-tb-cntnt">
             <div class="pymnts">
-                <form action="./16-datos-asegurado.html" method="POST" id="payment-form">
+                <form action="./16-datos-asegurado.html" onsubmit="return toDataInsured(event)" id="payment-form"> <!--  method="POST" -->
                     <input type="hidden" name="token_id" id="token_id">
                     <div class="pymnt-itm card active">
                         <h2>Tarjeta de crédito o débito</h2>
@@ -137,7 +137,7 @@
                             <!--<div class="sctn-row r" id="pagar">
                                 <a class="button rght" id="pay-button">Pagar</a> -->
 
-                            <button class="btn boton-pagar" role="link" onclick="toDataInsured()">PAGAR</button> 
+                            <button class="btn boton-pagar" role="link" type="submit" form="payment-form">PAGAR</button> 
                         </div>
                     </div>
                 </form>
