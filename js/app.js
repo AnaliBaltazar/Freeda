@@ -142,8 +142,8 @@ capturarButton.addEventListener("click", function (event) {
     document.querySelector("#contenedor-top").style.display="none"
     document.querySelector("#canvas").style.display="none"
     document.querySelector("#signature-pad-footer-container").style.display="none"
-    document.querySelector("#banco-transfer").textContent=localStorage.getItem("banco")
-    document.querySelector("#cuenta-transfer").textContent=localStorage.getItem("clabe")
+    document.querySelector("#banco-transfer").textContent=sessionStorage.getItem("banco")
+    document.querySelector("#cuenta-transfer").textContent=sessionStorage.getItem("clabe")
     document.querySelector("#seccion-tran1").style.display="block"
     document.querySelector("#seccion-tran2").style.display="block"
     document.querySelector("#seccion-tran3").style.display="block"

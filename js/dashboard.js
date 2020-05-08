@@ -1,9 +1,9 @@
 "use strict";
 window.onload = function(){
-    if(localStorage.getItem("clabe")){
-        document.querySelector("#numCuenta").textContent = localStorage.getItem("clabe").replace(/\d(?=\d{4})/g,"*");
-        document.querySelector("#banco-transfer").textContent=localStorage.getItem("banco")
-        document.querySelector("#cuenta-transfer").textContent=localStorage.getItem("clabe")
+    if(sessionStorage.getItem("clabe")){
+        document.querySelector("#numCuenta").textContent = sessionStorage.getItem("clabe").replace(/\d(?=\d{4})/g,"*");
+        document.querySelector("#banco-transfer").textContent=sessionStorage.getItem("banco")
+        document.querySelector("#cuenta-transfer").textContent=sessionStorage.getItem("clabe")
     }else{
         document.querySelector("#numCuenta").textContent = "Sin registro.";
         document.querySelector("#banco-transfer").textContent="Sin información."
@@ -91,8 +91,8 @@ function saveData(event) {
     if (name.classList.contains("invalid") || account.classList.contains("invalid") || bank == "0") {
         return false
     } else {
-        localStorage.setItem("clabe", account_value)
-        localStorage.setItem("banco",bank)
+        sessionStorage.setItem("clabe", account_value)
+        sessionStorage.setItem("banco",bank)
         document.querySelector("#numCuenta").textContent = account_value.replace(/\d(?=\d{4})/g,"*")
         document.querySelector("#cover").style.display="none";
         document.querySelector("#ready_screen1").style.display="none";
@@ -174,7 +174,7 @@ function showTransfer(params) {
     document.querySelector("#seccion-tran2").style.display="none"
     document.querySelector("#seccion-tran3").style.display="none"
     document.querySelector("#seccion-btn").style.display="none"
-    document.querySelector("p.texto-trans").innerHTML= "Se ha transferido a la cuenta " + "<br/>" + localStorage.getItem("clabe") + "<br/>" + " el monto de $1,500"
+    document.querySelector("p.texto-trans").innerHTML= "Se ha transferido a la cuenta " + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de $1,500"
     document.querySelector("#datos-poliza").style.display="block"
     document.querySelector("#transfer-msg").style.display="block"
 }

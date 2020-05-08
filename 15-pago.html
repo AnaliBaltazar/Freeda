@@ -38,7 +38,7 @@
 <body>
         <nav class="navbar navbar-expand-lg tamaño-renglon-1">
         <!--Logo de menu--> <!-- Botones del menu -->
-        <a href="./1-index.html"><img src="img/logo_freeda.svg" class="img-responsive navbar-brand logo-freeda"></a>  <!--Logo Freeda-->
+        <a href="./index.html"><img src="img/logo_freeda.svg" class="img-responsive navbar-brand logo-freeda"></a>  <!--Logo Freeda-->
         
         <button class="btn navbar-toggler boton-menu" type="button" data-toggle="collapse" data-traget="#navbarCollapsible">
             <i class="material-icons">menu</i>
@@ -104,7 +104,7 @@
     <div class="card_container">
         <div class="bkng-tb-cntnt">
             <div class="pymnts">
-                <form action="./16-datos-asegurado.html" method="POST" id="payment-form">
+                <form action="./16-datos-asegurado.html" onsubmit="return toDataInsured(event)" id="payment-form"> <!--  method="POST" -->
                     <input type="hidden" name="token_id" id="token_id">
                     <div class="pymnt-itm card active">
                         <h2>Tarjeta de crédito o débito</h2>
@@ -137,7 +137,7 @@
                             <!--<div class="sctn-row r" id="pagar">
                                 <a class="button rght" id="pay-button">Pagar</a> -->
 
-                            <button class="btn boton-pagar" role="link" onclick="toDataInsured()">PAGAR</button> 
+                            <button class="btn boton-pagar" role="link" type="submit" form="payment-form">PAGAR</button> 
                         </div>
                     </div>
                 </form>
@@ -155,7 +155,7 @@
     <a href="#" class="texto3-footer link-footer">Sobre nosotros</a>
      <a href="#" class="texto4-footer link-footer">Nuestros servicios</a>
     <!--<a href="#" class="texto5-footer link-footer">Aviso de privacidad</a> -->
-    <a href="#" class="logo-footer"><img src="img/freeda.svg"></a>    
+    <a href="#" class="logo-footer"><img src="img/Freeda.svg"></a>    
   </div>
 
   <!--Footer terminos y condiciones 

@@ -91,6 +91,6 @@ function removeText(element){   // REMUEVE EL ELEMENTO DE TEXTO EN LA CLASE DE I
     
 }
 function toYear(elmnt) {
-    localStorage.setItem('clase_propiedad',elmnt.id)
+    sessionStorage.setItem('clase_propiedad',elmnt.id)
     window.location = "./11-tiempo.html"
 }
