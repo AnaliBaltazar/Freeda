@@ -351,6 +351,7 @@ input.quantity-field{
   font-size: 20px;
   margin-top: -2%;
 }
+
 /*SECCION EPICENTRO 1*/
 .seccion-epicentro1{
   position: static;
@@ -365,15 +366,16 @@ input.quantity-field{
   color: #000000;
 }
 .imagen1-epicentro1{
-  width: 70%;
-  height: 80%;
+  width: 100%;
+  /*height: 80%;*/
   font-family: 'Raleway', sans-serif;
-  margin-left: 165px;
+  /*margin-left: 165px;*/
 }
 .negra-epicentro{
   font-weight: bold;
   color: #912F46;
 }
+
 /*SECCION EPICENTRO 2*/
 .seccion-epicentro2{
   position: static;
@@ -389,15 +391,19 @@ input.quantity-field{
   color: #000000;
 }
 .imagen1-epicentro2{
-  width: 70%;
-  height: 80%;
+  width: 100%;
+  /*height: 80%;*/
   font-family: 'Raleway', sans-serif;
-  margin-left: 165px;
+  /*margin-left: 165px;*/
 }
+/*SeccionBoton CONTRATAR*/
+.seccion-boton{
+  max-width: 900px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*background: #cc99cc;        /*PRUEBA*/
+} 
 .btn-contratar{
-  /*position: absolute;
-  margin-left: 38%;
-  margin-top: -10%;*/
   display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
@@ -425,12 +431,6 @@ input.quantity-field{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
-/*SeccionBoton CONTRATAR*/
-.seccion-boton{
-  max-width: 900px;
-  padding-top: 130px;
-  /*background: #cc99cc;        /*PRUEBA*/
-} 
 
 /*NUEVO FOOTER*/
 /*Footermenu*/
@@ -513,7 +513,6 @@ input.quantity-field{
 
 
 /*------------------MEDIA QUERIES--------------*/
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 .tamaño-renglon-1{
@@ -566,27 +565,17 @@ input.quantity-field{
 }
 
 /*18-SUMA-ASEGURADA*/
-.texto1-epicentro1{
+.texto1-epicentro1, .texto1-epicentro2{
   font-size: 20px;
 }
-.imagen1-epicentro1{ /*Tabla 1 Epicentro*/
-  width: 100%;
-  margin-left: 1%;
-}
-.texto1-epicentro2{
-  font-size: 20px;
-}
-.imagen1-epicentro2{ /*Tabla 2 Epicentro*/
-  width: 100%;
-  margin-left: 1%;
+.imagen1-epicentro1, .imagen1-epicentro2{
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-contratar{
-  margin-right: auto;
   margin-left: auto;
-  margin-top: 10%;
-}
-.seccion-boton{
-  display: none;
+  margin-right: auto;
+  margin-top: -35%;
 }
 
 /*Footer*/
@@ -651,27 +640,18 @@ input.quantity-field{
 }
 
 /*18-SUMA-ASEGURADA*/
-.texto1-epicentro1{
+.texto1-epicentro1, .texto1-epicentro2{
   font-size: 20px;
 }
-.imagen1-epicentro1{ /*Tabla 1 Epicentro*/
-  width: 100%;
-  margin-left: 1%;
-}
-.texto1-epicentro2{
-  font-size: 20px;
-}
-.imagen1-epicentro2{ /*Tabla 2 Epicentro*/
-  width: 100%;
-  margin-left: 1%;
+.imagen1-epicentro1, .imagen1-epicentro2{
+  width: 105%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-contratar{
-  margin-right: auto;
   margin-left: auto;
-  margin-top: 10%;
-}
-.seccion-boton{
-  display: none;
+  margin-right: auto;
+  margin-top: -20%;
 }
 
 
@@ -750,26 +730,18 @@ input.quantity-field{
 }
 
 /*18-SUMA-ASEGURADA*/
-.texto1-epicentro1{
-  font-size: 21px;
+.texto1-epicentro1, .texto1-epicentro2{
+  font-size: 20px;
 }
-.imagen1-epicentro1{ /*Tabla 1 Epicentro*/
+.imagen1-epicentro1, .imagen1-epicentro2{
   width: 100%;
-  margin-left: 1%;
-  height: 75%;
-}
-.texto1-epicentro2{
-  font-size: 21px;
-}
-.imagen1-epicentro2{ /*Tabla 2 Epicentro*/
-  width: 100%;
-  margin-left: 1%;
-  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-contratar{
-  margin-right: auto;
   margin-left: auto;
-  margin-top: -10%;
+  margin-right: auto;
+  margin-top: 5%;
 }
 
 
@@ -834,25 +806,24 @@ input.quantity-field{
  
 /*18-SUMA-ASEGURADA*/
 .texto1-epicentro1{
-  font-size: 21px;
-}
-.imagen1-epicentro1{ /*Tabla 1 Epicentro*/
-  width: 80%;
-  margin-left: 10%;
-  height: 70%;
+  font-size: 23px;
 }
 .texto1-epicentro2{
-  font-size: 21px;
+  font-size: 23px;
+  margin-top: 5%;
 }
-.imagen1-epicentro2{ /*Tabla 2 Epicentro*/
-  width: 80%;
-  margin-left: 10%;
-  height: 70%;
+.imagen1-epicentro1{
+  width: 70%;
+  margin-left: 15%;
+}
+.imagen1-epicentro2{
+  width: 70%;
+  margin-left: 15%;
 }
 .btn-contratar{
-  margin-right: auto;
   margin-left: auto;
-  margin-top: -10%;
+  margin-right: auto;
+  margin-top: 5%;
 }
 
 /*Footer*/
@@ -913,27 +884,19 @@ margin-top: 1%;
 
 /*18-SUMA-ASEGURADA*/
 .texto1-epicentro1{
-  font-size: 23px;
-  margin-right: 8%;
-}
-.imagen1-epicentro1{ /*Tabla 1 Epicentro*/
-  width: 70%;
-  margin-left: 15%;
-  height: 75%;
+  font-size: 25px;
 }
 .texto1-epicentro2{
-  font-size: 23px;
-  margin-right: 8%;
+  font-size: 25px;
+  margin-top: 2%;
 }
-.imagen1-epicentro2{ /*Tabla 2 Epicentro*/
-  width: 70%;
-  margin-left: 15%;
-  height: 75%;
+.imagen1-epicentro1{
+  width: 60%;
+  margin-left: 20%;
 }
-.btn-contratar{
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: -8%;
+.imagen1-epicentro2{
+  width: 60%;
+  margin-left: 20%;
 }
 
 
