@@ -1,7 +1,8 @@
 function previousPage() {
     window.history.back();
 }
-function toActivateToken() {
+function toActivateToken(event) {
+    event.preventDefault();
     window.location = "./3-activar-token.html";
 }
 

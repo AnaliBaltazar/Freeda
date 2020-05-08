@@ -120,7 +120,7 @@ function searchRFC(value){
         }
 }
 
-const form = document.querySelector("#data_registro")
+const form = document.querySelector("#data_registro2")
 form.addEventListener('submit', toLoader)
 function toLoader(evt) {
     evt.preventDefault();
