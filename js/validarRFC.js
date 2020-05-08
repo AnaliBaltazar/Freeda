@@ -55,17 +55,19 @@ function validateInputValue(){
                 let busqueda = searchRFC(elmnt_value);
                 if (busqueda != null) {
                     setRFCData(busqueda);
+                }else{
+                    document.querySelector("#nombre").disabled = false;
+                    document.querySelector("#paterno").disabled = false;
+                    document.querySelector("#materno").disabled = false;
+                    document.querySelector("#day").disabled = false;
+                    document.querySelector("#month").disabled = false;
+                    document.querySelector("#year").disabled = false;
                 }
                 document.querySelector("#cover").style.display="none"
                 document.querySelector(".center_container").style.display="none"
                 document.querySelector("#progress_loader").style.display="block"
                 document.querySelector("#caption_loader").style.display="block"
-                document.querySelector("#nombre").disabled = false;
-                document.querySelector("#paterno").disabled = false;
-                document.querySelector("#materno").disabled = false;
-                document.querySelector("#day").disabled = false;
-                document.querySelector("#month").disabled = false;
-                document.querySelector("#year").disabled = false;
+                
             },1500);
             
         }else{
@@ -85,7 +87,7 @@ function appendText(texto, elemento){   //Funcion para agregar o modificar el te
 function setRFCData(data){
     document.querySelector("#nombre").value = data.nombre;
     document.querySelector("#nombre").classList.add("valid");
-    
+    document.querySelector("#nombre").disabled = true;
     document.querySelector("#paterno").value = data.a_paterno;
     document.querySelector("#paterno").classList.add("valid");
     document.querySelector("#paterno").disabled = true;

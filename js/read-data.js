@@ -1,11 +1,11 @@
 "use strict";
 
 window.onload = (event) => {
-  let tipoPropiedad = localStorage.getItem("tipo_propiedad")
-  let clasePropiedad = localStorage.getItem("clase_propiedad")
-  let year = localStorage.getItem("year")
-  let construccion = localStorage.getItem("construccion")
-  let terreno = localStorage.getItem("terreno")
+  let tipoPropiedad = sessionStorage.getItem("tipo_propiedad")
+  let clasePropiedad = sessionStorage.getItem("clase_propiedad")
+  let year = sessionStorage.getItem("year")
+  let construccion = sessionStorage.getItem("construccion")
+  let terreno = sessionStorage.getItem("terreno")
 
   document.querySelector(".imagen-casa").src="./img/" + tipoPropiedad + ".svg";
   document.querySelector("#tipo-prop").textContent = tipoPropiedad.toUpperCase();
