@@ -97,7 +97,7 @@ function toContratar() {
 }
 
 function toPayment() {
-    window.location = "./15-Pago.html";
+    window.location = "./15-pago.html";
 }
 function toDataInsured(event) {
     event.preventDefault();
