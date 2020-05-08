@@ -94,3 +94,6 @@ function toYear(elmnt) {
     sessionStorage.setItem('clase_propiedad',elmnt.id)
     window.location = "./11-tiempo.html"
 }
+function previousPage() {
+    window.history.back();
+}
