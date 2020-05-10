@@ -19,7 +19,7 @@
 }
 .menu-freeda{
   font-size: 14px;
-  margin-left: 4%;
+  margin-left: 5%;
   padding-bottom: 4px;
 }
 .texto-menu-f{ /*Letra del menu*/
@@ -46,8 +46,8 @@
 }
 /*Boton cotizar seguro*/
 .boton2-menu{
-  position: absolute;
-  margin-left: 40%;
+  /*position: absolute;
+  margin-left: 40%;*/
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   width: 150px;
@@ -176,16 +176,6 @@ ul{ /*Contenedor botones*/
   border: 2px solid #C88585;
 }*/
 
-
-
-
-
-
-
-
-
-
-
 /*NUEVO FOOTER*/
 .footermenu{
   position: static;
@@ -264,9 +254,6 @@ ul{ /*Contenedor botones*/
 }
 
 
-
-
-
 /*---------MEDIA QUERIES---------*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -283,6 +270,20 @@ ul{ /*Contenedor botones*/
 }
 .boton-menu{
   left: 80%;
+}
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
+}
+.boton2-menu{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
 }
 /*----------------------------*/
 
@@ -324,6 +325,7 @@ ul{ /*Contenedor botones*/
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 .tamaño-renglon-1{
+
   padding-left: 25%; /*9*/
 }
 .logo-freeda{
@@ -335,6 +337,21 @@ ul{ /*Contenedor botones*/
 }
 .boton-menu{
   left: 80%;
+}
+
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
+}
+.boton2-menu{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
 }
 /*----------------------------*/
 /*Indexfreeda.html*/
@@ -386,6 +403,7 @@ ul{ /*Contenedor botones*/
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 .tamaño-renglon-1{
+
   padding-left: 10%;
 }
 .logo-freeda{
