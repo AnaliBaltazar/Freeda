@@ -85,6 +85,8 @@ function appendText(texto, elemento){   //Funcion para agregar o modificar el te
 }
 
 function setRFCData(data){
+    document.querySelector("#rfc").value = data.rfc;
+    document.querySelector("#rfc").classList.add("valid");
     document.querySelector("#nombre").value = data.nombre;
     document.querySelector("#nombre").classList.add("valid");
     document.querySelector("#nombre").disabled = true;
@@ -122,7 +124,29 @@ function searchRFC(value){
         }
 }
 
+/**
+ * Function "getFormData" gets the values in the form
+ * and returns them as an object with the
+ * [formIdentifier] as the object key
+ * returns {Object}
+ */
+const formId = "data_registro2"; // ID of the form
+const url = location.href; //  href for the page
+
 const form = document.querySelector("#data_registro2")
+const formElements = form.elements;
+
+
+const getFormData = () => {
+    let data = { ["InsuredData"]: {} }; // create an empty object with the formIdentifier as the key and an empty object as its value
+    for (const element of formElements) {
+      if (element.name.length > 0) {
+        data["InsuredData"][element.name] = element.value;
+      }
+    }
+    return data;
+};
+
 form.addEventListener('submit', toLoader)
 function toLoader(evt) {
     evt.preventDefault();
@@ -144,6 +168,9 @@ function toLoader(evt) {
     }else if (rfcelmnt.classList.contains("invalid") || nameelmnt.classList.contains("invalid") || patelmnt.classList.contains("invalid") || matelmnt.classList.contains("invalid")){
         alert("La información proporcionada no es válida")
     }else{
+        data = getFormData();
+        sessionStorage.setItem("InsuredData", JSON.stringify(data["InsuredData"]));
+
         document.querySelector("#cover").style.display="block";
         document.querySelector(".center_container").style.display="block";
         document.querySelector("#bar_loader").style.width="0";
