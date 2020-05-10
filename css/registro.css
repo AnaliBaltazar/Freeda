@@ -1,7 +1,7 @@
 /*Navegacion*/
 .tamaño-renglon-1{
   position: fixed;
-  height: 78px;
+  /* height: 78px; */
   padding-top: 13px;
   width: 100%;
   z-index: 2010;
@@ -48,7 +48,7 @@
 /*2-REGISTRO.HTML*/
 .seccion1{
   position: static;
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
   /*background: #DEDEDE; /*Prueba */
 }

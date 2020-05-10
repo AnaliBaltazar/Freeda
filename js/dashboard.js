@@ -1,5 +1,8 @@
 "use strict";
 window.onload = function(){
+    const userData= JSON.parse(sessionStorage.getItem("InsuredData")); // get and parse the saved data from localStorage
+    document.querySelector("#session-name").textContent=userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + "..."
+    document.querySelector("#clientName").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
     if(sessionStorage.getItem("clabe")){
         document.querySelector("#numCuenta").textContent = sessionStorage.getItem("clabe").replace(/\d(?=\d{4})/g,"*");
         document.querySelector("#banco-transfer").textContent=sessionStorage.getItem("banco")
@@ -112,6 +115,7 @@ function closePopup(){
 // SECCION SINIESTRO
 let temblo= true;
 let reporte_listo=true;
+let transfer=false;
 
 const siniestro_btn=document.querySelector("#siniestro");
 siniestro_btn.addEventListener('click', showSiniestro)
@@ -120,6 +124,10 @@ reembolso_btn.addEventListener('click',showReembolso)
 const firma_btn=document.querySelector("#signature-btn");
 firma_btn.addEventListener('click',showFirma)
 function showSiniestro() {
+    if (transfer == true) {
+        showTransfer();
+        return
+    }
     if (temblo==true && reporte_listo==false) {
         document.querySelector("#cover").style.display="block"
         document.querySelector("#ready_screen2").style.display="block"
@@ -156,11 +164,14 @@ function showFirma() {
 }
 
 const transferOK_btn=document.querySelector("#si")
-transferOK_btn.addEventListener('click', showTransfer)
+transferOK_btn.addEventListener('click', function(){
+    transfer = true;
+    showTransfer()
+});
 const transferNO_btn=document.querySelector("#no")
 transferNO_btn.addEventListener('click', addBankAccount)
 
-function showTransfer(params) {
+function showTransfer() {
     document.querySelector("#poliza-main").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none"
     document.querySelector("#info-reporte").style.display="none"
@@ -174,7 +185,7 @@ function showTransfer(params) {
     document.querySelector("#seccion-tran2").style.display="none"
     document.querySelector("#seccion-tran3").style.display="none"
     document.querySelector("#seccion-btn").style.display="none"
-    document.querySelector("p.texto-trans").innerHTML= "Se ha transferido a la cuenta " + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de $1,500"
+    document.querySelector("p.texto-trans").innerHTML= "Se ha transferido a la cuenta " + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de " + sessionStorage.getItem("total-indemnizar");
     document.querySelector("#datos-poliza").style.display="block"
     document.querySelector("#transfer-msg").style.display="block"
 }

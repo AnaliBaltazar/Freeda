@@ -1,7 +1,7 @@
 /*Navegacion*/
 .tamaño-renglon-1{
   position: fixed;
-  height: 78px;
+  /* height: 78px; */
   padding-top: 13px;
   width: 100%;
   z-index: 2010;
@@ -49,7 +49,7 @@
 /*Seccion1*/
 .seccion1{
   position: static;
-  height: 230px;
+  /* height: 230px; */
   width: 100%;
   /*background: #DEDEDE; /*Prueba */
 }
@@ -242,8 +242,9 @@ input.quantity-field{
 } 
 .btn-siguiente{
   position: absolute;
-  margin-left: 40%;
+  /* margin-left: 40%; */
   margin-top: 5%;
+  left: calc(50% - 100px);
   /* margin-top: -8%; */
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
@@ -524,9 +525,9 @@ a.nav-link:hover{
 .data_input_crear{
   width: 100%;
 }
-.btn-siguiente{
+/* .btn-siguiente{
   margin-left: 28%;
-}
+} */
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -595,9 +596,9 @@ a.nav-link:hover{
 .data_input_crear{
   width: 100%;
 }
-.btn-siguiente{
+/* .btn-siguiente{
   margin-left: 30%;
-}
+} */
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -670,9 +671,9 @@ input.invalid + label.head-label + label.bottom-label1{
 .data_input_crear{
   width: 100%;
 }
-.btn-siguiente{
+/* .btn-siguiente{
   margin-left: 34%;
-}
+} */
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -730,9 +731,9 @@ input.invalid + label.head-label + label.bottom-label1{
 .data_input_crear{
   width: 100%;
 }
-.btn-siguiente{
+/* .btn-siguiente{
   margin-left: 38%;
-}
+} */
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -780,9 +781,9 @@ margin-top: 1%;
 .data_input_crear{
   width: 100%;
 }
-.btn-siguiente{
+/* .btn-siguiente{
   margin-left: 40%;
-}
+} */
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
