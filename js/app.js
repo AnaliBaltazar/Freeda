@@ -142,6 +142,7 @@ capturarButton.addEventListener("click", function (event) {
     document.querySelector("#contenedor-top").style.display="none"
     document.querySelector("#canvas").style.display="none"
     document.querySelector("#signature-pad-footer-container").style.display="none"
+    document.querySelector("#monto").innerHTML= "El monto de " + sessionStorage.getItem("total-indemnizar") + " por indemnización<br> será transferido a la cuenta" ;
     document.querySelector("#banco-transfer").textContent=sessionStorage.getItem("banco")
     document.querySelector("#cuenta-transfer").textContent=sessionStorage.getItem("clabe")
     document.querySelector("#seccion-tran1").style.display="block"

@@ -1,7 +1,7 @@
 /*Navegacion*/
 .tamaño-renglon-1{
   position: fixed;
-  height: 78px;
+  /* height: 78px; */
   padding-top: 13px;
   width: 100%;
   z-index: 2010;
@@ -21,6 +21,7 @@
   font-size: 14px;
   margin-left: 5%;
   padding-bottom: 4px;
+  background-color: #912f46;
 }
 .texto-menu-f{ /*Letra del menu*/
   font-size: 18px;
@@ -271,9 +272,9 @@ ul{ /*Contenedor botones*/
 .boton-menu{
   left: 80%;
 }
-.menu-freeda{
+/* .menu-freeda{
   background-color: #912f46;
-}
+} */
 /*li.nav-item{
   border-bottom:1px solid rgba(255,255,255, .3);
 }*/
@@ -283,7 +284,7 @@ a.nav-link:hover{
 .boton2-menu{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 /*----------------------------*/
 
@@ -339,9 +340,9 @@ a.nav-link:hover{
   left: 80%;
 }
 
-.menu-freeda{
+/* .menu-freeda{
   background-color: #912f46;
-}
+} */
 /*li.nav-item{
   border-bottom:1px solid rgba(255,255,255, .3);
 }*/
@@ -351,7 +352,7 @@ a.nav-link:hover{
 .boton2-menu{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 /*----------------------------*/
 /*Indexfreeda.html*/
@@ -385,8 +386,6 @@ a.nav-link:hover{
 }
 .texto1-footer{
   margin-right: 15px;
-}
-.texto3-footer{
 }
 
 .logo-footer{
@@ -470,7 +469,7 @@ margin-left: -10%;
 
 .boton2-menu{
   width: 100px;
-  margin-left: 48%;
+  /* margin-left: 48%; */
 }
 /*------------------*/
 /*Indexfreeda.html*/
@@ -519,7 +518,7 @@ margin-top: 1%;
 }
 .boton2-menu{
   width: 150px;
-  margin-left: 38%;
+  /* margin-left: 38%; */
 }
 
 /*--------------------------*/

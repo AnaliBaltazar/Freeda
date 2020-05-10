@@ -122,6 +122,7 @@ function checkTotal(newVal, elmntID) {
         funcresult = true;
     }
     let totalBienesC="$ " + formatNumber(intresult.toString());
+    sessionStorage.setItem("total-indemnizar",totalBienesC)
     document.querySelector('#total-gastos').textContent= "Suma total de gastos: " + totalBienesC;
     return funcresult;
 }

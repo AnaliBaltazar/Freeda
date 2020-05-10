@@ -185,7 +185,7 @@ function showTransfer() {
     document.querySelector("#seccion-tran2").style.display="none"
     document.querySelector("#seccion-tran3").style.display="none"
     document.querySelector("#seccion-btn").style.display="none"
-    document.querySelector("p.texto-trans").innerHTML= "Se ha transferido a la cuenta " + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de $1,500"
+    document.querySelector("p.texto-trans").innerHTML= "Se ha transferido a la cuenta " + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de " + sessionStorage.getItem("total-indemnizar");
     document.querySelector("#datos-poliza").style.display="block"
     document.querySelector("#transfer-msg").style.display="block"
 }

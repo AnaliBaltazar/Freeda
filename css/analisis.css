@@ -2,7 +2,7 @@
 /*Encabezado menú*/
 .tamaño-renglon-1{
   position: fixed;
-  height: 78px;
+  /* height: 78px; */
   padding-top: 13px;
   width: 100%;
   z-index: 2010;
@@ -135,8 +135,9 @@
   /*background: #bfe7e5;        /*PRUEBA*/
 } 
 .boton-siguiente{
-  /*position: absolute;margin-top: -13%;*/
-  margin-left: 43%;
+  position: absolute;/*margin-top: -13%;*/
+  /* margin-left: 43%; */
+  left: calc(50% - 100px);
   margin-bottom: 5%;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
@@ -550,9 +551,9 @@ a.nav-link:hover{
 /*input.invalid + label.head-label + label.bottom-label1 {
    top: 110px; 
 }*/
-.boton-siguiente{
+/* .boton-siguiente{
   margin-left: 30%;
-}
+} */
 
 /*11-AÑOS.HTML*/
 .texto1{
@@ -633,9 +634,9 @@ a.nav-link:hover{
 /*input.invalid + label.head-label + label.bottom-label1 {
    top: 110px; 
 }*/
-.boton-siguiente{
+/* .boton-siguiente{
   margin-left: 37%;
-}
+} */
 
 
 /*11-AÑOS.HTML*/
@@ -725,9 +726,9 @@ a.nav-link:hover{
 /*input.invalid + label.head-label + label.bottom-label1 {
    top: 110px; 
 }*/
-.boton-siguiente{
+/* .boton-siguiente{
   margin-left: 40%;
-}
+} */
 
 /*11-AÑOS.HTML*/
 .texto1{
@@ -799,9 +800,9 @@ a.nav-link:hover{
 /* input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;
 } */
-.boton-siguiente{
+/* .boton-siguiente{
   margin-left: 42%;
-}
+} */
 
 /*11-AÑOS.HTML*/
 .texto1{
@@ -876,9 +877,9 @@ margin-top: 1%;
 /* input.invalid + label.head-label + label.bottom-label1 {
   top: 110px;
 } */
-.boton-siguiente{
+/* .boton-siguiente{
   margin-left: 43%;
-}
+} */
 
 
 /*11-AÑOS.HTML*/
