@@ -504,6 +504,16 @@ h3#caption_loader{
 .boton-menu{
   left: 80%;
 }
+
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
+}
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/
   margin-top: 28%;
@@ -564,6 +574,16 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 .boton-menu{
   left: 80%;
+}
+
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
 }
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/

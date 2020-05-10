@@ -497,6 +497,15 @@ div.shield {
 .boton-menu{
   left: 80%;
 }
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
+}
 /*Seguro primeros gastos terremoto*/
 .texto1-titulo{
   margin-top: 25%;
@@ -746,6 +755,15 @@ div.shield {
 }
 .boton-menu{
   left: 80%;
+}
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
 }
 /*Seguro primeros gastos terremoto*/
 .texto1-titulo{

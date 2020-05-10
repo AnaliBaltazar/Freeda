@@ -528,6 +528,16 @@ input.quantity-field{
 .boton-menu{
   left: 80%;
 }
+
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
+}
 /*----------------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
@@ -601,6 +611,15 @@ input.quantity-field{
 }
 .boton-menu{
   left: 80%;
+}
+.menu-freeda{
+  background-color: #912f46;
+}
+/*li.nav-item{
+  border-bottom:1px solid rgba(255,255,255, .3);
+}*/
+a.nav-link:hover{
+  color: #000000;
 }
 /*----------------------------*/
 /*7-CP.HTML*/
