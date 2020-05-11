@@ -49,8 +49,8 @@
 /*BARRA DE PROGRESO*/
 .espacio-progreso{
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 63px;
+  padding-bottom: 60px;
   /*background: #bfe7e5;        /*PRUEBA*/
 }
 .headerBar{ /*CONTENEDOR < >*/
@@ -573,6 +573,9 @@ h3#caption_loader{
 a.nav-link:hover{
   color: #000000;
 }
+.headerBar{
+  margin-top: -4%;
+}
 /*----------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
@@ -597,7 +600,7 @@ a.nav-link:hover{
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 28%;
+  margin-top: 30%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 76%;
@@ -661,6 +664,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 a.nav-link:hover{
   color: #000000;
 }
+.headerBar{
+  margin-top: -2%;
+}
 /*----------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
@@ -682,7 +688,7 @@ a.nav-link:hover{
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 27%;
+  margin-top: 29%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 76%;
@@ -747,6 +753,9 @@ width: 95%;
 .boton-menu{
   left: 80%;
 }
+.headerBar{
+  margin-top: -2%;
+}
 /*----------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
@@ -766,7 +775,7 @@ width: 95%;
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 20%;
+  margin-top: 22%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 56%;
@@ -820,6 +829,9 @@ input.invalid + label.head-label + label.bottom-label1 {
   margin-left: -55%;
   margin-top: 1%;
 }
+.headerBar{
+  margin-top: 0%;
+}
 /*------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
@@ -841,7 +853,10 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 15%;
+  margin-top: 18%;
+}
+.texto_area_rfc{
+  margin-top: 5%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 42%;
@@ -893,6 +908,9 @@ input.invalid + label.head-label + label.bottom-label1{
 margin-left: -55%;
 margin-top: 1%;
 }
+.headerBar{
+  margin-top: 0%;
+}
 /*--------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
@@ -913,7 +931,7 @@ margin-top: 1%;
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 13%;
+  margin-top: 15%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 37%;

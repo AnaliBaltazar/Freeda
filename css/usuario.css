@@ -281,6 +281,17 @@ input.quantity-field{
   width: 100%;
   /*background: #bfe7e5; /*PRUEBA*/
 }
+.texto1-iniciar{
+  font-size: 40px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 47px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  /*margin-top: 11%;*/
+}
 .texto_area_login{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -517,7 +528,7 @@ a.nav-link:hover{
 }
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 28%;
+  margin-top: 30%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 75%;
@@ -535,6 +546,10 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 
 /*6-INICIAR-SESIÓN.HTML*/
+.texto1-iniciar{
+  margin-top: 30%;
+  margin-bottom: 10%; 
+}
 .texto_area_login{ 
   /*margin-left: 15%;*/
   margin-left: auto;
@@ -588,7 +603,7 @@ a.nav-link:hover{
 }
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 28%;
+  margin-top: 32%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 75%;
@@ -606,6 +621,10 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 
 /*6-INICIAR-SESIÓN.HTML*/
+.texto1-iniciar{
+  margin-top: 30%;
+  margin-bottom: 10%; 
+}
 .texto_area_login{ 
   /*margin-left: 15%;*/
   margin-left: auto;
@@ -663,7 +682,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 20%;
+  margin-top: 23%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 55%;
@@ -681,6 +700,10 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 
 /*6-INICIAR-SESIÓN.HTML*/
+.texto1-iniciar{
+  margin-top: 23%;
+  margin-bottom: 8%; 
+}
 .texto_area_login{
   width: 55%;
   /*margin-left: 23%;*/
@@ -723,7 +746,6 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 16%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 42%;
@@ -741,6 +763,10 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 
 /*6-INICIAR-SESIÓN.HTML*/
+.texto1-iniciar{
+  margin-top: 20%;
+  margin-bottom: 7%; 
+}
 .texto_area_login{
   width: 88.5%;
   margin-left: 60%;
@@ -773,7 +799,8 @@ margin-top: 1%;
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 13%;
+  margin-top: 16%;
+  margin-bottom: 3%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 37%;
@@ -792,6 +819,10 @@ input.invalid + label.head-label + label.bottom-label1{
 
 
 /*6-INICIAR-SESIÓN.HTML*/
+.texto1-iniciar{
+  margin-top: 16%;
+  margin-bottom: 5%; 
+}
 .texto_area_login{
   width: 76%;
   margin-left: 65%;

@@ -48,8 +48,8 @@
 /*BARRA DE PROGRESO*/
 .espacio-progreso{
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 63px;
+  padding-bottom: 60px;
   /*background: #bfe7e5;        /*PRUEBA*/
 }
 .headerBar{ /*CONTENEDOR < >*/
@@ -539,10 +539,14 @@ input.quantity-field{
 a.nav-link:hover{
   color: #000000;
 }
+
+.headerBar{
+  margin-top: -4%;
+}
 /*----------------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 30%;
+  margin-top: 36%;
 }
 .texto_area_cp{
   width: 86%;
@@ -622,10 +626,14 @@ a.nav-link:hover{
 a.nav-link:hover{
   color: #000000;
 }
+
+.headerBar{
+  margin-top: -2%;
+}
 /*----------------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 30%;
+  margin-top: 35%;
 }
 .texto_area_cp{
   width: 64%;
@@ -714,10 +722,14 @@ a.nav-link:hover{
 .boton-menu{
   left: 80%;
 }
+
+.headerBar{
+  margin-top: -2%;
+}
 /*----------------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 23%;
+  margin-top: 26%;
 }
 .texto_area_cp{
   width: 49%;
@@ -788,10 +800,13 @@ a.nav-link:hover{
   margin-left: -55%;
   margin-top: 1%;
 }
+.headerBar{
+  margin-top: 0%;
+}
 /*------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 18%;
+  margin-top: 22%;
 }
 .texto_area_cp{
   width: 40%;
@@ -868,7 +883,7 @@ margin-top: 1%;
 /*--------------------------*/
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 15%;
+  margin-top: 18%;
 }
 .texto_area_cp{
   width: 37%;

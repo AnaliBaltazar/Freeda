@@ -699,7 +699,8 @@ a.nav-link:hover{
 
 /*-------3-ACTIVAR-TOKEN.HTML-------*/
 .texto1-seccion1{
-  margin-top: 28%;
+  margin-top: 33%;
+  margin-bottom: 10%;
 }
 .texto_area_tel{ /*Telefono celular*/
   width: 75%;
@@ -810,7 +811,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*-------3-ACTIVAR-TOKEN.HTML-------*/
 .texto1-seccion1{
-  margin-top: 25%;
+  margin-top: 30%;
+  margin-bottom: 10%;
 }
 .texto_area_tel{ /*Telefono celular*/
   width: 75%;
@@ -923,7 +925,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*--------3-ACTIVAR-TOKEN.HTML--------*/
 .texto1-seccion1{
-  margin-top: 20%;
+  margin-top: 24%;
+  margin-bottom: 9%;
 }
 .texto_area_tel{ /*Telefono celular*/
   width: 55%;
@@ -982,7 +985,7 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*--------2-REGISTRO.HTML--------*/
 .texto1-registro{ /*REGISTRATE*/
-  margin-top: 15%;
+  margin-top: 18%;
 }
 .texto_area_r{ /*Nombre usuario, apellidos,CP*/
   width: 42%;
@@ -1020,7 +1023,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*--------3-ACTIVAR-TOKEN.HTML--------*/
 .texto1-seccion1{
-  margin-top: 15%;
+  margin-top: 20%;
+  margin-bottom: 7%;
 }
 .texto_area_tel{ /*Telefono celular*/
   width: 41%;
@@ -1071,7 +1075,7 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*--------2-REGISTRO.HTML--------*/
 .texto1-registro{ /*REGISTRATE*/
-  margin-top: 13%;
+  margin-top: 15%;
 }
 .texto_area_r{ /*Nombre usuario, apellidos,CP*/
   width: 37%;
@@ -1109,7 +1113,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*--------3-ACTIVAR-TOKEN.HTML--------*/
 .texto1-seccion1{
-  margin-top: 13%;
+  margin-top: 17%;
+  margin-bottom: 6%;
 }
 .texto_area_tel{ /*Telefono celular*/
   width: 37%;
@@ -1135,7 +1140,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 
 .texto2-seccion1{
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 
