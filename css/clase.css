@@ -582,6 +582,9 @@ button.button_sel{
   margin-left: -55%;
   margin-top: 1%;
 }
+.headerBar{
+  margin-top: 2%;
+}
 .texto-clase{ /*¿Que clase de inmueble es?*/
   /*padding-top: 9%;*/
   margin-top: 6%;
