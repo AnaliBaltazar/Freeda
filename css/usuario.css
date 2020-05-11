@@ -355,8 +355,22 @@ input.quantity-field{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
   color: #912F46;
-} 
-
+}
+.sin-cuenta{
+  display: block;
+  text-align: center;
+  font-family: 'Raleway',sans-serif;
+  font-size: 16px;
+  color: #912F46;
+  margin-top: 2%;
+}
+.link-aqui{
+  color: #912F46;
+  text-decoration-line: underline;
+}
+.link-aqui:hover{
+  color: #707070;
+}
 
 
 /*NUEVO FOOTER*/
@@ -567,6 +581,7 @@ input.invalid + label.head-label + label.bottom-label1{
 
 
 
+
 /*Footer*/
 .logo-footer{
   display: none;
@@ -639,6 +654,8 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 
 /*Footer*/
@@ -718,7 +735,6 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: auto;
   margin-right: auto;
 }
-
 
 
 /*Footer*/
@@ -833,6 +849,10 @@ input.invalid + label.head-label + label.bottom-label1{
 .btn-iniciar{
   margin-left: 85%;
 }
+.sin-cuenta{
+  
+}
+
 
 
 /*Footer*/

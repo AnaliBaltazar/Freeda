@@ -95,15 +95,26 @@ function toContratar() {
         window.location = "./14-contratar.html";
     }
 }
-
+function toInsured() {
+    window.location = "./15-datos-asegurado.html";
+}
 function toPayment() {
+    window.location = "./16-pago.html";
+}
+function toDataInsured(event) {
+    event.preventDefault();
+    window.location = "./17-dashboard-1.html";
+    return false
+}
+
+/*function toPayment() {
     window.location = "./15-pago.html";
 }
 function toDataInsured(event) {
     event.preventDefault();
     window.location = "./16-datos-asegurado.html";
     return false
-}
+}*/
 /* function closePop() {
     document.querySelector("#ready_screen").style.display="none";
     document.querySelector("#cover2").style.display="none";

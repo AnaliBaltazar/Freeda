@@ -220,12 +220,12 @@ td.col_r{
 
 
 /*16-DATOS-ASEGURADO.HTML*/
-.seccion1{
+/*.seccion1{
   position: static;
-  height: 220px;
+  height: 150px;
   width: 100%;
-  /*background: #DEDEDE; /*Prueba */
-}
+  /*background: #DEDEDE; /*Prueba 
+}*/
 .texto1-seccion1{
   font-size: 40px; /*Tamaño letra*/
   font-family: 'Raleway', sans-serif;
@@ -235,7 +235,6 @@ td.col_r{
   text-align: center;
   color: #912F46;
   opacity: 1;
-  margin-top: 10%;
 }
 .texto_area_rfc{/*RFC*/
   text-align: center;
@@ -600,7 +599,7 @@ a.nav-link:hover{
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 30%;
+  margin-top: 15%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 76%;
@@ -688,7 +687,8 @@ a.nav-link:hover{
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 29%;
+  margin-top: 10%;
+  
 }
 .texto_area_rfc, .texto_area_regis{
   width: 76%;
@@ -775,7 +775,7 @@ width: 95%;
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 22%;
+  margin-top: 10%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 56%;
@@ -853,7 +853,7 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 18%;
+  margin-top: 7%;
 }
 .texto_area_rfc{
   margin-top: 5%;
@@ -931,7 +931,7 @@ margin-top: 1%;
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
-  margin-top: 15%;
+  margin-top: 6%;
 }
 .texto_area_rfc, .texto_area_regis{
   width: 37%;
