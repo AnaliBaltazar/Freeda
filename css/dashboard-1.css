@@ -502,7 +502,6 @@ h5{ /*Prado Churubusco*/
   background-size: 60%;
 }
 
-
 .texto_area_b{ /*Nombre completo, Cuenta CLABE*/
   text-align: center;
   margin: 30px auto;
@@ -513,6 +512,10 @@ h5{ /*Prado Churubusco*/
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   position: relative;
+}
+#clabe{
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
 }
 .data_input_banca{
   width: 100%;
