@@ -98,7 +98,34 @@ a, .Right span{
   margin-right: 5px;
 }
 
+/* PANTALLA TODO LISTO*/
 
+.icono_listo_screen{
+  height: auto;
+  margin-top: 30px;
+  width: 100px;
+}
+
+button.Continuar{
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #912F46;
+  border: none;
+  border-radius: 5px;
+  color: white;        
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  z-index: 101; 
+}
+button.Continuar:hover{
+  background-color: #b4425c;
+  border: none;
+}
 
 
 /*COBERTURAS-VER POLIZA-SINIESTRO*/
@@ -477,7 +504,7 @@ h5{ /*Prado Churubusco*/
   height:100%;
   display:none;
 }
-#ready_screen1, #ready_screen2{ /*Recuadro POP UP*/
+#ready_screen1, #ready_screen2, #allset_screen{ /*Recuadro POP UP*/
   background-color: white;
   width: 500px;
   height: 500px;
@@ -1461,6 +1488,17 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   align-items: center;
 }
 
+/* PANTALLA TODO LISTO*/
+#allset_screen{
+  width: 80%;
+  left: 10%;
+}
+
+button.Continuar i{
+  width: 20px;
+}
+
+/*****************************************/
 
 
 /*POPUP.html*/
@@ -1490,16 +1528,14 @@ h1#screenHeader{ /*Tembló*/
 .icono_micro_screen{
   margin-top: 70px;
   margin-right: 70%;
-  width: 100px;
+  width: 65px;
   }
 
 /*Reporte-daños.html*/
 .texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
   font-size: 18px;
 }
-.reporte-daños{
 
-}
 h3{
   font-size: 16px;
 }
@@ -1693,6 +1729,13 @@ margin:10px 0;
   flex-direction: row;
   align-items: center;
 }
+
+/* PANTALLA TODO LISTO*/
+    
+button i{
+  width: 30px;
+}
+/*****************************************/
 
 /*Pop up*/
 .btn-siniestro{
@@ -1890,7 +1933,12 @@ h3.describe_bien{
   margin-top: -4%;
 }
 
+/* PANTALLA TODO LISTO*/
+    
 
+
+
+/*****************************************/
 /*Pop up*/
 .btn-siniestro{
   margin-top: 430%;
