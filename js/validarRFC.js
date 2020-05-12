@@ -14,7 +14,7 @@ $('#rfc').on("change keyup paste", function(){
     document.querySelector("#materno").value = "";
     document.querySelector('#day [value="' + 0 + '"]').selected = true;
     document.querySelector('#month [value="' + 0 + '"]').selected = true;
-    document.querySelector('#year [value="' + 0 + '"]').selected = true;
+    document.querySelector('#year_date [value="' + 0 + '"]').selected = true;
     document.querySelectorAll("input").forEach(function(input){
         if (input.id != "rfc") {
             input.disabled=true
@@ -61,7 +61,7 @@ function validateInputValue(){
                     document.querySelector("#materno").disabled = false;
                     document.querySelector("#day").disabled = false;
                     document.querySelector("#month").disabled = false;
-                    document.querySelector("#year").disabled = false;
+                    document.querySelector("#year_date").disabled = false;
                 }
                 document.querySelector("#cover").style.display="none"
                 document.querySelector(".center_container").style.display="none"
@@ -100,8 +100,8 @@ function setRFCData(data){
     document.querySelector("#day").disabled = true;
     document.querySelector('#month [value="' + data.mes + '"]').selected = true;
     document.querySelector("#month").disabled = true;
-    document.querySelector('#year [value="' + data.year + '"]').selected = true;
-    document.querySelector("#year").disabled = true;
+    document.querySelector('#year_date [value="' + data.year + '"]').selected = true;
+    document.querySelector("#year_date").disabled = true;
     
 }
 
@@ -160,7 +160,7 @@ function toLoader(evt) {
     const matval = matelmnt.value;
     const diaval = document.querySelector("#day").value;
     const mesval = document.querySelector("#month").value;
-    const yearval = document.querySelector("#year").value;
+    const yearval = document.querySelector("#year_date").value;
 
     if (rfcval == "" || nameval=="" || patval=="" || matval=="" || diaval=="0" || mesval =="0" || yearval == "0") {    //Si el campo esta vacío = INVALIDO
         alert("Toda la información es necesaria")

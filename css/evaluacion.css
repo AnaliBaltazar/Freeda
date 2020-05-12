@@ -96,7 +96,7 @@
   /*margin-top: 10%;*/
 }
 .texto2{ /*Números*/
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Questrial', sans-serif;
   text-align: center;
   color: #912F46; 
   font-size: 40px;
@@ -132,6 +132,9 @@
   line-height: 12px;
   margin-right:50%;
 }
+#year, #construida, #terreno{
+  font-family: 'Questrial', sans-serif;
+}
 td{
   vertical-align: top;
   padding-right: 4%; /*Centrar el texto*/
@@ -166,9 +169,9 @@ td.col_r{
 .precio{ /*$59*/
   text-align: center;
   font-size: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Questrial', sans-serif;
   color: #FFFFFF;
-  padding-top: 31px;
+  padding-top: 38px;
 }
 .seccion-link{/*Link conoce cobertura*/
   padding-top: 12px;

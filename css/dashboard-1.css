@@ -220,6 +220,10 @@ td.col_r{
 table{
   border-collapse: separate;
 }
+#no-poliza, #vigencia, #numCuenta{
+  font-size: 18px;
+  font-family: 'Questrial', sans-serif;
+}
 /*BOTON AGREGAR*/
 .btn-agregar{
   font-family: 'Raleway', sans-serif;
@@ -318,6 +322,9 @@ table{
   text-align: center;
   color: #912F46;
   padding: 10px 80px 5px 80px;
+}
+#magnitud, #porcentaje{
+  font-family: 'Questrial',sans-serif;
 }
 /*SeccionBoton Resgistarse*/
 .seccion-boton{
@@ -522,7 +529,6 @@ h5{ /*Prado Churubusco*/
   background-size: 60%;
 }
 
-
 .texto_area_b{ /*Nombre completo, Cuenta CLABE*/
   text-align: center;
   margin: 30px auto;
@@ -533,6 +539,10 @@ h5{ /*Prado Churubusco*/
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   position: relative;
+}
+#clabe{
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
 }
 .data_input_banca{
   width: 100%;
@@ -743,6 +753,7 @@ h1#screenHeaderD{
   height: auto;
 }
 .valueModifier{
+  font-family: 'Questrial',sans-serif;
   width: 70%; 
   height: 35px;
   margin: 5% auto;
@@ -912,7 +923,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   font-size: 18px;
 }*/
 .banner_inq{ /*Banner $-*/
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Questrial', sans-serif;
   width: 100%;
   height: 30px;
   text-align: center;
@@ -938,6 +949,9 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   font-size: 35px;
   color: #000000;
   text-align: center;
+}
+#total-gastos, #indem-max{
+  font-family: 'Questrial',sans-serif;
 }
 .texto2-total{
   font-family: 'Raleway', sans-serif;
@@ -1127,7 +1141,12 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   color: #000000; 
   font-size: 25px;
 }
-
+.gastos{
+  font-family: 'Questrial', sans-serif;
+}
+#cuenta-transfer{
+  font-family: 'Questrial', sans-serif;
+}
 
 /*BOTONES SI NO */
 .seccion-btn{
@@ -1220,7 +1239,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 
 .texto-trans{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
