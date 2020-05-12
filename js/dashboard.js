@@ -12,6 +12,13 @@ window.onload = function(){
         document.querySelector("#banco-transfer").textContent="Sin información."
         document.querySelector("#cuenta-transfer").textContent="Sin información."
     }
+    if (sessionStorage.getItem('nuevaPoliza')) {
+        document.querySelector("#cover").style.display="block";
+        document.querySelector("#allset_screen").style.display="block";
+    }else{
+        document.querySelector("#cover").style.display="none";
+        document.querySelector("#allset_screen").style.display="none";
+    }
 }
 const addAccount=document.querySelector("#add-btn");
 addAccount.addEventListener('click', addBankAccount);
@@ -114,7 +121,7 @@ function closePopup(){
 
 // SECCION SINIESTRO
 let temblo= true;
-let reporte_listo=true;
+let reporte_listo=false;
 let transfer=false;
 
 const siniestro_btn=document.querySelector("#siniestro");
@@ -214,3 +221,9 @@ function showPoliza() {
     document.querySelector("#poliza").style.color="#912f46"
 }
 
+//Boton VER POLIZA de popup Todo Listo
+const ver_dash_btn= document.querySelector("#verseguro");
+ver_dash_btn.addEventListener('click', function(){
+    document.querySelector("#cover").style.display="none";
+    document.querySelector("#allset_screen").style.display="none";
+})

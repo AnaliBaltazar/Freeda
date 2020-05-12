@@ -170,8 +170,8 @@ function toLoader(evt) {
     }else{
         data = getFormData();
         sessionStorage.setItem("InsuredData", JSON.stringify(data["InsuredData"]));
-
-        document.querySelector("#cover").style.display="block";
+        window.location="./16-pago.html"
+    /*  document.querySelector("#cover").style.display="block";
         document.querySelector(".center_container").style.display="block";
         document.querySelector("#bar_loader").style.width="0";
         document.querySelector("#caption_loader").textContent="";
@@ -194,6 +194,6 @@ function toLoader(evt) {
                     }, 4000);
                 }, 4000);
             }, 4000);
-        }, 4000);
+        }, 4000); */
     }
 }

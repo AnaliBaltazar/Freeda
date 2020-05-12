@@ -325,6 +325,82 @@ div.shield {
   border: 2px solid #C88585;
 }
 
+/* ESTILOS PARA EL LOADER */
+#cover{
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index:5;
+  width:100%;
+  height:100%;
+  display:none;
+  opacity: 0.9;
+}
+.center_container{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index:6;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 250px);
+  display: none;
+  opacity: 1;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #912F46;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+
+
+#progress_loader{
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
+  height: 13px;
+  background-color: #EAEAEA;
+  border-radius: 5px;
+}
+
+#bar_loader{
+position: absolute;
+height: 100%;
+background-color: #912F46;
+border-radius: 5px;
+}
+h3#caption_loader{
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+/*  || ANIMATIONS  */
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* ++++++++++++++++++++++ */
+
 /*NUEVO FOOTER*/
 /*Footermenu*/
 .footermenu{

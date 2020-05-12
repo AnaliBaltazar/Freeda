@@ -1,3 +1,8 @@
+function newInsurancePolicy() {
+    sessionStorage.setItem('nuevaPoliza', true)
+    window.location="./6-iniciar-sesion.html"
+}
+
 function previousPage() {
     window.history.back();
 }
@@ -85,7 +90,12 @@ function toTerrain() {
     const sup_element=document.querySelector("#superficie")
     if (sup_element.classList.contains("valid")) {
         sessionStorage.setItem('construccion',sup_element.value)
-        window.location = "./13-terreno.html";
+        if (sessionStorage.getItem('tipo_propiedad') == "departamento") {
+            window.location = "./14-contratar.html";
+        } else {
+            window.location = "./13-terreno.html";
+        }
+        
     }
 }
 function toContratar() {
@@ -98,13 +108,35 @@ function toContratar() {
 function toInsured() {
     window.location = "./15-datos-asegurado.html";
 }
-function toPayment() {
+/* function toPayment() {
     window.location = "./16-pago.html";
-}
-function toDataInsured(event) {
+} */
+function genDashboard(event) {
     event.preventDefault();
-    window.location = "./17-dashboard-1.html";
-    return false
+    document.querySelector("#cover").style.display="block";
+        document.querySelector(".center_container").style.display="block";
+        document.querySelector("#bar_loader").style.width="0";
+        document.querySelector("#caption_loader").textContent="";
+        
+        setTimeout(() => {
+            document.querySelector("#bar_loader").style.width="15%";
+            document.querySelector("#caption_loader").textContent="Enviando datos a servidores";
+            setTimeout(() => {
+                document.querySelector("#bar_loader").style.width="35%";
+                document.querySelector("#caption_loader").textContent="Generando carátula del seguro";
+                setTimeout(() => {
+                    document.querySelector("#bar_loader").style.width="75%";
+                    document.querySelector("#caption_loader").textContent="Designando un número de póliza";
+                    setTimeout(() => {
+                        document.querySelector("#bar_loader").style.width="100%";
+                        document.querySelector("#caption_loader").textContent="Arreglando los últimos detalles";
+                        setTimeout(() => {
+                            window.location="./17-dashboard-1.html"
+                        }, 4000);
+                    }, 4000);
+                }, 4000);
+            }, 4000);
+        }, 4000);
 }
 
 /*function toPayment() {

@@ -12,5 +12,10 @@ window.onload = (event) => {
   document.querySelector("#clase-prop").textContent = clasePropiedad.toUpperCase();
   document.querySelector("#year").textContent = year;
   document.querySelector("#construida").textContent = construccion;
-  document.querySelector("#terreno").textContent = terreno;
+  if (terreno == null) {
+    document.querySelector("#terreno").style.display = "none";
+    document.querySelector("#terreno").previousElementSibling.style.display = "none";
+  } else {
+    document.querySelector("#terreno").textContent = terreno;
+  }
 };
