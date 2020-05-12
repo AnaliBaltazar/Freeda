@@ -1,3 +1,6 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
 /*Navegacion*/
 /*Encabezado menú*/
 .tamaño-renglon-1{
@@ -28,7 +31,7 @@
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
+ 
   font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -89,7 +92,7 @@
 
 /*7-CP.HTML*/
 .texto1-cp{ /*Titulo Código postal*/
-  font-family: 'Raleway', sans-serif;
+ 
   font-size: 40px;
   /*margin-top: 13%;*/ 
   font-weight: 700; /*Grosor*/
@@ -100,7 +103,7 @@
   opacity: 1; 
 }
 .texto2-cp{ /*Descipcion*/
-  font-family: 'Raleway', sans-serif;
+ 
   font-size: 20px;
   font-weight: 400; /*Grosor*/
   text-align: center;
@@ -117,7 +120,7 @@
   width: 36%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+ 
   position: relative;
 }
 /*INPUT*/
@@ -150,7 +153,6 @@
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 .boton-siguiente:hover{
@@ -168,7 +170,6 @@
 
 /*11-AÑOS.HTML*/
 .texto1{  /*Año de terminación de la obra*/
-  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   /*margin-top: 13%;*/ 
   font-weight: 700; /*Grosor*/
@@ -191,8 +192,7 @@
   flex-flow: column-reverse;
   width: 44%;
   padding: 10px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
   position: relative;
 }
 .data_input{
@@ -212,8 +212,7 @@
   flex-flow: column-reverse;
   width: 44%;
   padding: 10px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
   position: relative;
 }
 
@@ -225,8 +224,7 @@
   flex-flow: column-reverse;
   width: 44%;
   padding: 10px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
   position: relative;
 }
 
@@ -239,7 +237,6 @@ label.head-label, label.bottom-label1{
   margin-right: auto; /*Alinea el texto de arriba*/
   font-size: 15px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
@@ -339,14 +336,12 @@ input.quantity-field{
   /*background: #DEDEDE; /*Prueba */
 }
 .texto1-suma{
-  font-family: 'Questrial', sans-serif;
   text-align: center;
   color: #912F46; 
   font-size: 40px;
   font-weight: 500;
 }
 .texto2-suma{
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #000000; 
   font-size: 20px;
@@ -361,7 +356,6 @@ input.quantity-field{
   /*background: #c6d4e8;  /*PRUEBA*/
 }
 .texto1-epicentro1{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   text-align: center;
   color: #000000;
@@ -369,7 +363,6 @@ input.quantity-field{
 .imagen1-epicentro1{
   width: 100%;
   /*height: 80%;*/
-  font-family: 'Raleway', sans-serif;
   /*margin-left: 165px;*/
 }
 .negra-epicentro{
@@ -385,7 +378,6 @@ input.quantity-field{
   /*background: #e8c6d4; /*PRUEBA*/
 }
 .texto1-epicentro2{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   text-align: left;
   margin-left: 13.4%; /*Alinear el texto derecha*/
@@ -394,7 +386,6 @@ input.quantity-field{
 .imagen1-epicentro2{
   width: 100%;
   /*height: 80%;*/
-  font-family: 'Raleway', sans-serif;
   /*margin-left: 165px;*/
 }
 /*SeccionBoton CONTRATAR*/
@@ -417,7 +408,6 @@ input.quantity-field{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 .btn-contratar:hover{
@@ -445,7 +435,6 @@ input.quantity-field{
 }
 .texto1-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -457,7 +446,6 @@ input.quantity-field{
 }
 .texto2-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -466,7 +454,6 @@ input.quantity-field{
 }
 .texto3-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -475,7 +462,6 @@ input.quantity-field{
 }
 .texto4-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -484,7 +470,6 @@ input.quantity-field{
 }
 .texto5-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
