@@ -1,3 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+  height: 100%;
+}
 /*Navegacion*/
 .tamaño-renglon-1{
   position: fixed;
@@ -27,7 +36,6 @@
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -48,7 +56,6 @@
   color: white;
 }
 .texto-clase{
-  font-family: 'Raleway',sans-serif;
   color: #912F46;
   font-size: 40px;
 }
@@ -122,7 +129,6 @@
 }
 .texto1-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -134,7 +140,6 @@
 }
 .texto2-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -143,7 +148,6 @@
 }
 .texto3-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -152,7 +156,6 @@
 }
 .texto4-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -161,7 +164,6 @@
 }
 .texto5-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -213,7 +215,6 @@
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 
@@ -238,16 +239,7 @@
 
 
 /* */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
 
-
-html, body{
-    height: 100%;
-}
 /*
 a{
     height: 24px;
@@ -343,7 +335,6 @@ button.Continuar:hover{
   border: none;
 }
 p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
-  font-family: 'Raleway', sans-serif;
   color: #000000;
   font-weight: lighter;
   font-size: 18px;

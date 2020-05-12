@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 html, body{
   height: 100%;
@@ -139,7 +139,6 @@ button.Continuar:hover{
   padding-top: 20px;
 }
 .underlineHover1{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 30%;
@@ -148,7 +147,6 @@ button.Continuar:hover{
   color: #912F46;
 }
 .underlineHover2{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 5%;
@@ -157,7 +155,6 @@ button.Continuar:hover{
   color: #912F46;
 }
 .underlineHover3{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 5%;
@@ -225,11 +222,9 @@ table{
 }
 #no-poliza, #vigencia, #numCuenta{
   font-size: 18px;
-  font-family: 'Questrial', sans-serif;
 }
 /*BOTON AGREGAR*/
 .btn-agregar{
-  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   text-align: center;
   letter-spacing: 0.25px;
@@ -308,7 +303,6 @@ table{
   background-size: 60%;
 }
 .texto1-reporte{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   text-align: center;
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
@@ -319,7 +313,6 @@ table{
   padding: 15px 80px 5px 80px;
 }
 .texto2-reporte{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   font-weight: 400;
   text-align: center;
@@ -327,7 +320,6 @@ table{
   padding: 10px 80px 5px 80px;
 }
 #magnitud, #porcentaje{
-  font-family: 'Questrial',sans-serif;
 }
 /*SeccionBoton Resgistarse*/
 .seccion-boton{
@@ -351,7 +343,6 @@ table{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 .boton-reembolso:hover{
@@ -540,11 +531,9 @@ h5{ /*Prado Churubusco*/
   width: 70%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
   position: relative;
 }
 #clabe{
-  font-family: 'Questrial', sans-serif;
   font-size: 16px;
 }
 .data_input_banca{
@@ -562,7 +551,6 @@ label.head-label, label.bottom-label1{
   margin-right: auto; /*Alinea el texto de arriba*/
   font-size: 12px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
   display: none; /*Desaparese*/
   color: #912F46;
   text-align: left;
@@ -621,7 +609,6 @@ select:focus{
 }
 
 .boton-aceptar{
-  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   text-align: center;
   letter-spacing: 0.25px;
@@ -682,7 +669,6 @@ margin-top: 5%;
   display: none;
 }
 .texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   text-align: center;
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
@@ -756,7 +742,6 @@ h1#screenHeaderD{
   height: auto;
 }
 .valueModifier{
-  font-family: 'Questrial',sans-serif;
   width: 70%; 
   height: 35px;
   margin: 5% auto;
@@ -914,7 +899,6 @@ button.bien.activeHover:hover .icono_bienes .cls-2t{
   margin-right: auto;
 }
 h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
-  font-family: 'Raleway',sans-serif;
   color: #912F46;
   font-size: 18px;
   margin-top: 15%;
@@ -926,7 +910,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   font-size: 18px;
 }*/
 .banner_inq{ /*Banner $-*/
-  font-family: 'Questrial', sans-serif;
   width: 100%;
   height: 30px;
   text-align: center;
@@ -948,16 +931,13 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   /*background: #cc99cc;        /*PRUEBA*/
 }
 .texto1-total{
-  font-family: 'Raleway', sans-serif;
   font-size: 35px;
   color: #000000;
   text-align: center;
 }
 #total-gastos, #indem-max{
-  font-family: 'Questrial',sans-serif;
 }
 .texto2-total{
-  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   color: #000000  ;
   text-align: center;
@@ -979,7 +959,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 .boton1-firma:hover{
@@ -1046,7 +1025,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-left: 35%;
   text-align: center; /*Alineacion del texto del boton*/
   color: #912F46;
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   background: #FFFFFF;
 }
@@ -1073,7 +1051,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 /*UNDERLINEHOVER FIRMA.HTML*/
 .underlineHover1-1{ /*Cobertura, ver póliza Siniestro*/
   margin-left: 10%;
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 30%;
@@ -1083,7 +1060,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 
 .underlineHover2-2{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 5%;
@@ -1093,7 +1069,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 
 .underlineHover3-3{
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #707070;
   margin-left: 5%;
@@ -1112,7 +1087,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   display: none;
 }
 .texto-t1{
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #000000; 
   font-size: 25px;
@@ -1126,7 +1100,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   display: none;
 }
 .texto-t2{
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #000000; 
   font-size: 25px;
@@ -1139,16 +1112,13 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   display: none;
 }
 .texto-t3{
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #000000; 
   font-size: 25px;
 }
 .gastos{
-  font-family: 'Questrial', sans-serif;
 }
 #cuenta-transfer{
-  font-family: 'Questrial', sans-serif;
 }
 
 /*BOTONES SI NO */
@@ -1164,7 +1134,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   /*position: absolute; */
   width: 10%; /*Tamaño del boton*/
   background: #FFFFFF; /*Color del boton*/
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   text-align: center; /*Alineacion del texto del boton*/
   color: #912F46;
@@ -1191,7 +1160,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .boton-no{
   width: 10%; /*Tamaño 200px*/
   background: #FFFFFF 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   text-align: center;
   color: #912F46; /*Color de letra*/
@@ -1242,7 +1210,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 
 .texto-trans{
-  font-family: 'Questrial', sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
@@ -1316,7 +1283,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 .texto1-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -1328,7 +1294,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 .texto2-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -1337,7 +1302,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 .texto3-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -1346,7 +1310,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 .texto4-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -1355,7 +1318,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 .texto5-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;

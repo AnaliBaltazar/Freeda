@@ -1,4 +1,8 @@
-/*Navegacion*/
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+  /*Navegacion*/
 /*Encabezado menú*/
 .tamaño-renglon-1{
   position: fixed;
@@ -28,7 +32,6 @@
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -89,14 +92,12 @@
 
 /*14-CONTRATAR.HTML*/
 .texto1{ /*Información*/
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #000000; 
   font-size: 25px;
   /*margin-top: 10%;*/
 }
 .texto2{ /*Números*/
-  font-family: 'Questrial', sans-serif;
   text-align: center;
   color: #912F46; 
   font-size: 40px;
@@ -120,20 +121,17 @@
   /*border: 5px solid #912F46; /*PRUEBA*/
 }
 .texto-clase{ /*Casa*/
-  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   color: #912F46;
   padding: 10px 0 15px 0;
 }
 .texto-medidas{
-  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #000000;
   line-height: 12px;
   margin-right:50%;
 }
 #year, #construida, #terreno{
-  font-family: 'Questrial', sans-serif;
 }
 td{
   vertical-align: top;
@@ -152,7 +150,6 @@ td.col_r{
 }
 
 .texto-1{ /*El precio de contratar...*/
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #000000; 
   font-size: 25px;
@@ -169,7 +166,6 @@ td.col_r{
 .precio{ /*$59*/
   text-align: center;
   font-size: 50px;
-  font-family: 'Questrial', sans-serif;
   color: #FFFFFF;
   padding-top: 38px;
 }
@@ -178,7 +174,6 @@ td.col_r{
   padding-bottom: 12px;
 }
 .underlineHover{  /*Conocer coberturas*/
-  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #707070;
   text-align: center;
@@ -205,7 +200,6 @@ td.col_r{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 .btn-siguiente:hover{
@@ -231,7 +225,6 @@ td.col_r{
 }*/
 .texto1-seccion1{
   font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
@@ -247,7 +240,6 @@ td.col_r{
   width: 36.5%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif; 
   position: relative;
 }
 .texto_area_regis{ /*Nombre de usuario, Apellidos*/
@@ -258,7 +250,6 @@ td.col_r{
   width: 36%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif; 
   position: relative;
 }
 .data_input_aseg{ /*HACER MAS GRANDE LOS RECUADROS*/
@@ -277,7 +268,6 @@ label.head-label, label.bottom-label1{
   margin-right: auto; /*Alinea el texto de arriba*/
   font-size: 15px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
@@ -323,7 +313,6 @@ input.quantity-field{
 
 .label-date{
   position: absolute;
-  font-family: 'Raleway', sans-serif;
   margin-left: 32%;
 }
 select{
@@ -336,7 +325,6 @@ select:focus{
   outline: 0;
 }
 .nacimiento1{ /*Dia */
-  font-family: 'Raleway', sans-serif; 
   font-size: 18px;
   width: 5%;
   margin-top: 3%;
@@ -344,12 +332,10 @@ select:focus{
 }
 .nacimiento2{ /*Mes */
   width: 10%;
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
 .nacimiento3{ /*Año */
   width: 5%;
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
 /*BOTON GENERAR PÓLIZA*/
@@ -370,7 +356,6 @@ select:focus{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 .btn-generar:hover{
@@ -417,7 +402,6 @@ select:focus{
 }
 .texto1-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -429,7 +413,6 @@ select:focus{
 }
 .texto2-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -438,7 +421,6 @@ select:focus{
 }
 .texto3-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -447,7 +429,6 @@ select:focus{
 }
 .texto4-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -456,7 +437,6 @@ select:focus{
 }
 .texto5-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;

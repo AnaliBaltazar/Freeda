@@ -1,3 +1,6 @@
+*{
+  font-family: 'Roboto',sans-serif;
+}
 /*Navegacion*/
 .tamaño-renglon-1{
   position: fixed;
@@ -28,7 +31,6 @@
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -60,7 +62,7 @@
   opacity: 1;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 500;
 }
 .boton2-menu:hover{
@@ -188,7 +190,7 @@ ul{ /*Contenedor botones*/
 }
 .texto1-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -200,7 +202,7 @@ ul{ /*Contenedor botones*/
 }
 .texto2-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -209,7 +211,7 @@ ul{ /*Contenedor botones*/
 }
 .texto3-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -218,7 +220,7 @@ ul{ /*Contenedor botones*/
 }
 .texto4-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -227,7 +229,7 @@ ul{ /*Contenedor botones*/
 }
 .texto5-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;

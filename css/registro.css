@@ -1,3 +1,6 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
 /*Navegacion*/
 .tamaño-renglon-1{
   position: fixed;
@@ -27,7 +30,7 @@
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -54,7 +57,7 @@
 }
 .texto1-registro{ /*REGISTRATE*/
   font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
@@ -71,7 +74,7 @@
   width: 30%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  
   position: relative;
 }
 .data_input_usua{
@@ -96,7 +99,7 @@
 }*/
 .label-date{
   position: absolute;
-  font-family: 'Raleway', sans-serif;
+
   margin-left: 35%;
 }
 select{
@@ -109,7 +112,7 @@ select:focus{
   outline: 0;
 }
 .nacimiento1{ /*Dia */
-  font-family: 'Raleway', sans-serif; 
+ 
   font-size: 18px;
   width: 5%;
   margin-top: 3%;
@@ -117,12 +120,12 @@ select:focus{
 }
 .nacimiento2{ /*Mes */
   width: 10%;
-  font-family: 'Raleway', sans-serif;
+
   font-size: 18px;
 }
 .nacimiento3{ /*Año */
   width: 5%;
-  font-family: 'Raleway', sans-serif;
+
   font-size: 18px;
 }
 .seccion-boton{
@@ -147,7 +150,7 @@ select:focus{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+ 
   font-weight: 500;
 }
 .btn-registrarse:hover{
@@ -166,7 +169,7 @@ select:focus{
 /*3-ACTIVAR-TOKEN.HTML*/
 .texto2-seccion1{
   font-size: 20px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
+ 
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
@@ -192,7 +195,7 @@ select:focus{
   width: 35%; /*30*/
   padding: 10px; /*20*/
   font-size: 16px; /*20*/
-  font-family: 'Raleway', sans-serif;
+
   position: relative;
 }
 .data_input_tel{
@@ -226,7 +229,7 @@ select:focus{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 500; 
 }
 .enviar-token:hover{
@@ -253,7 +256,7 @@ select:focus{
   width: 34%;
   padding: 20px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+
   position: relative;
 }
 .data_input_token{
@@ -271,7 +274,7 @@ select:focus{
 /*revisar------------------*/
 .texto1-seccion1{
   font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
@@ -294,7 +297,7 @@ select:focus{
   width: 60%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+
 }
 label.head-label, label.bottom-label1{
   padding: 5px 0;
@@ -303,7 +306,7 @@ label.head-label, label.bottom-label1{
   margin-right: auto; /*Alinea el texto de arriba*/
   font-size: 15px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
+
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
@@ -448,7 +451,7 @@ input.quantity-field{
   width: 34%;
   padding: 20px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+
 }
 .data_input_token{
   width: 100%;
@@ -471,7 +474,7 @@ input.quantity-field{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 500;
 }
 .validar-token:hover{
@@ -490,7 +493,7 @@ input.quantity-field{
 }
 /*Mensaje validacion*/
 .msn-validacion{
-  font-family: 'Raleway',sans-serif;
+
   font-size:20px; 
   /*border: solid 2px #912F46;*/
   background-color: #912F46;
@@ -529,7 +532,7 @@ input.quantity-field{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 500;
 }
 .nuevo-token:hover{
@@ -560,7 +563,7 @@ input.quantity-field{
 }
 .texto1-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -572,7 +575,7 @@ input.quantity-field{
 }
 .texto2-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -581,7 +584,7 @@ input.quantity-field{
 }
 .texto3-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -590,7 +593,7 @@ input.quantity-field{
 }
 .texto4-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -599,7 +602,7 @@ input.quantity-field{
 }
 .texto5-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;

@@ -1,3 +1,6 @@
+*{
+  font-family: 'Roboto',sans-serif;
+}
 /*Navegacion*/
 .tamaño-renglon-1{
   position: fixed;
@@ -27,7 +30,7 @@
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -56,7 +59,7 @@
 }
 .texto1-seccion1{
   font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
@@ -76,7 +79,7 @@
 }
 .texto1-usuario{
   font-size: 18px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.2px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
@@ -92,7 +95,7 @@
   width: 36.5%;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+
   position: relative;
 }
 .data_input_crear{
@@ -110,7 +113,7 @@ label.head-label, label.bottom-label1{
   margin-right: auto; /*Alinea el texto de arriba*/
   font-size: 15px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
+
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
@@ -258,7 +261,7 @@ input.quantity-field{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+ 
   font-weight: 500;
 }
 .btn-siguiente:hover{
@@ -284,7 +287,7 @@ input.quantity-field{
 }
 .texto1-iniciar{
   font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
+ 
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
@@ -294,7 +297,7 @@ input.quantity-field{
   /*margin-top: 11%;*/
 }
 .texto_area_login{
-  font-family: 'Raleway', sans-serif;
+
   font-size: 16px;
   text-align: center;
   /*margin-left: 65%;*/
@@ -316,7 +319,7 @@ input.quantity-field{
 }
 .underlineHover{
   display: block; /*Posicionar debajo de text-area*/
-  font-family: 'Raleway', sans-serif;
+ 
   font-size: 15px;
   color: #707070;
 } 
@@ -340,7 +343,7 @@ input.quantity-field{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 500;
 }
 .btn-iniciar:hover{
@@ -360,7 +363,7 @@ input.quantity-field{
 .sin-cuenta{
   display: block;
   text-align: center;
-  font-family: 'Raleway',sans-serif;
+
   font-size: 16px;
   color: #912F46;
   margin-top: 2%;
@@ -375,7 +378,7 @@ input.quantity-field{
 /*6-RECUPERAR-USUARIO.HTML*/
 .texto1-recuperar{
   font-size: 40px; /*Tamaño letra*/
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
@@ -384,7 +387,7 @@ input.quantity-field{
   opacity: 1;
 }
 .instruccion{
-  font-family: 'Raleway',sans-serif;
+
   font-size: 20px;
   text-align: center;
 }
@@ -401,7 +404,7 @@ input.quantity-field{
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 500;
 }
 .btn-enviar:hover{
@@ -431,7 +434,7 @@ input.quantity-field{
 }
 .texto1-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -443,7 +446,7 @@ input.quantity-field{
 }
 .texto2-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -452,7 +455,7 @@ input.quantity-field{
 }
 .texto3-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -461,7 +464,7 @@ input.quantity-field{
 }
 .texto4-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -470,7 +473,7 @@ input.quantity-field{
 }
 .texto5-footer{
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
