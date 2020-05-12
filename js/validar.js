@@ -30,6 +30,9 @@ function validateInputValue(){
         if (this.id == "cp") {
             reg=/^\d{4,5}/g; //acepta 4 o 5 digitos
             result = elmnt_value.match(reg);
+            if (result != null && elmnt_value.length == 4) {
+                this.value="0"+result;
+            }
             cautionTxt = "El código postal no es válido";
         }else if (this.id == "telefono"){
             reg=/^\d{10}/g; //solo acepta 10 digitos
@@ -66,10 +69,16 @@ function validateInputValue(){
         }else if (this.id == "superficie" || this.id == "terreno"){
             reg=/^\d*$/; //solo acepta numeros
             result = elmnt_value.match(reg);
-            if (result != null) {
+            if (result != null && parseInt(elmnt_value) >= 1 && parseInt(elmnt_value) <= 10000) {
                 this.value = elmnt_value + " m²";
+            }else if (result != null && (parseInt(elmnt_value) < 1 || parseInt(elmnt_value) > 10000)){
+                cautionTxt = "Ingresa un número entre 1 y  10000";
+                result = null;
+            }else{
+                cautionTxt = "Ingresa solo números para la superficie";
+                result = null;
             }
-            cautionTxt = "Ingresa solo números para la superficie";
+            
         }else{  /*  */
             reg = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/g;
             result = elmnt_value.match(reg);
