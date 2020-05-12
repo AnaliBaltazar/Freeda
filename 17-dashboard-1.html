@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="./css/signature-pad.css"> 
     <!--Fuente de letra-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+
+     <!--QUESTRIAL-->
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <!--Va tipografia-->
     <!--Usar iconos-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -150,12 +153,12 @@
                             </tr>
                             <tr>
                                 <td class="col_l">No. de póliza:</td>
-                                <td class="col_r">64739402</td>
+                                <td class="col_r" id="no-poliza">64739402</td>
                             </tr>
 
                             <tr>
                                 <td class="col_l">Vigencia:</td>
-                                <td class="col_r">28/08/2020 al 28/08/2021</td>
+                                <td class="col_r" id="vigencia">28/08/2020 al 28/08/2021</td>
                             </tr>
 
 
@@ -255,12 +258,12 @@
                     <table class="info_seg2">
                         <tr>
                             <td class="col_l">No. de póliza:</td>
-                            <td class="col_r">64739402</td>
+                            <td class="col_r" id="no-poliza">64739402</td>
                         </tr>
 
                         <tr>
                             <td class="col_l">Vigencia:</td>
-                            <td class="col_r">28/08/2020 al 28/08/2021</td>
+                            <td class="col_r" id="vigencia">28/08/2020 al 28/08/2021</td>
                         </tr>
 
 
@@ -275,8 +278,8 @@
     </div>
 
     <div class="info-reporte" id="info-reporte">
-        <p class="texto1-reporte">El reporte final indica que el epicentro fue en Guerrero con una magnitud de 7.1</p>
-        <p class="texto2-reporte">Tienes derecho a una indemnización de 3% de tu suma asegurada</p>
+        <p class="texto1-reporte">El reporte final indica que el epicentro fue en Guerrero con una magnitud de <span id="magnitud">7.1</span>
+        <p class="texto2-reporte">Tienes derecho a una indemnización de <span id="porcentaje">3%</span> de tu suma asegurada</p>
          <button class="btn boton-reembolso" role="link" onclick="window.location='#'" id="reembolso-btn">SOLICITAR REEMBOLSO</button>
     </div>
         <!-- ------------------------------------------------------------------------- -->
@@ -417,9 +420,9 @@
         <div class="row text-center">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
             
-            <p class="texto1-total" id="total-gastos">Suma total de gastos: $ --</p>
+            <p class="texto1-total" >Suma total de gastos: <span id="total-gastos">$ --</span></p>
 
-            <p class="texto2-total">Indemnización máxima $ 1,500</p>
+            <p class="texto2-total">Indemnización máxima <span id="indem-max">$ 1,500</span></p>
 
 
             <button class="btn boton1-firma" role="link" id="signature-btn">FIRMA</button>
@@ -470,7 +473,8 @@
     <div class="container seccion-tran1" id="seccion-tran1">
         <div class="row texto-centrado">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
-                <p class="texto-t1" id="monto">El monto de $1,500 por indemnización<br>sera transferido a la cuenta</p>   
+                <!-- id="monto" -->
+                <p class="texto-t1" id="monto">El monto de <span class="gastos" id="total-gastos">$1,500</span> por indemnización<br>sera transferido a la cuenta</p>   
             </div>
         </div>
     </div>
@@ -517,12 +521,12 @@
                      <table class="info_seg">
                         <tr>
                             <td class="col_l">No. de póliza:</td>
-                            <td class="col_r">64739402</td>
+                            <td class="col_r" id="no-poliza">64739402</td>
                         </tr>
 
                         <tr>
                             <td class="col_l">Vigencia:</td>
-                            <td class="col_r">28/08/2020 al 28/08/2021</td>
+                            <td class="col_r" id="vigencia">28/08/2020 al 28/08/2021</td>
                         </tr>
 
 
