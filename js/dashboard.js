@@ -1,6 +1,26 @@
 "use strict";
 window.onload = function(){
     const userData= JSON.parse(sessionStorage.getItem("InsuredData")); // get and parse the saved data from localStorage
+    const fechaContratación = JSON.parse(sessionStorage.getItem("fechaContratacion"));
+    const datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
+    const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+      ]
+    
+    
+    document.querySelector("#vigenciaI").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
+    document.querySelector("#vigenciaF").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
     document.querySelector("#session-name").textContent=userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + "..."
     document.querySelector("#clientName").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
     if(sessionStorage.getItem("clabe")){

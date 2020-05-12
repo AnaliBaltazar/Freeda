@@ -1,21 +1,17 @@
 "use strict";
 
 window.onload = (event) => {
-  let tipoPropiedad = sessionStorage.getItem("tipo_propiedad")
-  let clasePropiedad = sessionStorage.getItem("clase_propiedad")
-  let year = sessionStorage.getItem("year")
-  let construccion = sessionStorage.getItem("construccion")
-  let terreno = sessionStorage.getItem("terreno")
+  const datosCotizador= JSON.parse(sessionStorage.getItem("datosCotizador"))
 
-  document.querySelector(".imagen-casa").src="./img/" + tipoPropiedad + ".svg";
-  document.querySelector("#tipo-prop").textContent = tipoPropiedad.toUpperCase();
-  document.querySelector("#clase-prop").textContent = clasePropiedad.toUpperCase();
-  document.querySelector("#year").textContent = year;
-  document.querySelector("#construida").textContent = construccion;
-  if (terreno == null) {
+  document.querySelector(".imagen-casa").src="./img/" + datosCotizador.tipo + ".svg";
+  document.querySelector("#tipo-prop").textContent = datosCotizador.tipo.toUpperCase();
+  document.querySelector("#clase-prop").textContent = datosCotizador.clase.toUpperCase();
+  document.querySelector("#year").textContent = datosCotizador.year;
+  document.querySelector("#construida").textContent = datosCotizador.construccion;
+  if (datosCotizador.terreno == null) {
     document.querySelector("#terreno").style.display = "none";
     document.querySelector("#terreno").previousElementSibling.style.display = "none";
   } else {
-    document.querySelector("#terreno").textContent = terreno;
+    document.querySelector("#terreno").textContent = datosCotizador.terreno;
   }
 };

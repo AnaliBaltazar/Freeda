@@ -91,7 +91,9 @@ function removeText(element){   // REMUEVE EL ELEMENTO DE TEXTO EN LA CLASE DE I
     
 }
 function toYear(elmnt) {
-    sessionStorage.setItem('clase_propiedad',elmnt.id)
+    let datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
+    datosCotizador.clase = elmnt.id;
+    sessionStorage.setItem('datosCotizador',JSON.stringify(datosCotizador));
     window.location = "./11-tiempo.html"
 }
 function previousPage() {
