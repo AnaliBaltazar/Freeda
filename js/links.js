@@ -139,10 +139,11 @@ function genDashboard(event) {
         }, 4000);
 }
 
-/*function toPayment() {
-    window.location = "./15-pago.html";
+//Para boton de 18-SUMA-ASEGURADA.HTML
+function toPayment() {
+    window.location = "./16-pago.html";
 }
-function toDataInsured(event) {
+/*function toDataInsured(event) {
     event.preventDefault();
     window.location = "./16-datos-asegurado.html";
     return false
