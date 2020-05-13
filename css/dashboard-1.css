@@ -173,11 +173,11 @@ a.current:link, a.current:visited{
 
 /*NUEVO DAHSBOARD*/
 .part1{
-  height: 650px;
+  height: 720px; /*650px*/
   padding-bottom: 100px;
 }
 .part2{
-  height: 600px;
+  height: 800px;
   padding-bottom: 100px; 
 }
 /*Recuadro con casita*/
@@ -1351,7 +1351,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 
 
 
-
 /*PARTE Dashboard
 .tables{  
     display: flex;
@@ -1415,7 +1414,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-left: -3%;
   margin-top: 0%;
 }
-
 .btn-agregar{
   margin-right: -4%;
   margin-top: -5%;
@@ -1431,18 +1429,21 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 
 /*COBERTURA, VER PÓLIZA, SINIESTRO*/
 .underlineHover1{
-  margin-left: 5%;
+  font-size: 22px;
+  margin-left: 12%;
 } 
 .underlineHover2{
+  font-size: 22px;
   margin-left: 5%;
 } 
 .underlineHover3{
+  font-size: 22px;
   margin-left: 5%;
-} 
+}
+/*DATOS DEL ASEGURADO*/
 .info_seg{
   border-spacing: 10px;
 }
-
 /*VER Y DESCARGAR*/
 .doc_row{
   width: 90%;
@@ -1655,10 +1656,9 @@ button.button-minus, button.button-plus{
   display: none;
 }
 
-
-
+/*COBERTURA VER PÓLIZA SINIESTRO*/
 .underlineHover1{
-  margin-left: 5%;
+  margin-left: 12%;
 } 
 .underlineHover2{
   margin-left: 5%;
@@ -1888,6 +1888,12 @@ h3.describe_bien{
 } 
 
 /*Recuadro con casita*/
+/*AGREGÓ PARA ACOMODAR RECUADRO*/
+.recuadro-info{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*NUEVO DASH*/
 .info_seg{
   border-spacing: 15px;
@@ -1908,12 +1914,13 @@ h3.describe_bien{
   flex-direction: row;
   align-items: center;
 }
+
 /*.btn-agregar{
   left: 73%;
   margin-top: 0px;
 }*/
 .btn-agregar{
-  margin-right: -4%;
+  margin-right: 4%; /*-4%*/
   margin-top: -4%;
 }
 
@@ -2081,6 +2088,12 @@ h3.describe_bien{
 } 
 
 /*NUEVO DASH*/
+/*AGREGÓ PARA ACOMODAR RECUADRO*/
+.recuadro-info{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .info_seg{
   border-spacing: 15px;
@@ -2232,6 +2245,22 @@ margin-top: 1%;
 }
 .recuadro-info{
   height: 110%;
+}
+.doc_row h4, .doc_row .doc_btns{
+  /* width: fit-content; */
+  margin:10px 5px;
+}
+.doc_row h4{
+  font-size: 20px; 
+  font-weight: 300;
+  color: #8E97A7;
+  /* margin-left: 30px; */
+}
+.doc_btns{
+  /* margin: 5px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /*.btn-agregar{
