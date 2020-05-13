@@ -239,13 +239,11 @@ input.quantity-field{
 } 
 .btn-siguiente{
   position: absolute;
-  /* margin-left: 40%; */
   margin-top: 5%;
   left: calc(50% - 100px);
-  /* margin-top: -8%; */
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
+  width: 220px; /*Tamaño*/
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
@@ -253,9 +251,7 @@ input.quantity-field{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
- 
-  font-weight: 500;
+  font-size: 20px;
 }
 .btn-siguiente:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -280,8 +276,6 @@ input.quantity-field{
 }
 .texto1-iniciar{
   font-size: 40px; /*Tamaño letra*/
- 
-  font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
   text-align: center;
@@ -290,8 +284,7 @@ input.quantity-field{
   /*margin-top: 11%;*/
 }
 .texto_area_login{
-
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   /*margin-left: 65%;*/
   width: 75%;
@@ -304,7 +297,6 @@ input.quantity-field{
 }
 .data_input_login{
   width: 100%;
-  font-weight: 700;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
@@ -312,7 +304,6 @@ input.quantity-field{
 }
 .underlineHover{
   display: block; /*Posicionar debajo de text-area*/
- 
   font-size: 15px;
   color: #707070;
 } 
@@ -335,9 +326,7 @@ input.quantity-field{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-
-  font-weight: 500;
+  font-size: 20px;
 }
 .btn-iniciar:hover{
   background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
@@ -371,8 +360,6 @@ input.quantity-field{
 /*6-RECUPERAR-USUARIO.HTML*/
 .texto1-recuperar{
   font-size: 40px; /*Tamaño letra*/
-
-  font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
   text-align: center;
@@ -380,8 +367,7 @@ input.quantity-field{
   opacity: 1;
 }
 .instruccion{
-
-  font-size: 20px;
+  font-size: 20%;
   text-align: center;
 }
 .btn-enviar{
@@ -396,9 +382,7 @@ input.quantity-field{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-
-  font-weight: 500;
+  font-size: 20px;
 }
 .btn-enviar:hover{
   background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
@@ -427,7 +411,6 @@ input.quantity-field{
 }
 .texto1-footer{
   font-size: 15px;
-
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -439,7 +422,6 @@ input.quantity-field{
 }
 .texto2-footer{
   font-size: 15px;
-
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -448,7 +430,6 @@ input.quantity-field{
 }
 .texto3-footer{
   font-size: 15px;
-
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -457,7 +438,6 @@ input.quantity-field{
 }
 .texto4-footer{
   font-size: 15px;
-
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -466,7 +446,6 @@ input.quantity-field{
 }
 .texto5-footer{
   font-size: 15px;
-
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
@@ -942,6 +921,9 @@ input.invalid + label.head-label + label.bottom-label1{
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
   margin-top: 18%;
+}
+.instruccion{
+  font-size: 25px;
 }
 .btn-enviar{
   margin-left: 41.5%;
