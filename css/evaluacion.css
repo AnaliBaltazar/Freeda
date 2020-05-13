@@ -28,7 +28,7 @@
   padding-bottom: 4px;
 }
 .texto-menu-f{ /*Letra del menu*/
-  font-size: 18px;
+  font-size: 20px;
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
@@ -121,7 +121,7 @@
   /*border: 5px solid #912F46; /*PRUEBA*/
 }
 .texto-clase{ /*Casa*/
-  font-size: 40px;
+  font-size: 35px;
   color: #912F46;
   padding: 10px 0 15px 0;
 }
@@ -132,6 +132,9 @@
   margin-right:50%;
 }
 #year, #construida, #terreno{
+}
+table{
+  margin-left: 10%;
 }
 td{
   vertical-align: top;
@@ -163,7 +166,7 @@ td.col_r{
   margin-left: auto;
   margin-right: auto;
 }
-.precio{ /*$59*/
+#precio{ /*$59*/
   text-align: center;
   font-size: 50px;
   color: #FFFFFF;
@@ -174,7 +177,7 @@ td.col_r{
   padding-bottom: 12px;
 }
 .underlineHover{  /*Conocer coberturas*/
-  font-size: 16px;
+  font-size: 20px;
   color: #707070;
   text-align: center;
   padding: 30px 0 10px 0;
@@ -184,14 +187,11 @@ td.col_r{
 }
 /*BOTÓN siguiente*/
 .btn-siguiente{
-  /*position: absolute;*/
-  /*margin-top: -18%;*/
-  /*margin-left: 0%; Centrar*/
   margin-top: 3%;
   margin-bottom: 10%; /*Dar espacio hacia abajo*/
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
+  width: 250px; /*Tamaño*/
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
@@ -199,8 +199,7 @@ td.col_r{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
 }
 .btn-siguiente:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -561,20 +560,43 @@ a.nav-link:hover{
 /*----------------------------*/
 /*14-CONTRATAR.HTML*/
 .texto1{
+  font-size: 23px;
   margin-top: 15%;
 }
 .part1{
-  width: 50%;
+  width: 40%;
 }
 .imagen-casa{
-  width: 30%;
+  width: 40%;
   margin-top: 33%;
   margin-left: 30%;
 }
 .part2{
-  width: 50%;
+  width: 60%;
+}
+table{
+  margin-left: -5%;
+}
+.texto-clase{
+  font-size: 20px;
+}
+.texto-medidas{
+  font-size: 19px;
+}
+.texto-1{
+  font-size: 23px;
+}
+#circulo{
+  width: 120px;
+  height: 120px;
+}
+#precio{
+  padding-top: 22%;
+  font-size: 45px; 
 }
 .btn-siguiente{ /*Boton siguiente*/
+  width: 200px;
+  font-size: 15px;
   margin-left: 2%;
   margin-bottom: 23%;
 }
@@ -654,14 +676,38 @@ a.nav-link:hover{
 .texto1{
   margin-top: 15%;
 }
+
+
+.part1{
+  width: 40%;
+  margin-bottom: 10%;
+}
+.imagen-casa{
+  width: 70%;
+  margin-top: 33%;
+  margin-left: 30%;
+}
+.part2{
+  width: 60%;
+  margin-bottom: 10%;
+}
+table{
+  margin-left: -5%;
+}
+.texto-clase{
+  font-size: 28px;
+}
+.texto-medidas{
+  font-size: 20px;
+}
 /*.part1, .part2{
   width: 50%;
-}*/
+}
 .imagen-casa{
   width: 30%;
   margin-top: 35%;
   margin-left: 30%;
-}
+}*/
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 2%;
   margin-bottom: 21%;
@@ -748,11 +794,15 @@ width: 95%;
   width: 50%;
 }*/
 .imagen-casa{
+  width: 50%;
   margin-top: 15%;
 }
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 2%;
   margin-bottom: 16%;
+}
+.part1, .part2{
+  margin-bottom: 0%;
 }
 
 
@@ -820,11 +870,9 @@ input.invalid + label.head-label + label.bottom-label1 {
 .texto1{
   margin-top: 8%;
 }
-/*.part1, .part2{
-  width: 50%;
-}*/
+
 .imagen-casa{
-  width: 30%;
+  width: 40%;
   margin-top: 0%;
   margin-left: 30%;
 }
@@ -901,15 +949,21 @@ margin-top: 1%;
 }
 .imagen-casa{
   width: 30%;
-  margin-left: 40%;
+  margin-left: 60%;
 }
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 0%;
   margin-bottom: 10%;
 }
-/*.part1, .part2{
-  width: 50%;
-}*/
+table{
+  margin-left: 2%;
+}
+.texto-clase{
+  font-size: 35px;
+}
+.texto-medidas{
+  font-size: 20px;
+}
 
 
 /*16-DATOS-ASEGURADO.HTML*/
