@@ -26,12 +26,10 @@
   padding-bottom: 4px;
 }
 .texto-menu-f{ /*Letra del menu*/
-  font-size: 18px;
+  font-size: 20px;
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-
-  font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
   color: #FFFFFF;
@@ -50,7 +48,7 @@
 
 
 
-/*Seccion1*/
+/*5-CREAR-USUARIO.HTML*/
 .seccion1{
   position: static;
   /* height: 230px; */
@@ -59,17 +57,12 @@
 }
 .texto1-seccion1{
   font-size: 40px; /*Tamaño letra*/
-
-  font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
   text-align: center;
   color: #912F46;
   opacity: 1;
-  /*margin-top: 11%;*/
 }
-
-
 /*SECCIÓN CREAR USUARIO*/
 .seccion-crear-usuario{
   position: static;
@@ -77,10 +70,8 @@
   width: 100%;
   /*background: #bfd5e7; /*Prueba */
 }
-.texto1-usuario{
+.texto1-usuario{ /*Contraseña*/
   font-size: 18px; /*Tamaño letra*/
-
-  font-weight: 700; /*Grosor*/
   letter-spacing: 0.2px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
   text-align: center;
@@ -94,8 +85,7 @@
   flex-flow: column-reverse;
   width: 36.5%;
   padding: 10px;
-  font-size: 16px;
-
+  font-size: 20px;
   position: relative;
 }
 .data_input_crear{
@@ -105,6 +95,10 @@
   padding-bottom: 6px;
   text-align: center;
   border-radius: 6px;
+}
+.tooltip li{
+  text-align: left;
+  font-size: 15px;
 }
 label.head-label, label.bottom-label1{
   padding: 5px 0;
@@ -198,7 +192,6 @@ input.quantity-field{
         transform: translateY(0);
     }
 }
-
 
 /* -----------------
 

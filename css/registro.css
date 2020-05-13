@@ -26,11 +26,10 @@
   padding-bottom: 4px;
 }
 .texto-menu-f{ /*Letra del menu*/
-  font-size: 18px;
+  font-size: 20px;
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
-
   font-weight: 600;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -57,8 +56,6 @@
 }
 .texto1-registro{ /*REGISTRATE*/
   font-size: 40px; /*Tamaño letra*/
-
-  font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
   text-align: center;
@@ -73,34 +70,21 @@
   flex-flow: column-reverse;
   width: 30%;
   padding: 10px;
-  font-size: 16px;
-  
+  font-size: 20px;
   position: relative;
 }
 .data_input_usua{
   width: 100%;
-  font-weight: 700;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
   border-radius: 6px;
 }
-/*FECHA DE NACIMIENTO*/
-/*.label-date{
-  padding: 5px 0;
-  width: 95%; Alinea el texto de arriba
-  margin-left: auto; Alinea el texto de arriba
-  margin-right: auto; Alinea el texto de arriba
-  font-size: 16px; Letra chiquita arriba del cuadro
-  font-weight: 300; 
-  font-family: 'Raleway', sans-serif;
-  margin-left: 475px;
-  padding-top: 5px;
-}*/
-.label-date{
-  position: absolute;
 
+.label-date{ /*Fecha de nacimiento*/
+  position: absolute;
   margin-left: 35%;
+  font-size: 20px;
 }
 select{
   margin: 0 auto;
@@ -112,21 +96,18 @@ select:focus{
   outline: 0;
 }
 .nacimiento1{ /*Dia */
- 
-  font-size: 18px;
+  font-size: 20px;
   width: 5%;
   margin-top: 3%;
   /*margin-left: 35%;*/
 }
 .nacimiento2{ /*Mes */
   width: 10%;
-
-  font-size: 18px;
+  font-size: 20px;
 }
 .nacimiento3{ /*Año */
   width: 5%;
-
-  font-size: 18px;
+  font-size: 20px;
 }
 .seccion-boton{
   max-width: 900px;
@@ -135,9 +116,6 @@ select:focus{
   /*background: #cc99cc;        /*PRUEBA*/
 } 
 .btn-registrarse{
-  /*position: absolute;
-  margin-left: 38%;
-  margin-top: -10%;*/
   display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
@@ -149,9 +127,7 @@ select:focus{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
- 
-  font-weight: 500;
+  font-size: 20px;
 }
 .btn-registrarse:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -167,18 +143,16 @@ select:focus{
 }
 
 /*3-ACTIVAR-TOKEN.HTML*/
-.texto2-seccion1{
-  font-size: 20px; /*Tamaño letra*/
- 
-  font-weight: 700; /*Grosor*/
+.texto1-seccion1{
+  font-size: 40px; /*Tamaño letra*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 30px; /*Sangria*/
+  line-height: 47px; /*Sangria*/
   text-align: center;
   color: #912F46;
   opacity: 1;
-  /*margin-top: 0%;*/
-  margin-bottom: 7%;
-}/*SECCION-TELEFONO token.html*/
+  margin-top: 12%;
+}
+/*SECCION-TELEFONO token.html*/
 .seccion-telefono{
   position: static;
   height: 150px;
@@ -194,13 +168,11 @@ select:focus{
   margin-bottom: 50px;
   width: 35%; /*30*/
   padding: 10px; /*20*/
-  font-size: 16px; /*20*/
-
+  font-size: 20px; /*20*/
   position: relative;
 }
 .data_input_tel{
   width: 100%;
-  font-weight: 700;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
@@ -214,13 +186,10 @@ select:focus{
   /*background: #cc99cc;        /*PRUEBA*/ 
 }
 .enviar-token{
-  /*position: absolute;
-  margin-left: 38%;
-  margin-top: 5px;*/
   display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
+  width: 250px; /*Tamaño*/
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
@@ -228,9 +197,7 @@ select:focus{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-
-  font-weight: 500; 
+  font-size: 20px; 
 }
 .enviar-token:hover{
   background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
@@ -246,6 +213,17 @@ select:focus{
   border: 2px solid #C88585;
   color: #912F46;
 }
+/*4-VALIDAR-TOKEN.HTML*/
+.texto2-seccion1{
+  font-size: 25px; /*Tamaño letra*/
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 30px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  margin-bottom: 7%;
+}
 .texto_area_token{
   text-align: center;
   margin-left: auto;
@@ -255,34 +233,100 @@ select:focus{
   margin-bottom: 50px;
   width: 34%;
   padding: 20px;
-  font-size: 16px;
-
+  font-size: 20px;
   position: relative;
 }
 .data_input_token{
   width: 100%;
-  font-weight: 700;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
   border-radius: 6px;
 }
-
-
-
-
-/*revisar------------------*/
-.texto1-seccion1{
-  font-size: 40px; /*Tamaño letra*/
-
-  font-weight: 700; /*Grosor*/
-  letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 47px; /*Sangria*/
+.validar-token{ /*BOTON VALIDAR TOKEN*/
+  display: block;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 250px; /*Tamaño*/
+  height: 40px;
   text-align: center;
-  color: #912F46;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
-  margin-top: 12%;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
 }
+.validar-token:hover{
+  background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
+  color: #FFFFFF; /*Color de letra*/
+}
+.validar-token:active{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
+.validar-token:focus{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
+/*Mensaje validacion*/
+.msn-validacion{
+  font-size:25px; 
+  background-color: #912F46;
+  color: #FFFFFF;
+  width: 30%;
+  padding: 7px 0 4px 0;
+  text-align: center;
+  margin-left: 35%;
+  margin-bottom: 5%;
+  position: relative;
+  display: none;
+}
+.error{
+  color: red;
+  display: none;
+}
+.seccion-espacio{
+  max-width: 900px;
+  padding-top: 100px;
+  padding-bottom: 100px;  
+  /*background: #bfe7e5;        /*PRUEBA*/
+}
+/*BOTON GENERAR NUEVO TOKEN*/
+.nuevo-token{ /*BOTON VALIDAR TOKEN*/
+  display: none;
+  margin-top: 2%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 250px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+}
+.nuevo-token:hover{
+  background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
+  color: #FFFFFF; /*Color de letra*/
+}
+.nuevo-token:active{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
+.nuevo-token:focus{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+  color: #912F46;
+}
+
+
+
 
 
 
@@ -296,8 +340,7 @@ select:focus{
   margin-bottom: 16px;
   width: 60%;
   padding: 10px;
-  font-size: 16px;
-
+  font-size: 20px;
 }
 label.head-label, label.bottom-label1{
   padding: 5px 0;
@@ -306,7 +349,6 @@ label.head-label, label.bottom-label1{
   margin-right: auto; /*Alinea el texto de arriba*/
   font-size: 15px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
-
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
@@ -318,7 +360,6 @@ label.head-label, label.bottom-label1{
   animation: silo-fade 0.2s; /*Google*/
 }
 input:focus{outline: none;}
-
 /*Hace la animacion de aparecer cuando se da clic*/
 input.invalid + label.head-label, input:focus + label.head-label, input:not(:placeholder-shown) + label.head-label{
   display: block;
@@ -433,123 +474,6 @@ input.quantity-field{
   100% { transform: rotate(360deg); }
 }
 
-/*4-VALIDAR-TOKEN.HTML*/
-/*.seccion-token{ 
-  max-width: 900px;
-  padding-top: 5px;
-  padding-bottom: 200px;
- background-color: #cc99cc;        
-  margin-top: -5%;
-}*/
-.texto_area_token{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: column-reverse;
-  margin-bottom: 50px;
-  width: 34%;
-  padding: 20px;
-  font-size: 16px;
-
-}
-.data_input_token{
-  width: 100%;
-  font-weight: 700;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  text-align: center;
-  border-radius: 6px;
-}
-.validar-token{ /*BOTON VALIDAR TOKEN*/
-  display: block;
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
-  opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-
-  font-weight: 500;
-}
-.validar-token:hover{
-  background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
-  color: #FFFFFF; /*Color de letra*/
-}
-.validar-token:active{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-  color: #912F46;
-}
-.validar-token:focus{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-  color: #912F46;
-}
-/*Mensaje validacion*/
-.msn-validacion{
-
-  font-size:20px; 
-  /*border: solid 2px #912F46;*/
-  background-color: #912F46;
-  color: #FFFFFF;
-  width: 30%;
-  padding: 7px 0 4px 0;
-  text-align: center;
-  /*margin-top: -5%;*/
-  margin-left: 35%;
-  margin-bottom: 5%;
-  position: relative;
-  display: none;
-}
-.error{
-  color: red;
-  display: none;
-}
-.seccion-espacio{
-  max-width: 900px;
-  padding-top: 100px;
-  padding-bottom: 100px;  
-  /*background: #bfe7e5;        /*PRUEBA*/
-}
-/*BOTON GENERAR NUEVO TOKEN*/
-.nuevo-token{ /*BOTON VALIDAR TOKEN*/
-  display: none;
-  margin-top: 2%;
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 200px; /*Tamaño*/
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
-  opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 14px;
-
-  font-weight: 500;
-}
-.nuevo-token:hover{
-  background: #C88585 0% 0% no-repeat padding-box;/*Color de boton*/
-  color: #FFFFFF; /*Color de letra*/
-}
-.nuevo-token:active{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-  color: #912F46;
-}
-.nuevo-token:focus{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-  color: #912F46;
-}
-
 
 
 /*NUEVO FOOTER*/
@@ -562,9 +486,7 @@ input.quantity-field{
   /*background: #99cccc;   /* PRUEBA*/
 }
 .texto1-footer{
-  font-size: 15px;
-
-  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.64px;
   color: #707070;
   opacity: 1;
@@ -574,36 +496,28 @@ input.quantity-field{
   z-index: 2001;
 }
 .texto2-footer{
-  font-size: 15px;
-
-  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.64px;
   color: #707070;
   opacity: 1;
   margin-right: 40px;
 }
 .texto3-footer{
-  font-size: 15px;
-
-  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.64px;
   color: #707070;
   opacity: 1;
   margin-right: 40px;
 }
 .texto4-footer{
-  font-size: 15px;
-
-  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.64px;
   color: #707070;
   opacity: 1;
   margin-right: 30px;
 }
 .texto5-footer{
-  font-size: 15px;
-
-  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.64px;
   color: #707070;
   opacity: 1;
@@ -628,8 +542,6 @@ input.quantity-field{
   margin-left: 80%;
   margin-top: -3%;
 }
-
-
 
 /*---------MEDIA QUERIES---------*/
 
@@ -858,8 +770,8 @@ input.invalid + label.head-label + label.bottom-label1{
 .texto1-footer{
   margin-right: 15px;
 }
-.texto3-footer{
-}
+/*.texto3-footer{
+}*/
 .logo-footer{
   width: 20%; 
   height: 55px;

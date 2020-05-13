@@ -106,9 +106,15 @@ function appendText(texto, elemento){   //Funcion para agregar o modificar el te
     elemento.textContent=texto;
 }
 
+
 function formatNumber(n) {
     // format number 1000000 to 1,234,567
         return n.replace(/\D/g, "").replace(/^0+/,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")    
   }
+
+//
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 

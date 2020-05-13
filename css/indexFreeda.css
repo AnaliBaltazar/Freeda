@@ -27,7 +27,7 @@
   background-color: #912f46;
 }
 .texto-menu-f{ /*Letra del menu*/
-  font-size: 18px;
+  font-size: 20px;
   color:#F7F7F7;
   margin-top: 3px;
   padding-right: 33px;
@@ -49,19 +49,17 @@
 }
 /*Boton cotizar seguro*/
 .boton2-menu{
-  /*position: absolute;
-  margin-left: 40%;*/
   border: 1px solid #FFFFFF;
   border-radius: 5px;
-  width: 150px;
-  height: 42px;
+  width: 150px; /*150*/
+  height: 52px;
   text-align: center;
   letter-spacing: 0.52px;
   color: #912F46;
   text-transform: uppercase;
   opacity: 1;
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  font-size: 13px;
+  font-size: 15px; /*13px*/
 
   font-weight: 500;
 }
@@ -115,70 +113,6 @@ ul{ /*Contenedor botones*/
   padding-top: 50px;
 }
 
-
-/*SLIDER Boton CONOCE MAS...
-.boton-conoce{
-  position: absolute;
-  margin-left: -8%;
-  margin-top: -40%;
-  border: 1px solid #FFFFFF; /*Margen de boton
-  border-radius: 5px; /*Ovalado/redondo
-  width: 200px; /*Tamaño
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra
-  text-transform: uppercase; /*Todas mayusculas
-  opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
-.boton-conoce:hover{
-  background: #C88585 0% 0% no-repeat padding-box; 
-  color: #000000;
-}
-.boton-conoce:active{
-  background: #912F46 0% 0% no-repeat padding-box;
-  border: 1px solid #000000;
-}
-.boton-conoce:focus{
-  background: #C88585 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-}*/
-/*SLIDER Boton INICAR SESIÓN
-.boton-iniciar{
-  position: absolute;
-  margin-left: -8%;
-  margin-top: -35%;
-  border: 1px solid #912F46; 
-  border-radius: 5px; 
-  width: 200px; 
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #912F46; 
-  text-transform: uppercase; 
-  opacity: 1;
-  background: #FFFFFF 0% 0% no-repeat padding-box; 
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-}
-.boton-iniciar:hover{
-  background: #C88585 0% 0% no-repeat padding-box; 
-  color: #000000;
-}
-.boton-iniciar:active{
-  background: #912F46 0% 0% no-repeat padding-box;
-  border: 1px solid #000000;
-}
-.boton-iniciar:focus{
-  background: #C88585 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-}*/
-
 /*NUEVO FOOTER*/
 .footermenu{
   position: static;
@@ -229,7 +163,6 @@ ul{ /*Contenedor botones*/
 }
 .texto5-footer{
   font-size: 15px;
-
   font-weight: 600;
   letter-spacing: 0.64px;
   color: #707070;
