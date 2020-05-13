@@ -65,9 +65,12 @@ function validatePassword(event) {
 }
 
 function cpNext() {
-    const cp_element=document.querySelector("#cp")
+    const cp_element=document.querySelector("#cp");
     if (cp_element.classList.contains("valid")) {
-        sessionStorage.setItem('codigopostal',cp_element.value)
+        let datosCotizador={
+            codigopostal: cp_element.value
+        }
+        sessionStorage.setItem('datosCotizador',JSON.stringify(datosCotizador));
         window.location = "./8-analisis-comp.html";
     }
 }
@@ -75,24 +78,32 @@ function toPropiedad() {
     window.location = "./9-tipo-propiedad.html";
 }
 function toClase(elmnt) {
-    sessionStorage.setItem('tipo_propiedad',elmnt.id)
+    let datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
+    datosCotizador.tipo = elmnt.id;
+    sessionStorage.setItem('datosCotizador',JSON.stringify(datosCotizador));
     window.location = "./10-clase-inmueble.html";
 }
 
 function toSup() {
     const years_element=document.querySelector("#year")
     if (years_element.classList.contains("valid")) {
-        sessionStorage.setItem('year',years_element.value)
+        let datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
+        datosCotizador.year = years_element.value;
+        sessionStorage.setItem('datosCotizador',JSON.stringify(datosCotizador));
         window.location = "./12-superficie.html";
     }
 }
 function toTerrain() {
     const sup_element=document.querySelector("#superficie")
     if (sup_element.classList.contains("valid")) {
-        sessionStorage.setItem('construccion',sup_element.value)
-        if (sessionStorage.getItem('tipo_propiedad') == "departamento") {
+        let datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
+        datosCotizador.construccion = sup_element.value;
+        if (datosCotizador.tipo == "departamento") {
+            datosCotizador.terreno = "--";
+            sessionStorage.setItem('datosCotizador',JSON.stringify(datosCotizador));
             window.location = "./14-contratar.html";
         } else {
+            sessionStorage.setItem('datosCotizador',JSON.stringify(datosCotizador));
             window.location = "./13-terreno.html";
         }
         
@@ -101,7 +112,9 @@ function toTerrain() {
 function toContratar() {
     const terr_element=document.querySelector("#terreno")
     if (terr_element.classList.contains("valid")) {
-        sessionStorage.setItem('terreno',terr_element.value)
+        let datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
+        datosCotizador.terreno = terr_element.value;
+        sessionStorage.setItem('datosCotizador',JSON.stringify(datosCotizador));
         window.location = "./14-contratar.html";
     }
 }
@@ -131,6 +144,14 @@ function genDashboard(event) {
                         document.querySelector("#bar_loader").style.width="100%";
                         document.querySelector("#caption_loader").textContent="Arreglando los últimos detalles";
                         setTimeout(() => {
+                            const date = new Date();
+                            
+                            const fechaContratación = {
+                                day : date.getDate(),
+                                month : date.getMonth(),
+                                year : date.getFullYear(),
+                            }
+                            sessionStorage.setItem("fechaContratacion", JSON.stringify(fechaContratación));
                             window.location="./17-dashboard-1.html"
                         }, 4000);
                     }, 4000);

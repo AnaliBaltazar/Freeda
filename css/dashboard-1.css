@@ -105,6 +105,9 @@ a, .Right span{
   margin-top: 30px;
   width: 100px;
 }
+#allset_screen p{
+  color: #767e8e;
+}
 
 button.Continuar{
   outline: none;
@@ -170,7 +173,7 @@ a.current:link, a.current:visited{
 
 /*NUEVO DAHSBOARD*/
 .part1{
-  height: 600px;
+  height: 650px;
   padding-bottom: 100px;
 }
 .part2{

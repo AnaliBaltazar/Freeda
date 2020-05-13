@@ -14,7 +14,12 @@ userform.addEventListener('submit', validatePassword) */
 
 function cleanInput() {
     if (this.classList.contains("valid") && (this.id == "superficie" || this.id == "terreno")) {
-        this.value = parseFloat(this.value);
+        let input_val=this.value
+        let reg=/\d+(\.\d{2})?|\.\d{2}/g;
+        let result = (input_val.match(reg) != null) ? input_val.match(reg) : ["0"];
+        let intresult = parseInt(result.join(""))
+        
+        this.value = intresult.toString();
     }
     this.classList.remove("valid");
     this.classList.remove("invalid");
@@ -70,7 +75,7 @@ function validateInputValue(){
             reg=/^\d*$/; //solo acepta numeros
             result = elmnt_value.match(reg);
             if (result != null && parseInt(elmnt_value) >= 1 && parseInt(elmnt_value) <= 10000) {
-                this.value = elmnt_value + " m²";
+                this.value = formatNumber(elmnt_value) + " m²";
             }else if (result != null && (parseInt(elmnt_value) < 1 || parseInt(elmnt_value) > 10000)){
                 cautionTxt = "Ingresa un número entre 1 y  10000";
                 result = null;
@@ -100,6 +105,12 @@ function validateInputValue(){
 function appendText(texto, elemento){   //Funcion para agregar o modificar el texto del elemento dado
     elemento.textContent=texto;
 }
+
+
+function formatNumber(n) {
+    // format number 1000000 to 1,234,567
+        return n.replace(/\D/g, "").replace(/^0+/,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")    
+  }
 
 //
 $(function () {
