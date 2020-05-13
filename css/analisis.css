@@ -92,10 +92,8 @@
 
 /*7-CP.HTML*/
 .texto1-cp{ /*Titulo Código postal*/
- 
   font-size: 40px;
   /*margin-top: 13%;*/ 
-  font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
   text-align: center;
@@ -103,9 +101,7 @@
   opacity: 1; 
 }
 .texto2-cp{ /*Descipcion*/
- 
-  font-size: 20px;
-  font-weight: 400; /*Grosor*/
+  font-size: 25px;
   text-align: center;
   color: #000000;
   opacity: 1; 
@@ -119,14 +115,12 @@
   flex-flow: column-reverse;
   width: 36%;
   padding: 10px;
-  font-size: 16px;
- 
+  font-size: 20px;
   position: relative;
 }
 /*INPUT*/
 .data_input{
   width: 100%;
-  font-weight: 700;
   padding-top: 10px;
   text-align: center;
   border-radius: 6px;
@@ -152,8 +146,7 @@
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 20px;
 }
 .boton-siguiente:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -171,8 +164,7 @@
 /*11-AÑOS.HTML*/
 .texto1{  /*Año de terminación de la obra*/
   font-size: 40px;
-  /*margin-top: 13%;*/ 
-  font-weight: 700; /*Grosor*/
+  /*margin-top: 13%;*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
   text-align: center;
@@ -192,7 +184,7 @@
   flex-flow: column-reverse;
   width: 44%;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 .data_input{
@@ -212,7 +204,7 @@
   flex-flow: column-reverse;
   width: 44%;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -224,11 +216,9 @@
   flex-flow: column-reverse;
   width: 44%;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
-
-
 
 label.head-label, label.bottom-label1{
   padding: 5px 0;
@@ -260,10 +250,10 @@ input.invalid + label.head-label + label.bottom-label1{
   position: absolute;
   top: 45px;
   left: 20px;
-  }
+}
 
 input:focus::-webkit-input-placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 
 input.valid{

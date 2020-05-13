@@ -2,7 +2,7 @@
 *{
   font-family: 'Roboto', sans-serif;
 }
-  /*Navegacion*/
+/*Navegacion*/
 /*Encabezado menú*/
 .tamaño-renglon-1{
   position: fixed;
@@ -226,7 +226,6 @@ td.col_r{
 }*/
 .texto1-seccion1{
   font-size: 40px; /*Tamaño letra*/
-  font-weight: 700; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 47px; /*Sangria*/
   text-align: center;
@@ -240,7 +239,7 @@ td.col_r{
   flex-flow: column-reverse;
   width: 36.5%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
 }
 .texto_area_regis{ /*Nombre de usuario, Apellidos*/
@@ -250,12 +249,11 @@ td.col_r{
   flex-flow: column-reverse;
   width: 36%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
 }
 .data_input_aseg, .data_input_inmueble{ /*HACER MAS GRANDE LOS RECUADROS*/
   width: 100%;
-  font-weight: 700;
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
@@ -326,25 +324,21 @@ select:focus{
   outline: 0;
 }
 .nacimiento1{ /*Dia */
-  font-size: 18px;
+  font-size: 20px;
   width: 5%;
   margin-top: 3%;
   /*margin-left: 33%;*/
 }
 .nacimiento2{ /*Mes */
   width: 10%;
-  font-size: 18px;
+  font-size: 20px;
 }
 .nacimiento3{ /*Año */
   width: 5%;
-  font-size: 18px;
+  font-size: 20px;
 }
 /*BOTON GENERAR PÓLIZA*/
 .btn-generar{
- /* position: absolute;
-  margin-left: 40%;
-  margin-top: 6%;
-  margin-top: -13%;*/
   display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
@@ -356,8 +350,7 @@ select:focus{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 20px;
 }
 .btn-generar:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -371,18 +364,7 @@ select:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
-/*.texto_area{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: column-reverse;
-  margin-bottom: 16px;
-  width: 30%;
-  padding: 10px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-}*/
+
 .seccion-siguiente{
   max-width: 900px;
   padding-top: 120px;
