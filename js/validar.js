@@ -101,6 +101,9 @@ function appendText(texto, elemento){   //Funcion para agregar o modificar el te
     elemento.textContent=texto;
 }
 
-
+//
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 

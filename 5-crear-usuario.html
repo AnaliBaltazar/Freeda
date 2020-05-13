@@ -90,9 +90,15 @@
 
                     <p class="texto1-usuario">La contraseña debe estar formada por 8 caracteres sin espacios.<br>(Al menos una letra sea mayúscula, una minúscula y un número)</p>
 
+
                     <!--Contraseña-->
                     <div class="texto_area_usuario" id="contraseña">
-                        <input type="password" name="pass" id="pass" class="data_input_crear" placeholder="Contraseña" pattern="[A-Za-z0-9]{8}">
+                        <input type="password" name="pass" id="pass" class="data_input_crear" placeholder="Contraseña" pattern="[A-Za-z0-9]" data-toggle="tooltip" data-html="true" data-placement="left" aria-describedby="passHelp" title="La contraseña debe estar formada por al menos:
+                        <ul>
+                            <li>8 caracteres</li>
+                            <li>1 letra mayúscula</li>
+                            <li>1 letra minúscula</li>
+                            <li>1 número</li></ul>">
                         <label class="head-label" for="contraseña">Contraseña</label>
                         <label class="bottom-label1" id="bottom-contraseña" for="contraseña"></label>
                     </div>
