@@ -565,6 +565,7 @@ a.nav-link:hover{
 }
 .part1{
   width: 40%;
+  margin-bottom: 5%;
 }
 .imagen-casa{
   width: 40%;
@@ -576,6 +577,12 @@ a.nav-link:hover{
 }
 table{
   margin-left: -5%;
+}
+td.col_r{
+  width: 90%;
+}
+td.col_l{
+  width: 50%;
 }
 .texto-clase{
   font-size: 20px;
@@ -677,7 +684,6 @@ a.nav-link:hover{
   margin-top: 15%;
 }
 
-
 .part1{
   width: 40%;
   margin-bottom: 10%;
@@ -693,6 +699,12 @@ a.nav-link:hover{
 }
 table{
   margin-left: -5%;
+}
+td.col_r{
+  width: 90%;
+}
+td.col_l{
+  width: 50%;
 }
 .texto-clase{
   font-size: 28px;
@@ -795,6 +807,7 @@ width: 95%;
 }*/
 .imagen-casa{
   width: 50%;
+  margin-right: 50%;
   margin-top: 15%;
 }
 .btn-siguiente{ /*Boton siguiente*/
@@ -803,6 +816,12 @@ width: 95%;
 }
 .part1, .part2{
   margin-bottom: 0%;
+}
+td.col_r{
+  width: 90%;
+}
+td.col_l{
+  width: 50%;
 }
 
 
@@ -870,15 +889,17 @@ input.invalid + label.head-label + label.bottom-label1 {
 .texto1{
   margin-top: 8%;
 }
-
 .imagen-casa{
-  width: 40%;
-  margin-top: 0%;
-  margin-left: 30%;
+  width: 35%;
+  margin-top: 3%;
+  margin-left: 50%;
 }
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 2%;
   margin-bottom: 12%;
+}
+table{
+  width: 100%;
 }
 
 
@@ -950,12 +971,14 @@ margin-top: 1%;
 .imagen-casa{
   width: 30%;
   margin-left: 60%;
+  margin-top: 3%;
 }
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 0%;
   margin-bottom: 10%;
 }
 table{
+  width: 80%;
   margin-left: 2%;
 }
 .texto-clase{
