@@ -216,6 +216,8 @@ td.col_r{
 
 
 /*16-DATOS-ASEGURADO.HTML*/
+/*DATOS-INMUEBLE.HTML*/
+/*CONFIRMAR.HTML*/
 /*.seccion1{
   position: static;
   height: 150px;
@@ -231,7 +233,7 @@ td.col_r{
   color: #912F46;
   opacity: 1;
 }
-.texto_area_rfc{/*RFC*/
+.texto_area_rfc, .text_area_i{/*RFC*/
   text-align: center;
   margin: 30px auto;
   display: flex;
@@ -251,7 +253,7 @@ td.col_r{
   font-size: 16px;
   position: relative;
 }
-.data_input_aseg{ /*HACER MAS GRANDE LOS RECUADROS*/
+.data_input_aseg, .data_input_inmueble{ /*HACER MAS GRANDE LOS RECUADROS*/
   width: 100%;
   font-weight: 700;
   padding-top: 5px;
@@ -387,7 +389,12 @@ select:focus{
   padding-bottom: 110px;  
   /*background: #bfe7e5;        /*PRUEBA*/
 }
-
+#confirmacion{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+}
 
 
 /*NUEVO FOOTER*/
@@ -613,7 +620,7 @@ td.col_l{
 .texto1-seccion1{
   margin-top: 15%;
 }
-.texto_area_rfc, .texto_area_regis{
+.texto_area_rfc, .texto_area_regis, .texto_area_i{
   width: 76%;
 }
 .label-date{
@@ -731,7 +738,7 @@ td.col_l{
   margin-top: 10%;
   
 }
-.texto_area_rfc, .texto_area_regis{
+.texto_area_rfc, .texto_area_regis, .texto_area_i{
   width: 76%;
 }
 .label-date{
@@ -829,7 +836,7 @@ td.col_l{
 .texto1-seccion1{
   margin-top: 10%;
 }
-.texto_area_rfc, .texto_area_regis{
+.texto_area_rfc, .texto_area_regis, .texto_area_i{
   width: 56%;
 }
 .label-date{
@@ -910,7 +917,7 @@ table{
 .texto_area_rfc{
   margin-top: 5%;
 }
-.texto_area_rfc, .texto_area_regis{
+.texto_area_rfc, .texto_area_regis, .texto_area_i{
   width: 42%;
 }
 .label-date{
@@ -993,7 +1000,7 @@ table{
 .texto1-seccion1{
   margin-top: 6%;
 }
-.texto_area_rfc, .texto_area_regis{
+.texto_area_rfc, .texto_area_regis, .texto_area_i{
   width: 37%;
 }
 .label-date{
