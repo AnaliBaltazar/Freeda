@@ -69,9 +69,10 @@
   display: flex;
   flex-flow: column-reverse;
   width: 30%;
-  padding: 10px;
+  padding: 10px; /*10px*/
   font-size: 20px;
   position: relative;
+  margin-bottom: 4%;
 }
 .data_input_usua{
   width: 100%;
@@ -144,9 +145,9 @@ select:focus{
 
 /*3-ACTIVAR-TOKEN.HTML*/
 .texto1-seccion1{
-  font-size: 40px; /*Tamaño letra*/
-  letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 47px; /*Sangria*/
+  font-size: 40px; 
+  letter-spacing: 0.4px; 
+  line-height: 47px; 
   text-align: center;
   color: #912F46;
   opacity: 1;
@@ -342,18 +343,19 @@ select:focus{
   padding: 10px;
   font-size: 20px;
 }
+/*Etiquetas arriba de text_area*/
 label.head-label, label.bottom-label1{
   padding: 5px 0;
   width: 95%; /*Alinea el texto de arriba*/
   margin-left: auto; /*Alinea el texto de arriba*/
   margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 15px; /*Letra chiquita arriba del cuadro*/
+  font-size: 20px; /*15px*/
   font-weight: 300; 
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
   position: absolute;
-  top: -15px;
+  top: -20px; /*15px*/
   left: 20px;
   -webkit-animation: silo-fade 0.2s; /*Google*/
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
@@ -369,7 +371,7 @@ input.invalid + label.head-label + label.bottom-label1{
   color:#FF4B4B;
   font-weight: 500;
   position: absolute;
-  top: 45px;
+  top: 50px; /*45px*/
 }
 input:focus::-webkit-input-placeholder {
     opacity: 0;
