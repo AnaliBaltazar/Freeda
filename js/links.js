@@ -7,7 +7,40 @@ function previousPage() {
     window.history.back();
 }
 function toActivateToken(event) {
+    
     event.preventDefault();
+    
+    const campos = document.querySelectorAll("input")
+    campos.forEach(campo => {validateInputValue(campo);})
+    for (let i = 0; i < campos.length; i++) {
+        const campo = campos[i];
+        
+        if (campo.value == "") {
+            alert ("Todos los campos son obligatorios.")
+            return false
+        }else if ( campo.classList.contains("invalid")) {
+            alert("Verifica que la información ingresada sea válida")
+            return false
+        }
+    }
+    
+    //  Calcular edad
+    const diaNac=parseInt(document.querySelector("select#day").value);
+    const mesNac=parseInt(document.querySelector("select#month").value);
+    const anioNac=parseInt(document.querySelector("select#year_date").value);
+    let edad, dateage;
+    if (diaNac != 0 && mesNac != 0 && anioNac != 0) {
+        const birthday = new Date(anioNac,mesNac-1,diaNac);
+        dateage = new Date(Date.now() - birthday);
+        edad = Math.abs(dateage.getUTCFullYear() - 1970);
+        if (edad < 18) {
+            alert("No cumples con la edad para contratar un seguro.")
+            return false
+        }
+    } else {
+        alert("Selecciona tu fecha de nacimiento")
+        return false
+    }
     window.location = "./3-activar-token.html";
 }
 

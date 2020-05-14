@@ -25,33 +25,36 @@ function cleanInput() {
     this.classList.remove("invalid");
 }
 
-function validateInputValue(){
-    const elmnt_value = this.value;
+function validateInputValue(element){
+    if (element.target) {
+        element= this;
+    }
+    const elmnt_value = element.value;
     let reg, result, cautionTxt;
     if (elmnt_value == "") {    //Si el campo esta vacío = INVALIDO
-        this.classList.add("invalid");
-        appendText("Esta información es necesaria",this.parentNode.querySelector('.bottom-label1'));
+        element.classList.add("invalid");
+        appendText("Esta información es necesaria",element.parentNode.querySelector('.bottom-label1'));
     } else {
-        if (this.id == "cp") {
+        if (element.id == "cp") {
             reg=/^\d{4,5}/g; //acepta 4 o 5 digitos
             result = elmnt_value.match(reg);
             if (result != null && elmnt_value.length == 4) {
-                this.value="0"+result;
+                element.value="0"+result;
             }
             cautionTxt = "El código postal no es válido";
-        }else if (this.id == "telefono"){
+        }else if (element.id == "telefono"){
             reg=/^\d{10}/g; //solo acepta 10 digitos
             result = elmnt_value.match(reg);
             cautionTxt = "Escribe tu número celular a 10 digitos";
-        }else if (this.id == "correo"){
+        }else if (element.id == "correo"){
             reg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
             result = elmnt_value.match(reg);
             cautionTxt = "La cuenta de correo no es válida";
-        }else if (this.id == "pass"){
+        }else if (element.id == "pass"){
             reg=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; 
             result = elmnt_value.match(reg);
             cautionTxt = "La contraseña no es válida";
-        }else if (this.id == "pass2"){
+        }else if (element.id == "pass2"){
             if (elmnt_value == document.querySelector("#pass").value && document.querySelector("#pass").value != "")  {
                 reg=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
             } else {
@@ -59,7 +62,7 @@ function validateInputValue(){
             }
             result = elmnt_value.match(reg);
             cautionTxt = "Las contraseñas no coinciden";
-        }else if (this.id == "year") {
+        }else if (element.id == "year") {
             reg=/^\d{4}/g; //acepta 4 o 5 digitos
             result = elmnt_value.match(reg);
             let int_result=parseInt(result);
@@ -71,11 +74,11 @@ function validateInputValue(){
             } else {
                 cautionTxt = "La información ingresada no es válida";
             }   
-        }else if (this.id == "superficie" || this.id == "terreno"){
+        }else if (element.id == "superficie" || element.id == "terreno"){
             reg=/^\d*$/; //solo acepta numeros
             result = elmnt_value.match(reg);
             if (result != null && parseInt(elmnt_value) >= 1 && parseInt(elmnt_value) <= 10000) {
-                this.value = formatNumber(elmnt_value) + " m²";
+                element.value = formatNumber(elmnt_value) + " m²";
             }else if (result != null && (parseInt(elmnt_value) < 1 || parseInt(elmnt_value) > 10000)){
                 cautionTxt = "Ingresa un número entre 1 y  10000";
                 result = null;
@@ -91,13 +94,13 @@ function validateInputValue(){
         }
 
         if (result != null) {
-            this.classList.add("valid");
-            this.classList.remove("invalid");
+            element.classList.add("valid");
+            element.classList.remove("invalid");
             
         }else{
-            this.classList.add("invalid");
-            this.classList.remove("valid");
-            appendText(cautionTxt,this.parentNode.querySelector('.bottom-label1'));
+            element.classList.add("invalid");
+            element.classList.remove("valid");
+            appendText(cautionTxt,element.parentNode.querySelector('.bottom-label1'));
         } 
     }
 }
