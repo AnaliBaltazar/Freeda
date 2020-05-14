@@ -508,7 +508,7 @@ h5{ /*Prado Churubusco*/
 #ready_screen1, #ready_screen2, #allset_screen{ /*Recuadro POP UP*/
   background-color: white;
   width: 500px;
-  height: 500px;
+  height: 550px;
   position: absolute;
   border-radius: 5px;
   text-align: center;
@@ -530,12 +530,12 @@ h5{ /*Prado Churubusco*/
   flex-flow: column-reverse;
   width: 70%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
 }
-#clabe{
+/*#clabe{
   font-size: 16px;
-}
+}*/
 .data_input_banca{
   width: 100%;
   font-weight: 700;
@@ -549,13 +549,13 @@ label.head-label, label.bottom-label1{
   width: 95%; /*Alinea el texto de arriba*/
   margin-left: auto; /*Alinea el texto de arriba*/
   margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 12px; /*Letra chiquita arriba del cuadro*/
+  font-size: 20px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
   display: none; /*Desaparese*/
   color: #912F46;
   text-align: left;
   position: absolute;
-  top: -15px;
+  top: -20px;
   left: 20px;
   -webkit-animation: silo-fade 0.2s; /*Google*/
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
@@ -598,7 +598,7 @@ select{
   margin: 0 auto;
   color: #912F46;
   background-color: white;
-  font-size: 16px;
+  font-size: 20px;
   width: 50%;
 }
 option[value="0"][disabled]{
@@ -607,9 +607,8 @@ option[value="0"][disabled]{
 select:focus{
   outline: 0;
 }
-
 .boton-aceptar{
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 0.25px;
   text-transform: uppercase;
@@ -1499,7 +1498,6 @@ button.Continuar i{
 }
 h1#screenHeader{ /*Tembló*/
   font-size: 35px;
-  font-weight: 500;
   width: 80%;
   margin: 28px auto;
   color: #912F46;
@@ -1943,7 +1941,6 @@ h3.describe_bien{
 }
 h1#screenHeader{ /*Tembló*/
   font-size: 35px;
-  font-weight: 500;
   width: 80%;
   margin: 30px auto;
   color: #912F46;
@@ -2131,7 +2128,6 @@ h3.describe_bien{
 }
 h1#screenHeader{ /*Tembló*/
   font-size: 35px;
-  font-weight: 500;
   width: 80%;
   margin: 40px auto;
   color: #912F46;
@@ -2295,6 +2291,10 @@ margin-top: 1%;
 .texto1-daños{
   font-size: 28px;
 }
+.leyenda{
+  font-size: 20px;
+}
+
 
 /*Footer*/
 .footermenu{
