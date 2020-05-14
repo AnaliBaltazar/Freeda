@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Empieza Head-->
+  <head>
+    <title>Ubicación del inmueble</title>
+    <link rel="icon" href=""> <!--Favicon-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Fuente de letra-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--Usar iconos-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <!--Documento css (Ruta css/----) -->
+    <link rel="stylesheet" href="css/evaluacion.css" > 
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Va el js/freeda.js -->
+    <script type="text/javascript" src="js/freeda.js"></script>
+
+  <!--Termina head-->
+  </head>
+
+
+ <!--Empieza body-->
+<body>
+        <nav class="navbar navbar-expand-lg tamaño-renglon-1">
+        <!--Logo de menu--> <!-- Botones del menu -->
+        <a href="./index.html"><img src="img/logo_freeda.svg" class="img-responsive navbar-brand logo-freeda"></a>  <!--Logo Freeda-->
+        
+        <button class="btn navbar-toggler boton-menu" type="button" data-toggle="collapse" data-target="#navbarCollapsible">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <!--Menu formal-->
+        <div class="collapse navbar-collapse" id="navbarCollapsible">
+            <ul class="navbar-nav  menu-freeda">
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link  texto-menu-f t1m text-nowrap">Solicitud de <span class="tmbl">pago</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Mi <span class="t2mi tmbl">póliza</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Crear <span class="t2mi tmbl">usuario</span></a>
+                </li>
+
+                <li class="nav-item posicion-item">
+                    <a href="#" class="nav-link texto-menu-f text-nowrap">Iniciar <span class="t2mi tmbl">sesión</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--BARRA DE PROGRESO-->
+    <div class="espacio-progreso"></div>
+    
+    <div class="headerBar">
+        <a href="javascript:previousPage();" class="Menu Left"><i class="material-icons icon-arrow">keyboard_arrow_left</i></a>
+        <!--<div class="logo_container"><img class="logo" src="RECURSOS/Group 3510@2x.png" alt=""></div>-->
+        <!--<a href="#" class="Menu Right"><i class="material-icons icon-arrow">keyboard_arrow_right</i></a>-->
+    </div>
+    
+    <div id="Progress">
+        <div id="bar" style="width: 87.5%;"></div>
+    </div>
+
+
+
+    <div class="container seccion1 ">
+        <div class="row texto-centrado">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--Grid-->
+                <p class="texto1-seccion1">Ubicación del inmueble</p>   
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="container contenedor-reg">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <!--reg1-->
+
+            <!--Formulario de registro -->
+            <form id="data_inmueble">
+
+                <div class="text_area_i" id="calle_inmueble_cont">
+                    <input type="text" name="calle_inmueble" id="calle" class="data_input_inmueble" placeholder="Calle y número" required>                
+                    <label class="head-label" for="calle">Calle y número donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_calle_inmueble" for="calle"></label>
+                </div>     
+                
+                <div class="text_area_i" id="cp_inmueble_cont">    
+                    <input type="text" name="cp_inmueble" id="cp" class="data_input_inmueble" placeholder="Código postal" maxlength="5" required>                
+                    <label class="head-label" for="cp">Código postal donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_cp_inmueble" for="cp"></label>
+                </div>
+                
+                <div class="text_area_i" id="estado_inmueble_cont">    
+                    <input type="text" name="estado_inmueble" id="estado" class="data_input_inmueble" placeholder="Estado" required>                
+                    <label class="head-label" for="estado">Estado donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_estado_inmueble" for="estado"></label>
+                </div>
+            
+                <div class="text_area_i" id="municipio_inmueble_cont">    
+                    <input type="text" name="municipio_inmueble" id="municipio" class="data_input_inmueble" placeholder="Municipio" required>                
+                    <label class="head-label" for="municipio">Municipio donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_municipio_inmueble" for="municipio"></label>
+                </div>
+        
+                <div class="text_area_i" id="colonia_inmueble_cont">
+                    <!-- <input type="text" name="colonia_inmueble" id="colonia_inmueble" class="data_input_inmueble" placeholder="Colonia" required>                
+                    <label class="head-label" for="colonia_inmueble">Colonia donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_colonia_inmueble" for="colonia_inmueble"></label> -->
+                    <select class="data_input_inmueble" name="colonia_inmueble" id="colonia_inmueble">
+                        <option value="selecciona" selected>Selecciona la colonia del inmueble:</option>
+                    </select>
+                </div>
+        
+                <!-- <div class="text_datos_cobro inmueble" id="datos_cobro_inmueble_cont" style="clear: both;">
+                    <input type="checkbox" name="datos_cobro_inmueble" id="datos_cobro_inmueble">
+                    <h5>Utilizar mismos datos para cobro</h5>
+                </div> -->
+               <button class="btn btn-generar" role="link" >CONTINUAR</button><!-- onclick="toPayment()" -->
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--Footer Menu-->
+<div class="footermenu">
+    <!--<a href="#" class="texto1-footermenu link-footer">Solicitud de póliza</a> -->
+    <a href="#" class="texto1-footer link-footer">Mi póliza</a>
+    <a href="#" class="texto2-footer link-footer">Crear usuario</a>
+    <a href="#" class="texto3-footer link-footer">Inicio sesión</a>
+        <a href="#" class="texto4-footer link-footer">Términos y condiciones</a>
+    <a href="#" class="texto5-footer link-footer">Aviso de privacidad</a>
+    <a href="#" class="logo-footer"><img src="img/Freeda.svg"></a>    
+</div>
+
+<div class="cover" id="cover"></div>
+<div class="center_container">
+    <div class="loader"></div>
+</div>
+
+    
+
+  <script src="./js/validar.js"></script>
+  <script src="./js/links.js"></script>
+</body>
+</html>
