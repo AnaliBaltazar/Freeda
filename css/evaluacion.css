@@ -553,13 +553,13 @@ a.nav-link:hover{
   margin-top: 15%;
 }
 .part1{
-  width: 40%;
+  width: 30%;
   margin-bottom: 5%;
 }
 .imagen-casa{
-  width: 40%;
+  width: 60%;
   margin-top: 33%;
-  margin-left: 30%;
+  margin-left: 0%;
 }
 .part2{
   width: 60%;
@@ -680,7 +680,7 @@ a.nav-link:hover{
 .imagen-casa{
   width: 70%;
   margin-top: 33%;
-  margin-left: 30%;
+  margin-left: -10%;
 }
 .part2{
   width: 60%;
@@ -696,7 +696,7 @@ td.col_l{
   width: 50%;
 }
 .texto-clase{
-  font-size: 28px;
+  font-size: 25px;
 }
 .texto-medidas{
   font-size: 20px;
@@ -791,20 +791,23 @@ width: 95%;
 .texto1{
   margin-top: 12%;
 }
+.part1{
+  margin-bottom: 0%;
+}
+.part2{
+  margin-bottom: 0%;
+}
 /*.part1, .part2{
   width: 50%;
 }*/
 .imagen-casa{
   width: 50%;
-  margin-right: 50%;
+  margin-left: 20%;
   margin-top: 15%;
 }
 .btn-siguiente{ /*Boton siguiente*/
   margin-left: 2%;
   margin-bottom: 16%;
-}
-.part1, .part2{
-  margin-bottom: 0%;
 }
 td.col_r{
   width: 90%;
@@ -812,7 +815,6 @@ td.col_r{
 td.col_l{
   width: 50%;
 }
-
 
 /*16-DATOS-ASEGURADO.HTML*/
 .texto1-seccion1{
@@ -888,7 +890,7 @@ input.invalid + label.head-label + label.bottom-label1 {
   margin-bottom: 12%;
 }
 table{
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -959,7 +961,7 @@ margin-top: 1%;
 }
 .imagen-casa{
   width: 30%;
-  margin-left: 60%;
+  margin-left: 50%;
   margin-top: 3%;
 }
 .btn-siguiente{ /*Boton siguiente*/
@@ -968,7 +970,7 @@ margin-top: 1%;
 }
 table{
   width: 80%;
-  margin-left: 2%;
+  margin-left: -5%;
 }
 .texto-clase{
   font-size: 35px;
