@@ -25,6 +25,14 @@ function toActivateToken(event) {
     }
     
     //  Calcular edad
+    let isAgeValid = ageCalc();
+    if (!isAgeValid){
+        return isAgeValid
+    }
+    window.location = "./3-activar-token.html";
+}
+
+function ageCalc() {
     const diaNac=parseInt(document.querySelector("select#day").value);
     const mesNac=parseInt(document.querySelector("select#month").value);
     const anioNac=parseInt(document.querySelector("select#year_date").value);
@@ -37,11 +45,11 @@ function toActivateToken(event) {
             alert("No cumples con la edad para contratar un seguro.")
             return false
         }
+        return true
     } else {
         alert("Selecciona tu fecha de nacimiento")
         return false
     }
-    window.location = "./3-activar-token.html";
 }
 
 function toValidateToken(event) {
@@ -154,6 +162,15 @@ function toContratar() {
 function toInsured() {
     window.location = "./15-datos-asegurado.html";
 }
+
+function toConfirm(event) {
+    event.preventDefault();
+
+    
+    
+    window.location = "./15-confirmar-datos.html";
+}
+
 /* function toPayment() {
     window.location = "./16-pago.html";
 } */
