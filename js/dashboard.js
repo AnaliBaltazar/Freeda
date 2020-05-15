@@ -140,9 +140,9 @@ function closePopup(){
 }
 
 // SECCION SINIESTRO
-let temblo= true;
-let reporte_listo=false;
-let transfer=false;
+let temblo= true; //true
+let reporte_listo=false; //false
+let transfer=false; //false
 
 const siniestro_btn=document.querySelector("#siniestro");
 siniestro_btn.addEventListener('click', showSiniestro)
@@ -212,7 +212,7 @@ function showTransfer() {
     document.querySelector("#seccion-tran2").style.display="none"
     document.querySelector("#seccion-tran3").style.display="none"
     document.querySelector("#seccion-btn").style.display="none"
-    document.querySelector("p.texto-trans").innerHTML= "Se ha transferido a la cuenta " + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de " + sessionStorage.getItem("total-indemnizar");
+    document.querySelector("p.texto-trans").innerHTML= "Será transferido a la cuenta proporcionada" + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de " + sessionStorage.getItem("total-indemnizar") + " en un plazo de 3 a 5 días hábiles";
     document.querySelector("#datos-poliza").style.display="block"
     document.querySelector("#transfer-msg").style.display="block"
 }
