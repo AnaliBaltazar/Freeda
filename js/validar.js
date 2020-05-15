@@ -2,12 +2,22 @@
 const inputElements=document.querySelectorAll('input');
 inputElements.forEach(inputElement => {
     //EVENTO ONFOCUSOUT
-    inputElement.addEventListener("focusout", validateInputValue); // AL SALIR DE LA SELECCION SE VALIDA LA INFORMACIÓN
-    //////////////////////////////////////////////////////////////
-
-    //EVENTO ONFOCUSIN - INVIERTE LA CLASE VALID-INVALID DEL CAMPO SELECCIONADO
-    inputElement.addEventListener("focusin", cleanInput)
+    if (inputElement.id != "rfcA") {
+        inputElement.addEventListener("focusout", validateInputValue); // AL SALIR DE LA SELECCION SE VALIDA LA INFORMACIÓN
+        //////////////////////////////////////////////////////////////
+    
+        //EVENTO ONFOCUSIN - INVIERTE LA CLASE VALID-INVALID DEL CAMPO SELECCIONADO
+        inputElement.addEventListener("focusin", cleanInput)
+    }
+   
 })
+
+const wordElements=document.querySelectorAll('input.word');
+wordElements.forEach(wordElement => {
+    wordElement.addEventListener("keyup" , function(){
+        this.value=removeNumbers(deleteSpecialChar(this.value));
+    })
+});
 
 /* const userform=document.querySelector('#data_crear_usua')
 userform.addEventListener('submit', validatePassword) */
@@ -40,6 +50,12 @@ function validateInputValue(element){
             result = elmnt_value.match(reg);
             if (result != null && elmnt_value.length == 4) {
                 element.value="0"+result;
+            }
+            if (result != null && result[0].length == 4 && elmnt_value.length == 5){
+                result=null;
+            }
+            if (result != null && (parseInt(result[0]) < 1000 || parseInt(result[0]) > 99999)){
+                result=null;
             }
             cautionTxt = "El código postal no es válido";
         }else if (element.id == "telefono"){
@@ -114,6 +130,14 @@ function formatNumber(n) {
     // format number 1000000 to 1,234,567
         return n.replace(/\D/g, "").replace(/^0+/,"").replace(/\B(?=(\d{3})+(?!\d))/g, ",")    
   }
+
+function deleteSpecialChar(value) {
+    return value.replace(/[`~!·€¬@#$%^&*()_|+\-=÷¿?;:'",.<>\{\}\[\]\\\/]/gi, '');
+}
+
+function removeNumbers(value) {
+    return value.replace(/\d/g, '');
+}
 
 //
 $(function () {

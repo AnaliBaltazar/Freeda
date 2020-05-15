@@ -244,6 +244,7 @@ function showPoliza() {
 //Boton VER POLIZA de popup Todo Listo
 const ver_dash_btn= document.querySelector("#verseguro");
 ver_dash_btn.addEventListener('click', function(){
+    sessionStorage.removeItem("nuevaPoliza")
     document.querySelector("#cover").style.display="none";
     document.querySelector("#allset_screen").style.display="none";
 })
