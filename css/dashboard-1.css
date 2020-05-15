@@ -99,7 +99,6 @@ a, .Right span{
 }
 
 /* PANTALLA TODO LISTO*/
-
 .icono_listo_screen{
   height: auto;
   margin-top: 30px;
@@ -108,7 +107,6 @@ a, .Right span{
 #allset_screen p{
   color: #767e8e;
 }
-
 button.Continuar{
   outline: none;
   display: flex;
@@ -180,8 +178,7 @@ a.current:link, a.current:visited{
   height: 800px;
   padding-bottom: 100px; 
 }
-/*Recuadro con casita*/
-.recuadro-info{
+.recuadro-info{/*Recuadro con casita*/
   width: 104%;
   height: 95%;
   margin-left: -2%;
@@ -220,144 +217,6 @@ td.col_r{
 table{
   border-collapse: separate;
 }
-#no-poliza, #vigencia, #numCuenta{
-  font-size: 18px;
-}
-/*BOTON AGREGAR*/
-.btn-agregar{
-  font-size: 15px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  width: 150px;
-  height: 25px;
-  border: 1px solid #FFFFFF;
-  border-radius: 5px;
-  background: #912F46 0% 0% no-repeat padding-box;
-  position: absolute;
-  right: 10%;
-}
-.btn-agregar:hover{
-  background: #C88585 0% 0% no-repeat padding-box; 
-  color: #000000;
-}
-.btn-agregar:active{
-  background: #912F46 0% 0% no-repeat padding-box;
-  border: 1px solid #000000;
-}
-.btn-agregar:focus{
-  background: #C88585 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-}
-
-/* SECCION SINIESTRO - REPORTE EPICENTRO */
-#siniestro-listo,#info-reporte,#reembolsobtn-container{
-  display: none;
-}
-.info_seg2{
-  /* width: 90%; */
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 16px;
-  border-spacing: 20px;
-  border-collapse: collapse;
-}
-.info_seg2 td{
-  vertical-align: top;
-  padding-right: 0%; 
-  padding-left: 0;
-}
-.info_seg2 td.col_l{
-  font-size: 20px;
-  color: #535965; /*Color de letra*/
-  font-weight: 500;
-  width: 50%; /*auto*/
-  text-align: left;
-  line-height: 30px; /*Sangria*/
-}
-.info_seg2 td.col_r{
-  font-size: 20px;
-  color: #767e8e; /*Color de letra*/
-  font-weight: 300;
-  width: auto;
-  text-align: right;
-  line-height: 30px; /*Sangria*/
-}
-/*------El reporte final indica que el epicentro...------*/
-.info-reporte{
-  width: 50%;
-  height: 65%;
-  /*margin-left: 5%; */
-  background-color: #F4F6FA ; /*#F4F6FA*/
-  border-radius: 10px;
-  margin-left: 26%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 35px;
-  background-image: url("../img/Grieta.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 100% 0%;
-  background-size: 60%;
-}
-.texto1-reporte{
-  font-size: 25px;
-  text-align: center;
-  letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 47px; /*Sangria*/
-  color: #534965;
-  /*padding-left: 80px;
-  padding-right: 80px; */
-  padding: 15px 80px 5px 80px;
-}
-.texto2-reporte{
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-  color: #912F46;
-  padding: 10px 80px 5px 80px;
-}
-#magnitud, #porcentaje{
-}
-/*SeccionBoton Resgistarse*/
-.seccion-boton{
-  max-width: 900px;
-  padding-top: 100px;
-  /*background: #cc99cc;        /*PRUEBA*/
-} 
-.boton-reembolso{
-  display: block;
-  /*position: absolute;
-  top:20%;
-  margin-left: 38%;*/
-  border: 1px solid #FFFFFF; /*Margen de boton*/
-  border-radius: 5px; /*Ovalado/redondo*/
-  width: 240px; /*Tamaño*/
-  height: 40px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #FFFFFF; /*Color de letra*/
-  text-transform: uppercase; /*Todas mayusculas*/
-  opacity: 1;
-  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-weight: 500;
-}
-.boton-reembolso:hover{
-  background: #C88585 0% 0% no-repeat padding-box; 
-  color: #000000;
-}
-.boton-reembolso:active{
-  background: #912F46 0% 0% no-repeat padding-box;
-  border: 1px solid #000000;
-}
-.boton-reembolso:focus{
-  background: #C88585 0% 0% no-repeat padding-box;
-  border: 2px solid #C88585;
-}
-/* ************************************ */
 
 /*DOCUMENTOS VER Y DESCARGA*/
 .documentos{
@@ -443,12 +302,141 @@ h5{ /*Prado Churubusco*/
   border-color: #912F46;
   color: #912F46;
 }
+/*#no-poliza, #vigencia, #numCuenta{
+  font-size: 18px;
+}*/
+.btn-agregar{/*BOTON AGREGAR*/
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 150px;
+  height: 25px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background: #912F46 0% 0% no-repeat padding-box;
+  position: absolute;
+  right: 10%;
+}
+.btn-agregar:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.btn-agregar:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.btn-agregar:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+/* SECCION SINIESTRO - REPORTE EPICENTRO */
+#siniestro-listo,#info-reporte,#reembolsobtn-container{
+  display: none;
+}
+.info_seg2{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  border-spacing: 15px; /*20px*/
+  /*border-collapse: collapse;*/
+}
+.info_seg2 td{
+  vertical-align: top;
+  padding-right: 0%; 
+  padding-left: 0;
+}
+.info_seg2 td.col_l{
+  font-size: 22px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+.info_seg2 td.col_r{
+  font-size: 22px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  width: auto;
+  text-align: right;
+  line-height: 30px; /*Sangria*/
+}
 
-
-
+/*------El reporte final indica que el epicentro...------*/
+.info-reporte{
+  width: 50%;
+  height: 65%;
+  /*margin-left: 5%; */
+  background-color: #F4F6FA ; /*#F4F6FA*/
+  border-radius: 10px;
+  margin-left: 26%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  background-image: url("../img/Grieta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 100% 0%;
+  background-size: 60%;
+}
+.texto1-reporte{
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 47px; /*Sangria*/
+  color: #534965;
+  /*padding-left: 80px;
+  padding-right: 80px; */
+  padding: 15px 80px 5px 80px;
+}
+.texto2-reporte{
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: #912F46;
+  padding: 10px 80px 5px 80px;
+}
+#magnitud, #porcentaje{
+}
+/*SeccionBoton Resgistarse*/
+.seccion-boton{
+  max-width: 900px;
+  padding-top: 100px;
+  /*background: #cc99cc;        /*PRUEBA*/
+} 
+.boton-reembolso{
+  display: block;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 240px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 18px;
+}
+.boton-reembolso:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.boton-reembolso:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.boton-reembolso:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
+/* ************************************ */
 
 /*POP-UP.html*/
-/*SeccionBoton SIGUIENTE*/
 .seccion-siniestro{
   max-width: 900px;
   padding-top: 130px;
@@ -467,9 +455,7 @@ h5{ /*Prado Churubusco*/
   vertical-align: text-bottom;
   text-align: center;
 }
-
-/*Boton close POP UP*/
-.btn-close{
+.btn-close{/*Boton close POP UP*/
   width: 10%;
   background: none;
   border: none;
@@ -488,12 +474,11 @@ h5{ /*Prado Churubusco*/
   color: #912F46;
   font-size: 40px;
 }
-
-
 .icono_micro_screen{
   height: auto;
 }
 
+/*********************************/
 /* POPUP AGREGAR CUENTA */
 #cover{ /*Cubre toda la pantalla*/
   position:fixed;
@@ -522,7 +507,6 @@ h5{ /*Prado Churubusco*/
   background-position: 100% 0%;
   background-size: 60%;
 }
-
 .texto_area_b{ /*Nombre completo, Cuenta CLABE*/
   text-align: center;
   margin: 30px auto;
@@ -633,11 +617,12 @@ margin-top: 5%;
   border: 2px solid #C88585;
 }
 
+/*********************************/
+/*REPORTE-DAÑOS.HTML*/
 .reporte-daños{
   width: 60%;
   background-color: #F4F6FA ; /*#F4F6FA*/
   border-radius: 10px;
-  
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -650,10 +635,8 @@ margin-top: 5%;
   background-position: 100% 0%;
   background-size: 60%;
   display: none;
-
   padding-bottom: 20px;
 }
-/*REPORTE-DAÑOS.HTML*/
 #bienesInquilino{ /*Acomoda los botones*/
   display: flex; /*Acomoda los botones de manera horizontal*/
   flex-direction: row;
@@ -682,7 +665,6 @@ h3{
   font-weight: normal;
   color: #989A9B;
 }
-
 /*Ventana Reporte daños*/
 /*Pantalla de fondo*/
 #cover-daños{
@@ -709,8 +691,6 @@ h3{
   z-index: 100;
   display: none;
 }
-
-
 /*Boton cerrar ventana*/
 .valueScreen i#close{
   font-size: 13px;
@@ -854,8 +834,6 @@ button.bien.activeHover:hover .icono_bienes .cls-2e,
 button.bien.activeHover:hover .icono_bienes .cls-2t{
     fill: #989A9B !important; /*GRIS*/
 }
-
-
 .icono_bienes.ico_selected .cls-1m, 
 .icono_bienes.ico_selected .cls-2m, 
 .icono_bienes.ico_selected .cls-1c, 
@@ -867,14 +845,12 @@ button.bien.activeHover:hover .icono_bienes .cls-2t{
 .icono_bienes.ico_selected .cls-2t{
     stroke: #912F46; /*AZUL SI SE SELECCIONA*/ 
 }
-
 .icono_bienes.ico_selected .cls-2m, 
 .icono_bienes.ico_selected .cls-2ed, 
 .icono_bienes.ico_selected .cls-2d, 
 .icono_bienes.ico_selected .cls-3a{
     fill: #912F46;  /*AZUL*/
 }
-
 .bien{ /*BOTONES(BANNER,ICONO,DESCRIPCIÓN)*/
   border: 1.5px solid #912F46; /*GRIS*/
   width: 250px;
@@ -921,7 +897,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   top: 0;
     /* display: none; */
 }
-
 .contenedor{
   max-width: 900px;
   padding-top: 40px;
@@ -930,7 +905,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   /*background: #cc99cc;        /*PRUEBA*/
 }
 .texto1-total{
-  font-size: 35px;
+  font-size: 25px;
   color: #000000;
   text-align: center;
 }
@@ -943,9 +918,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 /*BTN FIRMA*/
 .boton1-firma{
-  /*position: absolute;
-  margin-left: -10%;
-  margin-top: 2%;*/
   display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
@@ -957,8 +929,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 20px;
 }
 .boton1-firma:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
@@ -973,8 +944,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   border: 2px solid #C88585;
 }
 /* ********************************************************************************* */
-
-
 
 /*FIRMA.HTML*/
 .seccion-firma{
@@ -1018,11 +987,12 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-top: -4%;
 } 
 .capturar-firma{ /*BOTÓN CAPTURA FIRMA*/
+  display: block;
   width: 25.8%; /*Tamaño del boton*/
   /*position: absolute;*/
-  margin-top: 10%; /*Mover hacia arriba*/
-  margin-left: 35%;
-  text-align: center; /*Alineacion del texto del boton*/
+ /* margin-top: 10%; 
+  margin-left: 35%;*/
+  text-align: center; 
   color: #912F46;
   font-size: 18px;
   background: #FFFFFF;
@@ -1041,14 +1011,19 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   border: 2px solid #C88585;
   color: #912F46;
 }
+/*.seccion-espacio{
+  max-width: 900px;
+  padding-top: 100px;
+  background: #cc99cc;        /*PRUEBA
+}*/
 #signature-pad-footer-container #capturar{
   margin-top: 20px;
 }
 
 /* **************************************************************** */
 
-/*UNDERLINEHOVER FIRMA.HTML*/
-.underlineHover1-1{ /*Cobertura, ver póliza Siniestro*/
+/*UNDERLINEHOVER FIRMA.HTML
+.underlineHover1-1{ 
   margin-left: 10%;
   font-size: 25px;
   color: #707070;
@@ -1057,7 +1032,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .underlineHover1-1:hover {
   color: #912F46;
 }
-
 .underlineHover2-2{
   font-size: 25px;
   color: #707070;
@@ -1066,7 +1040,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .underlineHover2-2:hover {
   color: #912F46;
 }
-
 .underlineHover3-3{
   font-size: 25px;
   color: #707070;
@@ -1074,10 +1047,10 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 } 
 .underlineHover3-3:hover {
   color: #912F46;
-}
+}*/
 
-
-/*Seccion1*/
+/******************************************/
+/*TRANSFERENCIA CONFIRMACIÓN*/
 .seccion-tran1{
   position: static;
   width: 100%;
@@ -1090,7 +1063,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   color: #000000; 
   font-size: 25px;
 }
-
 .seccion-tran2{
   position: static;
   width: 100%;
@@ -1119,7 +1091,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 #cuenta-transfer{
 }
-
 /*BOTONES SI NO */
 .seccion-btn{
   position: static;
@@ -1154,7 +1125,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   border: 2px solid #C88585;
   color: #912F46;
 }
-
 /*NO*/
 .boton-no{
   width: 10%; /*Tamaño 200px*/
@@ -1186,7 +1156,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   background: aqua;
 } 
 
-/*Transferencia Realizada*/
+/*TRANSFERENCIA REALIZADA*/
 #datos-poliza{
   display: none;
 }
@@ -1207,14 +1177,15 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   background-size: 60%;
   display: none;
 }
-
 .texto-trans{
   font-size: 30px;
   font-weight: 700;
   text-align: center;
   color: #912F46;
-  padding: 55px 80px 5px 80px;
+  /*padding: 55px 80px 5px 80px;*/
 }
+
+
 
 /*Animations*/
 @-webkit-keyframes silo-fade {
@@ -1343,13 +1314,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-top: -3%;
 }
 
-
-
-
-
-
-
-
 /*PARTE Dashboard
 .tables{  
     display: flex;
@@ -1417,15 +1381,13 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-right: -4%;
   margin-top: -5%;
 }
-
-
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   display: none;
 }
 .texto-notificacion{
   display: none;
 }
-
+/*-------------------------------------*/
 /*COBERTURA, VER PÓLIZA, SINIESTRO*/
 .underlineHover1{
   font-size: 22px;
@@ -1439,7 +1401,9 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   font-size: 22px;
   margin-left: 5%;
 }
-/*DATOS DEL ASEGURADO*/
+
+/*-------------------------------------*/
+/*DATOS DEL ASEGURADO (direccion)*/
 .info_seg{
   border-spacing: 10px;
 }
@@ -1463,7 +1427,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
   margin:10px 5px;
-
 }
 .doc_btns{
   /* margin: 5px; */
@@ -1471,20 +1434,17 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   flex-direction: row;
   align-items: center;
 }
-
-/* PANTALLA TODO LISTO*/
+/*-------------------------------------*/
+/*PANTALLA TODO LISTO*/
 #allset_screen{
   width: 80%;
   left: 10%;
 }
-
 button.Continuar i{
   width: 20px;
 }
 
 /*****************************************/
-
-
 /*POPUP.html*/
 .btn-siniestro{
   margin-top: 56%;
@@ -1507,86 +1467,43 @@ h1#screenHeader{ /*Tembló*/
   font-size: 25px;
   margin: 5px auto;
 }
-
 .icono_micro_screen{
   margin-top: 70px;
   margin-right: 70%;
   width: 65px;
-  }
-
-/*Reporte-daños.html*/
-.texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
-  font-size: 18px;
-}
-
-h3{
-  font-size: 16px;
-}
-#bienesInquilino{
-  width: 100%;
-  margin-top: 10px; 
-}
-.bien{
-  border: 1.5px solid #C7C7C7;
-  width: 160px;
-  height: 160px;
-  margin: auto; /*20px*/
-}
-.icon_content{
-  top: 22px;
-  margin-top: 15px;
-}
-h3.describe_bien{
-  font-size: 14px;
-}
-.banner_inq{
-  margin-top: 3%;
-}
-.texto1-total, .texto2-total{
-  font-size: 25px;
-}
-.boton1-firma{
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10%;
-}
-
-/*Ventana*/
-/* button.Aceptar{
-  width: 90%;
-  height: 66px;
-  /*margin-top: 60px;*/
-/*} */
-button.button-minus, button.button-plus{
-  height: 29px;
-}
-/*22-FIRMA.HTML*/
-.underlineHover1-{ /*Cobertura, ver póliza Siniestro*/
-  margin-left: 10%;
-}
-.seccion-firma{
-  width: 80%;
-  height: 60%;
-  margin-left: 10%;
-}
-.container-1{
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 3%;
-}
-.container-2{
-  width: 80%;
-  margin-left: 10%;
-  margin-top: -9%;
-}
-.capturar-firma{
-  width: 35%;
-  margin-left: 34%;
-  margin-top: 3%; 
 }
 
 /*DASHBOARD2 REEMBOLSO*/
 /*------El reporte final indica que el epicentro...------*/
+.info_seg2{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  border-spacing: 15px; /*20px*/
+  /*border-collapse: collapse;*/
+}
+.info_seg2 td{
+  vertical-align: top;
+  padding-right: 0%; 
+  padding-left: 0;
+}
+.info_seg2 td.col_l{
+  font-size: 20px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+.info_seg2 td.col_r{
+  font-size: 20px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  width: auto;
+  text-align: right;
+  line-height: 30px; /*Sangria*/
+}
 .info-reporte{ /*Recuadro con grieta*/
   width: 90%;
   margin-left: 5%;
@@ -1609,6 +1526,78 @@ button.button-minus, button.button-plus{
   margin-right: auto;
 }
 
+/*********************************/
+/*REPORTE-DAÑOS.html*/
+.texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
+  font-size: 18px;
+}
+h3{
+  font-size: 16px;
+}
+#bienesInquilino{
+  width: 100%;
+  margin-top: 10px; 
+}
+.bien{
+  border: 1.5px solid #C7C7C7;
+  width: 160px;
+  height: 160px;
+  margin: auto; /*20px*/
+}
+.icon_content{
+  top: 22px;
+  margin-top: 15px;
+}
+h3.describe_bien{
+  font-size: 15px;
+}
+.banner_inq{
+  margin-top: 3%;
+}
+.texto1-total, .texto2-total{
+  font-size: 25px;
+}
+.boton1-firma{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+}
+/*Ventana*/
+/* button.Aceptar{
+  width: 90%;
+  height: 66px;
+  /*margin-top: 60px;*/
+/*} */
+button.button-minus, button.button-plus{
+  height: 29px;
+}
+/************************************/
+/*22-FIRMA.HTML*/
+/*.underlineHover1-{
+  margin-left: 10%;
+}*/
+.seccion-firma{
+  width: 80%;
+  height: 60%;
+  margin-left: 10%;
+}
+.container-1{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+.container-2{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -9%;
+}
+.capturar-firma{
+  width: 35%;
+  margin-left: 34%;
+  margin-top: 3%; 
+}
+
+/*------------------------------*/
 /*BOTON NO Y SI*/
 .boton-si{
   width: 20%;
@@ -1620,9 +1609,18 @@ button.button-minus, button.button-plus{
 }
 
 
+/*------------------------------*/
+/*TRANSFERENCIA REALIZADA*/ 
 .info-trans{
-  margin-bottom: 50%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
+.texto-trans{
+  padding-top: 40px;
+  font-size: 20px;
+}
+
 /*Footer*/
 .logo-footer{
   display: none;
@@ -1640,13 +1638,10 @@ button.button-minus, button.button-plus{
   margin-left: 12%;
   margin-top: 0%;
 }
-
 .btn-agregar{
   margin-right: -4%;
   margin-top: -5%;
 }
-
-
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   display: none;
 }
@@ -1665,12 +1660,12 @@ button.button-minus, button.button-plus{
   margin-left: 5%;
 } 
 
+/*-------------------------------------*/
+/*DATOS DEL ASEGURADO (direccion)*/
 .info_seg{
   border-spacing: 10px;
 }    
-
-
-/*Contenedor descarga*/
+/*VER Y DESCARGA*/
 .right_col{
   width: 100%; 
 }
@@ -1717,6 +1712,65 @@ margin:10px 0;
 button i{
   width: 30px;
 }
+
+/*DASHBOARD2 REEMBOLSO*/
+.info_seg2{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  border-spacing: 15px; /*20px*/
+  /*border-collapse: collapse;*/
+}
+.info_seg2 td{
+  vertical-align: top;
+  padding-right: 0%; 
+  padding-left: 0;
+}
+.info_seg2 td.col_l{
+  font-size: 20px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+.info_seg2 td.col_r{
+  font-size: 20px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  width: auto;
+  text-align: right;
+  line-height: 30px; /*Sangria*/
+}
+/*------El reporte final indica que el epicentro...------*/
+.info-reporte{ /*Recuadro con grieta*/
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+.texto1-reporte{
+  font-size: 25px;
+  line-height: 25px;
+  padding-top: 8%;
+}
+.texto2-reporte{
+  font-size: 25px;
+  font-weight: 400;
+}
+.boton-reembolso{
+  /*margin-top:-38%;
+  margin-left: 32%;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+
+
+
+
 /*****************************************/
 
 /*Pop up*/
@@ -1805,32 +1859,6 @@ h3.describe_bien{
   margin-top: 0%; 
 }
 
-/*DASHBOARD2 REEMBOLSO*/
-/*------El reporte final indica que el epicentro...------*/
-.info-reporte{ /*Recuadro con grieta*/
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 8%;
-  margin-bottom: 10%;
-}
-.texto1-reporte{
-  font-size: 25px;
-  line-height: 25px;
-  padding-top: 8%;
-}
-.texto2-reporte{
-  font-size: 25px;
-  font-weight: 400;
-}
-.boton-reembolso{
-  /*margin-top:-38%;
-  margin-left: 32%;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-}
-
-
 /*BOTON NO Y SI*/
 .boton-si{
   width: 20%;
@@ -1839,6 +1867,18 @@ h3.describe_bien{
 .boton-no{
   margin-left: 10%;
   width: 20%;
+}
+
+/*------------------------------*/
+/*TRANSFERENCIA REALIZADA*/ 
+.info-trans{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.texto-trans{
+  padding-top: 40px;
+  font-size: 22px;
 }
 
 /*Footer*/
@@ -1874,7 +1914,7 @@ h3.describe_bien{
 }
 
 
-/*Dashboard2.html*/
+/*COBERTURA VER PÓLIZA SINIESTRO*/
 .underlineHover1{
   margin-left: 20%;
 } 
@@ -1885,7 +1925,7 @@ h3.describe_bien{
   margin-left: 5%;
 } 
 
-/*Recuadro con casita*/
+/*DAHSBOARD*/
 /*AGREGÓ PARA ACOMODAR RECUADRO*/
 .recuadro-info{
   width: 85%;
@@ -1960,9 +2000,11 @@ h1#screenHeader{ /*Tembló*/
 .texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
   font-size: 18px;
 }
-
-.texto1-total, .texto2-total{
+.texto1-total{
   font-size: 25px;
+}
+.texto2-total{
+  font-size: 30px;
 }
 .boton1-firma{
   margin-right: auto;
@@ -1975,7 +2017,6 @@ h1#screenHeader{ /*Tembló*/
   height: 210px;
   margin: 20px;
 }
-
 #bienesInquilino{
   width: 100%;
   margin-top: 10px;    
@@ -1994,8 +2035,9 @@ h3.describe_bien{
 .banner_inq{
   margin-top: 7%;
 }
+
 /*22-FIRMA.HTML*/
-.underlineHover1-1{
+/*.underlineHover1-1{
   margin-left: 5%;
 }
 .underlineHover2-2{
@@ -2003,7 +2045,7 @@ h3.describe_bien{
 } 
 .underlineHover3-3{
  margin-left: 5%;
-}
+}*/
 .seccion-firma{
  width: 80%;
  height: 60%;
@@ -2020,11 +2062,40 @@ h3.describe_bien{
  margin-top: -9%;
 }
 .capturar-firma{
- width: 25%;
- margin-left: 38%; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*DASHBOARD2 REEMBOLSO*/
+.info_seg2{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  border-spacing: 15px; /*20px*/
+  /*border-collapse: collapse;*/
+}
+.info_seg2 td{
+  vertical-align: top;
+  padding-right: 0%; 
+  padding-left: 0;
+}
+.info_seg2 td.col_l{
+  font-size: 20px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+.info_seg2 td.col_r{
+  font-size: 20px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  width: auto;
+  text-align: right;
+  line-height: 30px; /*Sangria*/
+}
 /*------El reporte final indica que el epicentro...------*/
 .info-reporte{ /*Recuadro con grieta*/
   width: 60%;
@@ -2032,7 +2103,8 @@ h3.describe_bien{
   /*height: 70%;
   margin-left: 5%; */
   margin-left: auto;
-   margin-right: auto;
+  margin-right: auto;
+  margin-top: 3%;
 }
 .boton-reembolso{
   /*display: block;
@@ -2042,6 +2114,21 @@ h3.describe_bien{
   margin-right: auto;
   margin-top: 7%;
 }
+
+/*------------------------------*/
+/*TRANSFERENCIA REALIZADA*/ 
+.info-trans{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.texto-trans{
+  padding-top: 40px;
+  font-size: 25px;
+}
+
+
+
 /*Footer*/
 .footermenu{
   padding-right: 150px;
@@ -2065,7 +2152,6 @@ h3.describe_bien{
   margin-left: 75%;
   margin-top: 1%;
 }
-
 .texto-ayuda{ /*Texto Centro de ayuda se oculta*/
   visibility: visible;
 }
@@ -2073,7 +2159,7 @@ h3.describe_bien{
   display: all;
 }
 
-/*Dashboard2.html*/
+/*COBERTURA VER PÓLIZA SINIESTRO*/
 .underlineHover1{
   margin-left: 30%;
 } 
@@ -2091,7 +2177,6 @@ h3.describe_bien{
   margin-left: auto;
   margin-right: auto;
 }
-
 .info_seg{
   border-spacing: 15px;
 }
@@ -2207,13 +2292,58 @@ button.button-minus, button.button-plus{
   margin-top: -3%;
 }
 .capturar-firma{
-  width: 20%;
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*------El reporte final indica que el epicentro...------*/
+/*DASHBOARD2 REEMBOLSO*/
+.info_seg2{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  border-spacing: 15px; /*20px*/
+  /*border-collapse: collapse;*/
+}
+.info_seg2 td{
+  vertical-align: top;
+  padding-right: 0%; 
+  padding-left: 0;
+}
+.info_seg2 td.col_l{
+  font-size: 20px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+.info_seg2 td.col_r{
+  font-size: 20px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  width: auto;
+  text-align: right;
+  line-height: 30px; /*Sangria*/
+}
+.info-reporte{
+  margin-top: 3%;
+}
 .boton-reembolso{
   /*margin-left: 36%;*/
   margin-top: 10%;
+}
+
+/*------------------------------*/
+/*TRANSFERENCIA REALIZADA*/ 
+.info-trans{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.texto-trans{
+  padding-top: 40px;
+  font-size: 25px;
 }
 /*Footer*/
 .footermenu{
@@ -2268,6 +2398,37 @@ margin-top: 1%;
   left: 60%;
   margin-top: -6%;
 }
+
+/*---------------*/
+.info_seg2{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  border-spacing: 15px; /*20px*/
+  /*border-collapse: collapse;*/
+}
+.info_seg2 td{
+  vertical-align: top;
+  padding-right: 0%; 
+  padding-left: 0;
+}
+.info_seg2 td.col_l{
+  font-size: 20px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  width: 50%; /*auto*/
+  text-align: left;
+  line-height: 30px; /*Sangria*/
+}
+.info_seg2 td.col_r{
+  font-size: 20px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  width: auto;
+  text-align: right;
+  line-height: 30px; /*Sangria*/
+}
 /*------El reporte final indica que el epicentro...------*/
 .info-reporte{
   width: 50%;
@@ -2284,16 +2445,27 @@ margin-top: 1%;
   margin-top: 10%;
 }
 
-/*REPORTE DE DAÑOS*/
-.bien{
+/*------------------------------*/
+/*TRANSFERENCIA REALIZADA*/ 
+.info-trans{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.texto-trans{
+  padding-top: 40px;
+  font-size: 25px;
+}
 
-}
+/*REPORTE DE DAÑOS*/
 .texto1-daños{
-  font-size: 28px;
+  font-size: 25px;
 }
+/*POP-UP CUENTA CLABE */
 .leyenda{
   font-size: 20px;
 }
+
 
 
 /*Footer*/
