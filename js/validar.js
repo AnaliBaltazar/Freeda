@@ -40,7 +40,7 @@ function validateInputValue(element){
         element= this;
     }
     const elmnt_value = element.value;
-    let reg, result, cautionTxt;
+    let reg, result, result2, cautionTxt;
     if (elmnt_value == "") {    //Si el campo esta vacío = INVALIDO
         element.classList.add("invalid");
         appendText("Esta información es necesaria",element.parentNode.querySelector('.bottom-label1'));
@@ -60,8 +60,16 @@ function validateInputValue(element){
             cautionTxt = "El código postal no es válido";
         }else if (element.id == "telefono"){
             reg=/^\d{10}/g; //solo acepta 10 digitos
+            reg2=/(\d{5})\1/g;
             result = elmnt_value.match(reg);
-            cautionTxt = "Escribe tu número celular a 10 digitos";
+            result2 = elmnt_value.match(reg2);
+            if (result != null && result2 != null) {
+                result = null;
+                cautionTxt = "Escribe un número celular válido";
+            }else{
+                cautionTxt = "Escribe tu número celular a 10 digitos";
+            }
+            
         }else if (element.id == "correo"){
             reg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
             result = elmnt_value.match(reg);
@@ -103,8 +111,14 @@ function validateInputValue(element){
                 result = null;
             }
             
+        }else if(element.id == "calle"){
+            reg = /^[á-üa-zA-ZÁ-Ü0-9][^_!¡'¬∞¢ºª°ı•£‰ç?÷?¿/\\+=@$%ˆ&*(){}|~<>;:[\]]{2,}$/g;
+            result = elmnt_value.match(reg);
+            cautionTxt = "La información ingresada no es válida";
+        }else if(element.id == "datos_cobro_aseg" || element.id == "datos_cobro_inmueble"){
+            return
         }else{  /*  */
-            reg = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/g;
+            reg = /^[á-üa-zA-ZÁ-Ü][^0-9_!¡'\¬∞¢ºª°ı•£‰ç?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/g;
             result = elmnt_value.match(reg);
             cautionTxt = "La información ingresada no es válida";
         }
