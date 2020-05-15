@@ -241,6 +241,7 @@ td.col_r{
   padding: 10px;
   font-size: 20px;
   position: relative;
+  margin-bottom: 4%;
 }
 .texto_area_regis{ /*Nombre de usuario, Apellidos*/
   text-align: center;
@@ -251,6 +252,7 @@ td.col_r{
   padding: 10px;
   font-size: 20px;
   position: relative;
+  margin-bottom: 4%;
 }
 .data_input_aseg, .data_input_inmueble{ /*HACER MAS GRANDE LOS RECUADROS*/
   width: 100%;
@@ -265,13 +267,13 @@ label.head-label, label.bottom-label1{
   width: 95%; /*Alinea el texto de arriba*/
   margin-left: auto; /*Alinea el texto de arriba*/
   margin-right: auto; /*Alinea el texto de arriba*/
-  font-size: 15px; /*Letra chiquita arriba del cuadro*/
+  font-size: 20px; /*Letra chiquita arriba del cuadro*/
   font-weight: 300; 
   display: none; /*Desaparese*/
   color: #989A9B;
   text-align: left;
   position: absolute;
-  top: -15px;
+  top: -20px;
   left: 20px;
   -webkit-animation: silo-fade 0.2s; /*Google*/
   -moz-animation: silo-fade 0.2s; /*Motzilla*/
@@ -287,7 +289,7 @@ input.invalid + label.head-label + label.bottom-label1{
   color:#FF4B4B;
   font-weight: 500;
   position: absolute;
-  top: 45px;
+  top: 50px;
   left: 20px;
 }
 input:focus::-webkit-input-placeholder {
@@ -311,6 +313,7 @@ input.quantity-field{
 }
 
 .label-date{
+  font-size: 20px;
   position: absolute;
   margin-left: 32%;
 }
