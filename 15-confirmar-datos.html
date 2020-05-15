@@ -31,6 +31,7 @@
 
     <!-- Va el js/freeda.js -->
     <script type="text/javascript" src="js/freeda.js"></script>
+    <script type="text/javascript" src="js/preloadConfirm.js"></script>
 
   <!--Termina head-->
   </head>
@@ -100,50 +101,79 @@
 
             <!--Formulario de confirmacion -->
             <div id="confirmacion">
-                <!--RFC (Genera)-->
-                <div class="texto_area_regis" id="rfc-c">
-                    <input type="text" name="rfc" id="rfc" class="data_input_aseg" placeholder="RFC">
-                    <label class="head-label" for="rfc">RFC</label>
-                </div>
-
-                <!--Nombre de usuario-->
-                <div class="texto_area_regis" id="nombre_usua">
-                    <input type="text" name="nombre" id="nombre" class="data_input_aseg" placeholder="Nombre completo">
-                    <label class="head-label" for="nombre">Nombre completo</label>
-                </div>
-
-                <!--Fecha de nacimiento-->
-                <div class="texto_area_regis" id="fecha_nacimiento">
-                    <input type="text" name="fechaN" id="fechaN" class="data_input_aseg" placeholder="Fecha de nacimiento">
-                    <label class="head-label" for="materno">Fecha de nacimiento</label>
-                </div>
-
-                <div class="text_area_i" id="cp_inmueble_cont">    
-                    <input type="text" name="cp_inmueble" id="cp" class="data_input_inmueble" placeholder="Código postal" maxlength="5" required>                
-                    <label class="head-label" for="cp">Código postal donde se ubica el inmueble</label>
-                </div>
-
-                <div class="text_area_i" id="estado_inmueble_cont">    
-                    <input type="text" name="estado_inmueble" id="estado" class="data_input_inmueble" placeholder="Estado" required>                
-                    <label class="head-label" for="estado">Estado donde se ubica el inmueble</label>
+                
+                <div class="text_area_r" id="calle_inmueble_cont">
+                    <input type="text" name="calle_inmueble" id="calle_inmueble" class="data_review" placeholder="Calle y número" required disabled="disabled">                
+                    <label class="head-label" for="calle_inmueble">Calle y número donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_calle_inmueble" for="calle_inmueble"></label>
+                </div>     
+                
+                <div class="text_area_r" id="cp_inmueble_cont">    
+                    <input type="text" name="cp_inmueble" id="cp_inmueble" class="data_review" placeholder="Código postal" required disabled="disabled">                
+                    <label class="head-label" for="cp_inmueble">Código postal donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_cp_inmueble" for="cp_inmueble"></label>
                 </div>
             
-                <div class="text_area_i" id="municipio_inmueble_cont">    
-                    <input type="text" name="municipio_inmueble" id="municipio" class="data_input_inmueble" placeholder="Municipio" required>                
-                    <label class="head-label" for="municipio">Municipio donde se ubica el inmueble</label>
+                <div class="text_area_r" id="colonia_inmueble_cont">
+                    <input type="text" name="colonia_inmueble" id="colonia_inmueble" class="data_review" placeholder="Colonia" required disabled="disabled">                
+                    <label class="head-label" for="colonia_inmueble">Colonia donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_colonia_inmueble" for="colonia_inmueble"></label>
+                </div>
+            
+                <div class="text_area_r" id="municipio_inmueble_cont">    
+                    <input type="text" name="municipio_inmueble" id="municipio_inmueble" class="data_review" placeholder="Municipio" required disabled="disabled">                
+                    <label class="head-label" for="municipio_inmueble">Municipio donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_municipio_inmueble" for="municipio_inmueble"></label>
                 </div>
         
-                <div class="text_area_i" id="colonia_inmueble_cont">
-                    <input type="text" name="colonia_inmueble" id="colonia_inmueble" class="data_input_inmueble" placeholder="Colonia" required>                
-                    <label class="head-label" for="colonia_inmueble">Colonia donde se ubica el inmueble</label>
+                <div class="text_area_r" id="estado_inmueble_cont">    
+                    <input type="text" name="estado_inmueble" id="estado_inmueble" class="data_review" placeholder="Estado" required disabled="disabled">                
+                    <label class="head-label" for="estado_inmueble">Estado donde se ubica el inmueble</label>
+                    <label class="bottom-label1" id="bottoml_estado_inmueble" for="estado_inmueble"></label>
                 </div>
-                <div class="text_area_i" id="calle_inmueble_cont">
-                    <input type="text" name="calle_inmueble" id="calle" class="data_input_inmueble" placeholder="Calle y número" required>                
-                    <label class="head-label" for="calle">Calle y número donde se ubica el inmueble</label>
-                </div>     
+                
+                <div class="text_area_r" id="rfc_cont">    
+                    <input type="text" name="rfc_aseg" id="rfc_aseg" class="data_review" placeholder="RFC" required disabled="disabled">                
+                    <label class="head-label" for="rfc_aseg">RFC del asegurado</label>
+                    <label class="bottom-label1" id="bottoml_rfc_aseg" for="rfc_aseg"></label>
+                </div>
+
+                <div class="text_area_r" id="namec_aseg_cont">    
+                    <input type="text" name="namec_aseg" id="namec_aseg" class="data_review" placeholder="Nombre completo" required disabled="disabled">                
+                    <label class="head-label" for="namec_aseg">Nombre completo del asegurado</label>
+                    <label class="bottom-label1" id="bottoml_namec_aseg" for="namec_aseg"></label>
+                </div>
+        
+                <div class="text_area_r" id="type_cont">
+                    <input type="text" name="type" id="type" class="data_review" placeholder="Tipo" required disabled="disabled">                
+                    <label class="head-label" for="type">Tipo de inmueble</label>
+                    <label class="bottom-label1" id="bottoml_type" for="type"></label>
+                </div>
+            
+                <div class="text_area_r" id="clase_cont">
+                    <input type="text" name="clase_aseg" id="clase_aseg" class="data_review" placeholder="Clase" required disabled="disabled">                
+                    <label class="head-label" for="clase_aseg">Clase de inmueble</label>
+                    <label class="bottom-label1" id="bottoml_clase_aseg" for="clase_aseg"></label>
+                </div>
+            
+                <div class="text_area_r" id="years_cont">    
+                    <input type="text" name="years_inm" id="years_inm" class="data_review" placeholder="Años" required disabled="disabled">                
+                    <label class="head-label" for="years_inm">Años del inmueble</label>
+                    <label class="bottom-label1" id="bottoml_years_inm" for="years_inm"></label>
+                </div>
+                <div class="text_area_r" id="superficie_cont">    
+                    <input type="text" name="superficie_inm" id="superficie_inm" class="data_review" placeholder="Superficie habitable" required disabled="disabled">                
+                    <label class="head-label" for="superficie_inm">Superficie construida del inmueble</label>
+                    <label class="bottom-label1" id="bottoml_superficie_inm" for="supericie_inm"></label>
+                </div>
+                <div class="text_area_r" id="terreno_cont">    
+                    <input type="text" name="terreno_inm" id="terreno_inm" class="data_review" placeholder="Metros de terreno" required disabled="disabled">                
+                    <label class="head-label" for="terreno_inm">Metros de terreno del inmueble</label>
+                    <label class="bottom-label1" id="bottoml_terreno_inm" for="terreno_inm"></label>
+                </div>   
                      
             </div>
-            <button class="btn btn-generar" role="link" >CONTINUAR</button><!-- onclick="toPayment()" -->
+            <button class="btn btn-generar" role="link" onclick="toPayment();">CONTINUAR</button><!-- onclick="toPayment()" -->
         </div>
 
     </div>

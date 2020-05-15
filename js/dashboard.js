@@ -3,26 +3,38 @@ window.onload = function(){
     const userData= JSON.parse(sessionStorage.getItem("InsuredData")); // get and parse the saved data from localStorage
     const fechaContratación = JSON.parse(sessionStorage.getItem("fechaContratacion"));
     const datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
+    const datosAsegurado = JSON.parse(sessionStorage.getItem("InsuredData"));
+    const datosInmueble = JSON.parse(sessionStorage.getItem("PropertyData"));
     const months = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
+        'Enero',
+        'Febrero',
+        'Marzo',
+        'Abril',
+        'Mayo',
+        'Junio',
+        'Julio',
+        'Agosto',
+        'Septiembre',
+        'Octubre',
+        'Noviembre',
+        'Diciembre'
       ]
     
-    
-    document.querySelector("#vigenciaI").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
-    document.querySelector("#vigenciaF").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
+    document.querySelector("#prop_street").innerHTML = datosInmueble.calle_inmueble.toUpperCase();
+    document.querySelector("#prop_address").innerHTML = datosInmueble.colonia_inmueble.toUpperCase() + ", " + datosInmueble.estado_inmueble.toUpperCase();
+    document.querySelector("#vigenciaI-principal").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
+    document.querySelector("#vigenciaF-principal").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
     document.querySelector("#session-name").textContent=userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + "..."
-    document.querySelector("#clientName").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
+    document.querySelector("#clientName-principal").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
+    
+    document.querySelector("#vigenciaI-sin1").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
+    document.querySelector("#vigenciaF-sin1").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
+    document.querySelector("#clientName-sin1").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
+    
+    document.querySelector("#vigenciaI-transfer").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
+    document.querySelector("#vigenciaF-transfer").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
+    document.querySelector("#clientName-transfer").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
+
     if(sessionStorage.getItem("clabe")){
         document.querySelector("#numCuenta").textContent = sessionStorage.getItem("clabe").replace(/\d(?=\d{4})/g,"*");
         document.querySelector("#banco-transfer").textContent=sessionStorage.getItem("banco")
@@ -62,7 +74,12 @@ inputElements.forEach(inputElement => {
     //EVENTO ONFOCUSIN - INVIERTE LA CLASE VALID-INVALID DEL CAMPO SELECCIONADO
     inputElement.addEventListener("focusin", cleanInput)
 })
-
+const wordElements=document.querySelectorAll('input.word');
+wordElements.forEach(wordElement => {
+    wordElement.addEventListener("keyup" , function(){
+        this.value=removeNumbers(deleteSpecialChar(this.value));
+    })
+});
 function cleanInput() {
     this.classList.remove("valid");
     this.classList.remove("invalid");
@@ -73,17 +90,23 @@ function validateInputValue(element){
         element= this;
     }     
     const elmnt_value = element.value;
-    let reg, result, cautionTxt;
+    let reg, reg2, result, result2, cautionTxt;
     if (elmnt_value == "") {    //Si el campo esta vacío = INVALIDO
         element.classList.add("invalid");
         appendText("Esta información es necesaria",element.parentNode.querySelector('.bottom-label1'));
     } else {
         if (element.id == "clabe"){
             reg=/^\d{18}/g; //solo acepta 10 digitos
+            reg2=/(\d{9})\1/g;
             result = elmnt_value.match(reg);
-            cautionTxt = "Escribe los 18 digitos de tu cuenta CLABE";
+            result2 = elmnt_value.match(reg2);
+            if (result != null && result2 != null) {
+                result = null;
+            }
+            cautionTxt = "La cuenta ingresada no es válida.";
+            
         }else{  
-            reg = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/g;
+            reg = /^[á-üa-zA-ZÁ-Ü][^0-9_!¡'\¬∞¢ºª°ı•£‰ç?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/g;
             result = elmnt_value.match(reg);
             cautionTxt = "La información ingresada no es válida";
         }
@@ -103,6 +126,13 @@ function validateInputValue(element){
 
 function appendText(texto, elemento){   //Funcion para agregar o modificar el texto del elemento dado
     elemento.textContent=texto;
+}
+function deleteSpecialChar(value) {
+    return value.replace(/[`~!·€¬@#$%^&*()_|+\-=÷¿?;:'",.<>\{\}\[\]\\\/]/gi, '');
+}
+
+function removeNumbers(value) {
+    return value.replace(/\d/g, '');
 }
 
 // GUARDAR DATOS DE CUENTA BANCARIA
@@ -141,7 +171,7 @@ function closePopup(){
 
 // SECCION SINIESTRO
 let temblo= true; //true
-let reporte_listo=false; //false
+let reporte_listo=true; //false
 let transfer=false; //false
 
 const siniestro_btn=document.querySelector("#siniestro");

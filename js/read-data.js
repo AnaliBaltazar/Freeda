@@ -5,7 +5,12 @@ window.onload = (event) => {
 
   document.querySelector(".imagen-casa").src="./img/" + datosCotizador.tipo + ".svg";
   document.querySelector("#tipo-prop").textContent = datosCotizador.tipo.toUpperCase();
-  document.querySelector("#clase-prop").textContent = datosCotizador.clase.toUpperCase();
+  if (datosCotizador.clase == "interes") {
+    document.querySelector("#clase-prop").textContent = datosCotizador.clase.toUpperCase() + " SOCIAL";
+  } else {
+    document.querySelector("#clase-prop").textContent = datosCotizador.clase.toUpperCase();
+  }
+  
   document.querySelector("#year").textContent = datosCotizador.year;
   document.querySelector("#construida").textContent = datosCotizador.construccion;
   if (datosCotizador.terreno == null) {

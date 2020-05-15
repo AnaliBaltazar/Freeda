@@ -131,8 +131,7 @@
   line-height: 12px;
   margin-right:50%;
 }
-#year, #construida, #terreno{
-}
+
 table{
   margin-left: 10%;
 }
@@ -237,6 +236,23 @@ td.col_r{
   margin: 30px auto;
   display: flex;
   flex-flow: column-reverse;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 36.5%;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+}
+.text_area_r{ /* CONFIRMAR */
+  text-align: center;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: column-reverse;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 36.5%;
   padding: 10px;
   font-size: 20px;
@@ -247,12 +263,15 @@ td.col_r{
   margin: 30px auto;
   display: flex;
   flex-flow: column-reverse;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 36%;
   padding: 10px;
   font-size: 20px;
   position: relative;
 }
-.data_input_aseg, .data_input_inmueble{ /*HACER MAS GRANDE LOS RECUADROS*/
+.data_input_aseg, .data_input_inmueble, .data_review{ /*HACER MAS GRANDE LOS RECUADROS*/
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -337,6 +356,9 @@ select:focus{
   width: 5%;
   font-size: 20px;
 }
+.texto_area_regis h5, .text_area_i h5{
+  margin: 0 15px;
+}
 /*BOTON GENERAR PÓLIZA*/
 .btn-generar{
   display: block;
@@ -375,7 +397,7 @@ select:focus{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 500px;
+  height: 800px;
 }
 
 

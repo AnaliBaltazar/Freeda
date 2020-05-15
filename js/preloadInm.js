@@ -9,9 +9,9 @@ window.onload = (event) => {
     const calle_input = document.querySelector("#calle");
     let cpData;
 
-    cp_input.disabled = true;
+    /* cp_input.disabled = true;
     edo_input.disabled = true;
-    mpo_input.disabled = true;
+    mpo_input.disabled = true; */
 
     cp_input.value=datosCotizador.codigopostal;
 
@@ -25,12 +25,23 @@ window.onload = (event) => {
     }
     console.log(cpData);
 
-    const formId = "data_inmueble"; // ID of the form
-    const url = location.href; //  href for the page
-
-    const form = document.querySelector("#data_inmueble")
-    const formElements = form.elements;
-    console.log(formElements)
+    cp_input.addEventListener("focusout", function(){
+        cpData = searchCP(this.value);
+        if (cpData != null) {
+            edo_input.value = cpData.estado;
+            edo_input.classList.add("valid")
+            edo_input.classList.remove("invalid")
+            mpo_input.value = cpData.municipio;
+            mpo_input.classList.add("valid")
+            mpo_input.classList.remove("invalid")
+            setColonias(cpData.colonias)
+        } else {
+            edo_input.value = "";
+            edo_input.classList.remove("invalid")
+            mpo_input.value = "";
+            mpo_input.classList.remove("invalid")
+        }
+    })
 }
 
 function searchCP(code){
@@ -71,12 +82,19 @@ function setColonias(colonias){
  * [formIdentifier] as the object key
  * returns {Object}
  */
+/* const formId = "data_inmueble"; // ID of the form
+const url = location.href; //  href for the page
+
+const form = document.querySelector("#data_inmueble")
+const formElements = form.elements;
+console.log(formElements)
+
 const getFormData = () => {
-    let data = { ["propertyData"]: {} }; // create an empty object with the formIdentifier as the key and an empty object as its value
+    let data = { ["propertyData"]: {} }; // create an empty object
     for (const element of formElements) {
         if (element.name.length > 0) {
             data["propertyData"][element.name] = element.value;
         }
     }
     return data;
-};
+}; */

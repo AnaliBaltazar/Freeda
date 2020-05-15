@@ -31,7 +31,7 @@
 
     <!-- Va el js/freeda.js -->
     <script type="text/javascript" src="./js/freeda.js"></script>
-    <script src="./js/preload15.js"></script>
+    <script src="./js/preloadInm.js"></script>
 
   <!--Termina head-->
   </head>
@@ -102,19 +102,19 @@
             <!--Formulario de registro -->
             <form id="data_inmueble" onsubmit="return toConfirm(event);">
                 <div class="text_area_i" id="cp_inmueble_cont">    
-                    <input type="text" name="cp_inmueble" id="cp" class="data_input_inmueble" placeholder="Código postal" maxlength="5" required>                
+                    <input type="text" name="cp_inmueble" id="cp" class="data_input_inmueble" placeholder="Código postal" maxlength="5" >                
                     <label class="head-label" for="cp">Código postal</label>
                     <label class="bottom-label1" id="bottoml_cp_inmueble" for="cp"></label>
                 </div>
                 
                 <div class="text_area_i" id="estado_inmueble_cont">    
-                    <input type="text" name="estado_inmueble" id="estado" class="data_input_inmueble" placeholder="Estado" required>                
+                    <input type="text" name="estado_inmueble" id="estado" class="data_input_inmueble word" placeholder="Estado" >                
                     <label class="head-label" for="estado">Estado</label>
                     <label class="bottom-label1" id="bottoml_estado_inmueble" for="estado"></label>
                 </div>
             
                 <div class="text_area_i" id="municipio_inmueble_cont">    
-                    <input type="text" name="municipio_inmueble" id="municipio" class="data_input_inmueble" placeholder="Municipio" required>                
+                    <input type="text" name="municipio_inmueble" id="municipio" class="data_input_inmueble word" placeholder="Municipio" >                
                     <label class="head-label" for="municipio">Municipio</label>
                     <label class="bottom-label1" id="bottoml_municipio_inmueble" for="municipio"></label>
                 </div>
@@ -125,15 +125,15 @@
                     </select>
                 </div>
                 <div class="text_area_i" id="calle_inmueble_cont">
-                    <input type="text" name="calle_inmueble" id="calle" class="data_input_inmueble" placeholder="Calle y número" required>                
+                    <input type="text" name="calle_inmueble" id="calle" class="data_input_inmueble" placeholder="Calle y número" >                
                     <label class="head-label" for="calle">Calle y número</label>
                     <label class="bottom-label1" id="bottoml_calle_inmueble" for="calle"></label>
                 </div>  
         
-                <!-- <div class="text_datos_cobro inmueble" id="datos_cobro_inmueble_cont" style="clear: both;">
-                    <input type="checkbox" name="datos_cobro_inmueble" id="datos_cobro_inmueble">
+                <div class="text_area_i" id="datos_cobro_inmueble_cont" style="clear: both;">
+                    <input type="checkbox" name="mismos-cobro" id="datos_cobro_inmueble">
                     <h5>Utilizar mismos datos para cobro</h5>
-                </div> -->
+                </div>
                <button class="btn btn-generar" role="link" >CONTINUAR</button><!-- onclick="toPayment()" -->
 
             </form>

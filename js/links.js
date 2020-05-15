@@ -165,11 +165,43 @@ function toInsured() {
 
 function toConfirm(event) {
     event.preventDefault();
+    const form = event.target;
+    const formElements = form.elements;
 
-    
-    
-    window.location = "./15-confirmar-datos.html";
+    const cpelmnt = document.querySelector("#cp");
+    const edoelmnt = document.querySelector("#estado");
+    const mpoelmnt = document.querySelector("#municipio");
+    const calleelmnt = document.querySelector("#calle");
+    const cpval = cpelmnt.value;
+    const edoval = edoelmnt.value;
+    const mpoval = mpoelmnt.value;
+    const calleval = calleelmnt.value;
+    const coloniaval = document.querySelector("#colonia_inmueble").value;
+   
+
+    if (cpval == "" || edoval=="" || mpoval=="" || calleval=="" || coloniaval=="selecciona") {    //Si el campo esta vacío = INVALIDO
+        alert("Toda la información es necesaria")
+        
+    }else if (cpelmnt.classList.contains("invalid") || edoelmnt.classList.contains("invalid") || mpoelmnt.classList.contains("invalid") || calleelmnt.classList.contains("invalid")){
+        alert("La información proporcionada no es válida")
+    }else{
+        data = getInmData(formElements);
+        sessionStorage.setItem("PropertyData", JSON.stringify(data["PropertyData"])); 
+        window.location="./15-confirmar-datos.html"
+    }
+
 }
+
+const getInmData = (formElements) => {
+    let data = { ["PropertyData"]: {} }; // create an empty object with the formIdentifier as the key and an empty object as its value
+    for (const element of formElements) {
+      if (element.name.length > 0) {
+        data["PropertyData"][element.name] = element.value;
+      }
+    }
+    return data;
+};
+
 
 /* function toPayment() {
     window.location = "./16-pago.html";
