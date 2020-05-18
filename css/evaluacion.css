@@ -400,7 +400,7 @@ select:focus{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 800px;
+  height: 900px; /*800px*/
 }
 
 
@@ -627,9 +627,10 @@ td.col_l{
 .texto1-seccion1{
   margin-top: 15%;
 }
-.texto_area_rfc, .texto_area_regis, .texto_area_i{
+.texto_area_rfc, .texto_area_regis, .text_area_i{
   width: 76%;
 }
+
 .label-date{
   margin-left: 14%;
 }
@@ -745,9 +746,10 @@ td.col_l{
   margin-top: 10%;
   
 }
-.texto_area_rfc, .texto_area_regis, .texto_area_i{
+.texto_area_rfc, .texto_area_regis, .text_area_i{
   width: 76%;
 }
+
 .label-date{
   margin-left: 14%;
 }
@@ -845,7 +847,7 @@ td.col_l{
 .texto1-seccion1{
   margin-top: 10%;
 }
-.texto_area_rfc, .texto_area_regis, .texto_area_i{
+.texto_area_rfc, .texto_area_regis, .text_area_i{
   width: 56%;
 }
 .label-date{
@@ -926,7 +928,7 @@ table{
 .texto_area_rfc{
   margin-top: 5%;
 }
-.texto_area_rfc, .texto_area_regis, .texto_area_i{
+.texto_area_rfc, .texto_area_regis, .text_area_i{
   width: 42%;
 }
 .label-date{
@@ -1009,9 +1011,10 @@ table{
 .texto1-seccion1{
   margin-top: 6%;
 }
-.texto_area_rfc, .texto_area_regis, .texto_area_i{
+.texto_area_rfc, .texto_area_regis, .text_area_i{
   width: 37%;
 }
+
 .label-date{
   margin-left: 31.5%;
 }

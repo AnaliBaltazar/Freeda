@@ -409,8 +409,7 @@ input.quantity-field{
   text-transform: uppercase; /*Todas mayusculas*/
   opacity: 1;
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 20px;
 }
 .btn-contratar:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
