@@ -376,15 +376,15 @@ select:focus{
   background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
   font-size: 20px;
 }
-.btn-generar:hover{
+.btn-generar, .btn-continuar:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
   color: #000000;
 }
-.btn-generar:active{
+.btn-generar, .btn-continuar:active{
   background: #912F46 0% 0% no-repeat padding-box;
   border: 1px solid #000000;
 }
-.btn-generar:focus{
+.btn-generar, .btn-continuar:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
@@ -400,6 +400,21 @@ select:focus{
   flex-direction: column;
   flex-wrap: wrap;
   height: 900px; /*800px*/
+}
+.btn-continuar{
+  display: block;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 20px;
+  margin-bottom: 10%;
 }
 
 
@@ -628,7 +643,12 @@ td.col_l{
   margin-right: auto;
   margin-top: 18%;
   margin-bottom: 35%;
+}
 
+.btn-continuar{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5%;
 }
 input.invalid + label.head-label + label.bottom-label1 {
   /* top: 110px; */
@@ -779,6 +799,10 @@ td.col_l{
   margin-top: 16%;
   margin-bottom: 31%;
 }
+.btn-continuar{
+  margin-left: auto;
+  margin-right: auto;
+}
 input.invalid + label.head-label + label.bottom-label1 {
 /* top: 110px; */
 width: 95%;
@@ -898,6 +922,10 @@ td.col_l{
   margin-top: 13%;
   margin-bottom: 25%;
 }
+.btn-continuar{
+  margin-left: auto;
+  margin-right: auto;
+}
 input.invalid + label.head-label + label.bottom-label1 {
   /* top: 110px; */
   width: 95%;
@@ -1006,6 +1034,10 @@ table{
   margin-right: auto;
   margin-top: 10%;
   margin-bottom: 20%;
+}
+.btn-continuar{
+  margin-left: auto;
+  margin-right: auto;
 }
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -1118,6 +1150,10 @@ table{
   margin-right: auto;
   margin-top: 10%;
   margin-bottom: 20%;
+}
+.btn-continuar{
+  margin-left: auto;
+  margin-right: auto;
 }
 input.invalid + label.head-label + label.bottom-label1{
  /* top: 110px; */
