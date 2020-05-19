@@ -339,7 +339,7 @@ select{
   margin: 0 auto;
   color: #912F46;
   background-color: white;
-  font-size: 16px;
+  font-size: 20px;
 }
 select:focus{
   outline: 0;
@@ -653,6 +653,10 @@ td.col_l{
 input.invalid + label.head-label + label.bottom-label1 {
   /* top: 110px; */
   width: 95%;
+}
+
+select#colonia_inmueble{
+  font-size: 18px;
 }
 
 /*Footer*/
