@@ -16,23 +16,22 @@
   padding-left: 19%;
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-bottom: 2%;
+  margin-left: 19%; /*-55*/
   height: 85px;
   width: 210px; 
   display:flex;
 }
 .menu-freeda{
   font-size: 14px;
-  margin-left: 4%;
+  /*margin-left: 5%;*/
   padding-bottom: 4px;
 }
 .texto-menu-f{ /*Letra del menu*/
   font-size: 20px;
-  color:#F7F7F7;
+  color:#F7F7F7; /*F7F7F7*/
   margin-top: 3px;
-  padding-right: 33px;
-  font-weight: 600;
+  padding-right: 30px;
+  font-weight: 400;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
   color: #FFFFFF;
@@ -404,58 +403,49 @@ select:focus{
 }
 
 
-/*NUEVO FOOTER*/
+/*Footer*/
 .footermenu{
   position: static;
   height: 80px;
   border-top: solid 5px;
   border-color: #F2F5F4;
-  padding-top: 2%;
-  /*background: #99cccc;   /* PRUEBA*/
 }
 .texto1-footer{
+  position: absolute;
+  margin-left: 21%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px; /*Separacion entre textos*/
-  padding-left: 5%;
-  margin-top: 28px;
   z-index: 2001;
 }
 .texto2-footer{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2002;
 }
 .texto3-footer{
+  position: absolute;
+  margin-left: 39%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2003;
 }
-.texto4-footer{
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-}
-.texto5-footer{
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-  text-decoration: none;
+.logo-footer{
+  margin-left: 66%;
+  margin-top: 20px;
+  height: 48px;
+  width: 158px;
+  display: flex;
 }
 .link-footer:hover{
   color: #C88585;
@@ -467,13 +457,6 @@ select:focus{
 .link-footer:focus{
   text-decoration: underline;
   color: #C88585;
-}
-.logo-footer{
-  width: 160px;
-  height: 60px;
-  display: flex;
-  margin-left: 80%;
-  margin-top: -3%;
 }
 
 /* ESTILOS PARA EL LOADER */
@@ -546,21 +529,16 @@ h3#caption_loader{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 .tamaño-renglon-1{
-  padding-left: 25%; /*9*/
+  padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-top: -7%;
+  margin-left: -18%;
 }
 .material-icons{
   color: white;
 }
 .boton-menu{
   left: 80%;
-}
-
-.menu-freeda{
-  background-color: #912f46;
 }
 /*li.nav-item{
   border-bottom:1px solid rgba(255,255,255, .3);
@@ -658,8 +636,42 @@ input.invalid + label.head-label + label.bottom-label1 {
 }
 
 /*Footer*/
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2003;
+}
 .logo-footer{
-  display: none;
+  position: absolute;
+  margin-left: -7%;
+  margin-top: 29px;
+  height: 48px;
+  width: 141px;
 }
 
 }
@@ -669,20 +681,17 @@ input.invalid + label.head-label + label.bottom-label1 {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 .tamaño-renglon-1{
-  padding-left: 25%; /*9*/
+  padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-top: -7%;
+  margin-left: -18%;
+  /*margin-top: -7%;*/
 }
 .material-icons{
   color: white;
 }
 .boton-menu{
   left: 80%;
-}
-.menu-freeda{
-  background-color: #912f46;
 }
 /*li.nav-item{
   border-bottom:1px solid rgba(255,255,255, .3);
@@ -777,19 +786,39 @@ width: 95%;
 
 
 /*Footer*/
-.footermenu{ /*Politicas de privacidad*/
-  padding-right: 180px;
-  height: 130px;
-  background-color: white;
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
 }
 .texto1-footer{
-  margin-right: 15px;
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2001;
 }
-
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2003;
+}
 .logo-footer{
-  width: 20%; 
-  height: 55px;
-  margin-left: 84%;
+  position: absolute;
+  margin-left: -2%;
+  margin-top: 29px;
+  height: 50px;
+  width: 141px;
 }
 }
 
@@ -798,11 +827,10 @@ width: 95%;
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 .tamaño-renglon-1{
-  padding-left: 10%;
+  padding-left: 8%;
 }
 .logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
+  margin-left: -18%;
 }
 .material-icons{
   color: white;
@@ -878,13 +906,39 @@ input.invalid + label.head-label + label.bottom-label1 {
 
 /*Footer*/
 .footermenu{
-  padding-right: 150px;
-  background-color: white;
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 29%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 53%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2003;
 }
 .logo-footer{
-  width: 20%; 
-  height: 55px;
-  margin-left: 84%;
+  display: block;
+  margin-left: 83%;
+  margin-top: 2px;
+  height: 35px;
+  width: 110px;
+  position: absolute;
 }
 }
 
@@ -893,11 +947,13 @@ input.invalid + label.head-label + label.bottom-label1 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 .tamaño-renglon-1{
-  padding-left: 25%; /*9*/
+  padding-left: 11%; /*9*/
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-top: 1%;
+  margin-left: -38%;
+}
+.texto-menu-f{
+  margin-left: 0%;
 }
 .headerBar{
   margin-top: 0%;
@@ -956,15 +1012,41 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 95%;
 }
 
-
 /*Footer*/
 .footermenu{
-  padding-right: 45px;
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
 }
-.logo-footer{
-  margin-left: 78%;
+.texto1-footer{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2003;
+}
+/*.logo-footer{
+  margin-left: 75%;
+  margin-top: 5px;
   height: 60px;
-}
+  width: 50%;
+  display: flex;
+}*/
 }
 
 
@@ -972,11 +1054,13 @@ input.invalid + label.head-label + label.bottom-label1{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 .tamaño-renglon-1{
-  padding-left: 25%; /*9*/
+  padding-left: 20%; /*9*/
 }
 .logo-freeda{
-margin-left: -55%;
-margin-top: 1%;
+  margin-left: -100%;
+}
+.texto-menu-f{
+  margin-left: 10%;
 }
 .headerBar{
   margin-top: 0%;
@@ -1042,11 +1126,33 @@ input.invalid + label.head-label + label.bottom-label1{
 
 
 /*Footer*/
-.footermenu{
-  padding-left: 115px;
+.texto1-footer{
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 38.5%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2003;
 }
 .logo-footer{
-  margin-left: 78%;
+  margin-left: 83%;
+  /*margin-top: 5px;
+  height: 60px;
+  width: 150px;
+  display: flex;*/
 }
 }
 

@@ -11,24 +11,22 @@
   padding-left: 19%;
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-bottom: 2%;
+  margin-left: 19%; /*-55*/
   height: 85px;
   width: 210px; 
   display:flex;
 }
 .menu-freeda{
   font-size: 14px;
-  margin-left: 4%;
+  /*margin-left: 5%;*/
   padding-bottom: 4px;
 }
 .texto-menu-f{ /*Letra del menu*/
-  font-size: 18px;
-  color:#F7F7F7;
+  font-size: 20px;
+  color:#F7F7F7; /*F7F7F7*/
   margin-top: 3px;
-  padding-right: 33px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  padding-right: 30px;
+  font-weight: 400;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
   color: #FFFFFF;
@@ -401,82 +399,61 @@ h3#caption_loader{
 }
 /* ++++++++++++++++++++++ */
 
-/*NUEVO FOOTER*/
-/*Footermenu*/
+
+/*Footer*/
 .footermenu{
   position: static;
   height: 80px;
   border-top: solid 5px;
-  border-color: #FFFFFF;
-  padding-top: 2%;
-  /*background: #99cccc;   /* PRUEBA*/
+  border-color: #F2F5F4;
 }
 .texto1-footer{
+  position: absolute;
+  margin-left: 21%;
+  margin-top: 20px;
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px; /*Separacion entre textos*/
-  padding-left: 5%;
-  margin-top: 28px;
   z-index: 2001;
 }
 .texto2-footer{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 20px;
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2002;
 }
 .texto3-footer{
+  position: absolute;
+  margin-left: 39%;
+  margin-top: 20px;
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2003;
 }
-.texto4-footer{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-}
-.texto5-footer{
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-  text-decoration: none;
+.logo-footer{
+  margin-left: 66%;
+  margin-top: 20px;
+  height: 48px;
+  width: 158px;
+  display: flex;
 }
 .link-footer:hover{
-  color: #912F46;
+  color: #C88585;
 }
 .link-footer:active{
-  color: #912F46;
+  color: #C88585;
   text-decoration: none;
 }
 .link-footer:focus{
   text-decoration: underline;
-  color: #912F46;
-}
-.logo-footer{
-  width: 160px;
-  height: 60px;
-  display: flex;
-  margin-left: 80%;
-  margin-top: -3%;
+  color: #C88585;
 }
 
 /*Animations*/
@@ -562,11 +539,10 @@ h3#caption_loader{
 }*/
 
 .tamaño-renglon-1{
-  padding-left: 25%; /*9*/
+  padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-top: -7%;
+  margin-left: -18%;
 }
 .material-icons{
   color: white;
@@ -772,8 +748,42 @@ div.shield {
   display: none;
 }*/
 /*Footer*/
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2003;
+}
 .logo-footer{
-  display: none;
+  position: absolute;
+  margin-left: -7%;
+  margin-top: 29px;
+  height: 48px;
+  width: 141px;
 }
 
 }
@@ -821,20 +831,17 @@ div.shield {
   color: white;
 }*/
 .tamaño-renglon-1{
-  padding-left: 25%; /*9*/
+  padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-top: -7%;
+  margin-left: -18%;
+  /*margin-top: -7%;*/
 }
 .material-icons{
   color: white;
 }
 .boton-menu{
   left: 80%;
-}
-.menu-freeda{
-  background-color: #912f46;
 }
 /*li.nav-item{
   border-bottom:1px solid rgba(255,255,255, .3);
@@ -1044,10 +1051,40 @@ div.shield {
 .texto3-footer{
 }
 
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2003;
+}
 .logo-footer{
-  width: 20%; 
-  height: 55px;
-  margin-left: 84%;
+  position: absolute;
+  margin-left: -2%;
+  margin-top: 29px;
+  height: 50px;
+  width: 141px;
 }
 
 }
@@ -1069,11 +1106,10 @@ padding-right: 16%;
   color: white;
 }*/
 .tamaño-renglon-1{
-  padding-left: 10%;
+  padding-left: 8%;
 }
 .logo-freeda{
-  margin-left: -10%;
-  margin-top: -7.5%;
+  margin-left: -18%;
 }
 .material-icons{
   color: white;
@@ -1092,22 +1128,55 @@ padding-right: 16%;
   padding-right: 150px;
   background-color: white;
 }
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 29%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 53%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2003;
+}
 .logo-footer{
-  width: 20%; 
-  height: 55px;
-  margin-left: 84%;
+  display: block;
+  margin-left: 83%;
+  margin-top: 2px;
+  height: 35px;
+  width: 110px;
+  position: absolute;
 }
 
-
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 .tamaño-renglon-1{
-  padding-left: 25%; /*9*/
+  padding-left: 20%; /*9*/
 }
 .logo-freeda{
-  margin-left: -55%;
-  margin-top: 1%;
+  margin-left: -100%;
+}
+.texto-menu-f{
+  margin-left: 10%;
 }
 .headerBar{
   margin-top: 2%;
@@ -1126,12 +1195,33 @@ padding-right: 16%;
 }
 
 /*Footer*/
-.footermenu{
-  padding-right: 45px;
+.texto1-footer{
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 38.5%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2003;
 }
 .logo-footer{
-  margin-left: 78%;
+  margin-left: 83%;
+  /*margin-top: 5px;
   height: 60px;
+  width: 150px;
+  display: flex;*/
 }
 
 
