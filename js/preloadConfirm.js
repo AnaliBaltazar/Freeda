@@ -11,7 +11,7 @@ window.onload = (event)=>{
     document.querySelector("#municipio_inmueble").value = datosInmueble.municipio_inmueble.toUpperCase();
     document.querySelector("#estado_inmueble").value = datosInmueble.estado_inmueble.toUpperCase();
     document.querySelector("#rfc_aseg").value = datosAsegurado.rfc.toUpperCase();
-    document.querySelector("#namec_aseg").value = datosAsegurado.nombre.toUpperCase(); + " " + datosAsegurado.paterno.toUpperCase() + " " + datosAsegurado.materno.toUpperCase();;
+    document.querySelector("#namec_aseg").value = datosAsegurado.nombre.toUpperCase() + " " + datosAsegurado.paterno.toUpperCase() + " " + datosAsegurado.materno.toUpperCase();
     document.querySelector("#type").value = datosCotizador.tipo.toUpperCase();
 
     if (datosCotizador.clase == "interes") {
