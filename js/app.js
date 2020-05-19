@@ -131,8 +131,8 @@ capturarButton.addEventListener("click", function (event) {
     alert("Por favor dibuja una firma primero.");
   } else {
     var dataURL = signaturePad.toDataURL();
-    download(dataURL, "signature.png");
-
+    // download(dataURL, "signature.png");
+    
     document.querySelector("#poliza-main").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none"
     document.querySelector("#info-reporte").style.display="none"
@@ -143,8 +143,15 @@ capturarButton.addEventListener("click", function (event) {
     document.querySelector("#canvas").style.display="none"
     document.querySelector("#signature-pad-footer-container").style.display="none"
     document.querySelector("#monto").innerHTML= "El monto de " + sessionStorage.getItem("total-indemnizar") + " por indemnización<br> será transferido a la cuenta" ;
-    document.querySelector("#banco-transfer").textContent=sessionStorage.getItem("banco")
-    document.querySelector("#cuenta-transfer").textContent=sessionStorage.getItem("clabe")
+    if (sessionStorage.getItem("banco") == null || sessionStorage.getItem("clabe" == null)) {
+      document.querySelector("#banco-transfer").textContent="¡Ningún banco registrado!"
+      document.querySelector("#cuenta-transfer").textContent="¡No hay cuenta registrada!"
+      addBankAccount();
+    }else{
+      document.querySelector("#banco-transfer").textContent=sessionStorage.getItem("banco")
+      document.querySelector("#cuenta-transfer").textContent=sessionStorage.getItem("clabe")
+    }
+    
     document.querySelector("#seccion-tran1").style.display="block"
     document.querySelector("#seccion-tran2").style.display="block"
     document.querySelector("#seccion-tran3").style.display="block"

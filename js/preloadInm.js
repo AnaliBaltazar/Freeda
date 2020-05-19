@@ -9,9 +9,9 @@ window.onload = (event) => {
     const calle_input = document.querySelector("#calle");
     let cpData;
 
-    /* cp_input.disabled = true;
+    cp_input.disabled = true;
     edo_input.disabled = true;
-    mpo_input.disabled = true; */
+    mpo_input.disabled = true;
 
     cp_input.value=datosCotizador.codigopostal;
 

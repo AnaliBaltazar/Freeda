@@ -138,6 +138,7 @@ strong {
   color: #ccc;
 }
 .sctn-col input {
+  text-align: center;
   border: 1px solid #ccc;
 }
 .pymnt-itm h2 {
@@ -340,7 +341,7 @@ div.shield {
   margin-left: auto;
   margin-right: auto;
   z-index:6;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: calc(50% - 250px);
   display: none;

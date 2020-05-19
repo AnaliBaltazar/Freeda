@@ -222,8 +222,14 @@ function showFirma() {
 
 const transferOK_btn=document.querySelector("#si")
 transferOK_btn.addEventListener('click', function(){
-    transfer = true;
-    showTransfer()
+    if (sessionStorage.getItem("banco") == null || sessionStorage.getItem("clabe" == null)) {
+        alert('Por favor, registra una cuenta para poder continuar.')
+        addBankAccount();
+    } else {
+        transfer = true;
+        showTransfer() 
+    }
+    
 });
 const transferNO_btn=document.querySelector("#no")
 transferNO_btn.addEventListener('click', addBankAccount)
