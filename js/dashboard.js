@@ -278,3 +278,11 @@ ver_dash_btn.addEventListener('click', function(){
     document.querySelector("#cover").style.display="none";
     document.querySelector("#allset_screen").style.display="none";
 })
+
+//Cerrar sesión 
+$(document).ready(function()
+        {
+        $("#profile").on( "click", function() {    
+            $('.bubble_close').toggle();
+             });
+        });
