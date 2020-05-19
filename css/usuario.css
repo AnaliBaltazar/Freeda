@@ -480,7 +480,7 @@ input.quantity-field{
   margin-left: auto;
   margin-right: auto;
   z-index:6;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: calc(50% - 250px);
   display: none;

@@ -235,11 +235,11 @@ function genDashboard(event) {
                             }
                             sessionStorage.setItem("fechaContratacion", JSON.stringify(fechaContratación));
                             window.location="./17-dashboard-1.html"
-                        }, 4000);
-                    }, 4000);
-                }, 4000);
-            }, 4000);
-        }, 4000);
+                        }, 2000);
+                    }, 2000);
+                }, 2000);
+            }, 2000);
+        }, 2000);
 }
 
 //Para boton de 18-SUMA-ASEGURADA.HTML
