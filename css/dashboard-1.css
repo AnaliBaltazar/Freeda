@@ -2260,7 +2260,7 @@ h3.describe_bien{
   border-spacing: 15px;
 }
 .recuadro-info{
-  height: 110%;
+  height: 114%;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
@@ -2476,7 +2476,7 @@ button.button-minus, button.button-plus{
   border-spacing: 15px;
 }
 .recuadro-info{
-  height: 100%;
+  height: 114%;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
