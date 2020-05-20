@@ -86,6 +86,7 @@ a, .Right span{
   font-weight: 500;
   color: #912F46;
   display: none;
+  cursor: pointer;
 }
 #notifications{
   width: 200px;

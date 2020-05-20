@@ -285,10 +285,13 @@ ver_dash_btn.addEventListener('click', function(){
     document.querySelector("#allset_screen").style.display="none";
 })
 
-//Cerrar sesión 
-$(document).ready(function()
-        {
-        $("#profile").on( "click", function() {    
-            $('.bubble_close').toggle();
-             });
-        });
+//Mostrar boton Cerrar sesión 
+$("#profile").on( "click", function() {    
+    $('.bubble_close').toggle();
+});
+
+$("#cerrar-sesion").on( "click", function() {
+    sessionStorage.clear()    
+    window.location="./index.html"
+});
+
