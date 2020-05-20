@@ -26,7 +26,7 @@ $('#rfcA').on("change keyup paste", function(){
     document.querySelector('#month [value="' + 0 + '"]').selected = true;
     document.querySelector('#year_date [value="' + 0 + '"]').selected = true;
     document.querySelectorAll("input").forEach(function(input){
-        if (input.id != "rfcA") {
+        if (input.id != "rfcA" && input.id != "datos_cobro_aseg") {
             input.disabled=true
         }else{
             input.disabled=false
