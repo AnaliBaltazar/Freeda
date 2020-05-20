@@ -246,12 +246,19 @@ function genDashboard(event) {
 function toPayment() {
     window.location = "./16-pago.html";
 }
-/*function toDataInsured(event) {
+
+function userRecover(event) {
     event.preventDefault();
-    window.location = "./16-datos-asegurado.html";
-    return false
-}*/
-/* function closePop() {
-    document.querySelector("#ready_screen").style.display="none";
-    document.querySelector("#cover2").style.display="none";
-} */
+    let email = document.querySelector("#correo");
+    if (email.value == "") {    //Si el campo esta vacío = INVALIDO
+        alert("Toda la información es necesaria")
+        return false
+        
+    }else if (email.classList.contains("invalid") ){
+        alert("Escribe un correo electrónico válido.")
+        return false
+    }else{
+         
+        window.location="./6-iniciar-sesion.html"
+    }
+}
