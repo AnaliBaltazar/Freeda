@@ -10,20 +10,30 @@ let tipoPersona;
     inputElement.addEventListener("focusin", cleanInput);
 
 $('#rfcA').on("change keyup paste", function(){
+    document.querySelector("#rfcA").classList.remove("valid");
+    document.querySelector("#rfcA").classList.remove("invalid");
+    document.querySelector("#nombre").classList.remove("valid");
+    document.querySelector("#nombre").classList.remove("invalid");
+    document.querySelector("#paterno").classList.remove("valid");
+    document.querySelector("#paterno").classList.remove("invalid");
+    document.querySelector("#materno").classList.remove("valid");
+    document.querySelector("#materno").classList.remove("invalid");
+    
     document.querySelector("#nombre").value = "";
     document.querySelector("#paterno").value = "";
     document.querySelector("#materno").value = "";
     document.querySelector('#day [value="' + 0 + '"]').selected = true;
     document.querySelector('#month [value="' + 0 + '"]').selected = true;
     document.querySelector('#year_date [value="' + 0 + '"]').selected = true;
-    /* document.querySelectorAll("input").forEach(function(input){
+    document.querySelectorAll("input").forEach(function(input){
         if (input.id != "rfcA") {
             input.disabled=true
         }else{
             input.disabled=false
         } 
-    }) */
-    // document.querySelectorAll("select").forEach(select => select.disabled=true)
+    }) 
+    document.querySelectorAll("select").forEach(select => select.disabled=true)
+    
 })
 
 function cleanInput() {
@@ -40,46 +50,58 @@ function validateRFCValue(element){
     document.querySelector("#progress_loader").style.display="none"
     document.querySelector("#caption_loader").style.display="none"
     const elmnt_value = element.value.toUpperCase();
-    let reg, result, cautionTxt;
+    let regF, regM, resultF, resultM, cautionTxt;
     if (elmnt_value == "") {    //Si el campo esta vacío = INVALIDO
         element.classList.add("invalid");
         appendText("Esta información es necesaria",element.parentNode.querySelector('.bottom-label1'));
         document.querySelector("#cover").style.display="none"
         document.querySelector(".center_container").style.display="none"
     } else {
-        reg=/^[A-Z,Ñ,&]{3,4}[0-9]{2}(0[1-9]|1[0-2])((0[1-9]|[12][0-9]|3[01]))([A-Z,0-9][A-Z,0-9][0-9,A-Z])/g;
-        result = elmnt_value.match(reg);
+        regF=/^[A-Z,Ñ,&]{4}[0-9]{2}(0[1-9]|1[0-2])((0[1-9]|[12][0-9]|3[01]))([A-Z,0-9][A-Z,0-9][0-9,A-Z])/g;
+        regM=/^[A-Z,Ñ,&]{3}[0-9]{2}(0[1-9]|1[0-2])((0[1-9]|[12][0-9]|3[01]))([A-Z,0-9][A-Z,0-9][0-9,A-Z])/g;
+        resultF = elmnt_value.match(regF);
+        resultM = elmnt_value.match(regM);
         cautionTxt = "El RFC ingresado no es válido";
         
-        if (result != null) {
+        if (resultF != null) {
             element.classList.add("valid");
             element.classList.remove("invalid");
             setTimeout(() => {
-                element.value=result;
+                element.value=resultF;
                 let busqueda = searchRFC(elmnt_value);
                 if (busqueda != null) {
                     setRFCData(busqueda);
-                }/* else{
+                }else{
                     document.querySelector("#nombre").disabled = false;
                     document.querySelector("#paterno").disabled = false;
                     document.querySelector("#materno").disabled = false;
                     document.querySelector("#day").disabled = false;
                     document.querySelector("#month").disabled = false;
                     document.querySelector("#year_date").disabled = false;
-                } */
+                }
                 document.querySelector("#cover").style.display="none"
                 document.querySelector(".center_container").style.display="none"
                 document.querySelector("#progress_loader").style.display="block"
                 document.querySelector("#caption_loader").style.display="block"
                 
             },1500);
-            if (elmnt_value.length == 13) {
-                tipoPersona = "fisica";
-            } else if (elmnt_value.length == 12) {
-                tipoPersona = "moral";
-            }
-
             
+            tipoPersona = "fisica";
+        }else if(resultM){
+            alert('POR EL MOMENTO SOLO PUEDES CONTRATAR UN SEGURO SI ERES PERSONA FÍSICA')
+            cautionTxt = "Solo personas físicas";
+            element.classList.add("invalid");
+            element.classList.remove("valid");
+            appendText(cautionTxt,element.parentNode.querySelector('.bottom-label1'));
+            document.querySelector("#nombre").disabled = true;
+            document.querySelector("#paterno").disabled = true;
+            document.querySelector("#materno").disabled = true;
+            document.querySelector("#day").disabled = true;
+            document.querySelector("#month").disabled = true;
+            document.querySelector("#year_date").disabled = true;
+            document.querySelector("#cover").style.display="none"
+            document.querySelector(".center_container").style.display="none"
+
         }else{
             element.classList.add("invalid");
             element.classList.remove("valid");
@@ -101,21 +123,21 @@ function setRFCData(data){
     document.querySelector("#nombre").value = data.nombre;
     document.querySelector("#nombre").classList.add("valid");
     document.querySelector("#nombre").classList.remove("invalid");
-    // document.querySelector("#nombre").disabled = true;
+    document.querySelector("#nombre").disabled = true;
     document.querySelector("#paterno").value = data.a_paterno;
     document.querySelector("#paterno").classList.add("valid");
     document.querySelector("#paterno").classList.remove("invalid");
-    // document.querySelector("#paterno").disabled = true;
+    document.querySelector("#paterno").disabled = true;
     document.querySelector("#materno").value = data.a_materno;
     document.querySelector("#materno").classList.add("valid");
     document.querySelector("#materno").classList.remove("invalid");
-    // document.querySelector("#materno").disabled = true;
+    document.querySelector("#materno").disabled = true;
     document.querySelector('#day [value="' + data.dia + '"]').selected = true;
-    // document.querySelector("#day").disabled = true;
+    document.querySelector("#day").disabled = true;
     document.querySelector('#month [value="' + data.mes + '"]').selected = true;
-    // document.querySelector("#month").disabled = true;
+    document.querySelector("#month").disabled = true;
     document.querySelector('#year_date [value="' + data.year + '"]').selected = true;
-    // document.querySelector("#year_date").disabled = true;
+    document.querySelector("#year_date").disabled = true;
     
 }
 
