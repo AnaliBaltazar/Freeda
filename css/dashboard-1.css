@@ -385,7 +385,7 @@ h5{ /*Prado Churubusco*/
 /*------El reporte final indica que el epicentro...------*/
 .info-reporte{
   width: 50%;
-  height: 65%;
+  height: 68%;
   /*margin-left: 5%; */
   background-color: #F4F6FA ; /*#F4F6FA*/
   border-radius: 10px;
@@ -2152,7 +2152,7 @@ h3.describe_bien{
 /*------El reporte final indica que el epicentro...------*/
 .info-reporte{ /*Recuadro con grieta*/
   width: 60%;
-  height: 75%;
+  /*height: 75%;*/
   /*height: 70%;
   margin-left: 5%; */
   margin-left: auto;
@@ -2260,7 +2260,7 @@ h3.describe_bien{
   border-spacing: 15px;
 }
 .recuadro-info{
-  height: 114%;
+  height: 110%;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
@@ -2476,7 +2476,7 @@ button.button-minus, button.button-plus{
   border-spacing: 15px;
 }
 .recuadro-info{
-  height: 114%;
+  height: 100%;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
@@ -2538,7 +2538,7 @@ button.button-minus, button.button-plus{
 /*------El reporte final indica que el epicentro...------*/
 .info-reporte{
   width: 50%;
-  height: 75%;
+  /*height: 75%;*/
   /*margin-left: 5%; */
   margin-left: 26%;
   padding-left: 20px;
