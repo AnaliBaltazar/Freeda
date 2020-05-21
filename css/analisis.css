@@ -86,7 +86,236 @@
   background-color: #912F46;
   border-radius: 5px;
 }
+/*8-ANALISIS-COMP.HTML*/
+/*Seccion1*/
+.seccion1{
+  position: static;
+  height: 230px;
+  width: 100%;
+  /*background: #DEDEDE; /*Prueba */
+}
+.texto1-seccion1{
+  font-size: 40px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /*Grosor*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 47px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1;
+  margin-top: 11%;
+}
+.texto2-seccion1{ /*Analisis completo*/
+  font-size: 25px; /*Tamaño letra*/
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  color: #000000;
+}
+.done-icon{ /*List*/
+  font-size: 30px;
+  color: #912F46;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  /*margin-left: 15px;*/
+}
 
+.texto1-seccion2{ /*Sabias que...*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  color: #912F46;
+  margin-top: -2%; 
+  margin-bottom: 0%; 
+}
+/*PARTE 1 de analisis completo*/
+.part1{
+  height: 600px;
+  /*padding-bottom: 100px; */
+  border-right: transparent 1px solid ;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: #912F46;
+  margin-top: 35%; /*Centra la linea*/
+}
+
+/*Imagen palmera*/
+.imagen1-part1{
+  width: 120px; /*Tamaño de imagen*/
+  margin-left: 33%; 
+  margin-top: 16%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 7%; /*Separacion con el otro elemento hacia abajo*/
+}
+  /*Imagen estrellas*/
+.imagen2-part1{
+  width: 250px; /*Tamaño de imagen*/
+  margin-left: 15%; 
+  margin-top: 2%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 8%; /*Separacion con el otro elemento hacia abajo*/ 
+}
+.texto1-part1{/*Distancia de la costa*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 25px;
+  padding-left: 3px;
+}
+.texto2-part1{ /*Tu inmueble se encuentra alejado*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 25px;
+  padding-left: 3%;
+}
+/*PARTE 2 de analisis completo*/
+.part2{
+  /*height: 600px;*/
+  /*padding-bottom: 100px;*/
+  border-right: transparent 1px solid ;
+}
+
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: #912F46;
+  margin-top: 35%; /*Centra la linea*/
+}
+  /*Información1*/
+.texto1-part2{ /*El terremoto del 1985*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 20px;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  padding-left: 3%;
+  line-height: 28px;
+}
+/*Casa*/ 
+.imagen1-part2{
+  width: 80px; /*Tamaño de imagen*/
+  margin-left: 15%; 
+  margin-top: -2%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 3%; /*Separacion con el otro elemento hacia abajo*/ 
+}
+.texto2-part2{ /*Derrumbe*/
+  font-family: 'Raleway', sans-serif;
+  color: #912F46; 
+  font-size: 23px;
+  text-align: right; /*Texto a la derecha*/
+  margin-right: 15%; /*Alinear el texto derecha*/
+  margin-top: -60px; /*Alinear el texto hacia arriba*/
+  padding-left: 15%;
+}
+/*Información2*/
+.texto3-part2{ /*El terremoto de 2017*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 20px;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  padding-left: 3%;
+  line-height: 28px;
+}
+/*Casa*/
+.imagen2-part2{
+  width: 80px; /*Tamaño de imagen*/
+  margin-left: 15%; 
+  margin-top: -2%; /*Separacion con el otro elemento hacia arriba*/
+  margin-bottom: 3%; /*Separacion con el otro elemento hacia abajo*/ 
+}
+.texto4-part2{ /*Derrumbe*/
+  font-family: 'Raleway', sans-serif;
+  color: #912F46; 
+  font-size: 23px;
+  text-align: right; /*Texto a la derecha*/
+  margin-right: 15%; /*Alinear el texto derecha*/
+  margin-top: -60px; /*Alinear el texto hacia arriba*/
+}
+/*PARTE 3 de analisis completo*/
+.part3{
+  height: 600px;
+  /*padding-bottom: 100px;*/
+}
+.texto1-part3{ /*Tipo de suelo en CDMX*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #912F46; 
+  font-size: 28px;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.imagen1-part3{ /*Mapa.svg*/
+  width: 70%;
+  margin-left: 16%;
+}
+.texto2-part3{ /*Zona IIIa-d*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #912F46; 
+  font-size: 25px;
+  margin-top: -1%;
+  margin-bottom: 5%;
+}
+.texto3-part3{ /*Tu inmueble se encuantra de una zona de trasición*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 20px;
+  margin-top: -3%;
+  margin-bottom: 5%;
+  line-height: 25px; 
+}
+.texto4-part3{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #000000; 
+  font-size: 15px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  line-height: 23px; 
+}
+.boton1-seccion2{ /*Boton cotizar*/
+  display: block;
+  margin-left: 40%;
+  border: 1px solid #FFFFFF; /*Margen de boton*/
+  border-radius: 5px; /*Ovalado/redondo*/
+  width: 200px; /*Tamaño*/
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF; /*Color de letra*/
+  text-transform: uppercase; /*Todas mayusculas*/
+  opacity: 1;
+  background: #912F46 0% 0% no-repeat padding-box; /*Color de boton*/
+  font-size: 15px;
+  font-weight: 500;
+}
+.boton1-seccion2:hover{
+  background: #C88585 0% 0% no-repeat padding-box; 
+  color: #000000;
+}
+.boton1-seccion2:active{
+  background: #912F46 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+}
+.boton1-seccion2:focus{
+  background: #C88585 0% 0% no-repeat padding-box;
+  border: 2px solid #C88585;
+}
 
 /*7-CP.HTML*/
 .texto1-cp{ /*Titulo Código postal*/
@@ -506,6 +735,66 @@ a.nav-link:hover{
   margin-top: -4%;
 }
 /*----------------------------*/
+/*8-analisis-comp.html*/
+.texto1-seccion1{  /*Riesgo de ubicacion*/
+  margin-top: 32%;
+  font-size: 35px;
+}
+.texto2-seccion1{  /*Analisis completo*/
+  margin-right: 9%;
+  margin-top: 3%;
+}
+.done-icon{ /*Icono √*/
+ color: #912F46;
+  margin-right: 15%;
+}
+
+.texto1-seccion2{ /*Sabias que...*/
+  margin-top: 9%;
+}
+.imagen2-part1{ /*Imagen estrella*/
+  margin-left: 25%;
+}
+.part1{
+  width: 100%;
+  border-bottom: #912F46 1px solid;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 1px;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+  size: 10%;
+}
+.part2{
+  border-bottom: #912F46 1px solid ;
+}
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.boton1-seccion2{ /*Boton cotizar*/
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+margin-bottom: 20%;
+}
+.part3{ /*Recusdro de informacion*/
+  height: 20%;
+}
+
 /*7-CP.HTML*/
 .texto1-cp{
   margin-top: 36%;
@@ -624,6 +913,61 @@ a.nav-link:hover{
   margin-top: -2%;
 }
 /*----------------------------*/
+/*analisis-completo.html*/
+.texto1-seccion1{  /*Riesgo de ubicacion*/
+  margin-top: 30%;
+}
+.texto2-seccion1{  /*Analisis completo*/
+  margin-right: 10%;
+  margin-top: 3%;
+}
+.material-icons.done-icon{
+  color: #912F46;
+  margin-right: 15%;
+}
+.texto1-seccion2{
+  margin-top: 10%;
+}
+.part1{
+  border-bottom: #912F46 1px solid ;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.part2{
+  border-bottom: #912F46 1px solid ;
+}
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.imagen2-part1{ /*Imagen estrella*/
+margin-left: 25%;
+}
+.boton1-seccion2{ /*Boton cotizar*/
+margin-left: auto;
+margin-right: auto;
+margin-top: 30%;
+margin-bottom: 30%;
+}
+
+
+
 /*7-CP.HTML*/
 .texto1-cp{
   margin-top: 35%;
@@ -736,6 +1080,63 @@ a.nav-link:hover{
   margin-top: -2%;
 }
 /*----------------------------*/
+/*analisis-completo.html*/
+.texto1-seccion1{  /*Riesgo de ubicacion*/
+  margin-top: 23%;
+}
+.texto2-seccion1{  /*Analisis completo*/
+  margin-right: 17%;
+  margin-top: 3%;
+}
+.material-icons.done-icon{
+  color: #912F46;
+  margin-right: 15%;
+}
+.texto1-seccion2{
+  margin-top: 10%;
+}
+.part1{
+  border-bottom: #912F46 1px solid ;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.imagen1-part1{
+  margin-left: 40%;
+}
+.part2{
+  border-bottom: #912F46 1px solid ;
+}
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: transparent;
+  margin-top: 35%; /*Centra la linea*/
+}
+.imagen2-part1{ /*Imagen estrella*/
+  margin-left: 32%;
+}
+.boton1-seccion2{ /*Boton cotizar*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35%;
+  margin-bottom: 25%;
+}
+
+
 /*7-CP.HTML*/
 .texto1-cp{
   margin-top: 26%;
@@ -839,6 +1240,68 @@ a.nav-link:hover{
   margin-top: 0%;
 }
 /*------------------*/
+.part1{
+  border-bottom: transparent;
+}
+.part1:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 70%;  /* or 100px */
+  background: #912F46;
+  margin-top: 35%; /*Centra la linea*/
+}
+.texto1-seccion1{
+  margin-top: 18%;
+  margin-right: 10%
+}
+.texto2-seccion1{
+  width: 55%;
+  margin-left: 52%;
+  margin-top: -6%;
+}
+.texto1-seccion2{ /*Sabias que...*/
+  margin-bottom: 5%;
+}
+.imagen1-part1{
+  margin-left: 25%;
+}
+.imagen2-part1{
+  margin-left: 5%;
+}
+.texto1-part1, .texto2-part1{/*Distancia de la costa*/
+  font-size: 22px;
+}
+.part2{
+  border-bottom: transparent;
+}
+.part2:after{ /*Hace la linea mas pequeña*/
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 0;
+  width  : 1px;
+  height   : 70%;  /* or 100px */
+  background: #912F46;
+  margin-top: 35%; /*Centra la linea*/
+}
+.texto1-part2, .texto3-part2, .texto3-part3{ /*El terremoto del 1985*/
+  font-size: 18px;
+}
+.texto2-part2, .texto4-part2{ /*Derrumbe*/
+  font-size: 18px;
+}
+.boton1-seccion2{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  margin-bottom: 15%;
+}
+
 /*7-CP.HTML*/
 .texto1-cp{
   margin-top: 22%;
@@ -945,6 +1408,43 @@ a.nav-link:hover{
   margin-left: 10%;
 }
 /*--------------------------*/
+.texto1-seccion1{
+  margin-top: 15%;
+  margin-right: 10%
+}
+.texto2-seccion1{
+  width: 50%;
+  margin-left: 50%;
+  margin-top: -5%;
+}
+.texto1-seccion2{ /*Sabias que...*/
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.imagen1-part1{
+  margin-left: 25%;
+}
+.imagen2-part1{
+  margin-left: 15%;
+}
+.texto1-part1, .texto2-part1{/*Distancia de la costa*/
+  font-size: 22px;
+}
+.texto1-part2, .texto3-part2, .texto3-part3{ /*El terremoto del 1985*/
+  font-size: 20px;
+}
+.texto2-part2, .texto4-part2{ /*Derrumbe*/
+  font-size: 20px;
+}
+.boton1-seccion2{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  margin-bottom: 15%;
+}
+
+
+
 /*7-CP.HTML*/
 .texto1-cp{
   margin-top: 18%;
