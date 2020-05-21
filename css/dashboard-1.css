@@ -1202,6 +1202,10 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   /*padding: 55px 80px 5px 80px;*/
 }
 
+/*.reporte_msn{
+  font-size: 35px;
+  text-align: center;
+}*/
 
 
 /*Animations*/
@@ -1372,6 +1376,9 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  body{
+    background: pink;
+  }
 .logo-freeda{
   margin-left: -1%;
   margin-top: 1%;
@@ -1449,7 +1456,13 @@ button.Continuar i{
   margin-top: 56%;
   margin-left: 29%;
 }
-.readyScreen{ /*Recuadro grieta*/
+ /*.readyScreen{ Recuadro grieta
+  top: calc(68% - 250px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 380px;
+}*/
+#ready_screen2{ /*Popup*/
   top: calc(68% - 250px);
   left: calc(50% - 200px);
   width: 400px;
@@ -1463,8 +1476,9 @@ h1#screenHeader{ /*Tembló*/
 }
 .readyScreen p{ /*Espera el reporte final*/
   width: 260px;
-  font-size: 20px;
+  font-size: 25px;
   margin: 20px auto;
+  margin-top: 15%;
 }
 .icono_micro_screen{
   margin-top: 70px;
@@ -1664,6 +1678,9 @@ button.button-minus, button.button-plus{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    body{
+    background: gray;
+  }
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1811,7 +1828,13 @@ button i{
   margin-top: 46%;
   margin-left: 33%;
 }
-.readyScreen{ /*Recuadro grieta*/
+/*.readyScreen{ Recuadro grieta
+  top: calc(68% - 250px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+}*/
+#ready_screen2{
   top: calc(68% - 250px);
   left: calc(50% - 200px);
   width: 400px;
@@ -1826,8 +1849,9 @@ h1#screenHeader{ /*Tembló*/
 .readyScreen p{ /*Espera el reporte final*/
   width: 270px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
   margin: 20px auto;
+  margin-top: 15%;
 }
 .icono_micro_screen{ /*Microfono*/
   margin-top: 70px;
@@ -1958,6 +1982,9 @@ h3.describe_bien{
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    body{
+    background: orange;
+  }
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -2026,10 +2053,16 @@ h3.describe_bien{
   margin-top: 430%;
   margin-left: 440%;
 }
-.readyScreen{ /*Reguadro grieta*/
+/*.readyScreen{ Reguadro grieta
   top: calc(68% - 250px);
   left: calc(50% - 250px);
   width: 500px;
+  height: 400px;
+}*/
+#ready_screen2{
+  top: calc(68% - 250px);
+  left: calc(50% - 200px);
+  width: 400px;
   height: 400px;
 }
 h1#screenHeader{ /*Tembló*/
@@ -2040,8 +2073,9 @@ h1#screenHeader{ /*Tembló*/
 }
 .readyScreen p{ /*Espera el reporte*/
   width: 290px;
-  font-size: 20px;
+  font-size: 25px;
   margin: 20px auto;
+  margin-top: 10%;
 }
 .icono_micro_screen{ /*Microfono*/
   margin-top: 60px;
@@ -2224,6 +2258,9 @@ h3.describe_bien{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    body{
+    background: aqua;
+  }
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -2278,13 +2315,19 @@ h3.describe_bien{
   flex-direction: row;
   align-items: center;
 }
-
+/************************/
 /*Pop up*/
 .btn-siniestro{
   margin-top: 30%;
   margin-left: 40%;
 }
-.readyScreen{ /*Recuadro grieta*/
+/*.readyScreen{ Recuadro grieta
+  top: calc(65% - 250px);
+  left: calc(45% - 250px);
+  width: 650px;
+  height: 400px;
+}*/
+#ready_screen2{
   top: calc(65% - 250px);
   left: calc(45% - 250px);
   width: 650px;
@@ -2298,7 +2341,7 @@ h1#screenHeader{ /*Tembló*/
 }
 .readyScreen p{ /*Espera el reporte final*/
   width: 350px;
-  font-size: 20px;
+  font-size: 30px;
   margin: 20px auto;
 }
 .icono_micro_screen{ /*Microfono*/
@@ -2464,6 +2507,9 @@ button.button-minus, button.button-plus{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    body{
+    background: violet;
+  }
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -2604,4 +2650,10 @@ button.button-minus, button.button-plus{
   display: flex;*/
 }
 
+
+/*p.reporte_msn{
+  font-size: 33px;
+  text-align: center;
+  margin-top: 22%;
+}*/
 }
