@@ -37,17 +37,13 @@
 
 <!--Empieza body-->
 <body>
-        <nav class="navbar navbar-expand-lg tamaño-renglon-1">
-		<!--Logo de menu--> <!-- Botones del menu -->
-        <a href="./17-dashboard-1.html"><img src="img/logo_freeda.svg" class="img-responsive navbar-brand logo-freeda"></a>  <!--Logo Freeda-->
-        
+        <!--<nav class="navbar navbar-expand-lg tamaño-renglon-1">
+        <a href="./17-dashboard-1.html"><img src="img/logo_freeda.svg" class="img-responsive navbar-brand logo-freeda"></a>
         <button class="btn navbar-toggler boton-menu" type="button" data-toggle="collapse" data-target="#navbarCollapsible">
             <i class="material-icons">menu</i>
         </button>
-
-        <!--Menu formal-->
         <div class="collapse navbar-collapse" id="navbarCollapsible">
-            <!-- <ul class="navbar-nav  menu-freeda">
+                <ul class="navbar-nav  menu-freeda">
                 <li class="nav-item posicion-item">
                     <a href="#" class="nav-link  texto-menu-f t1m text-nowrap">Solicitud de pago</a>
                 </li>
@@ -63,9 +59,38 @@
                 <li class="nav-item posicion-item">
                     <a href="#" class="nav-link texto-menu-f text-nowrap">Iniciar sesión</a>
                 </li>
-            </ul> -->
+            </ul>
         </div>
-    </nav>
+    </nav> -->
+        <div class="headerBar1" id="dashboard_header">
+        <!--logo freeda-->
+        <div class="Left">
+            <a href="./17-dashboard-1.html"><img class="img-responsive logo-freeda" src="img/logo_freeda.svg" alt=""></a>
+        </div>
+
+        <div class="Right">
+            <div class="menu help" id="optn_hlp">
+                <!--Icono-->                                <!--Texto-->
+                <i class="material-icons" id="help">help</i><span class="texto-ayuda">Centro de ayuda</span>
+                <div class="bubble">Centro de ayuda</div>
+            </div>
+
+            <div class="menu notification" id="optn_not">
+                <i class="material-icons" id="notify">notifications</i><span class="texto-notificacion" href="#">Notificaciones</span>
+
+                <div class="bubble" id="notifications">
+                    <p>Tu código de invitación 345654 ha sido activado por el arrendador</p>
+                    <p><a href="#">Verifica tu perfil</a> para que tu solicitud pueda ser evaluada por el arrendador</p>
+                </div>
+            </div>
+
+            <div class="menu user_profile" id="optn_profile">
+                <i class="material-icons" id="profile">expand_more</i><span href="#" id="session-name">Manuel Chavez...</span>
+                <div class="bubble_close" id="cerrar-sesion">Cerrar sesión</div>
+            </div>
+        </div>    
+    </div> 
+
     <div class="espacio-progreso"></div>
     <div class="headerBar">
         <a href="javascript:previousPage();" class="Menu Left"><i class="material-icons icon-arrow">keyboard_arrow_left</i></a>

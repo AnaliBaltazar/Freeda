@@ -14,7 +14,7 @@ a, .Right span{
 
 
 /*MENU*/
-.headerBar{
+.headerBar1{
   height: 108px;
   background-color: #912F46; /*Color menu*/
   width: 100%;
@@ -1376,9 +1376,6 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body{
-    background: pink;
-  }
 .logo-freeda{
   margin-left: -1%;
   margin-top: 1%;
@@ -1678,9 +1675,6 @@ button.button-minus, button.button-plus{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body{
-    background: gray;
-  }
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -1982,9 +1976,6 @@ h3.describe_bien{
       
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body{
-    background: orange;
-  }
 .tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -2258,9 +2249,6 @@ h3.describe_bien{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body{
-    background: aqua;
-  }
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }
@@ -2507,9 +2495,6 @@ button.button-minus, button.button-plus{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body{
-    background: violet;
-  }
 .tamaño-renglon-1{
   padding-left: 25%; /*9*/
 }

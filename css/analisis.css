@@ -2,10 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 /*Navegacion*/
-/*Encabezado menú*/
-.tamaño-renglon-1{
+/*Barra de navegacion*/
+/*.tamaño-renglon-1{
   position: fixed;
-  /* height: 78px; */
+  /* height: 78px; 
   padding-top: 13px;
   width: 100%;
   z-index: 2010;
@@ -15,42 +15,146 @@
   padding-left: 19%;
 }
 .logo-freeda{
-  margin-left: 19%; /*-55*/
+  margin-left: 19%; 
   height: 85px;
   width: 210px; 
   display:flex;
 }
 .menu-freeda{
   font-size: 14px;
-  /*margin-left: 5%;*/
   padding-bottom: 4px;
 }
-.texto-menu-f{ /*Letra del menu*/
+.texto-menu-f{ 
   font-size: 20px;
-  color:#F7F7F7; /*F7F7F7*/
+  color:#F7F7F7; 
   margin-top: 3px;
   padding-right: 30px;
   font-weight: 400;
 }
-.texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
+.texto-menu-f:hover{ 
   color: #FFFFFF;
 }
 .texto-menu-f:active{
   color: #FFFFFF;
 }
-.texto-menu-f:focus{ /*Queda activado*/
+.texto-menu-f:focus{ 
   text-decoration: underline;
   color: #FFFFFF;
 }
 .boton-menu-f{
   position: absolute;
   left: 10%;
+}*/
+/*CAMBIO DE BARRA DE NAVEGACIÓN*/
+/*MENU*/
+.headerBar1{
+  height: 108px;
+  background-color: #912F46; /*Color menu*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
+.logo-freeda{
+  margin-left: 61%; /*Alineacion*/
+  /*margin-bottom: 0%;*/
+  height: 75px;
+  width: 210px; 
+  display:flex;
+}
+
+/*Lado derecho el menu*/
+.Right{
+  display: flex;
+  flex-direction: row;
+  /* width: 40%; */
+  align-items: center;
+  /* justify-content: flex-end;
+  margin-right: 10%; */
+}
+.Right i{
+  cursor: pointer;
+  position: relative;
+}
+.selected{
+  color: #60A1E7 !important;
+}
+/*AYUDA, NOTIFICACION Y USUARIO*/
+.menu{
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FFFFFF;/*Color de letra*/
+}
+
+.bubble{
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 50px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3B536D;
+  display: none;
+}
+.bubble_close{
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 80px;
+  margin-left: 7px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #912F46;
+  display: none;
+  cursor: pointer;
+}
+#notifications{
+  width: 200px;
+  height: auto;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 50px;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3B536D;
+  display: none;
+  border-left: 10px solid #3B536D;
+}
+#notifications p a{
+  color: #60A1E7;
+  /* font-size: 13px; */
+}
+.show, .show#notifications{display: block;}
+.material-icons{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
 /*BARRA DE PROGRESO*/
 .espacio-progreso{
   width: 100%;
-  padding-top: 63px;
-  padding-bottom: 60px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   /*background: #bfe7e5;        /*PRUEBA*/
 }
 .headerBar{ /*CONTENEDOR < >*/
@@ -712,8 +816,8 @@ input.quantity-field{
 /*------------------MEDIA QUERIES--------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.tamaño-renglon-1{
-  padding-left: 8%; /*9*/
+/*.tamaño-renglon-1{
+  padding-left: 8%; 
 }
 .logo-freeda{
   margin-left: -18%;
@@ -723,21 +827,35 @@ input.quantity-field{
 }
 .boton-menu{
   left: 80%;
-}
+}*/
 /*li.nav-item{
   border-bottom:1px solid rgba(255,255,255, .3);
-}*/
+}
 a.nav-link:hover{
   color: #000000;
 }
-
 .headerBar{
   margin-top: -4%;
+}*/
+/*CAMBIO DE BARRA DE NAVEGACIÓN*/
+.logo-freeda{
+  margin-left: -1%;
+  margin-top: 1%;
+}
+.btn-agregar{
+  margin-right: -4%;
+  margin-top: -5%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
 }
 /*----------------------------*/
 /*8-analisis-comp.html*/
 .texto1-seccion1{  /*Riesgo de ubicacion*/
-  margin-top: 32%;
+  margin-top: 18%;
   font-size: 35px;
 }
 .texto2-seccion1{  /*Analisis completo*/
@@ -752,7 +870,7 @@ a.nav-link:hover{
   margin-left: 37%;
 }
 .texto1-seccion2{ /*Sabias que...*/
-  margin-top: 9%;
+  margin-top: 0%;
 }
 .imagen2-part1{ /*Imagen estrella*/
   margin-left: 24%;
@@ -799,7 +917,7 @@ margin-bottom: 20%;
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 36%;
+  margin-top: 20%;
 }
 .texto_area_cp{
   width: 86%;
@@ -891,33 +1009,51 @@ margin-bottom: 20%;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-.tamaño-renglon-1{
-  padding-left: 8%; /*9*/
+/*.tamaño-renglon-1{
+  padding-left: 8%; 
 }
 .logo-freeda{
   margin-left: -18%;
-  /*margin-top: -7%;*/
 }
 .material-icons{
   color: white;
 }
 .boton-menu{
   left: 80%;
-}
+}*/
 /*li.nav-item{
   border-bottom:1px solid rgba(255,255,255, .3);
-}*/
+}
 a.nav-link:hover{
   color: #000000;
 }
-
 .headerBar{
   margin-top: -2%;
+}*/
+/*CAMBIO DE BARRA DE NAVEGACIÓN*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
 }
+.logo-freeda{
+  margin-left: 3%;
+  margin-top: 1%;
+}
+.btn-agregar{
+  margin-right: -4%;
+  margin-top: -5%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
+}
+
+
 /*----------------------------*/
 /*analisis-completo.html*/
 .texto1-seccion1{  /*Riesgo de ubicacion*/
-  margin-top: 30%;
+  margin-top: 16%;
 }
 .texto2-seccion1{  /*Analisis completo*/
   margin-right: 10%;
@@ -928,7 +1064,7 @@ a.nav-link:hover{
   margin-right: 15%;
 }
 .texto1-seccion2{
-  margin-top: 10%;
+  margin-top:0%;
 }
 .part1{
   border-bottom: #912F46 1px solid ;
@@ -975,7 +1111,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 35%;
+  margin-top: 20%;
 }
 .texto_area_cp{
   width: 64%;
@@ -1068,7 +1204,7 @@ a.nav-link:hover{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-.tamaño-renglon-1{
+/*.tamaño-renglon-1{
   padding-left: 8%;
 }
 .logo-freeda{
@@ -1080,14 +1216,22 @@ a.nav-link:hover{
 .boton-menu{
   left: 80%;
 }
-
 .headerBar{
   margin-top: -2%;
+}*/
+/*CAMBIO DE BARRA DE NAVEGACIÓN*/
+.tamaño-renglon-1{
+  padding-left: 10%;
 }
+.logo-freeda{
+  margin-left: 17.5%;
+  margin-top: 1%;
+}
+
 /*----------------------------*/
 /*analisis-completo.html*/
 .texto1-seccion1{  /*Riesgo de ubicacion*/
-  margin-top: 23%;
+  margin-top: 12%;
 }
 .texto2-seccion1{  /*Analisis completo*/
   margin-right: 17%;
@@ -1098,7 +1242,7 @@ a.nav-link:hover{
   margin-right: 15%;
 }
 .texto1-seccion2{
-  margin-top: 10%;
+  margin-top: 0%;
 }
 .part1{
   border-bottom: #912F46 1px solid ;
@@ -1144,7 +1288,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 26%;
+  margin-top: 15%;
 }
 .texto_area_cp{
   width: 49%;
@@ -1232,8 +1376,8 @@ a.nav-link:hover{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-.tamaño-renglon-1{
-  padding-left: 11%; /*9*/
+/*.tamaño-renglon-1{
+  padding-left: 11%; 
 }
 .logo-freeda{
   margin-left: -38%;
@@ -1243,7 +1387,22 @@ a.nav-link:hover{
 }
 .headerBar{
   margin-top: 0%;
+}*/
+/*CAMBIO DE BARRA DE NAVEGACIÓN*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
 }
+.logo-freeda{
+  margin-left: 21%;
+  margin-top: 1%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  visibility: visible;
+}
+.texto-notificacion{
+  display: all;
+}
+
 /*------------------*/
 .part1{
   border-bottom: transparent;
@@ -1260,7 +1419,7 @@ a.nav-link:hover{
   margin-top: 35%; /*Centra la linea*/
 }
 .texto1-seccion1{
-  margin-top: 18%;
+  margin-top: 8%;
   margin-right: 10%
 }
 .texto2-seccion1{
@@ -1309,7 +1468,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 22%;
+  margin-top: 10%;
 }
 .texto_area_cp{
   width: 40%;
@@ -1403,18 +1562,26 @@ a.nav-link:hover{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-.tamaño-renglon-1{
-  padding-left: 20%; /*9*/
+/*.tamaño-renglon-1{
+  padding-left: 20%; 
 }
 .logo-freeda{
   margin-left: -100%;
 }
 .texto-menu-f{
   margin-left: 10%;
+}*/
+/*CAMBIO DE BARRA DE NAVEGACIÓN*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: 21.5%;
+  margin-top: 3%;
 }
 /*--------------------------*/
 .texto1-seccion1{
-  margin-top: 15%;
+  margin-top: 8%;
   margin-right: 10%
 }
 .texto2-seccion1{
@@ -1423,7 +1590,7 @@ a.nav-link:hover{
   margin-top: -5%;
 }
 .texto1-seccion2{ /*Sabias que...*/
-  margin-top: 5%;
+  margin-top: 0%;
   margin-bottom: 3%;
 }
 .imagen1-part1{
@@ -1452,7 +1619,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 18%;
+  margin-top: 8%;
 }
 .texto_area_cp{
   width: 37%;
