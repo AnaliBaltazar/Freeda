@@ -122,3 +122,14 @@ function addUnits(){   // AGREGA LAS UNIDADES DE SUPERFICIE AL SALIR DEL CAMPO D
           // code block
     }
 }
+
+
+//Mostrar boton Cerrar sesión 
+$("#profile").on( "click", function() {    
+    $('.bubble_close').toggle();
+});
+
+$("#cerrar-sesion").on( "click", function() {
+    sessionStorage.clear()    
+    window.location="./index.html"
+});
