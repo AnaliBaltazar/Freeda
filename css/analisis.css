@@ -748,12 +748,14 @@ a.nav-link:hover{
  color: #912F46;
   margin-right: 15%;
 }
-
+.imagen1-part1{
+  margin-left: 37%;
+}
 .texto1-seccion2{ /*Sabias que...*/
   margin-top: 9%;
 }
 .imagen2-part1{ /*Imagen estrella*/
-  margin-left: 25%;
+  margin-left: 24%;
 }
 .part1{
   width: 100%;
@@ -956,14 +958,17 @@ a.nav-link:hover{
   background: transparent;
   margin-top: 35%; /*Centra la linea*/
 }
+.imagen1-part1{
+  margin-left: 38.5%;
+}
 .imagen2-part1{ /*Imagen estrella*/
-margin-left: 25%;
+  margin-left: 25%;
 }
 .boton1-seccion2{ /*Boton cotizar*/
-margin-left: auto;
-margin-right: auto;
-margin-top: 30%;
-margin-bottom: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 
@@ -1259,7 +1264,7 @@ margin-bottom: 30%;
   margin-right: 10%
 }
 .texto2-seccion1{
-  width: 55%;
+  width: 52%;
   margin-left: 52%;
   margin-top: -6%;
 }
