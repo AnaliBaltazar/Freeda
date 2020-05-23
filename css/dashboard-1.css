@@ -514,7 +514,7 @@ h5{ /*Prado Churubusco*/
   position: fixed;
   border-radius: 5px;
   text-align: center;
-  z-index: 100; /*superponen*/
+  z-index: 5001; /*superponen*/
   display: none;
   top: calc(50% - 250px);
   left: calc(50% - 250px);
