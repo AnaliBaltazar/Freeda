@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Empieza Head-->
+  <head>
+    <title>Pólizas</title>
+    <link rel="icon" href=""> <!--Favicon-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Fuente de letra-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--Usar iconos-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <!--Documento css (Ruta css/----) -->
+    <link rel="stylesheet" href="css/dashboard-1.css" > 
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+
+<!--Empieza body-->
+<body>
+
+      <div class="headerBar1" id="dashboard_header">
+        <!--logo freeda-->
+        <div class="Left">
+            <a href="#"><img class="img-responsive logo-freeda" src="img/logo_freeda.svg" alt=""></a>
+        </div>
+
+        <div class="Right">
+            <div class="menu help" id="optn_hlp">
+                <!--Icono-->                                <!--Texto-->
+                <i class="material-icons" id="help">help</i><span class="texto-ayuda">Centro de ayuda</span>
+                <div class="bubble">Centro de ayuda</div>
+            </div>
+
+            <div class="menu notification" id="optn_not">
+                <i class="material-icons" id="notify">notifications</i><span class="texto-notificacion" href="#">Notificaciones</span>
+
+                <div class="bubble" id="notifications">
+                    <p>Tu código de invitación 345654 ha sido activado por el arrendador</p>
+                    <p><a href="#">Verifica tu perfil</a> para que tu solicitud pueda ser evaluada por el arrendador</p>
+                </div>
+            </div>
+
+            <div class="menu user_profile" id="optn_profile">
+                <i class="material-icons" id="profile">expand_more</i><span href="#" id="session-name">Manuel Chavez...</span>
+                <div class="bubble_close" id="cerrar-sesion">Cerrar sesión</div>
+            </div>
+        </div>    
+    </div> 
+    
+    
+    <!--Pólizas-->
+    <div class="container">
+        <div class="header">
+            <h1>Pólizas</h1>
+        </div>
+
+
+        <!--<div class="header_btns">
+            <button id="filters">FILTRAR <i class="material-icons">expand_more</i></button>
+            <button id="add_btn">NUEVO INMUEBLE <i class="material-icons">add</i></button>
+        </div>
+        <div class="filters_container">
+            <label for="date" id="order_lbl">Ordenar por:</label>
+            <div class="custom-select">    
+                <select name="date" id="date">
+                    <option value="0">Fecha</option>
+                    <option value="1">Valor (max. a min.)</option>
+                    <option value="2">Valor (min. a max.)</option>    
+                </select>
+                <i class="material-icons" id="sel_arrow">expand_more</i>
+            </div>
+            
+            <div id="services_filt">
+                <h4 class="filtType_lbl">Servicios activos</h4>
+               
+                <label class="chkbox_container">Seguro Hogar Contratado
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="chkbox_container">Seguro Renta Contratado
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div id="type_filt">
+                <h4 class="filtType_lbl">Tipo de inmueble</h4>
+               
+                <label class="chkbox_container">Departamentos
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="chkbox_container">Casas
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="search" id="searchbox">
+                <input type="text" placeholder="Buscar por dirección">
+                <i class="material-icons">search</i>
+            </div>-->
+            
+        </div>
+
+
+        <table>
+            <!--<thead>
+                <tr>
+                    <td class="address_col"></td>
+                    <td class="estimation_col"><div>Estimación de valor</div> </td>
+                    <td class="report_col"><div>Reporte Invaia</div></td>
+                    <td class="segH_col"><div>Seguro Hogar</div></td>
+                </tr>
+            </thead> -->
+            
+            <tbody>
+                <tr class="ahover">
+                    <td class="address_col">
+                        <div>
+                      
+                            <img src="RECURSOS/casa.svg" alt="" id="icon">
+                            <div class="address">
+                                <h3 class="prop_street" id="prop_street">Casiopea 74</h3>
+                                <h5 class="prop_address" id="prop_address">Prado Churubusco, CDMX</h5>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="estimation_col">
+                        <h5>-</h5>
+                    </td>
+
+                    <td class="report_col">
+                        <h5>-</h5>
+                    </td>
+
+                    <td class="segH_col" id="estatus-poliza">
+                        <i class="material-icons">check</i>
+                        <h6>Vigente</h6>
+                    </td>
+
+             <!--   </tr>
+                <tr class="options_row">
+                    <td colspan="5">
+                        <div class="options_div" id="estimacion_div">
+                            <h5>Estimación de valor</h5>
+                            <a href="https://brainbow.mx/" target="_blank">Más información</a>
+                            <a href="https://brainbow.mx/" target="_blank" class="icon_a"><i class="material-icons" >chevron_right</i></a>                            
+                        </div>
+                        <div class="options_div" id="report_div">
+                            <h5>Reporte</h5>
+                            <a href="dashboard_reporte.html">Generar Reporte</a>
+                            <a href="dashboard_reporte.html" class="icon_a"><i class="material-icons">chevron_right</i></a>
+                            
+                        </div>
+                        <div class="options_div" id="segH_div">
+                            <h5>Seguro Hogar</h5>
+                            <a href="dashboard_contratar.html">Más información</a>
+                            <a href="dashboard_contratar.html" class="icon_a"><i class="material-icons">chevron_right</i></a>                            
+                        </div>
+                    </td>
+                </tr>
+                <tr class="space_row" style="height: 30px;">
+                    <td colspan="5" ></td>-->
+                </tr>
+            </tbody>
+        </table>
+
+    
+<!--Footer-->
+<div class="footermenu">
+  <a href="#" class="texto1-footer link-footer">Politicas de privacidad</a>
+  <a href="#" class="texto2-footer link-footer">Términos y condiciones</a>
+  <a href="#" class="texto3-footer link-footer">Sobre nosotros</a>
+  <a href="index.html" class="logo-footer"><img src="img/Freeda.svg"></a>
+</div>
+
+  
+
+  <script src="./js/freeda.js"></script>
+
+</body>
+</html>

@@ -1369,6 +1369,15 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
     width: 90%; 
 }*/
 
+/*POLIZAS.HTML*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
