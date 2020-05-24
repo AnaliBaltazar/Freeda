@@ -29,8 +29,33 @@ function toActivateToken(event) {
     if (!isAgeValid){
         return isAgeValid
     }
+
+    const regForm = document.querySelector("#data_registro");
+    const regFormElements = regForm.elements;
+
+    
+    let data = { ["UserData"]: {} };
+    let day,month,year;
+    for (const element of regFormElements) {
+        if (element.name.length > 0 && element.name != "birthday_day" && element.name != "birthday_month" && element.name != "birthday_year") {
+            data["UserData"][element.name] = element.value;
+        }else if (element.name.length > 0 && element.name == "birthday_day") {
+            day = (element.value.length == 1) ? "0" + element.value : element.value;
+        }else if (element.name.length > 0 && element.name == "birthday_month") {
+            month = (element.value.length == 1) ? "0" + element.value : element.value;
+        }else if (element.name.length > 0 && element.name == "birthday_year") {
+            year = element.value;
+        }
+    }
+    data["UserData"].birthday = day + "/" + month + "/" + year;
+        
+    sessionStorage.setItem("UserData", JSON.stringify(data["UserData"]));
     window.location = "./3-activar-token.html";
 }
+
+
+
+
 
 function ageCalc() {
     const diaNac=parseInt(document.querySelector("select#day").value);
@@ -54,6 +79,7 @@ function ageCalc() {
 
 function toValidateToken(event) {
     event.preventDefault();
+    let data = { ["UserData"]: {} };
     const phone=document.querySelector("#telefono");
     if (phone.value == "") {
         phone.classList.add("invalid");
@@ -62,22 +88,41 @@ function toValidateToken(event) {
     }else if (phone.classList.contains("invalid")){
         return false;
     }else {
+        data["UserData"] = JSON.parse(sessionStorage.getItem("UserData"));
+        data["UserData"].cellPhone = phone.value;
+        sessionStorage.setItem("UserData",JSON.stringify(data["UserData"]))
         window.location="./4-validar-token.html"
     }
+    
+
 }
 
 function validatePassword(event) {
     event.preventDefault();
     let password1 = document.querySelector('#pass');
     let password2 = document.querySelector('#pass2');
-    let mail=document.querySelector("#email")
-    if (password2.classList.contains("valid") && password2.value == password1.value) {
+    let mail=document.querySelector("#correo")
+    let data = { ["UserData"]: {} };
+
+    if (mail.classList.contains("valid") && password2.classList.contains("valid") && password2.value == password1.value) {
 
         document.querySelector("#cover").style.display="block";
         document.querySelector(".center_container").style.display="block";
         document.querySelector("#bar_loader").style.width="0";
         document.querySelector("#caption_loader").textContent="";
-        
+
+        const regForm = document.querySelector("#data_crear_usua");
+        const regFormElements = regForm.elements;
+
+        data["UserData"] = JSON.parse(sessionStorage.getItem("UserData"))
+        for (const element of regFormElements) {
+            if (element.name.length && element.name != "pass2") {
+                data["UserData"][element.name] = element.value;
+            }
+        }
+        sessionStorage.setItem("UserData", JSON.stringify(data["UserData"]));
+
+
         setTimeout(() => {
             document.querySelector("#bar_loader").style.width="15%";
             document.querySelector("#caption_loader").textContent="Creando cuenta de usuario";
@@ -96,6 +141,9 @@ function validatePassword(event) {
             }, 2000);
         }, 2000);
         
+    } else if(mail.classList.contains("invalid")){
+        alert("Escribe una cuenta de correo válida.")
+        return false
     } else if(password1.value == "" || password2.value == "" || mail.value == ""){
         alert("Todos los campos son necesarios.")
         return false
