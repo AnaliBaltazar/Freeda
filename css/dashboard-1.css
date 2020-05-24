@@ -1473,7 +1473,7 @@ h1#screenHeader{ /*Tembló*/
 }
 .readyScreen p{ /*Espera el reporte final*/
   width: 260px;
-  font-size: 25px;
+  font-size: 22px;
   margin: 20px auto;
   margin-top: 15%;
 }
@@ -1843,7 +1843,7 @@ h1#screenHeader{ /*Tembló*/
 .readyScreen p{ /*Espera el reporte final*/
   width: 270px;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   margin: 20px auto;
   margin-top: 15%;
 }
@@ -2065,7 +2065,7 @@ h1#screenHeader{ /*Tembló*/
 .readyScreen p{ /*Espera el reporte*/
   width: 290px;
   font-size: 25px;
-  margin: 20px auto;
+  margin: 22px auto;
   margin-top: 10%;
 }
 .icono_micro_screen{ /*Microfono*/
@@ -2329,7 +2329,7 @@ h1#screenHeader{ /*Tembló*/
 }
 .readyScreen p{ /*Espera el reporte final*/
   width: 350px;
-  font-size: 30px;
+  font-size: 22px;
   margin: 20px auto;
 }
 .icono_micro_screen{ /*Microfono*/
