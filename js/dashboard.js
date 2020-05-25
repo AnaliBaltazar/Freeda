@@ -235,22 +235,24 @@ const transferNO_btn=document.querySelector("#no")
 transferNO_btn.addEventListener('click', addBankAccount)
 
 function showTransfer() {
-    document.querySelector("#poliza-main").style.display="none"
-    document.querySelector("#siniestro-listo").style.display="none"
-    document.querySelector("#info-reporte").style.display="none"
-    document.querySelector("#reembolsobtn-container").style.display="none"
-    document.querySelector("#reporte-daños").style.display="none"
-    document.querySelector("#total-daños").style.display="none"
-    document.querySelector("#contenedor-top").style.display="none"
-    document.querySelector("#canvas").style.display="none"
-    document.querySelector("#signature-pad-footer-container").style.display="none"
-    document.querySelector("#seccion-tran1").style.display="none"
-    document.querySelector("#seccion-tran2").style.display="none"
-    document.querySelector("#seccion-tran3").style.display="none"
-    document.querySelector("#seccion-btn").style.display="none"
-    document.querySelector("p.texto-trans").innerHTML= "Será transferido a la cuenta proporcionada" + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de " + sessionStorage.getItem("total-indemnizar") + " en un plazo de 3 a 5 días hábiles";
-    document.querySelector("#datos-poliza").style.display="block"
-    document.querySelector("#transfer-msg").style.display="block"
+    document.querySelector("#poliza-main").style.display="none";
+    document.querySelector("#siniestro-listo").style.display="none";
+    document.querySelector("#info-reporte").style.display="none";
+    document.querySelector("#reembolsobtn-container").style.display="none";
+    document.querySelector("#reporte-daños").style.display="none";
+    document.querySelector("#total-daños").style.display="none";
+    document.querySelector("#contenedor-top").style.display="none";
+    document.querySelector("#canvas").style.display="none";
+    document.querySelector("#signature-pad-footer-container").style.display="none";
+    document.querySelector("#seccion-tran1").style.display="none";
+    document.querySelector("#seccion-tran2").style.display="none";
+    document.querySelector("#seccion-tran3").style.display="none";
+    document.querySelector("#seccion-btn").style.display="none";
+    document.querySelector("p.texto-trans").innerHTML= "Será transferido a la cuenta proporcionada" + "<br/>" + sessionStorage.getItem("clabe") + "<br/>" + " el monto de " + sessionStorage.getItem("total-indemnizar") + " en un plazo de 3 a 5 días hábiles";;
+    document.querySelector("#datos-poliza").style.display="block";
+    document.querySelector("#transfer-msg").style.display="block";
+    document.querySelector("#reporte_siniestro").style.display="flex";
+    document.querySelector("#indemnizacion").style.display="flex";
 }
 
 //Selección Póliza

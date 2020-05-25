@@ -238,7 +238,7 @@ table{
 /*DOCUMENTOS VER Y DESCARGA*/
 .documentos{
   width: 100%;
-  height: 78%;
+  /* height: 78%; */
   margin-left: 0%;
   margin-top: 4%;
   border-radius: 10px;
@@ -292,6 +292,10 @@ h5{ /*Prado Churubusco*/
   cursor: default;
 
 }
+
+.doc_row#reporte_siniestro, .doc_row#indemnizacion{
+  display: none;
+} 
 .doc_btns{ /*BOTONES VER Y DESCARGA*/
   display: flex;
   flex-direction: row;
