@@ -797,7 +797,6 @@ button.Continuar.Small{
   width: 141px;
 }
 
-
 /*POLIZAS*/
 button#filters, button#add_btn{
   width: 150px;
@@ -1041,7 +1040,6 @@ button.Continuar.Small{
   width: 141px;
 }
 
-
 /*POLIZAS*/
 button#filters, button#add_btn{
   width: 200px;
@@ -1132,7 +1130,7 @@ div#searchbox input{
   width: 80%;
   margin-top: 30px;
 }
-img#icon, svg{
+img#icon{ /*svg*/
   width: 50px;
 }
 table{
@@ -1153,7 +1151,6 @@ thead tr td.estimation_col div{
 tbody tr{
   height: 100px;
 }
-
 td div{
   margin-left: 10px;
 }
@@ -1182,6 +1179,7 @@ td h6{
 td i.material-icons{
   font-size: 20px;
 }
+
 
 }
 
@@ -1365,7 +1363,7 @@ div#searchbox input{
   width: 90%;
   margin-top: 30px;
 }
-img#icon, svg{
+img#icon{ /*svg*/
   width: 50px;
 }
 table{
@@ -1508,7 +1506,6 @@ button.button_sel{
   z-index: 2003;
 }
 
-
 /*POLIZAS*/
 button#filters, button#add_btn{
   width: 200px;
@@ -1592,7 +1589,7 @@ div#searchbox input{
   min-width: 900px;
   margin-top: 50px;
 }
-img#icon, svg{
+img#icon{ /*svg*/
   width: 60px;
 }
 table{
@@ -1635,6 +1632,38 @@ td i.material-icons{
 
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/*Footer*/
+.texto1-footer{
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 38.5%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  margin-left: 83%;
+  /*margin-top: 5px;
+  height: 60px;
+  width: 150px;
+  display: flex;*/
+}
+}
 
 /*  || ANIMATIONS  */
 
