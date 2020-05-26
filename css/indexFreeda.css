@@ -28,7 +28,7 @@
   font-size: 20px;
   color:#F7F7F7; /*F7F7F7*/
   margin-top: 3px;
-  padding-right: 30px;
+  padding-right: 33px;
   font-weight: 400;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -62,7 +62,6 @@
   opacity: 1;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   font-size: 15px; /*13px*/
-
   font-weight: 500;
 }
 .boton2-menu:hover{
@@ -453,12 +452,15 @@ a.nav-link:hover{
 .logo-freeda{
   margin-left: -38%;
 }
+.menu-freeda{
+  margin-left: 30%;
+}
 .texto-menu-f{
-  margin-left: 0%;
+  /*margin-left: 0%;*/
 }
 .boton2-menu{
   margin-right: 0%;
-  width: 100px;
+  width: 160px;
   /* margin-left: 48%; */
 }
 /*------------------*/
@@ -529,8 +531,11 @@ a.nav-link:hover{
 .logo-freeda{
   margin-left: -100%;
 }
+.menu-freeda{
+  margin-left: 32%;
+}
 .texto-menu-f{
-  margin-left: 10%;
+
 }
 .boton2-menu{
   width: 160px;
