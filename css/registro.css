@@ -44,7 +44,6 @@
   position: absolute;
   left: 10%;
 }
-
 /*2-REGISTRO.HTML*/
 .seccion1{
   position: static;
@@ -129,7 +128,7 @@ select:focus{
   font-size: 20px;
 }
 .btn-registrarse:hover{
-  background: #990099 0% 0% no-repeat padding-box; 
+  background: #C88585 0% 0% no-repeat padding-box; 
   color: #000000;
 }
 .btn-registrarse:active{
@@ -955,8 +954,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .logo-freeda{
   margin-left: -38%;
 }
+.menu-freeda{
+  margin-left: 51%;
+}
 .texto-menu-f{
-  margin-left: 0%;
+  /*margin-left: 0%;*/
 }
 
 /*--------2-REGISTRO.HTML--------*/
@@ -1023,7 +1025,7 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-top: 2%;
 }
 .msn-validacion{
-  width: 35%;
+  width: 38%;
 }
 .texto2-seccion1{
   font-size: 20px;
@@ -1078,8 +1080,10 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-left: -100%;
   margin-top: 1%;
 }
+.menu-freeda{
+  margin-left: 48%;
+}
 .texto-menu-f{
-  margin-left: 10%;
 }
 
 /*--------2-REGISTRO.HTML--------*/
@@ -1143,6 +1147,9 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-top: 2%;*/
   margin-left: auto;
   margin-right: auto;
+}
+.msn-validacion{
+  width: 33%;
 }
 .nuevo-token{
   margin-top: 2%;

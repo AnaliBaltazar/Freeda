@@ -28,7 +28,7 @@
   font-size: 20px;
   color:#F7F7F7; /*F7F7F7*/
   margin-top: 3px;
-  padding-right: 30px;
+  padding-right: 33px;
   font-weight: 400;
 }
 .texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
@@ -880,8 +880,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .logo-freeda{
   margin-left: -38%;
 }
-.texto-menu-f{
-  margin-left: 0%;
+.menu-freeda{
+  margin-left: 30%;
+}
+.tex2{ /*Para 5-Crear-usuario.html*/
+  margin-left: 100%;
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
@@ -975,8 +978,10 @@ input.invalid + label.head-label + label.bottom-label1{
 .logo-freeda{
   margin-left: -100%;
 }
+.menu-freeda{
+  margin-left: 32%;
+}
 .texto-menu-f{
-  margin-left: 10%;
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
