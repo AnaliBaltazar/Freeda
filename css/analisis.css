@@ -207,7 +207,6 @@
   text-align: center;
   color: #912F46;
   opacity: 1;
-  margin-top: 11%;
 }
 .texto2-seccion1{ /*Analisis completo*/
   font-size: 25px; /*Tamaño letra*/
@@ -228,9 +227,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 35px;
-  color: #912F46;
-  margin-top: -2%; 
-  margin-bottom: 0%; 
+  color: #912F46; 
 }
 /*PARTE 1 de analisis completo*/
 .part1{
@@ -505,11 +502,10 @@
 }
 
 /*11-AÑOS.HTML*/
-.texto1{  /*Año de terminación de la obra*/
+ .texto1-tiempo{
   font-size: 40px;
-  /*margin-top: 13%;*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
-  line-height: 30px; /*Sangria*/
+  line-height: 47px; /*Sangria*/
   text-align: center;
   color: #912F46;
   opacity: 1; 
@@ -540,6 +536,15 @@
 }
 
 /*12-SUPERFICIE.HTML*/
+.texto1{  /*Año de terminación de la obra*/
+  font-size: 40px;
+  /*margin-top: 13%;*/
+  letter-spacing: 0.4px; /*Separacion de todas las letras*/
+  line-height: 30px; /*Sangria*/
+  text-align: center;
+  color: #912F46;
+  opacity: 1; 
+}
 .texto_area_superficie{ /*Cuando de introduce el texto*/
   text-align: center;
   margin: 30px auto;
@@ -1150,11 +1155,11 @@ a.nav-link:hover{
 /*----------------------------*/
 /*8-analisis-comp.html*/
 .texto1-seccion1{  /*Riesgo de ubicacion*/
-  margin-top: 18%;
+  margin-top: 10%;
   font-size: 35px;
 }
 .texto2-seccion1{  /*Analisis completo*/
-  margin-right: 9%;
+  margin-right: 5%;
   margin-top: 3%;
 }
 .done-icon{ /*Icono √*/
@@ -1212,7 +1217,7 @@ margin-bottom: 20%;
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 20%;
+  margin-top: 15%;
 }
 .texto_area_cp{
   width: 86%;
@@ -1226,16 +1231,19 @@ margin-bottom: 20%;
 } */
 
 /*11-AÑOS.HTML*/
-.texto1{
+.texto1-tiempo{
   margin-top: 15%;
-  line-height: 47px;
-  margin-bottom: 10%;
 }
 .texto_area_años{
   width: 90%;
 }
 
 /*12-SUPERFICIE.HTML*/
+.texto1{
+  margin-top: 15%;
+  line-height: 47px;
+  margin-bottom: 10%;
+}
 .texto_area_superficie{
   width: 90%;
 }
@@ -1500,10 +1508,10 @@ a.nav-link:hover{
 /*----------------------------*/
 /*analisis-completo.html*/
 .texto1-seccion1{  /*Riesgo de ubicacion*/
-  margin-top: 16%;
+  margin-top: 8%;
 }
 .texto2-seccion1{  /*Analisis completo*/
-  margin-right: 10%;
+  margin-right: 12%;
   margin-top: 3%;
 }
 .material-icons.done-icon{
@@ -1511,7 +1519,7 @@ a.nav-link:hover{
   margin-right: 15%;
 }
 .texto1-seccion2{
-  margin-top:0%;
+  margin-top:-12%;
 }
 .part1{
   border-bottom: #912F46 1px solid ;
@@ -1558,7 +1566,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 20%;
+  margin-top: 12%;
 }
 .texto_area_cp{
   width: 64%;
@@ -1573,16 +1581,20 @@ a.nav-link:hover{
 
 
 /*11-AÑOS.HTML*/
-.texto1{
-  margin-top: 15%;
-  line-height: 47px;
-  margin-bottom: 10%;
+.texto1-tiempo{
+  margin-top: 10%;
 }
+
 .texto_area_años{
   width: 90%;
 }
 
 /*12-SUPERFICIE.HTML*/
+.texto1{
+  margin-top: 15%;
+  line-height: 47px;
+  margin-bottom: 10%;
+}
 .texto_area_superficie{
   width: 90%;
 }
@@ -1837,10 +1849,10 @@ img, svg{
 /*----------------------------*/
 /*analisis-completo.html*/
 .texto1-seccion1{  /*Riesgo de ubicacion*/
-  margin-top: 12%;
+  margin-top: 8%;
 }
 .texto2-seccion1{  /*Analisis completo*/
-  margin-right: 17%;
+  margin-right: 20%;
   margin-top: 3%;
 }
 .material-icons.done-icon{
@@ -1848,7 +1860,8 @@ img, svg{
   margin-right: 15%;
 }
 .texto1-seccion2{
-  margin-top: 0%;
+  margin-top: -5%;
+  margin-bottom: -15%;
 }
 .part1{
   border-bottom: #912F46 1px solid ;
@@ -1894,7 +1907,7 @@ img, svg{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 15%;
+  margin-top: 8%;
 }
 .texto_area_cp{
   width: 49%;
@@ -1908,15 +1921,18 @@ img, svg{
 } */
 
 /*11-AÑOS.HTML*/
-.texto1{
-  margin-top: 10%;
-  margin-bottom: 6%;
+.texto1-tiempo{
+  margin-top: 7%;
 }
 .texto_area_años{
   width: 72%;
 }
 
 /*12-SUPERFICIE.HTML*/
+.texto1{
+  margin-top: 10%;
+  margin-bottom: 6%;
+}
 .texto_area_superficie{
   width: 68%;
 }
@@ -2194,16 +2210,17 @@ img, svg{
   margin-top: 35%; /*Centra la linea*/
 }
 .texto1-seccion1{
-  margin-top: 8%;
+  margin-top: 5%;
   margin-right: 10%
 }
 .texto2-seccion1{
   width: 52%;
-  margin-left: 52%;
+  margin-left: 58%;
   margin-top: -6%;
 }
 .texto1-seccion2{ /*Sabias que...*/
-  margin-bottom: 5%;
+  margin-top: -10%;
+  margin-bottom: -15%;
 }
 .imagen1-part1{
   margin-left: 25%;
@@ -2243,7 +2260,7 @@ img, svg{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .texto_area_cp{
   width: 40%;
@@ -2257,15 +2274,18 @@ img, svg{
 } */
 
 /*11-AÑOS.HTML*/
-.texto1{
-  margin-top: 8%;
-  margin-bottom: 5%;
+.texto1-tiempo{
+  margin-top: 4%;
 }
 .texto_area_años{
   width: 50%;
 }
 
 /*12-SUPERFICIE.HTML*/
+.texto1{
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
 .texto_area_superficie{
   width: 50%;
 }
@@ -2496,17 +2516,16 @@ img, svg{
 }
 /*--------------------------*/
 .texto1-seccion1{
-  margin-top: 8%;
+  margin-top: 4%;
   margin-right: 10%
 }
 .texto2-seccion1{
   width: 50%;
-  margin-left: 50%;
-  margin-top: -5%;
+  margin-left: 60%;
+  margin-top: -5.8%;
 }
 .texto1-seccion2{ /*Sabias que...*/
-  margin-top: 0%;
-  margin-bottom: 3%;
+  margin-top: -10%;
 }
 .imagen1-part1{
   margin-left: 25%;
@@ -2534,7 +2553,7 @@ img, svg{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 8%;
+  margin-top: 5%;
 }
 .texto_area_cp{
   width: 37%;

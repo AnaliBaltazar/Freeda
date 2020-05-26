@@ -69,7 +69,6 @@ html, body{
   width: 210px; 
   display:flex;
 }
-
 /*Lado derecho el menu*/
 .Right{
   display: flex;
@@ -93,7 +92,6 @@ html, body{
   margin-right: 5px;
   color: #FFFFFF;/*Color de letra*/
 }
-
 .bubble{
   width: 150px;
   height: 40px;
@@ -153,7 +151,6 @@ html, body{
   margin-left: 5px;
   margin-right: 5px;
 }
-
 .material-icons{
   color: white;
 }
@@ -161,6 +158,7 @@ html, body{
   color: #912F46;
   font-size: 40px;
 }
+
 /*BARRA DE PROGRESO*/
 .espacio-progreso{
   width: 100%;
@@ -211,7 +209,6 @@ html, body{
   margin-top: -4%;
   margin-bottom: 10%;
 }
-
 .espacio{
   width: 100%;
   padding-bottom: 105px;
@@ -219,59 +216,49 @@ html, body{
 }
 
 
-/*NUEVO FOOTER*/
-/*Footermenu*/
+/*Footer*/
 .footermenu{
   position: static;
   height: 80px;
   border-top: solid 5px;
   border-color: #F2F5F4;
-  padding-top: 2%;
-  /*background: #99cccc;   /* PRUEBA*/
 }
 .texto1-footer{
+  position: absolute;
+  margin-left: 21%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px; /*Separacion entre textos*/
-  padding-left: 5%;
-  margin-top: 28px;
   z-index: 2001;
 }
 .texto2-footer{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2002;
 }
 .texto3-footer{
+  position: absolute;
+  margin-left: 39%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2003;
 }
-.texto4-footer{
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-}
-.texto5-footer{
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-  text-decoration: none;
+.logo-footer{
+  margin-left: 66%;
+  margin-top: 20px;
+  height: 48px;
+  width: 158px;
+  display: flex;
 }
 .link-footer:hover{
   color: #C88585;
@@ -283,13 +270,6 @@ html, body{
 .link-footer:focus{
   text-decoration: underline;
   color: #C88585;
-}
-.logo-footer{
-  width: 160px;
-  height: 60px;
-  display: flex;
-  margin-left: 80%;
-  margin-top: -3%;
 }
 
 
@@ -319,26 +299,18 @@ html, body{
   font-size: 15px;
   font-weight: 500;
 }
-
 .boton-siguiente:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
   color: #000000;
 }
-
 .boton-siguiente:active{
   background: #912F46 0% 0% no-repeat padding-box;
   border: 1px solid #000000;
 }
-
 .boton-siguiente:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
-
-
-
-
-
 
 /* */
 
@@ -364,30 +336,29 @@ button.button_sel{
   border-radius: 5px;
   background-color: #FFFFFF;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   display: flex;
   align-items: center;
   outline: none;
 }
 /*BORDE DEL BOTON  #60A1E7*/
 button.button_sel:focus{
-    border: 5px solid #F9919C; /*Borde el boton*/
-    outline: none; /* quita borde azul al hacer focus */
+  border: 5px solid #F9919C; /*Borde el boton*/
+  outline: none; /* quita borde azul al hacer focus */
 }
 
 /*FONDO DEL BOTON AL DAR CLIC #A7CBF2*/
 button.button_sel:active{
-    background-color: #989A9B;
+  background-color: #989A9B;
 }
  /*CUANDO TE POSISCIONAS */
 button.activeHover:hover{
-    background-color: #912F46 !important;
-    border: none !important;
+  background-color: #912F46 !important;
+  border: none !important;
 }
-
 button.activeHover:hover .rectangle_content .button_text, button.activeHover:hover .cls-1{
-    color: #FFFFFF !important; /*color de la letra*/
-    fill: #989A9B !important;
+  color: #FFFFFF !important; /*color de la letra*/
+  fill: #989A9B !important;
 }
 
 /*AJUSTA LOS BOTONES EN MEDIO*/
@@ -414,13 +385,11 @@ button.activeHover:hover .rectangle_content .button_text, button.activeHover:hov
   width: 50px;
   height: 50px;
 }
-
 /* Estilos del contenedor con la descripcion de la Clase */
 .textoContenedor{
   border: 1.5px solid #C7C7C7;
   border-radius: 5px;
 }
-
 button.Continuar{
   display: block;
   background-color: #912F46;
@@ -431,7 +400,6 @@ button.Continuar{
   color: white;
   max-width: 300px;
 }
-
 button.Continuar:hover{
   background-color: rgb(180, 66, 92);
   border: none;
@@ -454,9 +422,9 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
 */
 
 
+
+
 /*-----------MEDIAS QUERIES----------*/
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 /*.tamaño-renglon-1{
@@ -487,9 +455,6 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
 .texto-notificacion{
   display: none;
 }
-
-
-
 .texto-clase{
   /*padding-top:12%;*/
   margin-top: 12%;
@@ -497,51 +462,76 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
   margin-bottom: 15%;
 }
 
-
 h3{
   font-size: 16px;
 }
-
-
 .rectangle{
   width: 90%;
   height: 80px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-
 button.button_sel{
   height: 80px;
 }
-
 .rectangle_content{
   width: 70%;
   margin-left: 5%;
   margin-right: 5%;
 }
-
 .icono{
   width: 40px;
   height: 40px;
 }
-
 .boton-siguiente{
   margin-top: -15%;
   margin-left: 28%;
 }
-
-.footer-freeda{
-    padding-left: 144px;
-  }
-
 button.Continuar.Small{
   width: 30%;
   height: 35px;
   margin: 7px auto;
 }
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
 }
-
-
+.texto1-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  position: absolute;
+  margin-left: -7%;
+  margin-top: 29px;
+  height: 48px;
+  width: 141px;
+}
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
@@ -577,9 +567,6 @@ button.Continuar.Small{
 .texto-notificacion{
   display: none;
 }
-
-
-
 .texto-clase{ /*¿Que clase de inmueble es?*/
   /*padding-top: 14%;*/
   margin-top: 10%;
@@ -587,38 +574,70 @@ button.Continuar.Small{
   margin-bottom: 15%;
 }
 
-
 /*CAMBIA EL TAMAÑO DE LA LETRA*/
-
 h3{
   font-size: 22px;
-  }
-
-  /*RECTANGULO DE BOTON*/
+}
+h5{
+  font-size: 16px;
+}
 .rectangle{
   width: 443px;
   height: 104px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-
-.button_sel{
+button{
   height: 104px;
 }
-
-.boton-siguiente{
-  margin-top: -15%;
-  margin-left: 35%;
+button.Continuar, button.Editar, button.Pagar{
+  width: 325px;
+  height: 66px;
+  margin-bottom: 10%;
 }
-
-.footer-freeda{
-    padding-left: 300px;
-  }
 button.Continuar.Small{
   width: 30%;
   height: 35px;
   margin: 7px auto;
 }
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  position: absolute;
+  margin-left: -2%;
+  margin-top: 29px;
+  height: 50px;
+  width: 141px;
+}
+
+
 }
 
 
@@ -657,31 +676,59 @@ button.Continuar.Small{
 h3{
   font-size: 19px;
 }
-
 .rectangle{
   width: 468.95px;
   height: 96.33px;
   margin-top: 4%;
   margin-bottom: 4%;
 }
-
 button.button_sel{
   height: 96.33px;
 }
-
 .boton-siguiente{
   margin-top: -15%;
   margin-left: 37%;
 }
 
-.footer-freeda{
-    padding-left: 400px;
-  }
-  .logo-footer{
-  display: none;
-}
-}
 
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 29%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 53%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  display: block;
+  margin-left: 83%;
+  margin-top: 2px;
+  height: 35px;
+  width: 110px;
+  position: absolute;
+}
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -722,29 +769,48 @@ button.button_sel{
 h3{
   font-size: 22px;
 }
-
 .rectangle{
   width: 506.29px;
   height: 104px;
   margin-top: 2%;
   margin-bottom: 2%;
-
 }
-
 button.button_sel{
   height: 104px;
 }
-
 .boton-siguiente{
   margin-top: -10%;
   margin-left: 35%;
 }
 
-.footer-freeda{
-    padding-left: 758px;
-  }
-.logo-footer{
-  display: none;
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2003;
 }
 }
 
@@ -762,9 +828,6 @@ button.button_sel{
     100% { transform: rotate(360deg); }
 }
 
-
-
-/*INPUTS */
 
 
 
