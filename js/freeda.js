@@ -1,3 +1,10 @@
+
+const windowDir = window.location.href;
+console.log(windowDir)
+if (windowDir.match('index') != null ) {
+  sessionStorage.clear();
+}
+
 $(document).ready(function(){
   $("#navbarCollapsible").on("hide.bs.collapse", function(){
     $(".boton-menu").html('<i class="material-icons icono-bm"> menu </i>');
@@ -5,11 +12,8 @@ $(document).ready(function(){
   $("#navbarCollapsible").on("show.bs.collapse", function(){
     $(".boton-menu").html('<i class="material-icons icono-bc"> close </i>');
   });
-});
 
-
-//CARRUSEL FREEDA
-$(document).ready(function(){
+  //CARRUSEL FREEDA
   // Activate Carousel
   $("#myCarousel").carousel();
     
@@ -34,7 +38,12 @@ $(document).ready(function(){
   $(".carousel-control-next").click(function(){
     $("#myCarousel").carousel("next");
   });
+  
+  
 });
+
+
+
 
 
 //7-validar-token.html

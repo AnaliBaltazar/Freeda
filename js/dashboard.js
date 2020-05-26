@@ -190,16 +190,25 @@ function showSiniestro() {
         document.querySelector("#ready_screen2").style.display="block"
     } else if(temblo==true && reporte_listo == true){
         document.querySelector("#poliza-main").style.display="none"
+        document.querySelector(".seccion-suma").style.display="none"
+        document.querySelector(".seccion-epicentro1").style.display="none"
+        document.querySelector(".seccion-epicentro2").style.display="none"
         document.querySelector("#siniestro-listo").style.display="block"
         document.querySelector("#info-reporte").style.display="block"
         document.querySelector("#reembolsobtn-container").style.display="block"
         document.querySelector("#siniestro").style.color="#912f46" //
         document.querySelector("#poliza").style.color="#707070" //
     }
+    document.querySelector("#siniestro").style.color="#912f46"
+    document.querySelector("#coberturas").style.color="#707070"
+    document.querySelector("#poliza").style.color="#707070"
 }
 
 function showReembolso() {
     document.querySelector("#poliza-main").style.display="none"
+    document.querySelector(".seccion-suma").style.display="none"
+    document.querySelector(".seccion-epicentro1").style.display="none"
+    document.querySelector(".seccion-epicentro2").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none"
     document.querySelector("#info-reporte").style.display="none"
     document.querySelector("#reembolsobtn-container").style.display="none"
@@ -211,6 +220,9 @@ function showFirma() {
     document.querySelector("#poliza-main").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none"
     document.querySelector("#info-reporte").style.display="none"
+    document.querySelector(".seccion-suma").style.display="none"
+    document.querySelector(".seccion-epicentro1").style.display="none"
+    document.querySelector(".seccion-epicentro2").style.display="none"
     document.querySelector("#reembolsobtn-container").style.display="none"
     document.querySelector("#reporte-daños").style.display="none"
     document.querySelector("#total-daños").style.display="none"
@@ -235,6 +247,9 @@ const transferNO_btn=document.querySelector("#no")
 transferNO_btn.addEventListener('click', addBankAccount)
 
 function showTransfer() {
+    document.querySelector(".seccion-suma").style.display="none"
+    document.querySelector(".seccion-epicentro1").style.display="none"
+    document.querySelector(".seccion-epicentro2").style.display="none"
     document.querySelector("#poliza-main").style.display="none";
     document.querySelector("#siniestro-listo").style.display="none";
     document.querySelector("#info-reporte").style.display="none";
@@ -275,8 +290,40 @@ function showPoliza() {
     document.querySelector("#seccion-btn").style.display="none"
     document.querySelector("#datos-poliza").style.display="none"
     document.querySelector("#transfer-msg").style.display="none"
+    document.querySelector(".seccion-suma").style.display="none"
+    document.querySelector(".seccion-epicentro1").style.display="none"
+    document.querySelector(".seccion-epicentro2").style.display="none"
     document.querySelector("#siniestro").style.color="#707070"
+    document.querySelector("#coberturas").style.color="#707070"
     document.querySelector("#poliza").style.color="#912f46"
+}
+
+//Selección Coberturas
+const coberturas_btn=document.querySelector("#coberturas");
+coberturas_btn.addEventListener('click', showCoberturas)
+
+function showCoberturas() {
+    document.querySelector("#poliza-main").style.display="none"
+    document.querySelector("#siniestro-listo").style.display="none"
+    document.querySelector("#info-reporte").style.display="none"
+    document.querySelector("#reembolsobtn-container").style.display="none"
+    document.querySelector("#reporte-daños").style.display="none"
+    document.querySelector("#total-daños").style.display="none"
+    document.querySelector("#contenedor-top").style.display="none"
+    document.querySelector("#canvas").style.display="none"
+    document.querySelector("#signature-pad-footer-container").style.display="none"
+    document.querySelector("#seccion-tran1").style.display="none"
+    document.querySelector("#seccion-tran2").style.display="none"
+    document.querySelector("#seccion-tran3").style.display="none"
+    document.querySelector("#seccion-btn").style.display="none"
+    document.querySelector("#datos-poliza").style.display="none"
+    document.querySelector("#transfer-msg").style.display="none"
+    document.querySelector(".seccion-suma").style.display="block"
+    document.querySelector(".seccion-epicentro1").style.display="block"
+    document.querySelector(".seccion-epicentro2").style.display="block"
+    document.querySelector("#siniestro").style.color="#707070"
+    document.querySelector("#poliza").style.color="#707070"
+    document.querySelector("#coberturas").style.color="#912f46"
 }
 
 //Boton VER POLIZA de popup Todo Listo
