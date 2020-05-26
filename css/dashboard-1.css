@@ -263,8 +263,8 @@ a.current:link, a.current:visited{
   padding-bottom: 100px; 
 }
 .recuadro-info{/*Recuadro con casita*/
-  width: 104%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   margin-left: -2%;
   margin-top: 5%;
   border-radius: 10px;
@@ -285,17 +285,18 @@ td{
   padding-left: 4%; /*Centrar el texto*/
 }
 td.col_l{
+  width: 45%;
   font-size: 18px;
   color: #535965; /*Color de letra*/
   font-weight: 500;
-  width: 50%; /*auto*/
+  /*width: 50%; auto*/
   text-align: left;
 }
 td.col_r{
+  width: auto;
   font-size: 18px;
   color: #767e8e; /*Color de letra*/
   font-weight: 300;
-  width: auto;
   text-align: right;
 }
 table{
@@ -304,7 +305,7 @@ table{
 
 /*DOCUMENTOS VER Y DESCARGA*/
 .documentos{
-  width: 100%;
+  width: 92%;
   /* height: 78%; */
   margin-left: 0%;
   margin-top: 4%;
@@ -326,7 +327,7 @@ h3.prop_street, h3.seg_active{ /*Casiopesa*/
   font-size: 30px;
   margin: 0px 20px;
   color: #912F46;
-  line-height: 47px; /*Sangria*/
+  line-height: 40px; /*Sangria*/
 }
 h3.seg_active{
   margin-top: 10px;
@@ -342,7 +343,7 @@ h5{ /*Prado Churubusco*/
   font-weight: 200;
   color: #8D8D8D;
   margin-left: 20px;
-  line-height: 40px; /*Sangria*/
+  line-height: 30px; /*Sangria*/
 }
 .doc_row_1{
   width: 100%;
@@ -1496,7 +1497,20 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .info_seg{
   border-spacing: 10px;
 }
+.recuadro-info{
+  width: 104%;
+  /*height: 95%;*/
+  height: auto;
+}
+.btn-agregar{
+  margin-left: 10%; /*-4%*/
+  margin-top: -7%;
+}
 /*VER Y DESCARGAR*/
+.documentos{
+  margin-left: auto;
+  margin-right: auto;
+}
 .doc_row{
   width: 90%;
   margin: 10px auto;
@@ -1809,10 +1823,24 @@ button.button-minus, button.button-plus{
 /*DATOS DEL ASEGURADO (direccion)*/
 .info_seg{
   border-spacing: 10px;
-}    
+}
+.recuadro-info{
+  width: 104%;
+  height: auto;
+}
+.btn-agregar{
+  margin-right: -4%; /*-4%*/
+  margin-top: -6%;
+}
+
 /*VER Y DESCARGA*/
 .right_col{
   width: 100%; 
+}
+.documentos{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .docs_content{
   width: 70%;
@@ -2085,6 +2113,7 @@ h3.describe_bien{
   margin-top: 1%;
 }
 
+
 /*18-SUMA-ASEGURADA*/
 .texto1-epicentro1, .texto1-epicentro2{
   font-size: 20px;
@@ -2114,13 +2143,22 @@ h3.describe_bien{
 /*DAHSBOARD*/
 /*AGREGÓ PARA ACOMODAR RECUADRO*/
 .recuadro-info{
-  width: 85%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
+}
+.btn-agregar{
+  margin-right: -3%; /*-4%*/
+  margin-top: -5%;
 }
 /*NUEVO DASH*/
 .info_seg{
   border-spacing: 15px;
+}
+/*VER Y DECARGA*/
+.documentos{
+  margin-left: 5%;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
@@ -2137,15 +2175,6 @@ h3.describe_bien{
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-/*.btn-agregar{
-  left: 73%;
-  margin-top: 0px;
-}*/
-.btn-agregar{
-  margin-right: 4%; /*-4%*/
-  margin-top: -4%;
 }
 
 /* PANTALLA TODO LISTO*/
@@ -2414,7 +2443,7 @@ h3.describe_bien{
 /*NUEVO DASH*/
 /*AGREGÓ PARA ACOMODAR RECUADRO*/
 .recuadro-info{
-  width: 100%;
+  width: 116%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2422,7 +2451,10 @@ h3.describe_bien{
   border-spacing: 15px;
 }
 .recuadro-info{
-  height: 114%;
+  height: auto;
+}
+.documentos{
+  margin-left: 10%;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
@@ -2474,9 +2506,9 @@ h1#screenHeader{ /*Tembló*/
   margin-right: 80%;
   width: 100px;
 }
-
 .btn-agregar{
-  left: 55%;
+  /*left: 70%;*/
+  margin-right: -13%;
   margin-top: -12%;
 }
 /*Reporte-daños.html*/
@@ -2644,7 +2676,8 @@ button.button-minus, button.button-plus{
   border-spacing: 15px;
 }
 .recuadro-info{
-  height: 114%;
+  width: 115%;
+  height: auto;
 }
 .doc_row h4, .doc_row .doc_btns{
   /* width: fit-content; */
@@ -2667,10 +2700,10 @@ button.button-minus, button.button-plus{
   left: 58%;
   margin-top: 2px;
 }*/
-
 .btn-agregar{
-  left: 60%;
-  margin-top: -6%;
+  /*left: 60%;*/
+  margin-right: -13%;
+  margin-top: -8%;
 }
 
 /*---------------*/
