@@ -438,6 +438,7 @@ input.quantity-field{
   margin-left: 32%;
 }
 select{
+  border-radius: 5px;
   margin: 0 auto;
   color: #912F46;
   background-color: white;
