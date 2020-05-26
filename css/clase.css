@@ -69,7 +69,6 @@ html, body{
   width: 210px; 
   display:flex;
 }
-
 /*Lado derecho el menu*/
 .Right{
   display: flex;
@@ -93,7 +92,6 @@ html, body{
   margin-right: 5px;
   color: #FFFFFF;/*Color de letra*/
 }
-
 .bubble{
   width: 150px;
   height: 40px;
@@ -153,7 +151,6 @@ html, body{
   margin-left: 5px;
   margin-right: 5px;
 }
-
 .material-icons{
   color: white;
 }
@@ -161,6 +158,7 @@ html, body{
   color: #912F46;
   font-size: 40px;
 }
+
 /*BARRA DE PROGRESO*/
 .espacio-progreso{
   width: 100%;
@@ -211,7 +209,6 @@ html, body{
   margin-top: -4%;
   margin-bottom: 10%;
 }
-
 .espacio{
   width: 100%;
   padding-bottom: 105px;
@@ -219,59 +216,49 @@ html, body{
 }
 
 
-/*NUEVO FOOTER*/
-/*Footermenu*/
+/*Footer*/
 .footermenu{
   position: static;
   height: 80px;
   border-top: solid 5px;
   border-color: #F2F5F4;
-  padding-top: 2%;
-  /*background: #99cccc;   /* PRUEBA*/
 }
 .texto1-footer{
+  position: absolute;
+  margin-left: 21%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px; /*Separacion entre textos*/
-  padding-left: 5%;
-  margin-top: 28px;
   z-index: 2001;
 }
 .texto2-footer{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2002;
 }
 .texto3-footer{
+  position: absolute;
+  margin-left: 39%;
+  margin-top: 20px;
   font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   color: #707070;
   opacity: 1;
-  margin-right: 40px;
+  z-index: 2003;
 }
-.texto4-footer{
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-}
-.texto5-footer{
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.64px;
-  color: #707070;
-  opacity: 1;
-  margin-right: 30px;
-  text-decoration: none;
+.logo-footer{
+  margin-left: 66%;
+  margin-top: 20px;
+  height: 48px;
+  width: 158px;
+  display: flex;
 }
 .link-footer:hover{
   color: #C88585;
@@ -283,13 +270,6 @@ html, body{
 .link-footer:focus{
   text-decoration: underline;
   color: #C88585;
-}
-.logo-footer{
-  width: 160px;
-  height: 60px;
-  display: flex;
-  margin-left: 80%;
-  margin-top: -3%;
 }
 
 
@@ -319,26 +299,18 @@ html, body{
   font-size: 15px;
   font-weight: 500;
 }
-
 .boton-siguiente:hover{
   background: #C88585 0% 0% no-repeat padding-box; 
   color: #000000;
 }
-
 .boton-siguiente:active{
   background: #912F46 0% 0% no-repeat padding-box;
   border: 1px solid #000000;
 }
-
 .boton-siguiente:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
 }
-
-
-
-
-
 
 /* */
 
@@ -364,30 +336,29 @@ button.button_sel{
   border-radius: 5px;
   background-color: #FFFFFF;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   display: flex;
   align-items: center;
   outline: none;
 }
 /*BORDE DEL BOTON  #60A1E7*/
 button.button_sel:focus{
-    border: 5px solid #F9919C; /*Borde el boton*/
-    outline: none; /* quita borde azul al hacer focus */
+  border: 5px solid #F9919C; /*Borde el boton*/
+  outline: none; /* quita borde azul al hacer focus */
 }
 
 /*FONDO DEL BOTON AL DAR CLIC #A7CBF2*/
 button.button_sel:active{
-    background-color: #989A9B;
+  background-color: #989A9B;
 }
  /*CUANDO TE POSISCIONAS */
 button.activeHover:hover{
-    background-color: #912F46 !important;
-    border: none !important;
+  background-color: #912F46 !important;
+  border: none !important;
 }
-
 button.activeHover:hover .rectangle_content .button_text, button.activeHover:hover .cls-1{
-    color: #FFFFFF !important; /*color de la letra*/
-    fill: #989A9B !important;
+  color: #FFFFFF !important; /*color de la letra*/
+  fill: #989A9B !important;
 }
 
 /*AJUSTA LOS BOTONES EN MEDIO*/
@@ -414,13 +385,11 @@ button.activeHover:hover .rectangle_content .button_text, button.activeHover:hov
   width: 50px;
   height: 50px;
 }
-
 /* Estilos del contenedor con la descripcion de la Clase */
 .textoContenedor{
   border: 1.5px solid #C7C7C7;
   border-radius: 5px;
 }
-
 button.Continuar{
   display: block;
   background-color: #912F46;
@@ -431,7 +400,6 @@ button.Continuar{
   color: white;
   max-width: 300px;
 }
-
 button.Continuar:hover{
   background-color: rgb(180, 66, 92);
   border: none;
@@ -452,11 +420,276 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
     font-size: 24px;
 }
 */
+/*POLIZAS.HTML*/
+button#filters, button#add_btn{
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  outline: none;
+}
+button#filters{
+  background-color: #fff;
+  border: 1.5px solid #535965;
+  color: #535965;
+}
+button#filters:hover{
+  background-color: #F2F2F2;
+}
+button#filters:focus{
+  border-color: #007BFF;
+}
+button#filters.active{
+  background-color: #D3D3D3;
+  border-color: #3B536D;
+}
+button#add_btn{
+  color: white;
+  background-color: #912F46;
+  border: 1px solid #000000;
+}
+.filters_container{
+  display: none;
+  flex-direction: row;
+}
+.filters_container.visible{
+  display: flex;
+}
+label#order_lbl{
+  font-weight: 300;
+}
+/*/////////////////////////STYLING SELECT ELEMENT/////////////////////////////////////////////////*/
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  border: 1.5px solid #3B536D;
+  border-radius: 5px;
+  background-color: white;
+  color: #3B536D;
+  font-weight: 500;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+/*style the arrow inside the select element:*/
+#sel_arrow{
+  position: absolute;
+  content: "";
+  cursor: pointer;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #3B536D;
+  cursor: pointer;
+  user-select: none;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #F4F6FA;
+  z-index: 99;
+  font-weight: 300;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  color: #3B536D;
+  background-color: #F4F6FA;
+  font-weight: 500;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+div#services_filt, div#type_filt{
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+div#services_filt div, div#type_filt div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+div#services_filt label, div#type_filt label{
+  /* width: fit-content; */
+}
+/*********************CHECKBOX STYLES***********************/
+/* The container */
+.chkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.chkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1.5px solid #3B536D;
+}
+/* On mouse-over, add a grey background color */
+.chkbox_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.chkbox_container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.chkbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.chkbox_container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*******************************************************************/
+/* input[type="checkbox"]{
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 1.5px solid #3B536D;
+}
+input[type="checkbox"]:hover{
+  background-color: #D2D9E6;
+  border: 1.5px solid #3B536D;  
+} */
+div#searchbox{
+  border: 1.5px solid #91F246;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+div#searchbox input{
+  outline: none;
+  border: none;
+  font-weight: 300;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header_name{
+  color: #912F46;
+}
+/*Tabla*/
+table{
+  border-collapse: collapse;
+  /*width: 70%;*/
+  margin-bottom: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Parte derecha*/
+td.estimation_col, td.report_col, td.segH_col, td.segR_col{
+  text-align: center;
+  color: #912F46;
+}
+tbody td.estimation_col, tbody td.report_col, tbody td.segH_col, tbody td.segR_col{
+  color: #8E97A7;
+  font-weight: 500;
+}
+/*Tabla*/
+tbody tr{
+  height: 100px;
+  background-color: #F4F6FA;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 10%);
+  border-radius: 5px;
+}
+tbody tr.ahover:hover{
+  background-color: #EAEDF2;
+}
+tr.space_row{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+tbody td.address_col{
+  border-radius: 5px 0 0 5px;
+}
+tbody td.segR_col{
+  border-radius: 0 5px 5px 0;
+}
+/*Parte izquierda*/
+td div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+td div.address{
+  display: block;
+}
+h3.prop_street{
+  font-weight: 500;
+  color: #912f46;
+}
+h5.prop_address{
+  font-weight: 300;
+  color: #535965;
+}
+td h5{
+  font-weight: 500;
+  color: #3B536D;
+}
+td h6{
+  font-weight: 500;
+  color: #3B536D;
+}
+td i.material-icons{
+  color: #3B536D;
+}
 
 
 /*-----------MEDIAS QUERIES----------*/
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 /*.tamaño-renglon-1{
@@ -487,9 +720,6 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
 .texto-notificacion{
   display: none;
 }
-
-
-
 .texto-clase{
   /*padding-top:12%;*/
   margin-top: 12%;
@@ -497,51 +727,214 @@ p.textoClase{ /*TEXTO DE BOTON (DESPLEGABLE)*/
   margin-bottom: 15%;
 }
 
-
 h3{
   font-size: 16px;
 }
-
-
 .rectangle{
   width: 90%;
   height: 80px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-
 button.button_sel{
   height: 80px;
 }
-
 .rectangle_content{
   width: 70%;
   margin-left: 5%;
   margin-right: 5%;
 }
-
 .icono{
   width: 40px;
   height: 40px;
 }
-
 .boton-siguiente{
   margin-top: -15%;
   margin-left: 28%;
 }
-
-.footer-freeda{
-    padding-left: 144px;
-  }
-
 button.Continuar.Small{
   width: 30%;
   height: 35px;
   margin: 7px auto;
 }
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  font-size: 14px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  position: absolute;
+  margin-left: -7%;
+  margin-top: 29px;
+  height: 48px;
+  width: 141px;
+}
+
+/*POLIZAS*/
+button#filters, button#add_btn{
+  width: 150px;
+  height: 35px;
+  font-size: 12px;
+} 
+button#add_btn i{
+  font-size: 13px;
+}
+.filters_container{
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  position: relative;
+}
+label#order_lbl{
+  font-size: 15px;
+  margin-top: 50px;
+}
+/*/////////////////////////STYLING SELECT ELEMENT/////////////////////////////////////////////////*/
+/*the container must be positioned relative:*/
+.custom-select {
+  width: 170px;
+  height: 30px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.select-selected {
+  height: 28.5px;
+  width: 160px;
+}
+/*style the arrow inside the select element:*/
+#sel_arrow{
+  top: 3px;
+  right: 0;    
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected { 
+  height: 28.5px;
+  line-height: 28.5px;
+  margin-left: 5px;
+}
+/*style items (options):*/
+.select-items {
+  top: 31.5px;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+div#services_filt, div#type_filt{
+  margin: 20px 10px;
+  font-size: 13px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div#services_filt{
+  width: 80%;
+}
+div#type_filt{
+  width: 80%;
+  justify-content: space-between;
+}
+div#services_filt h4, div#type_filt h4{
+  width: 100%;
+}
+div#services_filt div, div#type_filt div{
+  margin:5px;
+}
+div#searchbox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 30px;
+}
+div#searchbox input{
+  width: 80%;
+  height: 25px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.container{
+  width: 90%;
+  margin-top: 20px;
+}
+img#icon{ /*svg*/
+  width: 50px;
+}
+table{
+  border-spacing:0 30px;
+}
+thead{
+  font-size: 13px;
+}
+thead tr td.report_col div, thead tr td.segH_col div, thead tr td.segR_col div{
+  max-width: 78px;
+  margin: 0 auto;
+}
+thead tr td.estimation_col div{
+  width: fit-content;
+  margin: 0 auto;
+}
+tbody tr{
+  height: 100px;
+}
+td div{
+  margin-left: 10px;
+}
+td div.options_div{
+  margin: 15px 20px;
+}
+td div.address{
+  margin-left: 10px;
+  max-width: 250px;
+}
+td.estimation_col h5{
+  font-size: 13px;
+}
+h3.prop_street{
+  font-size: 18px;
+}
+h5.prop_address{
+  font-size: 12px;
+}
+td h5{
+  font-size: 15px;
+}
+td h6{
+  font-size: 10px;
+}
+td i.material-icons{
+  font-size: 20px;
 }
 
 
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
@@ -577,9 +970,6 @@ button.Continuar.Small{
 .texto-notificacion{
   display: none;
 }
-
-
-
 .texto-clase{ /*¿Que clase de inmueble es?*/
   /*padding-top: 14%;*/
   margin-top: 10%;
@@ -587,38 +977,210 @@ button.Continuar.Small{
   margin-bottom: 15%;
 }
 
-
 /*CAMBIA EL TAMAÑO DE LA LETRA*/
-
 h3{
   font-size: 22px;
-  }
-
-  /*RECTANGULO DE BOTON*/
+}
+h5{
+  font-size: 16px;
+}
 .rectangle{
   width: 443px;
   height: 104px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-
-.button_sel{
+button{
   height: 104px;
 }
-
-.boton-siguiente{
-  margin-top: -15%;
-  margin-left: 35%;
+button.Continuar, button.Editar, button.Pagar{
+  width: 325px;
+  height: 66px;
+  margin-bottom: 10%;
 }
-
-.footer-freeda{
-    padding-left: 300px;
-  }
 button.Continuar.Small{
   width: 30%;
   height: 35px;
   margin: 7px auto;
 }
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 170px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
+}
+.texto1-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 9%;
+  margin-top: 125px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 93px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  position: absolute;
+  margin-left: -2%;
+  margin-top: 29px;
+  height: 50px;
+  width: 141px;
+}
+
+/*POLIZAS*/
+button#filters, button#add_btn{
+  width: 200px;
+  height: 35px;
+  font-size: 13px;
+}
+button#add_btn i{
+  font-size: 13px;
+}
+.filters_container{
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  position: relative;
+}
+label#order_lbl{
+  font-size: 16px;
+  margin-top: 50px;
+}
+/*/////////////////////////STYLING SELECT ELEMENT/////////////////////////////////////////////////*/
+/*the container must be positioned relative:*/
+.custom-select {
+  width: 170px;
+  height: 30px;
+  font-size: 15px;
+  margin-right: 40%;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.select-selected {
+  height: 28.5px;
+  width: 160px;
+}
+/*style the arrow inside the select element:*/
+#sel_arrow{
+  top: 3px;
+  right: 0;    
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {  
+  height: 28.5px;
+  line-height: 28.5px;
+  margin-left: 5px;
+}
+/*style items (options):*/
+.select-items {
+  top: 31.5px;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+div#services_filt, div#type_filt{
+  margin: 20px 10px;
+  font-size: 13px;
+  width: 45%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div#services_filt{
+  width: 55%;
+}
+div#type_filt{
+  width: 33%;
+}
+div#services_filt h4, div#type_filt h4{
+  width: 100%;
+}
+div#services_filt div, div#type_filt div{
+  margin:5px;
+}
+div#services_filt label, div#type_filt label{
+}
+div#searchbox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 30px;
+}
+div#searchbox input{
+  width: 80%;
+  height: 25px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.container{
+  width: 80%;
+  margin-top: 30px;
+}
+img#icon{ /*svg*/
+  width: 50px;
+}
+table{
+  width: 100%;
+  border-spacing:0 30px;
+}
+thead{
+  font-size: 13px;
+}
+thead tr td.report_col div, thead tr td.segH_col div, thead tr td.segR_col div{
+  max-width: 78px;
+  margin: 0 auto;
+}
+thead tr td.estimation_col div{
+  width: fit-content;
+  margin: 0 auto;
+}
+tbody tr{
+  height: 100px;
+}
+td div{
+  margin-left: 10px;
+}
+td div.options_div{
+  margin: 15px 70px;
+}
+td div.address{
+  margin-left: 10px;
+  max-width: 250px;
+}
+td.estimation_col h5{
+  font-size: 13px;
+}
+h3.prop_street{
+  font-size: 18px;
+}
+h5.prop_address{
+  font-size: 12px;
+}
+td h5{
+  font-size: 15px;
+}
+td h6{
+  font-size: 10px;
+}
+td i.material-icons{
+  font-size: 20px;
+}
+
+
 }
 
 
@@ -657,31 +1219,209 @@ button.Continuar.Small{
 h3{
   font-size: 19px;
 }
-
 .rectangle{
   width: 468.95px;
   height: 96.33px;
   margin-top: 4%;
   margin-bottom: 4%;
 }
-
 button.button_sel{
   height: 96.33px;
 }
-
 .boton-siguiente{
   margin-top: -15%;
   margin-left: 37%;
 }
 
-.footer-freeda{
-    padding-left: 400px;
-  }
-  .logo-footer{
-  display: none;
+
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
 }
+.texto1-footer{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 29%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 53%;
+  margin-top: 28px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  display: block;
+  margin-left: 83%;
+  margin-top: 2px;
+  height: 35px;
+  width: 110px;
+  position: absolute;
 }
 
+/*POLIZAS*/
+button#filters, button#add_btn{
+  width: 200px;
+  height: 35px;
+  font-size: 13px;
+}
+button#add_btn i{
+  font-size: 13px;
+}
+.filters_container{
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  position: relative;
+}
+label#order_lbl{
+  font-size: 16px;
+  margin-top: 0;
+}
+/*/////////////////////////STYLING SELECT ELEMENT/////////////////////////////////////////////////*/
+/*the container must be positioned relative:*/
+.custom-select {
+  width: 170px;
+  height: 30px;
+  font-size: 15px;
+  margin-right: 40%;
+  margin-left: 10px;
+  margin-top: 0;
+}
+.select-selected {
+  height: 28.5px;
+  width: 160px;
+}
+/*style the arrow inside the select element:*/
+#sel_arrow{
+  top: 3px;
+  right: 0;    
+} 
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {   
+  height: 28.5px;
+  line-height: 28.5px;
+  margin-left: 5px;
+}
+/*style items (options):*/
+.select-items {
+  top: 31.5px;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+div#services_filt, div#type_filt{
+  margin: 20px 10px;
+  font-size: 13px;
+  width: 45%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div#services_filt{
+  width: 55%;
+}
+div#type_filt{
+  width: 37%;
+}
+div#services_filt h4, div#type_filt h4{
+  width: 100%;
+}
+div#services_filt div, div#type_filt div{
+  margin:5px;
+}
+div#services_filt label, div#type_filt label{
+  margin: 15px;
+}  
+div#searchbox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 30px;
+}
+div#searchbox input{
+  width: 80%;
+  height: 25px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.container{
+  width: 90%;
+  margin-top: 30px;
+}
+img#icon{ /*svg*/
+  width: 50px;
+}
+table{
+  width: 100%;
+  border-spacing:0 30px;
+}
+thead{
+  font-size: 13px;
+}
+thead tr td.report_col div, thead tr td.segH_col div, thead tr td.segR_col div{
+  max-width: 78px;
+  margin: 0 auto;
+}
+thead tr td.estimation_col div{
+  width: fit-content;
+  margin: 0 auto;
+}
+tbody tr{
+  height: 100px;
+}
+td div{
+  margin-left: 10px;
+}
+td div.options_div{
+  margin: 15px 70px;
+}
+td div.address{
+  margin-left: 10px;
+  max-width: 250px;
+}
+td.estimation_col h5{
+  font-size: 13px;
+}
+h3.prop_street{
+  font-size: 18px;
+}
+h5.prop_address{
+  font-size: 12px;
+}
+td h5{
+  font-size: 15px;
+}
+td h6{
+  font-size: 10px;
+}
+td i.material-icons{
+  font-size: 20px;
+}
+div.options_div h5{
+  width: 100px;
+}
+div.options_div a{    
+  font-size: 15px;
+  margin-left: 40px;
+  width: 150px;
+}
+
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -722,32 +1462,208 @@ button.button_sel{
 h3{
   font-size: 22px;
 }
-
 .rectangle{
   width: 506.29px;
   height: 104px;
   margin-top: 2%;
   margin-bottom: 2%;
-
 }
-
 button.button_sel{
   height: 104px;
 }
-
 .boton-siguiente{
   margin-top: -10%;
   margin-left: 35%;
 }
 
-.footer-freeda{
-    padding-left: 758px;
-  }
-.logo-footer{
-  display: none;
+
+/*Footer*/
+.footermenu{
+  position: static;
+  height: 80px;
+  border-bottom: solid 5px;
+  border-color: #F2F5F4;
 }
+.texto1-footer{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2003;
 }
 
+/*POLIZAS*/
+button#filters, button#add_btn{
+  width: 200px;
+  height: 35px;
+  font-size: 13px;
+}
+button#add_btn i{
+  font-size: 13px;
+}
+.filters_container{
+  width: 100%;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+  position: static;
+  justify-content: space-between;
+}
+label#order_lbl{
+  font-size: 16px;
+}
+/*/////////////////////////STYLING SELECT ELEMENT/////////////////////////////////////////////////*/
+/*the container must be positioned relative:*/
+.custom-select {
+  width: 170px;
+  height: 30px;
+  font-size: 15px;
+  margin: 0 10px;
+}
+.select-selected {
+  height: 28.5px;
+  width: 160px;
+}
+/*style the arrow inside the select element:*/
+#sel_arrow{
+  top: 3px;
+  right: 0;    
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  height: 28.5px;
+  line-height: 28.5px;
+  margin-left: 5px;
+}
+/*style items (options):*/
+.select-items {
+  top: 31.5px;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+div#services_filt{
+  width: 250px;
+  margin: 0 20px;
+  font-size: 13px;
+}
+div#type_filt{
+  width: 200px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+div#services_filt div, div#type_filt div{
+  flex-wrap: nowrap;
+  margin:5px;
+}
+div#services_filt label, div#type_filt label{
+}
+div#searchbox{
+  position: static;
+  width: 350px;
+  height: 30px;
+}
+div#searchbox input{
+  width: 80%;
+  height: 25px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.container{
+  width: 70%;
+  max-width: 1500px;
+  min-width: 900px;
+  margin-top: 50px;
+}
+img#icon{ /*svg*/
+  width: 60px;
+}
+table{
+  width: 100%;
+  border-spacing:0 30px;
+}
+thead{
+  font-size: 13px;
+}
+tbody tr{
+  height: 100px;
+}
+td div{
+  margin-left: 20px;
+}
+td div.options_div{
+  margin: 20px 100px;
+}
+td div.address{
+  margin-left: 20px;
+}
+td.estimation_col h5{
+  font-size: 15px;
+}
+h3.prop_street{
+  font-size: 20px;
+}
+h5.prop_address{
+  font-size: 13px;
+}
+td h5{
+  font-size: 15px;
+}
+td h6{
+  font-size: 10px;
+}
+td i.material-icons{
+  font-size: 20px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/*Footer*/
+.texto1-footer{
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2001;
+}
+.texto2-footer{
+  position: absolute;
+  margin-left: 24%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2002;
+}
+.texto3-footer{
+  position: absolute;
+  margin-left: 38.5%;
+  margin-top: 20px;
+  opacity: 1;
+  z-index: 2003;
+}
+.logo-footer{
+  margin-left: 83%;
+  /*margin-top: 5px;
+  height: 60px;
+  width: 150px;
+  display: flex;*/
+}
+}
 
 /*  || ANIMATIONS  */
 
@@ -762,9 +1678,6 @@ button.button_sel{
     100% { transform: rotate(360deg); }
 }
 
-
-
-/*INPUTS */
 
 
 

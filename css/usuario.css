@@ -238,12 +238,10 @@ input.quantity-field{
   /*background: #bfe7e5;        /*PRUEBA*/
 } 
 .btn-siguiente{
-  position: absolute;
-  margin-top: 5%;
-  left: calc(50% - 100px);
+  display: block;
   border: 1px solid #FFFFFF; /*Margen de boton*/
   border-radius: 5px; /*Ovalado/redondo*/
-  width: 220px; /*Tamaño*/
+  width: 200px; /*Tamaño*/
   height: 40px;
   text-align: center;
   letter-spacing: 0.25px;
@@ -260,10 +258,12 @@ input.quantity-field{
 .btn-siguiente:active{
   background: #912F46 0% 0% no-repeat padding-box;
   border: 1px solid #000000;
+  color: #FFFFFF;
 }
 .btn-siguiente:focus{
   background: #C88585 0% 0% no-repeat padding-box;
   border: 2px solid #C88585;
+  color: #FFFFFF;
 }
 
 
@@ -558,9 +558,12 @@ a.nav-link:hover{
 .data_input_crear{
   width: 100%;
 }
-/* .btn-siguiente{
-  margin-left: 28%;
-} */
+.btn-siguiente{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -588,13 +591,14 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
-  margin-top: 15%;
+  margin-top: 38%;
 }
 .instruccion{
   font-size: 18px;
 }
 .btn-enviar{
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 21%;
   margin-bottom: 20%;
 }
@@ -675,9 +679,12 @@ a.nav-link:hover{
 .data_input_crear{
   width: 100%;
 }
-/* .btn-siguiente{
-  margin-left: 30%;
-} */
+.btn-siguiente{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+
+}
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -711,7 +718,8 @@ input.invalid + label.head-label + label.bottom-label1{
   font-size: 18px;
 }
 .btn-enviar{
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 21%;
   margin-bottom: 20%;
 }
@@ -780,9 +788,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .data_input_crear{
   width: 100%;
 }
-/* .btn-siguiente{
-  margin-left: 34%;
-} */
+.btn-siguiente{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12%;
+}
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -816,7 +826,8 @@ input.invalid + label.head-label + label.bottom-label1{
   font-size: 20px;
 }
 .btn-enviar{
-  margin-left: 37%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 15%;
   margin-bottom: 20%;
 }
@@ -874,6 +885,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
+  margin-top: 20%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 42%;
@@ -881,9 +893,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .data_input_crear{
   width: 100%;
 }
-/* .btn-siguiente{
-  margin-left: 38%;
-} */
+.btn-siguiente{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+}
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -910,7 +924,8 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-top: 20%;
 }
 .btn-enviar{
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10%;
   margin-bottom: 20%;
 }
@@ -974,9 +989,11 @@ input.invalid + label.head-label + label.bottom-label1{
 .data_input_crear{
   width: 100%;
 }
-/* .btn-siguiente{
-  margin-left: 40%;
-} */
+.btn-siguiente{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+}
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
@@ -1010,7 +1027,8 @@ input.invalid + label.head-label + label.bottom-label1{
   font-size: 25px;
 }
 .btn-enviar{
-  margin-left: 41.5%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 7%;
   margin-bottom: 8%;
 }
