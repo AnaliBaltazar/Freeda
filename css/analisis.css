@@ -432,7 +432,7 @@
   text-align: center;
   color: #000000;
   opacity: 1; 
-  margin-top: 2%;
+  margin-top: 1%;
 }
 /*Superficie.html*/
 .texto_area_cp{ /*Cuando de introduce el texto*/
@@ -923,7 +923,10 @@ margin-bottom: 20%;
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 15%;
+  margin-top: 10%;
+}
+.texto2-cp{
+  font-size: 22px;
 }
 .texto_area_cp{
   width: 86%;
@@ -938,15 +941,19 @@ margin-bottom: 20%;
 
 /*11-AÑOS.HTML*/
 .texto1-tiempo{
-  margin-top: 15%;
+  margin-top: 14%;
+  padding-left: 5px;
 }
 .texto_area_años{
   width: 90%;
 }
+.boton-siguiente{
+  margin-top: -4%;
+} 
 
 /*12-SUPERFICIE.HTML*/
 .texto1{
-  margin-top: 15%;
+  margin-top: 14%;
   line-height: 47px;
   margin-bottom: 10%;
 }
@@ -1132,23 +1139,22 @@ a.nav-link:hover{
 /*input.invalid + label.head-label + label.bottom-label1 {
    top: 110px; 
 }*/
-/* .boton-siguiente{
-  margin-left: 37%;
-} */
+.boton-siguiente{
+  margin-top: -4%;
+}
 
 
 /*11-AÑOS.HTML*/
 .texto1-tiempo{
-  margin-top: 10%;
+  margin-top: 14%;
 }
-
 .texto_area_años{
   width: 90%;
 }
 
 /*12-SUPERFICIE.HTML*/
 .texto1{
-  margin-top: 15%;
+  margin-top: 14%;
   line-height: 47px;
   margin-bottom: 10%;
 }
@@ -1310,7 +1316,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 8%;
+  margin-top: 9%;
 }
 .texto_area_cp{
   width: 49%;
@@ -1325,7 +1331,7 @@ a.nav-link:hover{
 
 /*11-AÑOS.HTML*/
 .texto1-tiempo{
-  margin-top: 7%;
+  margin-top: 11%;
 }
 .texto_area_años{
   width: 72%;
@@ -1333,7 +1339,7 @@ a.nav-link:hover{
 
 /*12-SUPERFICIE.HTML*/
 .texto1{
-  margin-top: 10%;
+  margin-top: 11%;
   margin-bottom: 6%;
 }
 .texto_area_superficie{
@@ -1498,7 +1504,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 5%;
+  margin-top: 7.7%;
 }
 .texto_area_cp{
   width: 40%;
@@ -1513,7 +1519,7 @@ a.nav-link:hover{
 
 /*11-AÑOS.HTML*/
 .texto1-tiempo{
-  margin-top: 4%;
+  margin-top: 7.3%;
 }
 .texto_area_años{
   width: 50%;
@@ -1521,7 +1527,7 @@ a.nav-link:hover{
 
 /*12-SUPERFICIE.HTML*/
 .texto1{
-  margin-top: 8%;
+  margin-top: 7.3%;
   margin-bottom: 5%;
 }
 .texto_area_superficie{
@@ -1621,9 +1627,9 @@ a.nav-link:hover{
   margin-right: 10%
 }
 .texto2-seccion1{
-  width: 50%;
+  width: 46%;
   margin-left: 60%;
-  margin-top: -5.8%;
+  margin-top: -5%;
 }
 .texto1-seccion2{ /*Sabias que...*/
   margin-top: -10%;
@@ -1654,7 +1660,7 @@ a.nav-link:hover{
 
 /*7-CP.HTML*/
 .texto1-cp{
-  margin-top: 5%;
+  margin-top: 6.5%;
 }
 .texto_area_cp{
   width: 37%;
@@ -1669,15 +1675,18 @@ a.nav-link:hover{
 
 
 /*11-AÑOS.HTML*/
-.texto1{
-  margin-top: 8%;
-  margin-bottom: 4%;
+.texto1-tiempo{
+  margin-top: 7.8%;
 }
 .texto_area_años{
   width: 45%;
 }
 
 /*12-SUPERFICIE.HTML*/
+.texto1{
+  margin-top: 7.8%;
+  margin-bottom: 4%;
+}
 .texto_area_superficie{
   width: 45%;
 }

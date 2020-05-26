@@ -367,8 +367,10 @@ input.quantity-field{
   opacity: 1;
 }
 .instruccion{
-  font-size: 20%;
+  font-size: 25px;
   text-align: center;
+  color: #000000;
+  opacity: 1;  
 }
 .btn-enviar{
   display: block;
@@ -549,8 +551,10 @@ a.nav-link:hover{
   color: #000000;
 }
 /*----------------------------*/
-.texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 30%;
+/*5-CREAR USUARIO.HTML*/
+.texto1-seccion1{ 
+  margin-top: 31%;
+  margin-bottom: 1%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 75%;
@@ -572,8 +576,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*6-INICIAR-SESIÓN.HTML*/
 .texto1-iniciar{
-  margin-top: 30%;
-  margin-bottom: 10%; 
+  margin-top: 31%;
+  margin-bottom: 8%; 
 }
 .texto_area_login{ 
   /*margin-left: 15%;*/
@@ -591,10 +595,10 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
-  margin-top: 38%;
+  margin-top: 31%;
 }
 .instruccion{
-  font-size: 18px;
+  font-size: 22px;
 }
 .btn-enviar{
   margin-left: auto;
@@ -670,8 +674,10 @@ a.nav-link:hover{
   color: #000000;
 }
 /*----------------------------*/
-.texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 32%;
+/*5-CREAR-USUARIO.HTML*/
+.texto1-seccion1{ 
+  margin-top: 31%;
+  margin-bottom: 1.5%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 75%;
@@ -693,8 +699,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*6-INICIAR-SESIÓN.HTML*/
 .texto1-iniciar{
-  margin-top: 30%;
-  margin-bottom: 10%; 
+  margin-top: 31%;
+  margin-bottom: 7.5%; 
 }
 .texto_area_login{ 
   /*margin-left: 15%;*/
@@ -712,11 +718,9 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
-  margin-top: 30%;
+  margin-top: 31%;
 }
-.instruccion{
-  font-size: 18px;
-}
+
 .btn-enviar{
   margin-left: auto;
   margin-right: auto;
@@ -781,6 +785,7 @@ input.invalid + label.head-label + label.bottom-label1{
 /*----------------------------*/
 .texto1-seccion1{ /*CREAR USUARIO*/
   margin-top: 23%;
+  margin-bottom: 1.5%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 55%;
@@ -802,7 +807,7 @@ input.invalid + label.head-label + label.bottom-label1{
 /*6-INICIAR-SESIÓN.HTML*/
 .texto1-iniciar{
   margin-top: 23%;
-  margin-bottom: 8%; 
+  margin-bottom: 5.5%; 
 }
 .texto_area_login{
   width: 55%;
@@ -820,10 +825,10 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
-  margin-top: 24%;
+  margin-top: 23%;
 }
 .instruccion{
-  font-size: 20px;
+  font-size: 25px;
 }
 .btn-enviar{
   margin-left: auto;
@@ -888,7 +893,8 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 20%;
+  margin-top: 18%;
+  margin-bottom: 1%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 42%;
@@ -909,8 +915,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*6-INICIAR-SESIÓN.HTML*/
 .texto1-iniciar{
-  margin-top: 20%;
-  margin-bottom: 7%; 
+  margin-top: 18%;
+  margin-bottom: 5.3%; 
 }
 .texto_area_login{
   width: 88.5%;
@@ -924,7 +930,10 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
-  margin-top: 20%;
+  margin-top: 18%;
+}
+.instruccion{
+  font-size: 25px;
 }
 .btn-enviar{
   margin-left: auto;
@@ -985,8 +994,8 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*5-CREAR-USUARIO.HTML*/
 .texto1-seccion1{ /*CREAR USUARIO*/
-  margin-top: 16%;
-  margin-bottom: 3%;
+  margin-top: 15%;
+  margin-bottom: 1.8%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
   width: 37%;
@@ -1008,8 +1017,8 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*6-INICIAR-SESIÓN.HTML*/
 .texto1-iniciar{
-  margin-top: 16%;
-  margin-bottom: 5%; 
+  margin-top: 15%;
+  margin-bottom: 4.5%; 
 }
 .texto_area_login{
   width: 76%;
@@ -1026,7 +1035,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
-  margin-top: 18%;
+  margin-top: 15%;
 }
 .instruccion{
   font-size: 25px;
