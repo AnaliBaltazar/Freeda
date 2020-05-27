@@ -190,6 +190,7 @@ function showSiniestro() {
         document.querySelector("#ready_screen2").style.display="block"
     } else if(temblo==true && reporte_listo == true){
         document.querySelector("#poliza-main").style.display="none"
+        document.querySelector("#mis-polizas").style.display="none"
         document.querySelector(".seccion-suma").style.display="none"
         document.querySelector(".seccion-epicentro1").style.display="none"
         document.querySelector(".seccion-epicentro2").style.display="none"
@@ -206,6 +207,7 @@ function showSiniestro() {
 
 function showReembolso() {
     document.querySelector("#poliza-main").style.display="none"
+    document.querySelector("#mis-polizas").style.display="none"
     document.querySelector(".seccion-suma").style.display="none"
     document.querySelector(".seccion-epicentro1").style.display="none"
     document.querySelector(".seccion-epicentro2").style.display="none"
@@ -218,6 +220,7 @@ function showReembolso() {
 
 function showFirma() {
     document.querySelector("#poliza-main").style.display="none"
+    document.querySelector("#mis-polizas").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none"
     document.querySelector("#info-reporte").style.display="none"
     document.querySelector(".seccion-suma").style.display="none"
@@ -251,6 +254,7 @@ function showTransfer() {
     document.querySelector(".seccion-epicentro1").style.display="none"
     document.querySelector(".seccion-epicentro2").style.display="none"
     document.querySelector("#poliza-main").style.display="none";
+    document.querySelector("#mis-polizas").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none";
     document.querySelector("#info-reporte").style.display="none";
     document.querySelector("#reembolsobtn-container").style.display="none";
@@ -270,12 +274,40 @@ function showTransfer() {
     document.querySelector("#indemnizacion").style.display="flex";
 }
 
-//Selección Póliza
+//Selección Ver Mis Pólizas
 const poliza_btn=document.querySelector("#poliza");
-poliza_btn.addEventListener('click', showPoliza)
+poliza_btn.addEventListener('click', showMisPolizas)
+
+//Selección Póliza
+const polizas_btns=document.querySelectorAll("table.lista-polizas tbody tr");
+polizas_btns.forEach(poliza => poliza.addEventListener('click', showPoliza))
 
 function showPoliza() {
+    document.querySelector("#mis-polizas").style.display="none"
     document.querySelector("#poliza-main").style.display="block"
+    document.querySelector("#siniestro-listo").style.display="none"
+    document.querySelector("#info-reporte").style.display="none"
+    document.querySelector("#reembolsobtn-container").style.display="none"
+    document.querySelector("#reporte-daños").style.display="none"
+    document.querySelector("#total-daños").style.display="none"
+    document.querySelector("#contenedor-top").style.display="none"
+    document.querySelector("#canvas").style.display="none"
+    document.querySelector("#signature-pad-footer-container").style.display="none"
+    document.querySelector("#seccion-tran1").style.display="none"
+    document.querySelector("#seccion-tran2").style.display="none"
+    document.querySelector("#seccion-tran3").style.display="none"
+    document.querySelector("#seccion-btn").style.display="none"
+    document.querySelector("#datos-poliza").style.display="none"
+    document.querySelector("#transfer-msg").style.display="none"
+    document.querySelector(".seccion-suma").style.display="none"
+    document.querySelector(".seccion-epicentro1").style.display="none"
+    document.querySelector(".seccion-epicentro2").style.display="none"
+    
+}
+
+function showMisPolizas() {
+    document.querySelector("#mis-polizas").style.display="flex"
+    document.querySelector("#poliza-main").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none"
     document.querySelector("#info-reporte").style.display="none"
     document.querySelector("#reembolsobtn-container").style.display="none"
@@ -304,6 +336,7 @@ coberturas_btn.addEventListener('click', showCoberturas)
 
 function showCoberturas() {
     document.querySelector("#poliza-main").style.display="none"
+    document.querySelector("#mis-polizas").style.display="none"
     document.querySelector("#siniestro-listo").style.display="none"
     document.querySelector("#info-reporte").style.display="none"
     document.querySelector("#reembolsobtn-container").style.display="none"

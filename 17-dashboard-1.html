@@ -101,7 +101,7 @@
         <div class="row texto-centrado">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
                 <a class="underlineHover1" href="#" id="coberturas">Coberturas</a>
-                <a class="underlineHover2 current" href="#" id="poliza">Ver póliza</a> 
+                <a class="underlineHover2 current" href="#" id="poliza">Ver mis pólizas</a> 
                 <a class="underlineHover3" href="#" id="siniestro">Siniestro</a> 
             </div>
         </div>
@@ -143,6 +143,123 @@
 
 
     <!-- POLIZA -->
+
+    <!--Pólizas-->
+    <div class="container contenedor-polizas" id="mis-polizas">
+        <!-- <div class="header">
+            <h1 class="header_name">Volver a <a href="#poliza-main">Mis Pólizas</a></h1>
+        </div> -->
+
+        <div class="header_btns">
+            <button id="filters">FILTRAR <i class="material-icons">expand_more</i></button>
+            <button id="add_btn">NUEVA COTIZACION <i class="material-icons">add</i></button>
+        </div>
+        <div class="filters_container">
+            <label for="date" id="order_lbl">Ordenar por:</label>
+            <div class="custom-select">    
+                <select name="date" id="date">
+                    <option value="0">Fecha</option>
+                    <option value="1">Valor (max. a min.)</option>
+                    <option value="2">Valor (min. a max.)</option>    
+                </select>
+                <i class="material-icons" id="sel_arrow">expand_more</i>
+            </div>
+            
+            <div id="services_filt">
+                <h4 class="filtType_lbl">Servicios activos</h4>
+               
+                <label class="chkbox_container">Seguro Hogar Contratado
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="chkbox_container">Seguro Renta Contratado
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div id="type_filt">
+                <h4 class="filtType_lbl">Tipo de inmueble</h4>
+               
+                <label class="chkbox_container">Departamentos
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="chkbox_container">Casas
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="search" id="searchbox">
+                <input type="text" placeholder="Buscar por dirección">
+                <i class="material-icons">search</i>
+            </div>
+            
+        </div>
+        <table class="lista-polizas">
+            <thead>
+                <tr>
+                    <td class="address_col"></td>
+
+                    <td class="estimation_col"><div>Estimación de valor</div> </td>
+                    <td class="report_col"><div>Reporte</div></td>
+                    <td class="segH_col"><div>Seguro Hogar</div></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="ahover">
+                    <td class="address_col">
+                        <div>
+                            <img src="img/casa.svg" alt="" id="icon">
+                            <div class="address">
+                                <h3 class="prop_street" id="prop_street">Casiopea 74</h3>
+                                <h5 class="prop_address" id="prop_address">Prado Churubusco, CDMX</h5>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="estimation_col">
+                        <h5>-</h5>
+                    </td>
+
+                    <td class="report_col">
+                        <h5>-</h5>
+                    </td>
+
+                    <td class="segH_col" id="estatus-poliza">
+                        <i class="material-icons">check</i>
+                        <h6>Vigente</h6>
+                    </td>
+
+             <!--   </tr>
+                <tr class="options_row">
+                    <td colspan="5">
+                        <div class="options_div" id="estimacion_div">
+                            <h5>Estimación de valor</h5>
+                            <a href="https://brainbow.mx/" target="_blank">Más información</a>
+                            <a href="https://brainbow.mx/" target="_blank" class="icon_a"><i class="material-icons" >chevron_right</i></a>                            
+                        </div>
+                        <div class="options_div" id="report_div">
+                            <h5>Reporte</h5>
+                            <a href="dashboard_reporte.html">Generar Reporte</a>
+                            <a href="dashboard_reporte.html" class="icon_a"><i class="material-icons">chevron_right</i></a>
+                            
+                        </div>
+                        <div class="options_div" id="segH_div">
+                            <h5>Seguro Hogar</h5>
+                            <a href="dashboard_contratar.html">Más información</a>
+                            <a href="dashboard_contratar.html" class="icon_a"><i class="material-icons">chevron_right</i></a>                            
+                        </div>
+                    </td>
+                </tr>
+                <tr class="space_row" style="height: 30px;">
+                    <td colspan="5" ></td>-->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <div class="container contenedor-analisis" id="poliza-main">
         <div class="row">
             <!--Parte1-->
