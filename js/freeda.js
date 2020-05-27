@@ -134,11 +134,53 @@ function addUnits(){   // AGREGA LAS UNIDADES DE SUPERFICIE AL SALIR DEL CAMPO D
 
 
 //Mostrar boton Cerrar sesión 
-$("#profile").on( "click", function() {    
+/*$("#profile").on( "click", function() {    
     $('.bubble_close').toggle();
 });
 
 $("#cerrar-sesion").on( "click", function() {
     sessionStorage.clear()    
     window.location="./index.html"
-});
+});*/
+
+// Click en Iconos de la barra de menus
+const header_btns=document.querySelectorAll(".Right i");
+header_btns.forEach(icon_button => icon_button.addEventListener('click',changeStyle));
+
+// Cambia el estilo de la seccion seleccionada en la barra de menus y permite visualizar su contenido
+function changeStyle(){ 
+    const thisId=this.id;
+    const parent_idVal= this.parentNode.id; 
+    this.classList.toggle('selected');
+    this.nextSibling.classList.toggle('selected');
+    document.querySelector("#"+parent_idVal+" .bubble").classList.toggle('show');
+    // Deshace los cambios de estilo de los elementos que no estan seleccionados y oculta sus opciones
+    header_btns.forEach(option => { 
+        if(option.classList.contains('selected') && option.id!=thisId){
+          option.classList.toggle('selected');
+          option.nextSibling.classList.toggle('selected');
+          const parent_idVal_opt=option.parentNode.id;
+          document.querySelector("#"+parent_idVal_opt+".bubble").classList.toggle('show');
+        }
+    });
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.Right i')) {
+      let dropdowns = document.getElementsByClassName("bubble");
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+      let options = document.querySelectorAll(".Right i")
+      options.forEach(option => {
+          if(option.classList.contains('selected')){
+            option.classList.toggle('selected');
+            option.nextSibling.classList.toggle('selected');
+          }
+        });
+    }
+}
