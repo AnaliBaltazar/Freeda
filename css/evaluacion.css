@@ -484,6 +484,7 @@ select:focus{
   padding-bottom: 110px;  
   /*background: #bfe7e5;        /*PRUEBA*/
 }
+/*15-CONFIRMACIÓN-DATOS.HTML*/
 #confirmacion{
   display: flex;
   flex-direction: column;
@@ -770,6 +771,17 @@ select#colonia_inmueble{
   font-size: 18px;
 }
 
+/*15-CONFIRMACIÓN-DATOS.HTML*/
+#confirmacion{
+  height: 1500px;
+}
+/*#calle_inmueble_cont, #cp_inmueble_cont, #colonia_inmueble_cont, #municipio_inmueble_cont{
+  width: 90%;
+}*/
+#confirmacion .text_area_r{
+  width: 90%;
+}
+
 /*Footer*/
 .footermenu{
   position: static;
@@ -941,6 +953,17 @@ input.invalid + label.head-label + label.bottom-label1 {
 width: 95%;
 }
 
+/*15-CONFIRMACIÓN-DATOS.HTML*/
+#confirmacion{
+  height: 1500px;
+}
+/*#calle_inmueble_cont, #cp_inmueble_cont, #colonia_inmueble_cont, #municipio_inmueble_cont{
+  width: 90%;
+}*/
+#confirmacion .text_area_r{
+  width: 90%;
+}
+
 
 /*Footer*/
 .footermenu{
@@ -1072,6 +1095,24 @@ input.invalid + label.head-label + label.bottom-label1 {
   width: 95%;
 }
 
+/*15-CONFIRMACIÓN-DATOS.HTML*/
+#confirmacion{
+  height: 800px;
+}
+/*#calle_inmueble_cont, #cp_inmueble_cont, #colonia_inmueble_cont, #municipio_inmueble_cont{
+  width: 90%;
+}*/
+#confirmacion .text_area_r{
+  width: 50%;
+  font-size: 18px;
+}
+label.lab-calle, label.lab-cp{
+  font-size: 16px;
+}
+label.lab-mun{
+  font-size: 18px;
+}
+
 
 /*Footer*/
 .footermenu{
@@ -1199,6 +1240,18 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 95%;
 }
 
+/*15-CONFIRMACIÓN-DATOS.HTML*/
+#confirmacion .text_area_r{
+  width: 50%;
+  font-size: 20px;
+}
+label.lab-calle, label.lab-cp{
+  font-size: 20px;
+}
+label.lab-mun{
+  font-size: 20px;
+}
+
 /*Footer*/
 .footermenu{
   position: static;
@@ -1322,6 +1375,16 @@ input.invalid + label.head-label + label.bottom-label1{
  /* top: 110px; */
  width: 95%;
 }
+
+/*15-CONFIRMACIÓN-DATOS.HTML*/
+#confirmacion{
+  height: 900px;
+}
+#confirmacion .text_area_r{
+  width: 40%;
+  font-size: 20px;
+}
+
 
 
 /*Footer*/
