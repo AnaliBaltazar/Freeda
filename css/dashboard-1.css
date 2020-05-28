@@ -582,6 +582,12 @@ table.lista-polizas td h6{
 table.lista-polizas td i.material-icons{
   color: #3B536D;
 }
+td#estatus-poliza.active-policy h6,td#estatus-poliza.active-policy i.material-icons{
+  color: #80CFC2;
+}
+td#estatus-poliza.inactive-policy h6,td#estatus-poliza.inactive-policy i.material-icons{
+  color: #CE4646;
+}
 
 /*DOCUMENTOS VER Y DESCARGA*/
 .documentos{

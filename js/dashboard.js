@@ -1,7 +1,7 @@
 "use strict";
 window.onload = function(){
     const userData= JSON.parse(sessionStorage.getItem("InsuredData")); // get and parse the saved data from localStorage
-    const fechaContratación = JSON.parse(sessionStorage.getItem("fechaContratacion"));
+    const fechaContratacion = JSON.parse(sessionStorage.getItem("fechaContratacion"));
     const datosCotizador = JSON.parse(sessionStorage.getItem("datosCotizador"));
     const datosAsegurado = JSON.parse(sessionStorage.getItem("InsuredData"));
     const datosInmueble = JSON.parse(sessionStorage.getItem("PropertyData"));
@@ -18,23 +18,26 @@ window.onload = function(){
         'Octubre',
         'Noviembre',
         'Diciembre'
-      ]
+    ]
+    const fecha_inicio_vigencia = new Date(fechaContratacion.year,fechaContratacion.month,fechaContratacion.day+1);
+    const fecha_termino_vigencia = new Date(fechaContratacion.year+1,fechaContratacion.month,fechaContratacion.day+1);
+    const fecha_hoy = new Date();
     
     document.querySelector("#prop_street").innerHTML = datosInmueble.calle_inmueble.toUpperCase();
     document.querySelector("#prop_address").innerHTML = datosInmueble.colonia_inmueble.toUpperCase() + ", " + datosInmueble.estado_inmueble.toUpperCase();
     document.querySelector("#prop_street2").innerHTML = datosInmueble.calle_inmueble.toUpperCase();
     document.querySelector("#prop_address2").innerHTML = datosInmueble.colonia_inmueble.toUpperCase() + ", " + datosInmueble.estado_inmueble.toUpperCase();
-    document.querySelector("#vigenciaI-principal").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
-    document.querySelector("#vigenciaF-principal").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
+    document.querySelector("#vigenciaI-principal").innerHTML = "12 horas del<br>" + (fechaContratacion.day + 1) + " de " + months[fechaContratacion.month] + " del " + fechaContratacion.year;
+    document.querySelector("#vigenciaF-principal").innerHTML = "12 horas del<br>" + (fechaContratacion.day + 1) + " de " + months[fechaContratacion.month] + " del " + (fechaContratacion.year + 1);
     document.querySelector("#session-name").textContent=userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + "..."
     document.querySelector("#clientName-principal").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
     
-    document.querySelector("#vigenciaI-sin1").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
-    document.querySelector("#vigenciaF-sin1").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
+    document.querySelector("#vigenciaI-sin1").innerHTML = "12 horas del<br>" + (fechaContratacion.day + 1) + " de " + months[fechaContratacion.month] + " del " + fechaContratacion.year;
+    document.querySelector("#vigenciaF-sin1").innerHTML = "12 horas del<br>" + (fechaContratacion.day + 1) + " de " + months[fechaContratacion.month] + " del " + (fechaContratacion.year + 1);
     document.querySelector("#clientName-sin1").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
     
-    document.querySelector("#vigenciaI-transfer").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
-    document.querySelector("#vigenciaF-transfer").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
+    document.querySelector("#vigenciaI-transfer").innerHTML = "12 horas del<br>" + (fechaContratacion.day + 1) + " de " + months[fechaContratacion.month] + " del " + fechaContratacion.year;
+    document.querySelector("#vigenciaF-transfer").innerHTML = "12 horas del<br>" + (fechaContratacion.day + 1) + " de " + months[fechaContratacion.month] + " del " + (fechaContratacion.year + 1);
     document.querySelector("#clientName-transfer").textContent = userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + " " + userData.materno.toUpperCase(); 
 
     if(sessionStorage.getItem("clabe")){
@@ -52,6 +55,17 @@ window.onload = function(){
     }else{
         document.querySelector("#cover").style.display="none";
         document.querySelector("#allset_screen").style.display="none";
+    }
+    if (fecha_hoy < fecha_inicio_vigencia || fecha_hoy >= fecha_termino_vigencia) {
+        document.querySelector("#estatus-poliza i").textContent = "close";
+        document.querySelector("#estatus-poliza h6").textContent = "SIN VIGENCIA";
+        document.querySelector("#estatus-poliza").classList.remove("active-policy")
+        document.querySelector("#estatus-poliza").classList.add("inactive-policy")
+    }else{
+        document.querySelector("#estatus-poliza i").textContent = "check";
+        document.querySelector("#estatus-poliza h6").textContent = "VIGENTE";
+        document.querySelector("#estatus-poliza").classList.add("active-policy")
+        document.querySelector("#estatus-poliza").classList.remove("inactive-policy")
     }
 }
 const addAccount=document.querySelector("#add-btn");
