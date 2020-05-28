@@ -557,28 +557,28 @@ a.nav-link:hover{
 
 /*------2-REGISTRO.HTML------*/
 .texto1-registro{ /*REGISTRARSE*/
-  margin-top: 31%;
-  margin-bottom: 2%;
+  margin-top: 35%;
+  margin-bottom: 0%;
 }
 .texto_area_r{ /*Nombre usuario, apellidos,CP*/
-  width: 75%;
+  width: 95%;
 }
 /*.label-date{ FECHA DE NACIMIENTO
   margin-left: 25%;
 }*/
 .label-date{
-  margin-left: 14%;
+  margin-left: 6%;
 }
 .nacimiento1{ /*Día*/
-  width: 18%;
-  margin-left: 15%;
+  width: 23%;
+  margin-left: 6%;
   margin-top: 8%;
 }
 .nacimiento2{ /*Mes*/
-  width: 32%;
+  width: 40%;
 }
 .nacimiento3{ /*Año*/
-  width: 18%;
+  width: 23%;
 }
 .btn-registrarse{
   margin-left: auto;
