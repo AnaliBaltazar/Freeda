@@ -597,11 +597,11 @@ a.nav-link:hover{
 
 /*-------3-ACTIVAR-TOKEN.HTML-------*/
 .texto1-seccion1{
-  margin-top: 31%;
+  margin-top: 35%;
   margin-bottom: 10%;
 }
 .texto_area_tel{ /*Telefono celular*/
-  width: 75%;
+  width: 95%;
 }
 .enviar-token{  /*Enviar token SMS*/
   /*margin-left: 29%;*/
@@ -615,7 +615,7 @@ font-size: 18px;
 
 /*-------4-VALIDAR-TOKEN.HTML-------*/
 .texto_area_token{
-  width: 79%;
+  width: 95%;
 }
 .validar-token{ 
   margin-left: auto;
