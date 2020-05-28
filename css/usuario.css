@@ -91,7 +91,7 @@
 }
 .data_input_crear{
   width: 100%;
-  font-weight: 700;
+  font-weight: 500;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
@@ -529,7 +529,6 @@ h3#caption_loader{
 /* ++++++++++++++++++++++ */
 
 /*---------MEDIA QUERIES---------*/
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 .tamaño-renglon-1{
@@ -553,11 +552,11 @@ a.nav-link:hover{
 /*----------------------------*/
 /*5-CREAR USUARIO.HTML*/
 .texto1-seccion1{ 
-  margin-top: 31%;
+  margin-top: 35%;
   margin-bottom: 1%;
 }
 .texto_area_usuario{ /*Area correo, contraseña y confirmar */
-  width: 75%;
+  width: 95%;
 }
 .data_input_crear{
   width: 100%;
@@ -576,11 +575,12 @@ input.invalid + label.head-label + label.bottom-label1{
 
 /*6-INICIAR-SESIÓN.HTML*/
 .texto1-iniciar{
-  margin-top: 31%;
+  margin-top: 35%;
   margin-bottom: 8%; 
 }
 .texto_area_login{ 
   /*margin-left: 15%;*/
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -595,7 +595,7 @@ input.invalid + label.head-label + label.bottom-label1{
 }
 /*6-RECUPERAR-USUARIO*/
 .texto1-recuperar{
-  margin-top: 31%;
+  margin-top: 35%;
 }
 .instruccion{
   font-size: 22px;
