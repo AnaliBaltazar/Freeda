@@ -1740,16 +1740,26 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 @media only screen and (max-width: 600px) {
 .menu{
   display: flex;
-  margin-left: 5px; /*5px*/
-  margin-right: 5px; /*5px*/
+  margin-left: 2px; /*5px*/
+  margin-right: 2px; /*5px*/
   color: #FFFFFF;/*Color de letra*/
+}
+.Left{
+  width: 25px;
+  margin-left: 0%;
+}
+.Right{
+  width: 95%;
+  margin-right: 5%;
+  justify-content: flex-end;
 }
 #session-name{
   font-size: 14px;
   font-weight: 600;
 }
 .logo-freeda{
-  margin-left: -1%;
+  width: 350%;
+  /*margin-left: -1%;*/
   margin-top: 1%;
 }
 .btn-agregar{
