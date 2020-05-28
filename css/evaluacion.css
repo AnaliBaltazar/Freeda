@@ -694,7 +694,7 @@ a.nav-link:hover{
 }
 .part1{
   width: 30%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
 .imagen-casa{
   width: 60%;
@@ -703,6 +703,7 @@ a.nav-link:hover{
 }
 .part2{
   width: 60%;
+  margin-bottom: 15%;
 }
 table{
   margin-left: -5%;
