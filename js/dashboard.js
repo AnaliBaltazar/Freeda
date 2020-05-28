@@ -384,7 +384,7 @@ ver_dash_btn.addEventListener('click', function(){
 })
 
 //Mostrar boton Cerrar sesión 
-/*
+
 $("#profile").on( "click", function() {    
     $('.bubble_close').toggle();
 });
@@ -393,7 +393,7 @@ $("#cerrar-sesion").on( "click", function() {
     sessionStorage.clear()    
     window.location="./index.html"
 });
-*/
+
 // Click en Iconos de la barra de menus
 const header_btns=document.querySelectorAll(".Right i");
 header_btns.forEach(icon_button => icon_button.addEventListener('click',changeStyle));
