@@ -60,7 +60,7 @@
   margin-left: 61%; /*Alineacion*/
   /*margin-bottom: 0%;*/
   height: 75px;
-  width: 210px; 
+  width: 210px;  /*210px*/
   display:flex;
 }
 
@@ -530,7 +530,7 @@
 }
 .data_input{
   width: 100%;
-  font-weight: 700;
+  font-weight: 500;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
@@ -848,7 +848,8 @@ a.nav-link:hover{
 }*/
 /*CAMBIO DE BARRA DE NAVEGACIÓN*/
 .logo-freeda{
-  margin-left: -1%;
+  width: 350%;
+  /*margin-left: -8%;*/
   margin-top: 1%;
 }
 .btn-agregar{
@@ -861,10 +862,19 @@ a.nav-link:hover{
 .texto-notificacion{
   display: none;
 }
+.Left{
+  width: 25px;
+  margin-left: 0%;
+}
+.Right{
+  width: 95%;
+  margin-right: 5%;
+  justify-content: flex-end;
+}
 .menu{
   display: flex;
-  margin-left: 5px; /*5px*/
-  margin-right: 5px; /*5px*/
+  margin-left: 2px; /*5px*/
+  margin-right: 2px; /*5px*/
   color: #FFFFFF;/*Color de letra*/
 }
 /*----------------------------*/
