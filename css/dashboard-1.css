@@ -170,8 +170,6 @@ a.current:link, a.current:visited{
   color: #912F46;
 }
 
-
-/*NUEVO DAHSBOARD*/
 /* COBERTURAS */
 .container.seccion-suma,  .container.seccion-epicentro1, .container.seccion-epicentro2{
   display: none;
@@ -197,7 +195,6 @@ a.current:link, a.current:visited{
   font-size: 20px;
   margin-top: -2%;
 }
-
 /*SECCION EPICENTRO 1*/
 .seccion-epicentro1{
   position: static;
@@ -219,7 +216,6 @@ a.current:link, a.current:visited{
   font-weight: bold;
   color: #912F46;
 }
-
 /*SECCION EPICENTRO 2*/
 .seccion-epicentro2{
   position: static;
@@ -264,6 +260,14 @@ a.current:link, a.current:visited{
   font-size: 20px;
   border-spacing: 18px;
 }
+h3.prop_street2{ /*Casiopesa*/
+  color: #3B536D;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0px 20px;
+  color: #912F46;
+  line-height: 47px; /*Sangria*/
+}
 td{
   vertical-align: top;
   padding-right: 4%; /*Centrar el texto*/
@@ -284,7 +288,7 @@ td.col_r{
   font-weight: 300;
   text-align: right;
 }
-table{
+table.info_seg{
   border-collapse: separate;
 }
 
@@ -514,19 +518,19 @@ table.lista-polizas td.estimation_col, table.lista-polizas td.report_col, table.
   text-align: center;
   color: #912F46;
 }
-table.lista-polizas tbody td.estimation_col, table.lista-polizas tbody td.report_col,  table.lista-polizas tbody td.segH_col, table.lista-polizas tbody td.segR_col{
+table.lista-polizas tbody.tbody_polizas td.estimation_col, table.lista-polizas tbody.tbody_polizas td.report_col,  table.lista-polizas tbody.tbody_polizas td.segH_col, table.lista-polizas tbody.tbody_polizas td.segR_col{
   color: #8E97A7;
   font-weight: 500;
 }
 /*Tabla*/
-table.lista-polizas tbody tr{
+table.lista-polizas tbody.tbody_polizas tr{
   height: 100px;
   background-color: #F4F6FA;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 10%);
   border-radius: 5px;
   cursor: pointer;
 }
-table.lista-polizas tbody tr.ahover:hover{
+table.lista-polizas tbody.tbody_polizas tr.ahover:hover{
   background-color: #EAEDF2;
 }
 table.lista-polizas tr.space_row{
@@ -534,10 +538,10 @@ table.lista-polizas tr.space_row{
   border: none;
   box-shadow: none;
 }
-table.lista-polizas tbody td.address_col{
+table.lista-polizas tbody.tbody_polizas td.address_col{
   border-radius: 5px 0 0 5px;
 }
-table.lista-polizas tbody td.segR_col{
+table.lista-polizas tbody.tbody_polizas td.segR_col{
   border-radius: 0 5px 5px 0;
 }
 /*Parte izquierda*/
@@ -627,7 +631,6 @@ h5{ /*Prado Churubusco*/
   cursor: default;
 
 }
-
 .doc_row#reporte_siniestro, .doc_row#indemnizacion{
   display: none;
 } 
@@ -1715,11 +1718,15 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 /*---------MEDIA QUERIES---------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .menu{
+.menu{
   display: flex;
   margin-left: 5px; /*5px*/
   margin-right: 5px; /*5px*/
   color: #FFFFFF;/*Color de letra*/
+}
+#session-name{
+  font-size: 14px;
+  font-weight: 600;
 }
 .logo-freeda{
   margin-left: -1%;
@@ -1855,7 +1862,7 @@ div#searchbox input{
 img#icon{ /*svg*/
   width: 50px;
 }
-table{
+table.lista-polizas{
   border-spacing:0 30px;
 }
 thead{
@@ -1869,7 +1876,7 @@ thead tr td.estimation_col div{
   width: fit-content;
   margin: 0 auto;
 }
-tbody tr{
+tbody.tbody_polizas tr{
   height: 100px;
 }
 td div{
@@ -2336,7 +2343,7 @@ table.lista-polizas thead tr td.estimation_col div{
   width: fit-content;
   margin: 0 auto;
 }
-table.lista-polizas tbody tr{
+table.lista-polizas tbody.tbody_polizas tr{
   height: 100px;
 }
 table.lista-polizas td div{
@@ -2797,7 +2804,7 @@ table.lista-polizas thead tr td.estimation_col div{
   width: fit-content;
   margin: 0 auto;
 }
-table.lista-polizas tbody tr{
+table.lista-polizas tbody.tbody_polizas tr{
   height: 100px;
 }
 table.lista-polizas td div{
@@ -3230,7 +3237,7 @@ table.lista-polizas {
 table.lista-polizas thead{
   font-size: 13px;
 }
-table.lista-polizas tbody tr{
+table.lista-polizas tbody.tbody_polizas tr{
   height: 100px;
 }
 table.lista-polizas td div{
