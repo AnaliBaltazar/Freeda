@@ -160,7 +160,7 @@ function changeStyle(){
           option.classList.toggle('selected');
           option.nextSibling.classList.toggle('selected');
           const parent_idVal_opt=option.parentNode.id;
-          document.querySelector("#"+parent_idVal_opt+".bubble").classList.toggle('show');
+          document.querySelector("#"+parent_idVal_opt+" .bubble").classList.toggle('show');
         }
     });
 }
