@@ -711,12 +711,22 @@ td i.material-icons{
 /*CAMBIO DE BARRA DE NAVEGACIÓN*/
 .menu{
   display: flex;
-  margin-left: 5px; /*5px*/
-  margin-right: 5px; /*5px*/
+  margin-left: 2px; /*5px*/
+  margin-right: 2px; /*5px*/
   color: #FFFFFF;/*Color de letra*/
 }
+.Left{
+  width: 25px;
+  margin-left: 0%;
+}
+.Right{
+  width: 95%;
+  margin-right: 5%;
+  justify-content: flex-end;
+}
 .logo-freeda{
-  margin-left: -1%;
+  width: 350%;
+  /*margin-left: -1%;*/
   margin-top: 1%;
 }
 .btn-agregar{
