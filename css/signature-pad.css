@@ -72,7 +72,8 @@ canvas {
   color: #C3C3C3;
   text-align: center;
   font-size: 1.2em;
-  margin-top: 8px;
+  height: 100%;
+  /* margin-top: 8px; */
 }
 
 .signature-pad--footer button{
@@ -88,7 +89,7 @@ canvas {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-around;
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 
 #github img {

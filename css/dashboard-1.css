@@ -1327,11 +1327,12 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   /*margin-left: 5%; */
   background-color: #F4F6FA ; /*#F4F6FA*/
   border-radius: 10px;
-  margin-left: 32%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 35px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 35px; */
   display: none;
 }
 .container-1{ /*LINEA ROSA*/
@@ -1339,18 +1340,20 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   height: 5%;
   background-color: #912F46;
   border-radius: 10px;
-  margin-left: 32%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2%;
-  margin-bottom: -1%;
+  /* margin-bottom: -1%; */
   display: none;
 }
 .container-2{ /*LINEA ROSA*/
   width: 35%;
-  height: 5%;
+  height: 32px;
   background-color: #912F46;
   border-radius: 10px;
-  margin-left: 32%;
-  margin-top: -4%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: -4%; */
   margin-bottom: 8%;
   display: none;
 }
@@ -1364,6 +1367,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .capturar-firma{ /*BOTÓN CAPTURA FIRMA*/
   display: block;
   width: 25.8%; /*Tamaño del boton*/
+  min-width: 140px;
   /*position: absolute;*/
  /* margin-top: 10%; 
   margin-left: 35%;*/
@@ -1392,7 +1396,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   background: #cc99cc;        /*PRUEBA
 }*/
 #signature-pad-footer-container #capturar{
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 /* **************************************************************** */
@@ -2133,22 +2137,25 @@ button.button-minus, button.button-plus{
 }*/
 .seccion-firma{
   width: 80%;
+  max-width: 540px;
   height: 60%;
-  margin-left: 10%;
 }
 .container-1{
   width: 80%;
-  margin-left: 10%;
+  max-width: 540px;
+  max-width: 540px;
   margin-top: 3%;
 }
 .container-2{
   width: 80%;
-  margin-left: 10%;
-  margin-top: -9%;
+  max-width: 540px;
+  max-width: 540px;
+  /* margin-top: -9%; */
 }
 .capturar-firma{
   width: 35%;
-  margin-left: 34%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3%; 
 }
 
@@ -2614,22 +2621,24 @@ h3.describe_bien{
 /*22-FIRMA.HTML*/
 .seccion-firma{
   width: 80%;
+  max-width: 690px;
   height: 60%;
-  margin-left: 10%;
 }
 .container-1{
   width: 80%;
-  margin-left: 10%;
+  max-width: 690px;
   margin-top: 3%;
 }
 .container-2{
   width: 80%;
-  margin-left: 10%;
-  margin-top: -9%;
+  max-width: 690px;
+  /* margin-top: -9%; */
 }
 .capturar-firma{
   width: 35%;
-  margin-left: 34%;
+  max-width: 690px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0%; 
 }
 
@@ -3020,18 +3029,18 @@ h3.describe_bien{
 }*/
 .seccion-firma{
  width: 80%;
+ max-width: 700px;
  height: 60%;
- margin-left: 10%;
 }
 .container-1{
  width: 80%;
- margin-left: 10%;
+ max-width: 700px;
  margin-top: 3%;
 }
 .container-2{
  width: 80%;
- margin-left: 10%;
- margin-top: -9%;
+ max-width: 700px;
+ /* margin-top: -9%; */
 }
 .capturar-firma{
   margin-left: auto;
@@ -3443,18 +3452,18 @@ button.button-minus, button.button-plus{
 } 
 .seccion-firma{
   width: 50%;
+  max-width: 700px;
   height: 60%;
-  margin-left: 25%;
 }
 .container-1{
   width: 50%;
-  margin-left: 25%;
+  max-width: 700px;
   margin-top: 3%;
 }
 .container-2{
   width: 50%;
-  margin-left: 25%;
-  margin-top: -3%;
+  max-width: 700px;
+  /* margin-top: -3%; */
 }
 .capturar-firma{
   margin-left: auto;
