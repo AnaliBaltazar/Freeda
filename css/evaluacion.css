@@ -744,22 +744,21 @@ td.col_l{
   margin-top: 15%;
 }
 .texto_area_rfc, .texto_area_regis, .text_area_i{
-  width: 76%;
+  width: 95%;
 }
-
 .label-date{
-  margin-left: 14%;
+  margin-left: 5%;
 }
 .nacimiento1{ /*Día*/
-  width: 18%;
-  margin-left: 15%;
+  width: 22%;
+  margin-left: 5%;
   margin-top: 8%;
 }
 .nacimiento2{ /*Mes*/
-  width: 32%;
+  width: 40%;
 }
 .nacimiento3{ /*Año*/
-  width: 18%;
+  width: 22%;
 }
 .btn-generar{
   margin-left: auto;
@@ -791,6 +790,9 @@ select#colonia_inmueble{
 }*/
 #confirmacion .text_area_r{
   width: 90%;
+}
+label.lab-calle, label.lab-cp, label.lab-mun{
+  font-size: 17px;
 }
 
 /*Footer*/

@@ -200,7 +200,7 @@ div.shield {
 /*BARRA DE PROGRESO*/
 .espacio-progreso{
   width: 100%;
-  padding-top: 40px;
+  padding-top: 55px;
   padding-bottom: 50px;
   /*background: #bfe7e5;        /*PRUEBA*/
 }
@@ -748,6 +748,9 @@ div.shield {
 .logo-footer{
   display: none;
 }*/
+.boton-pagar{
+  font-size: 12px;
+}
 /*Footer*/
 .footermenu{
   position: static;
