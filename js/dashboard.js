@@ -22,6 +22,8 @@ window.onload = function(){
     
     document.querySelector("#prop_street").innerHTML = datosInmueble.calle_inmueble.toUpperCase();
     document.querySelector("#prop_address").innerHTML = datosInmueble.colonia_inmueble.toUpperCase() + ", " + datosInmueble.estado_inmueble.toUpperCase();
+    document.querySelector("#prop_street2").innerHTML = datosInmueble.calle_inmueble.toUpperCase();
+    document.querySelector("#prop_address2").innerHTML = datosInmueble.colonia_inmueble.toUpperCase() + ", " + datosInmueble.estado_inmueble.toUpperCase();
     document.querySelector("#vigenciaI-principal").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + fechaContratación.year;
     document.querySelector("#vigenciaF-principal").innerHTML = "12 horas del<br>" + (fechaContratación.day + 1) + " de " + months[fechaContratación.month] + " del " + (fechaContratación.year + 1);
     document.querySelector("#session-name").textContent=userData.nombre.toUpperCase() + " " + userData.paterno.toUpperCase() + "..."
