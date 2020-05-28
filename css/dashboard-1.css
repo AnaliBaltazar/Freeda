@@ -141,7 +141,7 @@ button.Continuar:hover{
 .underlineHover1{
   font-size: 25px;
   color: #707070;
-  margin-left: 30%;
+  /*margin-left: 30%;*/
 } 
 .underlineHover1:hover {
   color: #912F46;
@@ -149,7 +149,7 @@ button.Continuar:hover{
 .underlineHover2{
   font-size: 25px;
   color: #707070;
-  margin-left: 5%;
+  /*margin-left: 5%;*/
 } 
 .underlineHover2:hover {
   color: #912F46;
@@ -157,7 +157,7 @@ button.Continuar:hover{
 .underlineHover3{
   font-size: 25px;
   color: #707070;
-  margin-left: 5%;
+  /*margin-left: 5%;*/
 } 
 .underlineHover3:hover {
   color: #912F46;
@@ -1774,9 +1774,15 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 
 /*-------------------------------------*/
 /*COBERTURA, VER PÓLIZA, SINIESTRO*/
-.underlineHover1{
+.underlineHover1, .underlineHover2, .underlineHover3{
   font-size: 22px;
-  margin-left: 12%;
+  flex-direction: column;
+  text-align: center;
+  display: block;
+}
+/*.underlineHover1{
+  font-size: 22px;
+  margin-left: 10%;
 } 
 .underlineHover2{
   font-size: 22px;
@@ -1786,6 +1792,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   font-size: 22px;
   margin-left: 5%;
 }
+*/
 
 /*POLIZAS*/
 button#filters, button#add_btn{
@@ -1932,6 +1939,7 @@ td i.material-icons{
   width: 104%;
   /*height: 95%;*/
   height: auto;
+  margin-top: 18%;
 }
 .btn-agregar{
   margin-left: 10%; /*-4%*/
@@ -2240,7 +2248,13 @@ button.button-minus, button.button-plus{
 }
 
 /*COBERTURA VER PÓLIZA SINIESTRO*/
-.underlineHover1{
+.underlineHover1, .underlineHover2, .underlineHover3{
+  font-size: 22px;
+  flex-direction: column;
+  text-align: center;
+  display: block;
+}
+/*.underlineHover1{
   margin-left: 12%;
 } 
 .underlineHover2{
@@ -2249,7 +2263,7 @@ button.button-minus, button.button-plus{
 .underlineHover3{
   margin-left: 5%;
 } 
-
+*/
 /*POLIZAS*/
 button#filters, button#add_btn{
   width: 200px;
@@ -2397,6 +2411,7 @@ table.lista-polizas td i.material-icons{
 .recuadro-info{
   width: 104%;
   height: auto;
+  margin-top: 18%;
 }
 .btn-agregar{
   margin-right: -4%; /*-4%*/
@@ -2700,7 +2715,7 @@ h3.describe_bien{
 }
 
 /*COBERTURA VER PÓLIZA SINIESTRO*/
-.underlineHover1{
+/*.underlineHover1{
   margin-left: 20%;
 } 
 .underlineHover2{
@@ -2709,7 +2724,13 @@ h3.describe_bien{
 .underlineHover3{
   margin-left: 5%;
 } 
-
+*/
+.underlineHover1, .underlineHover2, .underlineHover3{
+  font-size: 22px;
+  flex-direction: column;
+  text-align: center;
+  display: block;
+}
 /*POLIZAS*/
 button#filters, button#add_btn{
   width: 200px;
@@ -2866,6 +2887,7 @@ div.options_div a{
   margin-left: auto;
   margin-right: auto;
   height: auto;
+  margin-top: 10%;
 }
 .btn-agregar{
   margin-right: -3%; /*-4%*/
@@ -3149,7 +3171,7 @@ h3.describe_bien{
 }
 
 /*COBERTURA VER PÓLIZA SINIESTRO*/
-.underlineHover1{
+/*.underlineHover1{
   margin-left: 30%;
 } 
 .underlineHover2{
@@ -3157,7 +3179,17 @@ h3.describe_bien{
 } 
 .underlineHover3{
   margin-left: 5%;
-} 
+} */
+
+.underlineHover1, .underlineHover2, .underlineHover3{
+  font-size: 25px;
+  flex-direction: row;
+  display: inline;
+  margin-left: 10%;
+}
+.underlineHover1{
+  margin-left: 20%;
+}
 
 /*POLIZAS*/
 button#filters, button#add_btn{
@@ -3289,6 +3321,7 @@ table.lista-polizas td i.material-icons{
   width: 116%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
 }
 .info_seg{
   border-spacing: 15px;
