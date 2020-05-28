@@ -1354,7 +1354,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-left: auto;
   margin-right: auto;
   /* margin-top: -4%; */
-  margin-bottom: 8%;
+  margin-bottom: 20%;
   display: none;
 }
 /*CAPTURAR FIRMA*/
@@ -3045,6 +3045,7 @@ h3.describe_bien{
 .capturar-firma{
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10%;
 }
 
 /*DASHBOARD2 REEMBOLSO*/
@@ -3468,6 +3469,7 @@ button.button-minus, button.button-plus{
 .capturar-firma{
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16%;
 }
 /*------El reporte final indica que el epicentro...------*/
 /*DASHBOARD2 REEMBOLSO*/
