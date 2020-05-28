@@ -1768,6 +1768,9 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 
 /*-------------------------------------*/
 /*COBERTURA, VER PÓLIZA, SINIESTRO*/
+#sub-menu{
+  height: auto;
+}
 .underlineHover1, .underlineHover2, .underlineHover3{
   font-size: 22px;
   flex-direction: column;
@@ -1793,6 +1796,7 @@ button#filters, button#add_btn{
   width: 150px;
   height: 35px;
   font-size: 12px;
+  margin-top: 10%;
 } 
 button#add_btn i{
   font-size: 13px;
@@ -1913,6 +1917,7 @@ h3.prop_street{
 }
 h5.prop_address{
   font-size: 12px;
+  line-height: 20px;
 }
 td h5{
   font-size: 15px;
@@ -1933,7 +1938,7 @@ td i.material-icons{
   width: 104%;
   /*height: 95%;*/
   height: auto;
-  margin-top: 18%;
+  margin-top: 10%;
 }
 .btn-agregar{
   margin-left: 10%; /*-4%*/
@@ -2242,6 +2247,9 @@ button.button-minus, button.button-plus{
 }
 
 /*COBERTURA VER PÓLIZA SINIESTRO*/
+#sub-menu{
+  height: auto;
+}
 .underlineHover1, .underlineHover2, .underlineHover3{
   font-size: 22px;
   flex-direction: column;
@@ -2405,7 +2413,7 @@ table.lista-polizas td i.material-icons{
 .recuadro-info{
   width: 104%;
   height: auto;
-  margin-top: 18%;
+  margin-top: 8%;
 }
 .btn-agregar{
   margin-right: -4%; /*-4%*/
@@ -2881,7 +2889,7 @@ div.options_div a{
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .btn-agregar{
   margin-right: -3%; /*-4%*/
