@@ -540,7 +540,7 @@ input.quantity-field{
   padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -18%;
+  margin-left: -13%;
 }
 .material-icons{
   color: white;
@@ -673,7 +673,11 @@ font-size: 18px;
   height: 48px;
   width: 141px;
 }
-
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 }
 
 
@@ -684,7 +688,7 @@ font-size: 18px;
   padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -18%;
+  margin-left: -15%;
 }
 .material-icons{
   color: white;
@@ -814,6 +818,11 @@ input.invalid + label.head-label + label.bottom-label1{
   margin-top: 29px;
   height: 50px;
   width: 141px;
+}
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
 }
 }
 
@@ -946,6 +955,12 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 110px;
   position: absolute;
 }
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
 }
 
 
@@ -1074,6 +1089,12 @@ input.invalid + label.head-label + label.bottom-label1{
   width: 50%;
   display: flex;
 }*/
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
