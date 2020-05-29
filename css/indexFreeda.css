@@ -204,7 +204,17 @@ a.nav-link:hover{
   /* margin-top: 2%; */
 }
 /*----------------------------*/
-
+.carousel-item{
+  width: 90%; 
+}
+ul{ /*Contenedor botones*/
+  padding-bottom: 3%;
+}
+.carousel-indicators li{ /*CIRCULOS*/
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
 /*Indexfreeda.html*/
 .video1{
   margin-top: 34%;
