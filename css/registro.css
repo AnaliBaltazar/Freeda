@@ -540,7 +540,9 @@ input.quantity-field{
   padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -13%;
+  /*margin-left: -13%;*/
+  width: 180px;
+  margin-left: -9%;
 }
 .material-icons{
   color: white;
