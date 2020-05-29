@@ -179,7 +179,7 @@ ul{ /*Contenedor botones*/
   padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -18%;
+  margin-left: -13%;
 }
 .material-icons{
   color: white;
@@ -266,11 +266,17 @@ a.nav-link:hover{
   z-index: 2003;
 }
 .logo-footer{
+
   position: absolute;
   margin-left: -7%;
   margin-top: 29px;
   height: 48px;
   width: 141px;
+}
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
 }
 
 }
@@ -283,7 +289,7 @@ a.nav-link:hover{
   padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -18%;
+  margin-left: -15%;
   /*margin-top: -7%;*/
 }
 .material-icons{
@@ -365,6 +371,11 @@ a.nav-link:hover{
   height: 50px;
   width: 141px;
 }
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 }
 
 
@@ -440,6 +451,12 @@ a.nav-link:hover{
   height: 35px;
   width: 110px;
   position: absolute;
+}
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 8%;
 }
 
 }
@@ -521,6 +538,12 @@ a.nav-link:hover{
   width: 50%;
   display: flex;
 }*/
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -533,8 +556,6 @@ a.nav-link:hover{
 }
 .menu-freeda{
   margin-left: 32%;
-}
-.texto-menu-f{
 }
 .boton2-menu{
   width: 160px;
