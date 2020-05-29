@@ -864,13 +864,14 @@ a.nav-link:hover{
 }
 div.shield {
   background-position: left center;
-  margin-left: 55%;
+  margin-left: 42%;
   width: 180px;
   padding: 10px 0 10px 30px;
   text-align: center;
+  display: flex;
 }
 #pagar{
-  width: 90%;
+  width: 100%;
   text-align: right;
 }
 .card-expl {
@@ -908,7 +909,9 @@ div.shield {
   display: none;
 }*/
 .boton-pagar{
+  width: 30%;
   font-size: 12px;
+  margin-left: 60%;
 }
 /*Footer*/
 .footermenu{

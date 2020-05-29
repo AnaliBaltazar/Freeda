@@ -892,13 +892,13 @@ a.nav-link:hover{
   margin-right: 15%;
 }
 .imagen1-part1{
-  margin-left: 37%;
+  margin-left: 34%;
 }
 .texto1-seccion2{ /*Sabias que...*/
   margin-top: 0%;
 }
 .imagen2-part1{ /*Imagen estrella*/
-  margin-left: 24%;
+  margin-left: 19%;
 }
 .part1{
   width: 100%;
@@ -978,6 +978,12 @@ margin-bottom: 20%;
 }
 .texto_area_superficie{
   width: 90%;
+}
+label.lab-superficie{
+  font-size: 18px;
+}
+input.data_input::placeholder{
+  font-size: 19px;
 }
 
 /*13-TERRENO.HTML*/

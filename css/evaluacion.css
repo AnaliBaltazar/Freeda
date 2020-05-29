@@ -791,8 +791,20 @@ select#colonia_inmueble{
 #confirmacion .text_area_r{
   width: 90%;
 }
-label.lab-calle, label.lab-cp, label.lab-mun{
+label.lab-calle{
+  font-size: 14px;
+}
+label.lab-cp{
+  font-size: 14.5px;
+} 
+label.lab-col, label.lab-mun, label.lab-edo, label.lab-nom, label.lab-sup{
   font-size: 16px;
+}
+label.lab-rfc, label.lab-tipo, label.lab-tipo, label.lab-clase, label.lab-año, label.lab-metros{
+  font-size: 18px;
+}
+.btn-continuar{
+  margin-top: -15%;
 }
 
 /*Footer*/
