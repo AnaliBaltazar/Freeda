@@ -543,7 +543,7 @@ h3#caption_loader{
   padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -18%;
+  margin-left: -13%;
 }
 .material-icons{
   color: white;
@@ -789,7 +789,11 @@ div.shield {
   height: 48px;
   width: 141px;
 }
-
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 }
 
 
@@ -838,7 +842,7 @@ div.shield {
   padding-left: 8%; /*9*/
 }
 .logo-freeda{
-  margin-left: -18%;
+  margin-left: -15%;
   /*margin-top: -7%;*/
 }
 .material-icons{
@@ -1090,7 +1094,11 @@ div.shield {
   height: 50px;
   width: 141px;
 }
-
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1168,7 +1176,12 @@ padding-right: 16%;
   width: 110px;
   position: absolute;
 }
-
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1227,7 +1240,12 @@ padding-right: 16%;
   width: 150px;
   display: flex;*/
 }
-
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
 
 }
 

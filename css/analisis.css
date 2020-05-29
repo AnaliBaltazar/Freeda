@@ -1037,7 +1037,11 @@ margin-bottom: 20%;
   height: 48px;
   width: 141px;
 }
-
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 
 
     
@@ -1238,11 +1242,11 @@ a.nav-link:hover{
   height: 50px;
   width: 141px;
 }
-
-
-
-
-
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 
 }
 
@@ -1423,7 +1427,12 @@ a.nav-link:hover{
   position: absolute;
 }
 
-
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
 
 
 }
@@ -1616,7 +1625,12 @@ a.nav-link:hover{
   width: 50%;
   display: flex;
 }*/
-
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
 
 
 }

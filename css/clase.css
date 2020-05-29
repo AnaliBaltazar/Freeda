@@ -815,6 +815,11 @@ button.Continuar.Small{
   height: 48px;
   width: 141px;
 }
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 
 /*POLIZAS*/
 button#filters, button#add_btn{
@@ -1058,6 +1063,11 @@ button.Continuar.Small{
   height: 50px;
   width: 141px;
 }
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 
 /*POLIZAS*/
 button#filters, button#add_btn{
@@ -1289,6 +1299,13 @@ button.button_sel{
   height: 35px;
   width: 110px;
   position: absolute;
+}
+
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 8%;
 }
 
 /*POLIZAS*/
@@ -1523,6 +1540,13 @@ button.button_sel{
   margin-top: 20px;
   opacity: 1;
   z-index: 2003;
+}
+
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
 }
 
 /*POLIZAS*/
