@@ -766,14 +766,14 @@ h5{ /*Prado Churubusco*/
   color: #534965;
   /*padding-left: 80px;
   padding-right: 80px; */
-  padding: 15px 80px 5px 80px;
+  /*padding: 15px 80px 5px 80px;*/
 }
 .texto2-reporte{
   font-size: 25px;
   font-weight: 400;
   text-align: center;
   color: #912F46;
-  padding: 10px 80px 5px 80px;
+  /*padding: 10px 80px 5px 80px;*/
 }
 #magnitud, #porcentaje{
 }
@@ -897,7 +897,7 @@ h5{ /*Prado Churubusco*/
 }*/
 .data_input_banca{
   width: 100%;
-  font-weight: 700;
+  font-weight: 500;
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
@@ -1558,7 +1558,7 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 }
 .texto-trans{
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   color: #912F46;
   /*padding: 55px 80px 5px 80px;*/
@@ -1772,6 +1772,8 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
 .texto-notificacion{
   display: none;
 }
+/*POPUP CLABE*/
+
 
 /*18-SUMA-ASEGURADA*/
 .texto1-epicentro1, .texto1-epicentro2{
@@ -1811,6 +1813,17 @@ h3.describe_bien{ /*Hospedaje,cristales,electrodomesticos,techos*/
   margin-left: 5%;
 }
 */
+.btn-close{/*Boton close POP UP*/
+  width: 6%;
+  left: 400px;
+  top: 8px;
+}
+/*.material-icons#close-pop{
+  margin-left: 10%;
+}
+#ready_screen1{
+  width: auto;
+}*/
 
 /*POLIZAS*/
 button#filters, button#add_btn{
@@ -1960,13 +1973,31 @@ td i.material-icons{
   /*height: 95%;*/
   height: auto;
   margin-top: 10%;
+  margin-bottom: auto;
+}
+td.col_l{
+  width: 40%;
+  font-size: 18px;
+  color: #535965; /*Color de letra*/
+  font-weight: 500;
+  /*width: 50%; auto*/
+  text-align: left;
+}
+td.col_r{
+  width: auto;
+  font-size: 18px;
+  color: #767e8e; /*Color de letra*/
+  font-weight: 300;
+  text-align: right;
 }
 .btn-agregar{
   margin-left: 10%; /*-4%*/
-  margin-top: -7%;
+  margin-top: -7.6%;
 }
 /*VER Y DESCARGAR*/
 .documentos{
+  width: auto;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2058,15 +2089,15 @@ h1#screenHeader{ /*Tembló*/
   padding-left: 0;
 }
 .info_seg2 td.col_l{
-  font-size: 20px;
+  font-size: 18px;
   color: #535965; /*Color de letra*/
   font-weight: 500;
-  width: 50%; /*auto*/
+  width: 45%; /*auto*/
   text-align: left;
   line-height: 30px; /*Sangria*/
 }
 .info_seg2 td.col_r{
-  font-size: 20px;
+  font-size: 18px;
   color: #767e8e; /*Color de letra*/
   font-weight: 300;
   width: auto;
@@ -2189,7 +2220,7 @@ button.button-minus, button.button-plus{
   margin-right: auto;
 }
 .texto-trans{
-  padding-top: 40px;
+  padding-top: 15px;
   font-size: 20px;
 }
 
@@ -2542,11 +2573,12 @@ button i{
 .texto1-reporte{
   font-size: 25px;
   line-height: 25px;
-  padding-top: 8%;
+  padding: 20px 80px 5px 80px;
 }
 .texto2-reporte{
   font-size: 25px;
   font-weight: 400;
+  padding: 10px 80px 5px 80px;
 }
 .boton-reembolso{
   /*margin-top:-38%;
@@ -2926,6 +2958,7 @@ div.options_div a{
   margin-right: auto;
   height: auto;
   margin-top: 5%;
+  margin-bottom: auto;
 }
 .btn-agregar{
   margin-right: -3%; /*-4%*/
@@ -2937,6 +2970,7 @@ div.options_div a{
 }
 /*VER Y DECARGA*/
 .documentos{
+  margin-top: auto;
   margin-left: 5%;
 }
 .doc_row h4, .doc_row .doc_btns{
@@ -2997,6 +3031,17 @@ h1#screenHeader{ /*Tembló*/
   width: 100px;
 }
 
+/*3%*/
+.texto1-reporte{
+  font-size: 22px;
+  line-height: 25px;
+  padding: 20px 100px 5px 100px;
+}
+.texto2-reporte{
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 100px 5px 100px;
+}
 /*Reporte-daños.html*/
 .texto1-daños{ /*Reporta los daños que ocasionó el temblor*/
   font-size: 18px;
@@ -3529,6 +3574,19 @@ button.button-minus, button.button-plus{
   text-align: right;
   line-height: 30px; /*Sangria*/
 }
+.texto1-reporte{
+  font-size: 22px;
+  line-height: 25px;
+  padding: 50px 80px 5px 100px;
+}
+.texto2-reporte{
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 80px 5px 100px;
+}
+
+
+
 .info-reporte{
   margin-top: 3%;
 }
@@ -3699,6 +3757,18 @@ button.button-minus, button.button-plus{
   margin-top: 10%;
 }
 
+
+
+.texto1-reporte{
+  font-size: 22px;
+  line-height: 25px;
+  padding: 50px 100px 5px 100px;
+}
+.texto2-reporte{
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 100px 5px 100px;
+}
 /*------------------------------*/
 /*TRANSFERENCIA REALIZADA*/ 
 .info-trans{
