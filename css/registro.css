@@ -215,7 +215,7 @@ select:focus{
 /*4-VALIDAR-TOKEN.HTML*/
 .texto2-seccion1{
   font-size: 25px; /*Tamaño letra*/
-  font-weight: 700; /*Grosor*/
+  font-weight: 500; /*Grosor*/
   letter-spacing: 0.4px; /*Separacion de todas las letras*/
   line-height: 30px; /*Sangria*/
   text-align: center;
