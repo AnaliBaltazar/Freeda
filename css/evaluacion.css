@@ -798,7 +798,7 @@ label.lab-calle, label.lab-cp, label.lab-mun{
 /*Footer*/
 .footermenu{
   position: static;
-  height: 170px;
+  height: 200px;
   border-bottom: solid 5px;
   border-color: #F2F5F4;
 }
@@ -820,8 +820,8 @@ label.lab-calle, label.lab-cp, label.lab-mun{
 }
 .texto3-footer{
   position: absolute;
-  margin-left: 50%;
-  margin-top: 93px;
+  margin-left: 9%;
+  margin-top: 157px;
   font-size: 14px;
   opacity: 1;
   z-index: 2003;
@@ -836,7 +836,7 @@ label.lab-calle, label.lab-cp, label.lab-mun{
 .logo-img{
   height: 100%;
   width: 85%;
-  margin-left: 50%;
+  margin-left: 58%;
 }
 
 }
