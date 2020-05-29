@@ -1,7 +1,6 @@
 /*Navegacion*/
-.tamaño-renglon-1{
+/*.tamaño-renglon-1{
   position: fixed;
-  /* height: 78px; */
   padding-top: 13px;
   width: 100%;
   z-index: 2010;
@@ -11,30 +10,29 @@
   padding-left: 19%;
 }
 .logo-freeda{
-  margin-left: 19%; /*-55*/
+  margin-left: 19%; 
   height: 85px;
   width: 210px; 
   display:flex;
 }
 .menu-freeda{
   font-size: 14px;
-  /*margin-left: 5%;*/
   padding-bottom: 4px;
 }
-.texto-menu-f{ /*Letra del menu*/
+.texto-menu-f{ 
   font-size: 20px;
-  color:#F7F7F7; /*F7F7F7*/
+  color:#F7F7F7; 
   margin-top: 3px;
   padding-right: 30px;
   font-weight: 400;
 }
-.texto-menu-f:hover{ /*Cuando te posicionas encima del texto*/
+.texto-menu-f:hover{ 
   color: #FFFFFF;
 }
 .texto-menu-f:active{
   color: #FFFFFF;
 }
-.texto-menu-f:focus{ /*Queda activado*/
+.texto-menu-f:focus{ 
   text-decoration: underline;
   color: #FFFFFF;
 }
@@ -42,7 +40,138 @@
   position: absolute;
   left: 10%;
 }
+*/
 
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+html, body{
+  height: 100%;
+}
+a, .Right span{
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFFFFF; /*Color letra */
+}
+
+/*MENU*/
+.headerBar1{
+  height: 108px;
+  background-color: #912F46; /*Color menu*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-freeda{
+  margin-left: 61%; /*Alineacion*/
+  /*margin-bottom: 0%;*/
+  height: 75px;
+  width: 210px; 
+  display:flex;
+}
+
+/*Lado derecho el menu*/
+.Right{
+  margin-right: 3%;
+  display: flex;
+  flex-direction: row;
+  /* width: 40%; */
+  align-items: center;
+  /* justify-content: flex-end;
+  margin-right: 10%; */
+}
+.Right i{
+  cursor: pointer;
+  position: relative;
+}
+.selected{
+  color: #000000 !important;
+}
+/*AYUDA, NOTIFICACION Y USUARIO*/
+.menu{
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #FFFFFF;/*Color de letra*/
+}
+.bubble{
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 80px;
+  margin-left: 7px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #912F46;
+  display: none;
+  cursor: pointer;
+}
+#notifications{
+  width: 200px;
+  height: auto;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px #D0D0D0;
+  position: absolute;
+  top: 80px;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3B536D;
+  display: none;
+  border-left: 8px solid #912F46;
+  z-index: 2001;
+}
+#notifications p a{
+  color: #60A1E7;
+  /* font-size: 13px; */
+}
+.show, .show#notifications{display: block;}
+.material-icons{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* PANTALLA TODO LISTO*/
+.icono_listo_screen{
+  height: auto;
+  margin-top: 30px;
+  width: 100px;
+}
+#allset_screen p{
+  color: #767e8e;
+}
+button.Continuar{
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #912F46;
+  border: none;
+  border-radius: 5px;
+  color: white;        
+  margin: 50px auto;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  z-index: 101; 
+}
+button.Continuar:hover{
+  background-color: #b4425c;
+  border: none;
+}
 
 /* @charset "US-ASCII"; */
 @import "https://fonts.googleapis.com/css2?family=Questrial&display=swap";
@@ -538,9 +667,8 @@ h3#caption_loader{
 .material-icons{
   color: white;
 }*/
-
-.tamaño-renglon-1{
-  padding-left: 8%; /*9*/
+/*.tamaño-renglon-1{
+  padding-left: 8%; 
 }
 .logo-freeda{
   margin-left: -13%;
@@ -554,11 +682,42 @@ h3#caption_loader{
 .menu-freeda{
   background-color: #912f46;
 }
-/*li.nav-item{
-  border-bottom:1px solid rgba(255,255,255, .3);
-}*/
 a.nav-link:hover{
   color: #000000;
+}*/
+.menu{
+  display: flex;
+  margin-left: 2px; /*5px*/
+  margin-right: 2px; /*5px*/
+  color: #FFFFFF;/*Color de letra*/
+}
+.Left{
+  width: 25px;
+  margin-left: 0%;
+}
+.Right{
+  width: 95%;
+  margin-right: 5%;
+  justify-content: flex-end;
+}
+#session-name{
+  font-size: 14px;
+  font-weight: 600;
+}
+.logo-freeda{
+  width: 350%;
+  /*margin-left: -1%;*/
+  margin-top: 1%;
+}
+.btn-agregar{
+  margin-right: -4%;
+  margin-top: -5%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
 }
 /*Seguro primeros gastos terremoto*/
 .texto1-titulo{
@@ -838,12 +997,11 @@ div.shield {
 .material-icons{
   color: white;
 }*/
-.tamaño-renglon-1{
-  padding-left: 8%; /*9*/
+/*.tamaño-renglon-1{
+  padding-left: 8%; 
 }
 .logo-freeda{
   margin-left: -15%;
-  /*margin-top: -7%;*/
 }
 .material-icons{
   color: white;
@@ -851,12 +1009,27 @@ div.shield {
 .boton-menu{
   left: 80%;
 }
-/*li.nav-item{
-  border-bottom:1px solid rgba(255,255,255, .3);
-}*/
 a.nav-link:hover{
   color: #000000;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
 }
+.logo-freeda{
+  margin-left: 3%;
+  margin-top: 1%;
+}
+.btn-agregar{
+  margin-right: -4%;
+  margin-top: -5%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  display: none;
+}
+.texto-notificacion{
+  display: none;
+}
+
 /*Seguro primeros gastos terremoto*/
 .texto1-titulo{
   margin-top: 25%;
@@ -1103,7 +1276,6 @@ div.shield {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
 /*.tamaño-renglon-1{
   padding-left: 10%;
 }
@@ -1117,7 +1289,7 @@ padding-right: 16%;
 .material-icons{
   color: white;
 }*/
-.tamaño-renglon-1{
+/*.tamaño-renglon-1{
   padding-left: 8%;
 }
 .logo-freeda{
@@ -1128,6 +1300,13 @@ padding-right: 16%;
 }
 .boton-menu{
   left: 80%;
+}*/
+.tamaño-renglon-1{
+  padding-left: 10%;
+}
+.logo-freeda{
+  margin-left: 17.5%;
+  margin-top: 1%;
 }
 
 /*Seguro primeros gastos terremoto*/
@@ -1186,8 +1365,8 @@ padding-right: 16%;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-.tamaño-renglon-1{
-  padding-left: 20%; /*9*/
+/*.tamaño-renglon-1{
+  padding-left: 20%; 
 }
 .logo-freeda{
   margin-left: -100%;
@@ -1197,6 +1376,19 @@ padding-right: 16%;
 }
 .headerBar{
   margin-top: 2%;
+}*/
+.tamaño-renglon-1{
+  padding-left: 25%; /*9*/
+}
+.logo-freeda{
+  margin-left: 21%;
+  margin-top: 1%;
+}
+.texto-ayuda{ /*Texto Centro de ayuda se oculta*/
+  visibility: visible;
+}
+.texto-notificacion{
+  display: all;
 }
 
 .texto1-titulo{
