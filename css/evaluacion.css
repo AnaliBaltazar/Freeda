@@ -833,6 +833,11 @@ label.lab-calle, label.lab-cp, label.lab-mun{
   height: 48px;
   width: 141px;
 }
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
 
 }
 
@@ -1013,6 +1018,13 @@ width: 95%;
   height: 50px;
   width: 141px;
 }
+
+.logo-img{
+  height: 100%;
+  width: 85%;
+  margin-left: 50%;
+}
+
 }
 
 
@@ -1163,6 +1175,12 @@ label.lab-mun{
   width: 110px;
   position: absolute;
 }
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
 }
 
 
@@ -1300,6 +1318,12 @@ label.lab-mun{
   width: 50%;
   display: flex;
 }*/
+.logo-img{
+  height: 150%;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
 }
 
 
