@@ -672,7 +672,7 @@ a.nav-link:hover{
   justify-content: flex-end;
 }
 .logo-freeda{
-  width: 350%;
+  width: 500%;
   /*margin-left: -1%;*/
   margin-top: 1%;
 }
@@ -792,7 +792,7 @@ select#colonia_inmueble{
   width: 90%;
 }
 label.lab-calle, label.lab-cp, label.lab-mun{
-  font-size: 17px;
+  font-size: 16px;
 }
 
 /*Footer*/
