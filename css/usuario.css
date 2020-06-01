@@ -568,7 +568,12 @@ a.nav-link:hover{
   margin-right: auto;
   margin-top: 15%;
 }
-
+.tooltip{
+  display: none;
+}
+.tooltip li{
+  display: none;
+}
 /*INPUT IVALIDO*/
 input.invalid + label.head-label + label.bottom-label1{
   /* top: 110px; */
